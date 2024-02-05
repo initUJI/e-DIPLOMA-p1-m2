@@ -1,0 +1,5 @@
+userID;fecha
+FakeUser42;15/01/2024_09:54
+unixTimestamp;Timestamp;Situacion;Estado;BPM
+1705308910,89646;16,11940;Test1;MEDIUM;67
+1705308915,91285;21,13457;Test1;NONE;0

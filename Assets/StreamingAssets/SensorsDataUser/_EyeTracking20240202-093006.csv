@@ -1,0 +1,4 @@
+userID;fecha
+FakeUser42;02/02/2024_09:30
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1706862606,48103;,06539;Test1;ENTRA_HEAD;Platform

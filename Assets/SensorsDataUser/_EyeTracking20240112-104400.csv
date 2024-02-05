@@ -1,0 +1,5 @@
+userID;fecha
+FakeUser42;12/01/2024_10:44
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1705052642,93882;2,15983;Test1;ENTRA_HEAD;Character
+1705052643,13725;2,35850;Test1;SALE_HEAD;Character
