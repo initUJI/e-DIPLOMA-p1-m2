@@ -8,7 +8,7 @@ public class CursorObject : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("TREE") || other.CompareTag("ROCK") || other.CompareTag("FLAG"))
+        if (other.CompareTag("TREE") || other.CompareTag("ROCK") || other.CompareTag("FLAG") || other.CompareTag("OBSTACLE"))
             objectInFront = other.gameObject;
     }
 

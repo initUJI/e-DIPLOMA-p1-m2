@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
         originalObstacles = new List<GameObject>();
         originalObstacles.AddRange(GameObject.FindGameObjectsWithTag("TREE"));
         originalObstacles.AddRange(GameObject.FindGameObjectsWithTag("ROCK"));
+        originalObstacles.AddRange(GameObject.FindGameObjectsWithTag("OBSTACLE"));
         originalObstacles.AddRange(GameObject.FindGameObjectsWithTag("MISTERIOUS"));
 
         executionObstacles = new List<GameObject>();

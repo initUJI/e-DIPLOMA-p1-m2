@@ -12,6 +12,7 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
 
     [SerializeField] Material TODELETE;
 
+    int substraction = 0;
     public XRSocketInteractor getRightSocket()
     {
         return rightSocket;
@@ -28,6 +29,7 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
     {
         String toInterpret = "";
         Block block = getSocketBlock(rightSocket);
+        substraction = 0;
         
         if (block == null)
         {
@@ -64,6 +66,7 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
             case "TREE":
             case "ROCK":
             case "FLAG":
+            case "OBSTACLE":
                 if (GameManager.objectInFront != null)
                 {
                     result = GameManager.objectInFront.CompareTag(expression);
@@ -72,6 +75,7 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
             case "!TREE":
             case "!ROCK":
             case "!FLAG":
+            case "!OBSTACLE":
                 result = true;
                 if (GameManager.objectInFront != null)
                 {
@@ -79,16 +83,35 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
                     result = !(GameManager.objectInFront.CompareTag(expressionCut));
                 }
                 break;
+            
             default:
-                string localExpression = (Tool.ReplaceVariablesInExpression(expression, variables)).Replace("==", "="); ;
+                int number;
+                if (int.TryParse(expression, out number))
+                {
+                    if (number-substraction > 0)
+                    {
+                        result = true;
+                        substraction++;
+                    }
+                    else
+                    {
+                        result = false;
+                    }
+                }
+                else
+                {
+                    string localExpression = (Tool.ReplaceVariablesInExpression(expression, variables)).Replace("==", "="); ;
 
-                try
-                {
-                    DataTable dt = new DataTable();
-                    result = (bool)dt.Compute(localExpression, "");
-                } catch
-                {
-                    GameManager.ReportError(this, "Incorrect Boolean expression");
+                    try
+                    {
+                        DataTable dt = new DataTable();
+                        result = (bool)dt.Compute(localExpression, "");
+                    }
+                    catch
+                    {
+                        GameManager.ReportError(this, "Incorrect Boolean expression");
+                    }
+
                 }
 
                 break;
@@ -97,7 +120,6 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
         return result;
         
     }
-
 }
 
        

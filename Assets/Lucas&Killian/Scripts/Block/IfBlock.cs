@@ -13,10 +13,4 @@ public class IfBlock : ConditionalBlock
         this.variables = variables;
         Execute();
     }
-
-    
-
-
-
-
 }

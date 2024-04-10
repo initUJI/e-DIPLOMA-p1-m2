@@ -28,6 +28,8 @@ TagManager:
   - Node
   - NodeNext
   - UI
+  - PLANT
+  - OBSTACLE
   layers:
   - Default
   - TransparentFX

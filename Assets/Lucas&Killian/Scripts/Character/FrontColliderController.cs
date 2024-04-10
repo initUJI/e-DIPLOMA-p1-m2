@@ -7,7 +7,7 @@ public class FrontColliderController : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.tag);
-        if (other.CompareTag("TREE") || other.CompareTag("ROCK") || other.CompareTag("FLAG"))
+        if (other.CompareTag("TREE") || other.CompareTag("ROCK") || other.CompareTag("FLAG") || other.CompareTag("OBSTACLE"))
         {
             GameManager.objectInFront = other.gameObject;
         }
