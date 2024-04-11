@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 //using System.Collections;
@@ -7,7 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 //using UnityEngine.iOS;
 //using UnityEngine.XR.OpenXR.Input;
 
-public class DeleteWindowController : MonoBehaviour
+public class DeleteWindowController : NumberOfBlocks
 {
     public GameObject deleteWindowPrefabs;
     private GameObject deleteWindow;
@@ -49,7 +50,17 @@ public class DeleteWindowController : MonoBehaviour
     public void Delete()
     {
         Debug.Log(FindChildDeleteWindow());
-        Destroy(FindChildDeleteWindow().parent.gameObject);
+        
+        try
+        {
+            sumNumberOfBlocks(FindChildDeleteWindow().parent.gameObject);
+            Destroy(FindChildDeleteWindow().parent.gameObject);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Error al destruir el objeto: " + e.Message);
+            substractNumberOfBlocks(FindChildDeleteWindow().parent.gameObject);
+        }
     }
 
     public void Cancel()

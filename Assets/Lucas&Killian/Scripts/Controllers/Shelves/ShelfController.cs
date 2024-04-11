@@ -5,7 +5,7 @@ using UnityEngine;
 //using UnityEditor.Experimental.GraphView;
 //using UnityEngine.XR.Interaction.Toolkit;
 
-public class ShelfController : MonoBehaviour
+public class ShelfController : NumberOfBlocks
 {
     [SerializeField] GameObject blockPrefab;
     [SerializeField] GameObject attach;
@@ -14,7 +14,13 @@ public class ShelfController : MonoBehaviour
 
     protected virtual void Start()
     {
-        StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
+        blocksForLevel1();
+        if (returnNumberOfBlocks(blockPrefab) > 0)
+        {
+            StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
+            substractNumberOfBlocks(blockPrefab);
+        }
+        
     }
 
     protected virtual void CreateNewBlock()
@@ -29,7 +35,11 @@ public class ShelfController : MonoBehaviour
     {
 
         if (other.gameObject == currentBlock){
-            CreateNewBlock();
+            if (returnNumberOfBlocks(blockPrefab) > 0)
+            {
+                CreateNewBlock();
+                substractNumberOfBlocks(blockPrefab);
+            }
         }
     }
 

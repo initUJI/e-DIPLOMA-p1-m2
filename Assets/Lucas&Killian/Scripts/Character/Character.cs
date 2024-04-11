@@ -216,10 +216,10 @@ public class Character : MonoBehaviour
 
         // This case is useful for keeping the animation fluid. When the isAnimated variable is set to false,
         // we wait until the character has recovered its original position before stopping the animation.
-        if (!isAnimated && Mathf.Abs(child.transform.rotation.z) < 0.01)
-        {
-            animator.enabled = false;
-        }
+        //if (!isAnimated && Mathf.Abs(child.transform.rotation.z) < 0.01)
+        //{
+           // animator.enabled = false;
+        //}
     }
 
     public void ResetTheTargetPosition(Vector3 initialTargetPosition, Quaternion initialTargetRotation)
