@@ -30,10 +30,21 @@ public abstract class Block : MonoBehaviour
     {
         value = 1;
         referentBlock = null;
-
         objectRenderer = GetComponent<Renderer>();
-        newMaterials = objectRenderer.materials;
-        newMaterials[1] = materials[0];
+        if (objectRenderer != null)
+        {  
+            newMaterials = objectRenderer.materials;
+        }
+        else
+        {
+            objectRenderer = transform.GetChild(0).GetComponent<Renderer>();
+            newMaterials = objectRenderer.materials;
+        }
+        if (newMaterials.Length > 1)
+        {
+            newMaterials[1] = materials[0];
+        }
+
         objectRenderer.materials = newMaterials;
         glowing = false;
     }
@@ -130,7 +141,11 @@ public abstract class Block : MonoBehaviour
 
     public void ChangeBlockMaterial(Material material)
     {
-        newMaterials[1] = material;
+        if (newMaterials.Length > 1)
+        {
+            newMaterials[1] = material;
+        }
+
         objectRenderer.materials = newMaterials;
     }
 

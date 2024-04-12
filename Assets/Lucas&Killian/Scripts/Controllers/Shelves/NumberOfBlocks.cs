@@ -28,8 +28,7 @@ public class NumberOfBlocks : MonoBehaviour
 
     public int returnNumberOfBlocks(GameObject block)
     {
-        Debug.Log(block.GetComponent<Block>().GetType().ToString());
-        switch (block.GetComponent<Block>().GetType().ToString())
+        switch (block.name)
         {
             case "TurnBlock":
                 return numberOfTurn;
@@ -56,7 +55,7 @@ public class NumberOfBlocks : MonoBehaviour
 
     public void substractNumberOfBlocks(GameObject block)
     {
-        switch (block.GetComponent<Block>().GetType().ToString())
+        switch (block.name)
         {
             case "TurnBlock":
                 numberOfTurn--;
@@ -92,7 +91,7 @@ public class NumberOfBlocks : MonoBehaviour
 
     public void sumNumberOfBlocks(GameObject block)
     {
-        switch (block.GetComponent<Block>().GetType().ToString())
+        switch (block.name)
         {
             case "TurnBlock":
                 numberOfTurn++;

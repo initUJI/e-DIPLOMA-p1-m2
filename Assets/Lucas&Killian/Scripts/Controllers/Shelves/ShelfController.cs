@@ -27,8 +27,19 @@ public class ShelfController : NumberOfBlocks
     {
         currentBlock = Instantiate(blockPrefab);
         currentBlock.transform.parent = attach.transform;
-        currentBlock.transform.localPosition = Vector3.zero;
-        currentBlock.transform.localRotation = Quaternion.identity;
+
+        float xPos;
+        if (currentBlock.GetComponent<BoxCollider>() != null)
+        {
+            xPos = currentBlock.GetComponent<BoxCollider>().size.z * 4;
+        }
+        else
+        {
+            xPos = currentBlock.transform.GetChild(0).GetComponent<BoxCollider>().size.z * 4;
+        }
+        
+        currentBlock.transform.localPosition = new Vector3(xPos, 0.2f, 0);
+        currentBlock.transform.localRotation = blockPrefab.transform.rotation;
     }
 
     public void OnTriggerExit(Collider other)
