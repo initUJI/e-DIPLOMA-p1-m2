@@ -21,6 +21,10 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
 
     protected Coroutine currentCoroutine;
 
+    private bool activeIf = false;
+    private bool activeFor = false;
+    private IfBlock currentIfBlock;
+    private ForBlock currentForBlock;
 
     protected void Execute()
     {
@@ -114,25 +118,30 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
 
         while (currentBlock != null && !MainBlock.error)
         {
-
             GameManager.currentBlock = currentBlock;
 
             currentBlock.SetGlowing(true);
 
             yield return new WaitUntil(() => !MainBlock.paused); // Wait until pause equals false
-            //Debug.Log("MainBlock : Next block !");
-            
-            
+            //Debug.Log("MainBlock : Next block !");                     
 
-            if (currentBlock as IfBlock)
+            if (currentBlock as ForBlock)
+            {
+                activeFor = true;
+                currentForBlock = (ForBlock)currentBlock;
+            }
+
+            else if (currentBlock as IfBlock)
             {
                 wasIfBlock = true;
                 ifConditionChecked = false;
                 IfBlock ifBlock = (IfBlock)currentBlock;
+                activeIf = true;
                 if (ifBlock.conditionChecked(variables))
                 {
                     ifConditionChecked = true;
                     ifBlock.Execute(variables);
+                    currentIfBlock = ifBlock;
                 }
             }
             else if (currentBlock as ElseBlock)
@@ -150,9 +159,31 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
                     GameManager.ReportError(elseBlock, "An else block must be preceded by an if block");
                 }
             }
+            else if (currentBlock as EndIfBlock)
+            {
+                activeIf = false;
+                currentIfBlock = null;
+            }
+            else if (currentBlock as EndForBlock)
+            {
+                activeFor = false;
+                currentForBlock = null;
+            }
             else
             {
-                currentBlock.Execute(variables); // Execute the current block
+                if (activeFor && currentForBlock != null)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
+
+                if (activeIf && currentIfBlock != null)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
+                else if (!activeIf && !activeFor)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
             }
 
             yield return new WaitUntil(() => !MainBlock.error);
@@ -173,8 +204,4 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
     {
         return isFinished;
     }
-
-    
-
-
 }

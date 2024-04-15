@@ -1,0 +1,6 @@
+userID;fecha
+FakeUser42;15/04/2024_13:16
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1713179807,33577;1,58121;Test1;ENTRA_HEAD;Tree
+1713179809,33948;3,58503;Test1;SALE_HEAD;Tree
+1713179812,05955;6,30478;Test1;ENTRA_HEAD;Tree

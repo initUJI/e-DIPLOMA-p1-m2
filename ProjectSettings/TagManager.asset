@@ -30,6 +30,7 @@ TagManager:
   - UI
   - PLANT
   - OBSTACLE
+  - Car
   layers:
   - Default
   - TransparentFX

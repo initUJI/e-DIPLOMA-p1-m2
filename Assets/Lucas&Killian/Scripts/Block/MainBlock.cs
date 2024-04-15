@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.XR.Interaction.Toolkit;
 //using Unity.Burst.Intrinsics;
 //using System.Net.Sockets;
@@ -38,6 +39,15 @@ public class MainBlock : Block, WithBottomSocket
         paused = false;
 
         //Execute();
+    }
+
+    void Update()
+    {
+        //test
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Execute();
+        }
     }
 
     /* Calls the c_Execute coroutine */

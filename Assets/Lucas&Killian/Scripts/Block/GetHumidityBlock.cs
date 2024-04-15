@@ -8,10 +8,6 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 {
     [SerializeField] protected XRSocketInteractor rightSocket;
     private Plant plant;
-    private void Start()
-    {
-        plant = GameObject.FindFirstObjectByType<Plant>();
-    }
 
     public XRSocketInteractor getRightSocket()
     {
@@ -20,6 +16,7 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 
     public override void Execute(Dictionary<string, int> variables)
     {
+        plant = GameObject.FindFirstObjectByType<Plant>();
         StartCoroutine(c_Execute(variables));
     }
 
@@ -40,7 +37,4 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
     {
         return base.IsFinished() && isFinished;
     }
-
-
-
 }

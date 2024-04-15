@@ -584,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5987263208668715218}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0.169, z: -0.051}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -790,8 +790,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.10236201, y: 0.114999995, z: 0.47953188}
-  m_Center: {x: 0, y: -0.057499997, z: -0.23976594}
+  m_Size: {x: 0.10236201, y: 0.075791314, z: 0.47953188}
+  m_Center: {x: 1.4543386e-16, y: -0.054524712, z: -0.23976594}
 --- !u!114 &7740459882854921377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +850,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &3986578084178940163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,7 +999,7 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 1
+  m_AddDefaultGrabTransformers: 0
 --- !u!114 &1277161821799544018
 MonoBehaviour:
   m_ObjectHideFlags: 0

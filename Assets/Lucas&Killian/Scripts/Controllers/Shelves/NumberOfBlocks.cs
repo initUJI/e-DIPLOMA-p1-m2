@@ -13,19 +13,8 @@ public class NumberOfBlocks : MonoBehaviour
     private int numberOfObject = 0;
     private int numberOfRight = 0;
     private int numberOfTurn = 0;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    private int numberOfEndFor = 0;
+    private int numberOfEndIf = 0;
     public int returnNumberOfBlocks(GameObject block)
     {
         switch (block.name)
@@ -48,6 +37,10 @@ public class NumberOfBlocks : MonoBehaviour
                 return numberOfForward;
             case "ForBlock":
                 return numberOfFor;
+            case "EndIfBloc":
+                return numberOfEndIf;
+            case "EndForBlock":
+                return numberOfEndFor;
             default:
                 return 0;
         }
@@ -83,6 +76,12 @@ public class NumberOfBlocks : MonoBehaviour
                 break;
             case "ForBlock":
                 numberOfFor--;
+                break;
+            case "EndIfBlock":
+                numberOfEndIf--;
+                break;
+            case "EndForBlock":
+                numberOfEndFor--;
                 break;
             default:
                 break;
@@ -120,9 +119,30 @@ public class NumberOfBlocks : MonoBehaviour
             case "ForBlock":
                 numberOfFor++;
                 break;
+            case "EndIfBlock":
+                numberOfEndIf++; 
+                break;
+            case "EndForBlock":
+                numberOfEndFor++;
+                break;
             default:
                 break;
         }
+    }
+
+    public void blocksForTest()
+    {
+        numberOfFor = 10;
+        numberOfForward = 10;
+        numberOfGetHumidity = 10;
+        numberOfIf = 10;
+        numberOfLeft = 10;
+        numberOfNumber = 10;
+        numberOfObject = 10;
+        numberOfRight = 10;
+        numberOfTurn = 10;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 
     public void blocksForLevel1()
@@ -136,6 +156,8 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfObject = 0;
         numberOfRight = 2;
         numberOfTurn = 2;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 
     public void blocksForLevel2()
@@ -149,6 +171,8 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfObject = 0;
         numberOfRight = 2;
         numberOfTurn = 2;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 
     public void blocksForLevel3()
@@ -162,6 +186,8 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfObject = 0;
         numberOfRight = 0;
         numberOfTurn = 0;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 
     public void blocksForLevel4()
@@ -175,6 +201,8 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfObject = 1;
         numberOfRight = 2;
         numberOfTurn = 2;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 
     public void blocksForLevel5()
@@ -188,6 +216,8 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfObject = 1;
         numberOfRight = 2;
         numberOfTurn = 2;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 
     public void blocksForLevel6()
@@ -201,5 +231,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfObject = 1;
         numberOfRight = 2;
         numberOfTurn = 2;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
     }
 }

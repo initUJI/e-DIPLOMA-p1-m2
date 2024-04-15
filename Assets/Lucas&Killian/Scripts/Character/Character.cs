@@ -35,7 +35,7 @@ public class Character : MonoBehaviour
         isCutting = false;
         isBreaking = false;
         objectIsFalling = false;
-        child = GameObject.FindGameObjectWithTag("Bear");
+        child = GameObject.FindGameObjectWithTag("Car");
     }
 
     public bool Motionless()

@@ -36,6 +36,7 @@ public class LevelManager : NumberOfBlocks
             case 3: blocksForLevel3(); break;
             case 2: blocksForLevel2(); break;
             case 1: blocksForLevel1(); break;
+            case 0: blocksForTest(); break;
         }
     }
 }

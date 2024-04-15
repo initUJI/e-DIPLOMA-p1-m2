@@ -14,13 +14,12 @@ public class ShelfController : NumberOfBlocks
 
     protected virtual void Start()
     {
-        blocksForLevel1();
+        blocksForTest();
         if (returnNumberOfBlocks(blockPrefab) > 0)
         {
             StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
             substractNumberOfBlocks(blockPrefab);
         }
-        
     }
 
     protected virtual void CreateNewBlock()
@@ -29,16 +28,27 @@ public class ShelfController : NumberOfBlocks
         currentBlock.transform.parent = attach.transform;
 
         float xPos;
-        if (currentBlock.GetComponent<BoxCollider>() != null)
+        float yPos;
+        if (blockPrefab.name == "TurnLeftBlock" || blockPrefab.name == "TurnRightBlock" || blockPrefab.name == "ObjectBlock"
+            || blockPrefab.name == "NumberBlock")
         {
-            xPos = currentBlock.GetComponent<BoxCollider>().size.z * 4;
+            xPos = 0;
+            yPos = 0;
         }
         else
         {
-            xPos = currentBlock.transform.GetChild(0).GetComponent<BoxCollider>().size.z * 4;
+            if (currentBlock.GetComponent<BoxCollider>() != null)
+            {
+                xPos = currentBlock.GetComponent<BoxCollider>().size.z * 4;
+            }
+            else
+            {
+                xPos = currentBlock.transform.GetChild(0).GetComponent<BoxCollider>().size.z * 4;
+            }
+            yPos = 0.2f;
         }
         
-        currentBlock.transform.localPosition = new Vector3(xPos, 0.2f, 0);
+        currentBlock.transform.localPosition = new Vector3(xPos, yPos, 0);
         currentBlock.transform.localRotation = blockPrefab.transform.rotation;
     }
 
