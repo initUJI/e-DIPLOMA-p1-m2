@@ -5,6 +5,7 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     [HideInInspector] public GameObject character;
+    [HideInInspector] public bool humidityChecked = false;
 
     private void OnTriggerEnter(Collider other)
     {

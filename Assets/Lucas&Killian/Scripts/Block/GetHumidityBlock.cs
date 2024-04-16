@@ -7,7 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 {
     [SerializeField] protected XRSocketInteractor rightSocket;
-    private Plant plant;
+    private Plant[] plants;
 
     public XRSocketInteractor getRightSocket()
     {
@@ -16,7 +16,7 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 
     public override void Execute(Dictionary<string, int> variables)
     {
-        plant = GameObject.FindFirstObjectByType<Plant>();
+        plants = GameObject.FindObjectsOfType<Plant>();
         StartCoroutine(c_Execute(variables));
     }
 
@@ -24,9 +24,12 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
     {
         isFinished = false;
 
-        if (plant.characterInPlant())
+        foreach (Plant p in plants)
         {
-            //completed
+            if (p.characterInPlant())
+            {
+                p.humidityChecked = true;
+            }
         }
 
         yield return new WaitUntil(() => base.IsFinished());
