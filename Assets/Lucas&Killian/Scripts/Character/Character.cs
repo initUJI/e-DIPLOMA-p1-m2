@@ -13,10 +13,11 @@ public class Character : MonoBehaviour
     private Quaternion targetRotation;
     private Quaternion transformRotationSave;
     private GameObject child;
-    private const float unit = 2f;
+    private float unit = 2f;
     private const float speed = 2f;
     private const float rotateSpeed = 90f;
     private float timeAnimationCutOrBreak = ANIMATION_TIME_OBJECT;
+    private Transform levelTransform;
 
     public bool isForwarding;
     public bool isRotating;
@@ -36,6 +37,8 @@ public class Character : MonoBehaviour
         isBreaking = false;
         objectIsFalling = false;
         child = GameObject.FindGameObjectWithTag("Car");
+        levelTransform = transform.parent.parent.parent.transform;
+        unit *= levelTransform.localScale.x;
     }
 
     public bool Motionless()
@@ -105,7 +108,10 @@ public class Character : MonoBehaviour
         if (isForwarding)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
-            if (Mathf.Approximately(transform.position.z, targetPosition.z) && Mathf.Approximately(transform.position.y, targetPosition.y) && Mathf.Approximately(transform.position.x, targetPosition.x))
+
+            if (Mathf.Approximately(transform.position.z, targetPosition.z) 
+                && Mathf.Approximately(transform.position.y, targetPosition.y) 
+                && Mathf.Approximately(transform.position.x, targetPosition.x))
             {
                 isForwarding = false;
                 isAnimated = false;
