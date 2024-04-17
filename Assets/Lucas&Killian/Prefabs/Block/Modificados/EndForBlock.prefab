@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 8170523681141268505}
   - component: {fileID: 8170523681141268511}
   - component: {fileID: 8170523681141268510}
+  - component: {fileID: 118494443070528441}
   m_Layer: 0
   m_Name: Bottom Socket
   m_TagString: BottomSocket
@@ -632,10 +633,23 @@ SphereCollider:
   m_GameObject: {fileID: 8170523681141268504}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &118494443070528441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170523681141268504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1524766, y: 0.063737154, z: 0.09618219}
+  m_Center: {x: -0.07490023, y: -0.01812756, z: -0.00210081}
 --- !u!1 &8170523681168890828
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class ShelfController : NumberOfBlocks
     [SerializeField] GameObject attach;
 
     public GameObject currentBlock;
+    [SerializeField] public int numberForNumberBlock;
 
     protected virtual void Start()
     {
@@ -26,6 +27,11 @@ public class ShelfController : NumberOfBlocks
     {
         currentBlock = Instantiate(blockPrefab);
         currentBlock.transform.parent = attach.transform;
+
+        if (currentBlock.name == "NumberBlock")
+        {
+            currentBlock.GetComponent<ObjectBlock>().setAssociatedString(numberForNumberBlock.ToString());
+        }
 
         float xPos;
         float yPos;

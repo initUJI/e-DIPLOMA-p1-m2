@@ -12,6 +12,17 @@ public class ObjectBlock : Block, WithAssociatedString
         return associatedString;
     }
 
+    public void setAssociatedString(string s)
+    {
+        associatedString = s;
+
+        TMP_Text textMeshPro = GetComponentInChildren<TMP_Text>();
+        if (textMeshPro != null)
+        {
+            textMeshPro.text = associatedString;
+        }
+    }
+
     public override void Start()
     {
         base.Start();
