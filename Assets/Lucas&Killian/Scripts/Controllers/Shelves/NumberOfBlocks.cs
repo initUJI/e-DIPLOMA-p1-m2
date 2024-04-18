@@ -130,7 +130,7 @@ public class NumberOfBlocks : MonoBehaviour
         }
     }
 
-    public void blocksForTest()
+    public bool blocksForTest()
     {
         numberOfFor = 10;
         numberOfForward = 10;
@@ -143,6 +143,8 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 10;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+
+        return true;
     }
 
     public void blocksForLevel1()

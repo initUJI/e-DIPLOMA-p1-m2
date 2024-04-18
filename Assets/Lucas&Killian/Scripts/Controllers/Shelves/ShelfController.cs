@@ -1,3 +1,5 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 //using System.Collections.Generic;
 //using System.Collections;
@@ -5,7 +7,7 @@ using UnityEngine;
 //using UnityEditor.Experimental.GraphView;
 //using UnityEngine.XR.Interaction.Toolkit;
 
-public class ShelfController : NumberOfBlocks
+public class ShelfController : LevelManager
 {
     [SerializeField] GameObject blockPrefab;
     [SerializeField] GameObject attach;
@@ -15,11 +17,24 @@ public class ShelfController : NumberOfBlocks
 
     protected virtual void Start()
     {
-        blocksForTest();
-        if (returnNumberOfBlocks(blockPrefab) > 0)
+
+    }
+
+    private void Update()
+    {
+        if (alreadyCreated)
         {
-            StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
-            substractNumberOfBlocks(blockPrefab);
+            if (returnNumberOfBlocks(blockPrefab) > 0)
+            {
+                GetComponentInChildren<TextMeshProUGUI>().text = returnNumberOfBlocks(blockPrefab).ToString();
+                StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
+                substractNumberOfBlocks(blockPrefab);
+            }
+            else
+            {
+                GetComponentInChildren<TextMeshProUGUI>().text = "";
+            }
+            alreadyCreated = false;
         }
     }
 
@@ -28,7 +43,7 @@ public class ShelfController : NumberOfBlocks
         currentBlock = Instantiate(blockPrefab);
         currentBlock.transform.parent = attach.transform;
 
-        if (currentBlock.name == "NumberBlock")
+        if (currentBlock.name.Contains("NumberBlock"))
         {
             currentBlock.GetComponent<ObjectBlock>().setAssociatedString(numberForNumberBlock.ToString());
         }
@@ -64,8 +79,13 @@ public class ShelfController : NumberOfBlocks
         if (other.gameObject == currentBlock){
             if (returnNumberOfBlocks(blockPrefab) > 0)
             {
+                GetComponentInChildren<TextMeshProUGUI>().text = returnNumberOfBlocks(blockPrefab).ToString();
                 CreateNewBlock();
                 substractNumberOfBlocks(blockPrefab);
+            }
+            else
+            {
+                GetComponentInChildren<TextMeshProUGUI>().text = "";
             }
         }
     }

@@ -29,11 +29,30 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
             if (p.characterInPlant())
             {
                 p.humidityChecked = true;
+
+                if (allPlantsChecked())
+                {
+                    //levelcompleted
+                    LevelManager lm = FindObjectOfType<LevelManager>();
+                    lm.saveCompletedLevel(lm.getActualLevel());
+                }
             }
         }
 
         yield return new WaitUntil(() => base.IsFinished());
         isFinished = true;
+    }
+
+    private bool allPlantsChecked()
+    {
+        foreach (Plant p in plants)
+        {
+            if (!p.humidityChecked)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     public override bool IsFinished()

@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 0
+  m_AddDefaultGrabTransformers: 1
 --- !u!114 &1277161821799544018
 MonoBehaviour:
   m_ObjectHideFlags: 0

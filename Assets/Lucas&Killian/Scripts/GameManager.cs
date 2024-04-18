@@ -43,14 +43,14 @@ public class GameManager : MonoBehaviour
         whichHand = false;
         errorMaterial = errorMaterialGiven;
         warningMaterial = warningMaterialGiven;
-        NewLevel();
+        //NewLevel();
     }
 
     public void NewLevel()
     {
         objectsFound = false;
         
-        StartCoroutine(Tool.c_InvokeAfterWait(0.1f, FindObjects));
+        StartCoroutine(Tool.c_InvokeAfterWait(1f, FindObjects));
     }
 
     private void FindObjects()
