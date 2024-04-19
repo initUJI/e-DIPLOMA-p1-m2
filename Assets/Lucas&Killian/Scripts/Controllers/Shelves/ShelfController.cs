@@ -7,7 +7,7 @@ using UnityEngine;
 //using UnityEditor.Experimental.GraphView;
 //using UnityEngine.XR.Interaction.Toolkit;
 
-public class ShelfController : LevelManager
+public class ShelfController : MonoBehaviour
 {
     [SerializeField] GameObject blockPrefab;
     [SerializeField] GameObject attach;
@@ -15,26 +15,24 @@ public class ShelfController : LevelManager
     public GameObject currentBlock;
     [SerializeField] public int numberForNumberBlock;
 
+    private LevelManager levelManager;
+
     protected virtual void Start()
     {
-
+        levelManager = FindObjectOfType<LevelManager>();
     }
 
-    private void Update()
+    public void startCreatingBlocks()
     {
-        if (alreadyCreated)
+        if (levelManager.returnNumberOfBlocks(blockPrefab) > 0)
         {
-            if (returnNumberOfBlocks(blockPrefab) > 0)
-            {
-                GetComponentInChildren<TextMeshProUGUI>().text = returnNumberOfBlocks(blockPrefab).ToString();
-                StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
-                substractNumberOfBlocks(blockPrefab);
-            }
-            else
-            {
-                GetComponentInChildren<TextMeshProUGUI>().text = "";
-            }
-            alreadyCreated = false;
+            GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab).ToString();
+            StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
+            levelManager.substractNumberOfBlocks(blockPrefab);
+        }
+        else
+        {
+            GetComponentInChildren<TextMeshProUGUI>().text = "";
         }
     }
 
@@ -77,11 +75,11 @@ public class ShelfController : LevelManager
     {
 
         if (other.gameObject == currentBlock){
-            if (returnNumberOfBlocks(blockPrefab) > 0)
+            if (levelManager.returnNumberOfBlocks(blockPrefab) > 0)
             {
-                GetComponentInChildren<TextMeshProUGUI>().text = returnNumberOfBlocks(blockPrefab).ToString();
+                GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab).ToString();
                 CreateNewBlock();
-                substractNumberOfBlocks(blockPrefab);
+                levelManager.substractNumberOfBlocks(blockPrefab);
             }
             else
             {

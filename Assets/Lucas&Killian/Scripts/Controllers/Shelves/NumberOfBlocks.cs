@@ -37,7 +37,7 @@ public class NumberOfBlocks : MonoBehaviour
                 return numberOfForward;
             case "ForBlock":
                 return numberOfFor;
-            case "EndIfBloc":
+            case "EndIfBlock":
                 return numberOfEndIf;
             case "EndForBlock":
                 return numberOfEndFor;

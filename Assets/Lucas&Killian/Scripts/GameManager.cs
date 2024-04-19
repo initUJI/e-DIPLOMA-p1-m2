@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     static Vector3 characterInitialScale;
 
     public static GameObject objectInFront;
+    public static GameObject objectInBehind;
 
     public static TMP_Text printScreenTMP;
 
@@ -43,7 +44,6 @@ public class GameManager : MonoBehaviour
         whichHand = false;
         errorMaterial = errorMaterialGiven;
         warningMaterial = warningMaterialGiven;
-        //NewLevel();
     }
 
     public void NewLevel()
@@ -106,6 +106,16 @@ public class GameManager : MonoBehaviour
     public static void InvokeAfterInit(MonoBehaviour obj, Action action)
     {
         obj.StartCoroutine(c_InvokeAfterInit(action));
+    }
+
+    public void moveCharacter(String direction)
+    {
+        switch (direction) {
+            case "Forward": character.Forward(); break;
+            case "Behind": character.Behind(); break;
+            case "Right": character.TurnRight(); break;
+            case "Left": character.TurnLeft(); break;
+        }
     }
 
     public static void Reset()

@@ -20,6 +20,7 @@ public class Character : MonoBehaviour
     private Transform levelTransform;
 
     public bool isForwarding;
+    public bool isBehinding;
     public bool isRotating;
     public bool isAnimated;
     public bool isCutting;
@@ -31,6 +32,7 @@ public class Character : MonoBehaviour
     private void Start()
     {
         isForwarding = false;
+        isBehinding = false;
         isRotating = false;
         isAnimated = false;
         isCutting = false;
@@ -59,6 +61,22 @@ public class Character : MonoBehaviour
         else
         {
             GameManager.printScreenTMP.text = "Cannot forwarding because there is a " + GameManager.objectInFront.tag;
+        }
+    }
+
+    public void Behind()
+    {
+        GameObject objectInBehind = GameManager.objectInBehind;
+        if (objectInBehind == null)
+        {
+            PlayAnimation("Walking");
+            isBehinding = true;
+            Debug.Log("Go behind!");
+            targetPosition -= transform.forward * unit;
+        }
+        else
+        {
+            GameManager.printScreenTMP.text = "Cannot because there is a " + GameManager.objectInBehind.tag;
         }
     }
 
@@ -114,6 +132,21 @@ public class Character : MonoBehaviour
                 && Mathf.Approximately(transform.position.x, targetPosition.x))
             {
                 isForwarding = false;
+                isAnimated = false;
+                targetPosition = transform.position;
+                child.transform.rotation.Set(Quaternion.identity.x, Quaternion.identity.y, Quaternion.identity.z, Quaternion.identity.w);
+            }
+        }
+
+        if (isBehinding)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
+            if (Mathf.Approximately(transform.position.z, targetPosition.z)
+                && Mathf.Approximately(transform.position.y, targetPosition.y)
+                && Mathf.Approximately(transform.position.x, targetPosition.x))
+            {
+                isBehinding = false;
                 isAnimated = false;
                 targetPosition = transform.position;
                 child.transform.rotation.Set(Quaternion.identity.x, Quaternion.identity.y, Quaternion.identity.z, Quaternion.identity.w);

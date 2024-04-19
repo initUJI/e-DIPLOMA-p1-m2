@@ -6,6 +6,7 @@ public class LevelManager : NumberOfBlocks
 {
     private int actualLevel;
 
+    [SerializeField] private GameObject Level0;
     [SerializeField] private GameObject Level1;
     [SerializeField] private GameObject Level2;
     [SerializeField] private GameObject Level3;
@@ -14,14 +15,13 @@ public class LevelManager : NumberOfBlocks
     [SerializeField] private GameObject Level6;
 
     private GameManager gameManager;
-    public bool alreadyCreated;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-        changeLevel(lastLevelCompleted() + 1);
-        alreadyCreated = false;
+        //changeLevel(lastLevelCompleted() + 1);
+        changeLevel(0);
     }
     public int getActualLevel()
     {
@@ -66,13 +66,17 @@ public class LevelManager : NumberOfBlocks
             case 3: level = Instantiate(Level3); break;
             case 2: level = Instantiate(Level2); break;
             case 1: level = Instantiate(Level1); break;
-            default: level = Instantiate(Level1); break;
+            default: level = Instantiate(Level0); break;
         }
 
         level.transform.SetParent(this.transform);
         level.transform.localPosition = Vector3.zero;
 
-        alreadyCreated = true;
+        ShelfController[] shelves = FindObjectsOfType<ShelfController>();
+        foreach (ShelfController s in shelves)
+        {
+            s.startCreatingBlocks();
+        }
         gameManager.NewLevel();
     }
 
@@ -101,6 +105,11 @@ public class LevelManager : NumberOfBlocks
             case 1: return PlayerPrefs.GetInt("Level1Completed", 0) == 1; 
             default: return false;
         }
+    }
+
+    public void resetAllsaves()
+    {
+        PlayerPrefs.DeleteAll();
     }
 
     public int lastLevelCompleted()
