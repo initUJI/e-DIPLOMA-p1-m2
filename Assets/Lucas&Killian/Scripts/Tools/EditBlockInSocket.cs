@@ -95,7 +95,6 @@ public class EditBlockInSocket : MonoBehaviour
     {
         if (neighborBlock is WithBottomSocket)
         {
-
             XRSocketInteractor bottomSocket = ((WithBottomSocket)neighborBlock).getBottomSocket();
 
             if (desactivateBottomSocket)
@@ -121,8 +120,6 @@ public class EditBlockInSocket : MonoBehaviour
             {
                 rightSocket.interactionLayers = rightSocketDefaultLayers;
             }
-
-            
         }
     }
 }

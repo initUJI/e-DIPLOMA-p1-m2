@@ -242,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1822314049052601911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 4977639877704049840}
   - component: {fileID: 4977639877704049807}
   - component: {fileID: 3335654937759326396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom Socket
   m_TagString: BottomSocket
   m_Icon: {fileID: 0}

@@ -971,7 +971,7 @@ GameObject:
   - component: {fileID: 3999710674519891484}
   - component: {fileID: 3999710674519891491}
   - component: {fileID: 2807496929128118045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom Socket
   m_TagString: BottomSocket
   m_Icon: {fileID: 0}
@@ -1417,6 +1417,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 77d8d70a6ddeeaf4f8304c06d14a5f51, type: 2}
   - {fileID: 2100000, guid: 32a2963455fd65e4fae063d7f644b4ad, type: 2}
   bottomSocket: {fileID: 3999710674519891484}
+  currentBlock: {fileID: 0}
 --- !u!114 &2780242033712439381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2170,7 +2171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7773171496041387163}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}

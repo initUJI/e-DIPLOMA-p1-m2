@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 9159120423273730600}
   - component: {fileID: 494429917773547722}
   - component: {fileID: 2633984261860968480}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right Socket
   m_TagString: RightSocket
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9119676489892083499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 447472686560760886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 6515503500523298481}
   - component: {fileID: 6515503500523298446}
   - component: {fileID: 347857514319023657}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bottom Socket
   m_TagString: BottomSocket
   m_Icon: {fileID: 0}

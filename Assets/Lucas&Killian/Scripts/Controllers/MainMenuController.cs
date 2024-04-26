@@ -27,6 +27,7 @@ public class MainMenuController : MonoBehaviour
     [HideInInspector] public GameObject mainBlock;
     [HideInInspector] public GameObject moveForwardBlock;
     [HideInInspector] public GameObject getHumidityBlock;
+    [HideInInspector] public TextMeshPro userInputField;
     [HideInInspector] public bool teleportCompleted;
     [HideInInspector] public bool dynamicTutorialCompleted;
     private Vector3 platformLocation;
@@ -53,6 +54,12 @@ public class MainMenuController : MonoBehaviour
         block2Location = new Vector3(-0.3f, 0.8f, -0.82f);
         block3Location = new Vector3(0.13f, 1.0f, -0.92f);
         levelLocation = new Vector3(-0.233f, -0.46f, -0.746f);
+    }
+
+    public void saveUserId()
+    {
+        string inputField = userInputField.text;
+        PlayerPrefs.SetString("UserID", inputField);
     }
 
     // Update is called once per frame
