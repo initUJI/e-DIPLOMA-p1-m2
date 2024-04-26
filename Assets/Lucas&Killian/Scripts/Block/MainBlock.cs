@@ -22,6 +22,7 @@ public class MainBlock : Block, WithBottomSocket
     public static Dictionary<string, int> variables;
 
     [SerializeField] XRSocketInteractor bottomSocket;
+    [HideInInspector] public ExecutableBlock currentBlock;
 
     public static bool paused;
     public static bool error;
@@ -92,7 +93,7 @@ public class MainBlock : Block, WithBottomSocket
         GameManager.Reset();
 
         Debug.Log("MainBlock : BEGIN");
-        ExecutableBlock currentBlock = (ExecutableBlock) getSocketBlock(bottomSocket);
+        currentBlock = (ExecutableBlock) getSocketBlock(bottomSocket);
 
         while (currentBlock != null && !error)
         {

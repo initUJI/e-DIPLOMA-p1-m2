@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 2038392789239631294}
   m_Layer: 0
   m_Name: EndIfBlock
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -760,7 +760,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 8767356528518877758}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295

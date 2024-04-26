@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
@@ -32,9 +33,17 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 
                 if (allPlantsChecked())
                 {
-                    //levelcompleted
-                    LevelManager lm = FindObjectOfType<LevelManager>();
-                    lm.saveCompletedLevel(lm.getActualLevel());
+                    if (SceneManager.GetActiveScene().buildIndex == 0)
+                    {
+                        MainMenuController mMC = FindObjectOfType<MainMenuController>();
+                        mMC.dynamicTutorialCompleted = true;
+                    }
+                    else
+                    {
+                        //levelcompleted
+                        LevelManager lm = FindObjectOfType<LevelManager>();
+                        lm.saveCompletedLevel(lm.getActualLevel());
+                    }                   
                 }
             }
         }

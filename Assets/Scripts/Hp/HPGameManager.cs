@@ -34,6 +34,10 @@ public class HPGameManager : MonoBehaviour
 
         UserDataFolder = Application.streamingAssetsPath + "/SensorsDataUser"; // Application.dataPath 
         _dataManager = GetComponent<cDataManager>();
-        _csvPath.SetText(UserDataFolder);
+
+        if (_csvPath != null)
+        {
+            _csvPath.SetText(UserDataFolder);
+        }
     }
 }
