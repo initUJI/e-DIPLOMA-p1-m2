@@ -654,6 +654,7 @@ GameObject:
   - component: {fileID: 8767356528518877757}
   - component: {fileID: 8767356528518877758}
   - component: {fileID: 2038392789239631294}
+  - component: {fileID: 579682298940119655}
   m_Layer: 0
   m_Name: EndIfBlock
   m_TagString: Block
@@ -766,7 +767,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 128
+    m_Bits: 12
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -853,7 +854,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1382121755674952039}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
@@ -984,5 +985,19 @@ MonoBehaviour:
   value: 0
   referentBlock: {fileID: 0}
   bottomBlock: {fileID: 0}
-  materials: []
-  bottomSocket: {fileID: 0}
+  materials:
+  - {fileID: -2505642851634945670, guid: 76d175df2262e664fa1b4743fa05c60d, type: 3}
+  - {fileID: -2505642851634945670, guid: 76d175df2262e664fa1b4743fa05c60d, type: 3}
+  bottomSocket: {fileID: 9203601804710340458}
+--- !u!114 &579682298940119655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8767356528518877745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaeac3c1fcbba284f8333ae973cb6ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

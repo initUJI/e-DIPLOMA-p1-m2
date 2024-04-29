@@ -15,118 +15,108 @@ public class NumberOfBlocks : MonoBehaviour
     private int numberOfTurn = 0;
     private int numberOfEndFor = 0;
     private int numberOfEndIf = 0;
-    public int returnNumberOfBlocks(GameObject block)
+
+    private int numberOfNumber2 = 0;
+    private int numberOfNumber3 = 0;
+    private int numberOfNumber4 = 0;
+    private int numberOfNumber5 = 0;
+    private int numberOfNumber6 = 0;
+    private int numberOfNumber7 = 0;
+    private int numberOfNumber8 = 0;
+    private int numberOfNumber9 = 0;
+    public int returnNumberOfBlocks(GameObject block, int n = 0)
     {
         switch (block.name)
         {
-            case "TurnBlock":
-                return numberOfTurn;
-            case "TurnRightBlock":
-                return numberOfRight;
-            case "ObjectBlock":
-                return numberOfObject;
+            case "TurnBlock": return numberOfTurn;
+            case "TurnRightBlock": return numberOfRight;
+            case "ObjectBlock": return numberOfObject;
             case "NumberBlock":
-                return numberOfNumber;
-            case "TurnLeftBlock":
-                return numberOfLeft;
-            case "IfBlock":
-                return numberOfIf;
-            case "GetHumidityBlock":
-                return numberOfGetHumidity;
-            case "ForwardBlock":
-                return numberOfForward;
-            case "ForBlock":
-                return numberOfFor;
-            case "EndIfBlock":
-                return numberOfEndIf;
-            case "EndForBlock":
-                return numberOfEndFor;
-            default:
-                return 0;
+                switch (n)
+                {
+                    case 9: return numberOfNumber9;
+                    case 8: return numberOfNumber8;
+                    case 7: return numberOfNumber7;
+                    case 6: return numberOfNumber6;
+                    case 5: return numberOfNumber5;
+                    case 4: return numberOfNumber4;
+                    case 3: return numberOfNumber3;
+                    case 2: return numberOfNumber2;
+                    default: return numberOfNumber;
+                }
+                
+            case "TurnLeftBlock": return numberOfLeft;
+            case "IfBlock": return numberOfIf;
+            case "GetHumidityBlock": return numberOfGetHumidity;
+            case "ForwardBlock": return numberOfForward;
+            case "ForBlock": return numberOfFor;
+            case "EndIfBlock": return numberOfEndIf;
+            case "EndForBlock": return numberOfEndFor;
+            default: return 0;
         }
     }
 
-    public void substractNumberOfBlocks(GameObject block)
+    public void substractNumberOfBlocks(GameObject block, int n = 0)
     {
         switch (block.name)
         {
-            case "TurnBlock":
-                numberOfTurn--;
-                break;
-            case "TurnRightBlock":
-                numberOfRight--;
-                break;
-            case "ObjectBlock":
-                numberOfObject--;
-                break;
+            case "TurnBlock": numberOfTurn--; break;
+            case "TurnRightBlock": numberOfRight--; break;
+            case "ObjectBlock": numberOfObject--; break;
             case "NumberBlock":
-                numberOfNumber--;
+                switch (n)
+                {
+                    case 9: numberOfNumber9--; break;
+                    case 8: numberOfNumber8--; break;
+                    case 7: numberOfNumber7--; break;
+                    case 6: numberOfNumber6--; break;
+                    case 5: numberOfNumber5--; break;
+                    case 4: numberOfNumber4--; break;
+                    case 3: numberOfNumber3--; break;
+                    case 2: numberOfNumber2--; break;
+                    default: numberOfNumber--; break;
+                }
                 break;
-            case "TurnLeftBlock":
-                numberOfLeft--;
-                break;
-            case "IfBlock":
-                numberOfIf--;
-                break;
-            case "GetHumidityBlock":
-                numberOfGetHumidity--;
-                break;
-            case "ForwardBlock":
-                numberOfForward--;
-                break;
-            case "ForBlock":
-                numberOfFor--;
-                break;
-            case "EndIfBlock":
-                numberOfEndIf--;
-                break;
-            case "EndForBlock":
-                numberOfEndFor--;
-                break;
-            default:
-                break;
+            case "TurnLeftBlock": numberOfLeft--; break;
+            case "IfBlock": numberOfIf--; break;
+            case "GetHumidityBlock": numberOfGetHumidity--; break;
+            case "ForwardBlock": numberOfForward--; break;
+            case "ForBlock": numberOfFor--; break;
+            case "EndIfBlock": numberOfEndIf--; break;
+            case "EndForBlock": numberOfEndFor--; break;
+            default: break;
         }
     }
 
-    public void sumNumberOfBlocks(GameObject block)
+    public void sumNumberOfBlocks(GameObject block, int n = 0)
     {
         switch (block.name)
         {
-            case "TurnBlock":
-                numberOfTurn++;
-                break;
-            case "TurnRightBlock":
-                numberOfRight++;
-                break;
-            case "ObjectBlock":
-                numberOfObject++;
-                break;
+            case "TurnBlock": numberOfTurn++; break;
+            case "TurnRightBlock": numberOfRight++; break;
+            case "ObjectBlock": numberOfObject++; break;
             case "NumberBlock":
-                numberOfNumber++;
+                switch (n)
+                {
+                    case 9: numberOfNumber9++; break;
+                    case 8: numberOfNumber8++; break;
+                    case 7: numberOfNumber7++; break;
+                    case 6: numberOfNumber6++; break;
+                    case 5: numberOfNumber5++; break;
+                    case 4: numberOfNumber4++; break;
+                    case 3: numberOfNumber3++; break;
+                    case 2: numberOfNumber2++; break;
+                    default: numberOfNumber++; break;
+                }
                 break;
-            case "TurnLeftBlock":
-                numberOfLeft++;
-                break;
-            case "IfBlock":
-                numberOfIf++;
-                break;
-            case "GetHumidityBlock":
-                numberOfGetHumidity++;
-                break;
-            case "ForwardBlock":
-                numberOfForward++;
-                break;
-            case "ForBlock":
-                numberOfFor++;
-                break;
-            case "EndIfBlock":
-                numberOfEndIf++; 
-                break;
-            case "EndForBlock":
-                numberOfEndFor++;
-                break;
-            default:
-                break;
+            case "TurnLeftBlock": numberOfLeft++; break;
+            case "IfBlock": numberOfIf++; break;
+            case "GetHumidityBlock": numberOfGetHumidity++; break;
+            case "ForwardBlock": numberOfForward++; break;
+            case "ForBlock": numberOfFor++; break;
+            case "EndIfBlock": numberOfEndIf++; break;
+            case "EndForBlock": numberOfEndFor++; break;
+            default: break;
         }
     }
 
@@ -143,6 +133,14 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 10;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
 
         return true;
     }
@@ -160,6 +158,14 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 2;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
     }
 
     public void blocksForLevel2()
@@ -175,6 +181,14 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 2;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
     }
 
     public void blocksForLevel3()
@@ -190,6 +204,14 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 0;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
     }
 
     public void blocksForLevel4()
@@ -205,6 +227,14 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 2;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
     }
 
     public void blocksForLevel5()
@@ -220,6 +250,14 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 2;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
     }
 
     public void blocksForLevel6()
@@ -235,5 +273,13 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfTurn = 2;
         numberOfEndFor = numberOfFor;
         numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
     }
 }

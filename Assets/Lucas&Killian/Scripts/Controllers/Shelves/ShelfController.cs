@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 //using System.Collections.Generic;
 //using System.Collections;
 //using Unity.VisualScripting;
@@ -28,7 +29,13 @@ public class ShelfController : MonoBehaviour
         {
             GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab).ToString();
             StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
-            levelManager.substractNumberOfBlocks(blockPrefab);
+            levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
+
+            /*if (blockPrefab.name.Contains("NumberBlock"))
+            {
+                levelManager.sumNumberOfBlocks(blockPrefab);
+            }*/
+            
         }
         else
         {
@@ -73,13 +80,12 @@ public class ShelfController : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-
-        if (other.gameObject == currentBlock){
+        if (other.gameObject == currentBlock || (other.gameObject.transform.parent != null && other.gameObject.transform.parent.gameObject == currentBlock)){
             if (levelManager.returnNumberOfBlocks(blockPrefab) > 0)
             {
-                GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab).ToString();
+                GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString();
                 CreateNewBlock();
-                levelManager.substractNumberOfBlocks(blockPrefab);
+                levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
             }
             else
             {

@@ -45,7 +45,7 @@ public class Character : MonoBehaviour
 
     public bool Motionless()
     {
-        return !(isForwarding || isRotating || isCutting || isBreaking || isAnimated || objectIsFalling || animator.enabled);
+        return !(isForwarding || isRotating || isCutting || isBreaking || isAnimated || objectIsFalling /*|| animator.enabled*/);
     }
 
     public void Forward()

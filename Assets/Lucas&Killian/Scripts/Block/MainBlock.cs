@@ -29,6 +29,12 @@ public class MainBlock : Block, WithBottomSocket
 
     Coroutine currentCoroutine;
 
+    bool activeIf = false;
+    IfBlock ifBlock;
+
+    bool activeFor = false;
+    ForBlock forBlock;
+
     public XRSocketInteractor getBottomSocket()
     {
         return bottomSocket;
@@ -102,23 +108,48 @@ public class MainBlock : Block, WithBottomSocket
             currentBlock.SetGlowing(true);
 
             yield return new WaitUntil(() => !paused); // Wait until pause equals false
-            //Debug.Log("MainBlock : Next block !");
-            
+                                                       //Debug.Log("MainBlock : Next block !");
 
-            if (currentBlock as IfBlock)
+            if (currentBlock as ForBlock)
+            {
+                activeFor = true;
+                forBlock = (ForBlock)currentBlock;
+                currentBlock.Execute(variables);
+            }
+
+            else if (currentBlock as IfBlock)
             {
                 wasIfBlock = true;
                 ifConditionChecked = false;
-                IfBlock ifBlock = (IfBlock)currentBlock;
+                ifBlock = (IfBlock)currentBlock;
                 if (ifBlock.conditionChecked(variables))
                 {
                     ifConditionChecked = true;
                     ifBlock.Execute(variables);
+                    activeIf = true;
                 } else
                 {
                     ifBlock.isFinished = true;
                 }
-            } 
+            }
+            else if (currentBlock as EndIfBlock)
+            {
+                activeIf = false;
+                ifBlock = null;
+            }
+            else if (currentBlock as EndForBlock)
+            {
+                
+                activeFor = false;
+
+                Debug.Log(!forBlock.IsFinished());
+                if (!forBlock.IsFinished())
+                {
+                    currentBlock = forBlock;
+                }
+                currentBlock.Execute(variables);
+                //forBlock = null;
+            }
             else if (currentBlock as ElseBlock) {
                 ElseBlock elseBlock = (ElseBlock) currentBlock;
                 if (wasIfBlock)
@@ -135,7 +166,28 @@ public class MainBlock : Block, WithBottomSocket
                     GameManager.ReportError(elseBlock, "An else block must be preceded by an if block");
                 }
             } else {
-                currentBlock.Execute(variables); // Execute the current block
+                if (activeIf && ifBlock != null)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
+                else if (ifBlock == null && !activeIf)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
+
+                else if (activeFor && forBlock != null)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
+                else if (forBlock == null && !activeFor)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
+
+                else if(ifBlock == null && !activeIf || forBlock == null && !activeFor)
+                {
+                    currentBlock.Execute(variables); // Execute the current block
+                }
             }
 
             Debug.Log("W");

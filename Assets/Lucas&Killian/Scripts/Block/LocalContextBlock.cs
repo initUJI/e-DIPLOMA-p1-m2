@@ -129,6 +129,8 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
             {
                 activeFor = true;
                 currentForBlock = (ForBlock)currentBlock;
+                currentForBlock.Execute(variables);
+                
             }
 
             else if (currentBlock as IfBlock)

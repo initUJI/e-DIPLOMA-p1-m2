@@ -24,7 +24,7 @@ public class ForwardBlock : ActionCharacterBlock, WithRightSocket
 
         Block rightBlock = getSocketBlock(rightSocket);
 
-        Debug.Log(rightBlock == null);
+        //Debug.Log(rightBlock == null);
 
         if (rightBlock != null)
         {

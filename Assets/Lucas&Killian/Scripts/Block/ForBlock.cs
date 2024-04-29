@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,10 +32,15 @@ public class ForBlock : ConditionalBlock
     {
         forIsFinished = false;
 
-        while (conditionChecked(variables))
+        Block block = getSocketBlock(rightSocket);
+        String toInterpret = ((WithAssociatedString)block).getAssociatedString();
+        int number;
+        int.TryParse(toInterpret, out number);
+
+        while (number > 0)
         {
             Debug.Log("Condition vérifiée !");
-
+            Debug.Log(currentCoroutine);
             if (currentCoroutine != null)
             {
                 StopCoroutine(currentCoroutine);
@@ -42,14 +48,29 @@ public class ForBlock : ConditionalBlock
 
             // Launch and wait the end of c_Execute
             yield return (currentCoroutine = StartCoroutine(c_Execute()));
+            startFor();
+            number--;
         }
 
+        Debug.Log("eeeeeeeeeeeeeeeeeeeeeeeeeeee");
         forIsFinished = true;
     }
 
     public override bool IsFinished()
     {
         return forIsFinished;
+    }
+
+    public void startFor()
+    {
+        ExecutableBlock block = (ExecutableBlock)getSocketBlock(bottomSocket);
+        Debug.Log(block);
+        block.Execute(variables);
+        /*while (block != null)
+        {
+            block.Execute(variables);
+            block = (ExecutableBlock)getSocketBlock(bottomSocket);
+        }*/
     }
 
 }

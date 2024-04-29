@@ -61,13 +61,6 @@ public class MainMenuController : MonoBehaviour
         string inputField = userInputField.text;
         PlayerPrefs.SetString("UserID", inputField);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void startGameplay()
     {
         SceneManager.LoadScene(1);

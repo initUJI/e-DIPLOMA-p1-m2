@@ -29,7 +29,6 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
     {
         String toInterpret = "";
         Block block = getSocketBlock(rightSocket);
-        substraction = 0;
         
         if (block == null)
         {
@@ -95,6 +94,7 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
                     }
                     else
                     {
+                        substraction = 0;
                         result = false;
                     }
                 }
