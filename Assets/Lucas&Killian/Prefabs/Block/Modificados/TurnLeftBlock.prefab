@@ -342,7 +342,7 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: e5dfd5158bb98f6499a3e1a9de9e877d, type: 2}
   - {fileID: 2100000, guid: 94b8ccee0ed93ea408b71f7455abde09, type: 2}
-  bottomSocket: {fileID: 0}
+  bottomSocket: {fileID: 6295371837756633402}
 --- !u!1 &3990485504985233209
 GameObject:
   m_ObjectHideFlags: 0

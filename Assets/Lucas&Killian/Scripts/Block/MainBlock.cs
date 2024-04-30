@@ -136,19 +136,13 @@ public class MainBlock : Block, WithBottomSocket
             {
                 activeIf = false;
                 ifBlock = null;
+                currentBlock.Execute(variables);
             }
             else if (currentBlock as EndForBlock)
             {
                 
                 activeFor = false;
-
-                Debug.Log(!forBlock.IsFinished());
-                if (!forBlock.IsFinished())
-                {
-                    currentBlock = forBlock;
-                }
                 currentBlock.Execute(variables);
-                //forBlock = null;
             }
             else if (currentBlock as ElseBlock) {
                 ElseBlock elseBlock = (ElseBlock) currentBlock;

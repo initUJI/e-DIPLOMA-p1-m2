@@ -60,6 +60,7 @@ public class MainMenuController : MonoBehaviour
     {
         string inputField = userInputField.text;
         PlayerPrefs.SetString("UserID", inputField);
+        FindObjectOfType<EventsManager>().setUserID(inputField);
     }
     public void startGameplay()
     {

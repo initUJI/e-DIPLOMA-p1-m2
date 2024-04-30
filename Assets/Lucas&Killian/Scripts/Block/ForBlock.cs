@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 //using System;
 //using UnityEngine.WSA;
 //using UnityEngine.XR.Interaction.Toolkit;
@@ -10,11 +11,13 @@ public class ForBlock : ConditionalBlock
 {
     bool forIsFinished;
     Coroutine forCoroutine;
+    bool endfinded;
 
     public override void Start()
     {
         base.Start();
         forIsFinished = false;
+        endfinded = false;
     }
     public override void Execute(Dictionary<string, int> variables)
     {
@@ -39,8 +42,8 @@ public class ForBlock : ConditionalBlock
 
         while (number > 0)
         {
+            endfinded = false;
             Debug.Log("Condition vérifiée !");
-            Debug.Log(currentCoroutine);
             if (currentCoroutine != null)
             {
                 StopCoroutine(currentCoroutine);
@@ -52,7 +55,6 @@ public class ForBlock : ConditionalBlock
             number--;
         }
 
-        Debug.Log("eeeeeeeeeeeeeeeeeeeeeeeeeeee");
         forIsFinished = true;
     }
 
@@ -63,14 +65,88 @@ public class ForBlock : ConditionalBlock
 
     public void startFor()
     {
-        ExecutableBlock block = (ExecutableBlock)getSocketBlock(bottomSocket);
-        Debug.Log(block);
-        block.Execute(variables);
-        /*while (block != null)
+        ExecutableBlock block = this;
+        if ((ExecutableBlock)getSocketBlock(bottomSocket) != null)
+        {
+            block = (ExecutableBlock)getSocketBlock(bottomSocket);
+        } 
+
+        if (block != null && !checkIfEnd(block) && !endfinded)
         {
             block.Execute(variables);
-            block = (ExecutableBlock)getSocketBlock(bottomSocket);
-        }*/
+        }
+        else if (checkIfEnd(block))
+        {
+            endfinded = true;
+        }
+
+        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
+        {
+            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
+        }
+
+        if (block != null && !checkIfEnd(block) && !endfinded)
+        {
+            block.Execute(variables);
+        }
+        else if (checkIfEnd(block))
+        {
+            endfinded = true;
+        }
+
+        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
+        {
+            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
+        }
+
+        if (block != null && !checkIfEnd(block) && !endfinded)
+        {
+            block.Execute(variables);
+        }
+        else if (checkIfEnd(block))
+        {
+            endfinded = true;
+        }
+
+        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
+        {
+            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
+        }
+
+        if (block != null && !checkIfEnd(block) && !endfinded)
+        {
+            block.Execute(variables);
+        }
+        else if (checkIfEnd(block))
+        {
+            endfinded = true;
+        }
+
+        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
+        {
+            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
+        }
+
+        if (block != null && !checkIfEnd(block) && !endfinded)
+        {
+            block.Execute(variables);
+        }
+        else if (checkIfEnd(block))
+        {
+            endfinded = true;
+        }
+    }
+
+    private bool checkIfEnd(Block block)
+    {
+        if (block.name.Contains("End"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
 }

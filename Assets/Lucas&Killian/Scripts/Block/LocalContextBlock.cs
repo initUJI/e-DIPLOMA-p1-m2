@@ -161,31 +161,8 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
                     GameManager.ReportError(elseBlock, "An else block must be preceded by an if block");
                 }
             }
-            else if (currentBlock as EndIfBlock)
-            {
-                activeIf = false;
-                currentIfBlock = null;
-            }
-            else if (currentBlock as EndForBlock)
-            {
-                activeFor = false;
-                currentForBlock = null;
-            }
             else
             {
-                if (activeFor && currentForBlock != null)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
-                }
-
-                if (activeIf && currentIfBlock != null)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
-                }
-                else if (!activeIf && !activeFor)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
-                }
             }
 
             yield return new WaitUntil(() => !MainBlock.error);
