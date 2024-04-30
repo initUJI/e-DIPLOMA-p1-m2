@@ -27,6 +27,7 @@ public class LevelManager : NumberOfBlocks
 
     private GameObject optionsInGameplay;
     private GameObject optionsLevelCompleted;
+    private EventsManager eventsManager;
 
     private GameManager gameManager;
     private float timerForClues = 0;
@@ -38,6 +39,7 @@ public class LevelManager : NumberOfBlocks
     {
         optionsInGameplay = optionsWindow.transform.GetChild(0).gameObject;
         optionsLevelCompleted = optionsWindow.transform.GetChild(1).gameObject;
+        eventsManager = FindObjectOfType<EventsManager>();
 
         optionsInGameplay.SetActive(true);
         optionsLevelCompleted.SetActive(false);
@@ -76,6 +78,7 @@ public class LevelManager : NumberOfBlocks
 
     public void resetScene()
     {
+        eventsManager.buttonClicked("NEXT LEVEL");
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }

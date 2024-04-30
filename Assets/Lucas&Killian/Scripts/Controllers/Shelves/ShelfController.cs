@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 //using System.Collections.Generic;
 //using System.Collections;
 //using Unity.VisualScripting;
@@ -30,11 +31,6 @@ public class ShelfController : MonoBehaviour
             GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab).ToString();
             StartCoroutine(Tool.c_InvokeAfterWait(0.1f, CreateNewBlock));
             levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
-
-            /*if (blockPrefab.name.Contains("NumberBlock"))
-            {
-                levelManager.sumNumberOfBlocks(blockPrefab);
-            }*/
             
         }
         else
@@ -76,6 +72,13 @@ public class ShelfController : MonoBehaviour
         
         currentBlock.transform.localPosition = new Vector3(xPos, yPos, 0);
         currentBlock.transform.localRotation = blockPrefab.transform.rotation;
+
+        EventsManager eventsManager;
+        if (FindObjectOfType<EventsManager>() != null)
+        {
+            eventsManager = FindObjectOfType<EventsManager>();
+            eventsManager.subscribeGrabEvents(currentBlock.GetComponent<XRGrabInteractable>());
+        }
     }
 
     public void OnTriggerExit(Collider other)

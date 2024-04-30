@@ -36,9 +36,13 @@ public class MainMenuController : MonoBehaviour
     private Vector3 block3Location;
     private Vector3 levelLocation;
 
+    private EventsManager eventsManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        eventsManager = FindObjectOfType<EventsManager>();
+
         MainOptions = menuWindow.transform.GetChild(0).gameObject;
         TutorialOptions = menuWindow.transform.GetChild(1).gameObject;
         ControlsTutorial = menuWindow.transform.GetChild(2).gameObject;
@@ -60,21 +64,24 @@ public class MainMenuController : MonoBehaviour
     {
         string inputField = userInputField.text;
         PlayerPrefs.SetString("UserID", inputField);
-        FindObjectOfType<EventsManager>().setUserID(inputField);
+        eventsManager.setUserID(inputField);
     }
     public void startGameplay()
     {
+        eventsManager.buttonClicked("START");
         SceneManager.LoadScene(1);
     }
 
     public void startTutorial()
     {
+        eventsManager.buttonClicked("TUTORIAL");
         MainOptions.SetActive(false);
         TutorialOptions.SetActive(true);
     }
 
     public void startControlsTutorial()
     {
+        eventsManager.buttonClicked("CONTROLS TUTORIAL");
         ControlsTutorial.SetActive(true);
         TutorialOptions.SetActive(false);
         cube = Instantiate(cubePrefab);
@@ -115,6 +122,7 @@ public class MainMenuController : MonoBehaviour
 
     public void startDynamicsTutorial()
     {
+        eventsManager.buttonClicked("DYNAMICS TUTORIAL");
         ControlsTutorial.SetActive(true);
         TutorialOptions.SetActive(false);
         grabInteractable = cube.GetComponent<XRGrabInteractable>();
@@ -168,6 +176,7 @@ public class MainMenuController : MonoBehaviour
 
     public void resetScene()
     {
+        eventsManager.buttonClicked("RESET MAIN MENU (HOUSE ICON)");
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
     }
