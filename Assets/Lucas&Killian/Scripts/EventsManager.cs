@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Newtonsoft.Json;
 using System.IO;
 using System;
 using System.Data;
@@ -17,7 +16,7 @@ public class EventsManager : MonoBehaviour
     private XRGrabInteractable[] grabInteractables;
 
     private string userID;
-    private string fileName;
+    private string fileName = "";
     private LevelManager levelManager;
     private string filePath;
     private TextMeshProUGUI errorText;
@@ -31,10 +30,7 @@ public class EventsManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    //Faltan eventos: evento se abre ventana de borrar bloque, evento se cierra ventana de borrar bloque
-    // evento se borra un bloque, eventos se mueve el coche con el pilar + dirección
-    //evento se usa pista, evento se limpia la escena, evento nivel completado
-    //evento se da al play, evento se da al boton de abandonar nivel,
+    //Faltan eventos: evento se da al boton de abandonar nivel,
     //evento se confirma abandonar nivel
 
     //Falta funcionalidad: poder abandonar nivel
@@ -54,12 +50,150 @@ public class EventsManager : MonoBehaviour
 
         TeleportationProvider teleportationProvider = xrOrigin.GetComponent<TeleportationProvider>();
         teleportationProvider.endLocomotion += OnTeleportationEnd;
-      
-        /*foreach (XRGrabInteractable grab in grabInteractables)
-        {
-            subscribeGrabEvents(grab);
-        }*/
     }
+
+    public void playPressed()
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "BUTTON PLAY PRESSED");
+        }
+        else
+        {
+            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "BUTTON PLAY PRESSED");
+        }
+
+        writeInJson(data);
+    }
+
+    public void levelCompleted(int num)
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "LEVEL COMPLETED: " + num.ToString());
+            writeInJson(data);
+        }
+    }
+
+    public void sceneCleaned()
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "SCENE CLEANED, ALL BLOCKS RESETED");
+            writeInJson(data);
+        }
+    }
+
+    public void clueUsed(string clue)
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "USED CLUE: " + clue);
+            writeInJson(data);
+        }
+    }
+
+    public void testStandUsed(string direction)
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "PRESSED TEST STAND: " + direction);
+            writeInJson(data);
+        }
+    }
+
+    public void characterMoving(string direction)
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "CHARACTER START MOVING: " + direction);
+        }
+        else
+        {
+            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "CHARACTER START MOVING: " + direction);
+        }
+
+        writeInJson(data);
+    }
+
+    public void deleteWindowOpen()
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW OPEN");
+        }
+        else
+        {
+            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "DELETE BLOCK WINDOW OPEN");
+        }
+
+        writeInJson(data);
+    }
+
+    public void deleteWindowClose()
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW CLOSE");
+        }
+        else
+        {
+            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "DELETE BLOCK WINDOW CLOSE");
+        }
+
+        writeInJson(data);
+    }
+
+    public void deleteBlock(GameObject block)
+    {
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "DELETED BLOCK: " + block.name);
+        }
+        else
+        {
+            data = new Data(userID, DateTime.Now.ToString(),"MAIN MENU", "DELETED BLOCK: " + block.name);
+        }
+
+        writeInJson(data);
+    }
+
 
     public void subscribeGrabEvents(XRGrabInteractable grab)
     {
@@ -86,13 +220,13 @@ public class EventsManager : MonoBehaviour
         {
             data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(),
                 "OBJECT " + interactor.interactableObject.transform.gameObject.name + 
-                " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root);
+                " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
         }
         else
         {
             data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU",
                  "OBJECT " + interactor.interactableObject.transform.gameObject.name +
-                " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root);
+                " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
         }
 
         writeInJson(data);
@@ -184,11 +318,21 @@ public class EventsManager : MonoBehaviour
 
     private void writeInJson(Data data) 
     {
-        string jsonString = JsonConvert.SerializeObject(data);
-        StreamWriter writer = new StreamWriter(filePath, true);
-        writer.WriteLine(jsonString);
+        try
+        {
+            if (filePath != null && filePath.Length > 0)
+            {
+                string jsonString = JsonUtility.ToJson(data);
+                StreamWriter writer = new StreamWriter(filePath, true);
+                writer.WriteLine(jsonString);
 
-        writer.Close();
+                writer.Close();
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Error al escribir en el archivo JSON con Path " +filePath+ ": " + ex.Message);
+        }
     }
 
     private void errorMessage(string error)

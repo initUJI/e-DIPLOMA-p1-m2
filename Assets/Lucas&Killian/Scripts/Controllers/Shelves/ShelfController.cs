@@ -78,6 +78,16 @@ public class ShelfController : MonoBehaviour
         {
             eventsManager = FindObjectOfType<EventsManager>();
             eventsManager.subscribeGrabEvents(currentBlock.GetComponent<XRGrabInteractable>());
+
+            if (currentBlock.GetComponent<SocketsControl>() != null)
+            {
+                XRSocketInteractor[] xRSockets = currentBlock.GetComponent<SocketsControl>().getSockets();
+
+                foreach (XRSocketInteractor socket in xRSockets)
+                {
+                    if (socket != null) eventsManager.subscribeSocketsEvents(socket);
+                }
+            }
         }
     }
 

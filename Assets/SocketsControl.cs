@@ -16,6 +16,12 @@ public class SocketsControl : MonoBehaviour
         _interactable.selectExited.AddListener(f_ActivateSockets);
     }
     
+    public XRSocketInteractor[] getSockets()
+    {
+        sockets = GetComponentsInChildren<XRSocketInteractor>();
+        return sockets;
+    }
+
     public void f_DeactivateSockets()
     {
         foreach(XRSocketInteractor s in sockets)

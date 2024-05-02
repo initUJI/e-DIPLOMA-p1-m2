@@ -18,6 +18,7 @@ public class Character : MonoBehaviour
     private const float rotateSpeed = 90f;
     private float timeAnimationCutOrBreak = ANIMATION_TIME_OBJECT;
     private Transform levelTransform;
+    private EventsManager eventsManager;
 
     public bool isForwarding;
     public bool isBehinding;
@@ -41,6 +42,7 @@ public class Character : MonoBehaviour
         child = GameObject.FindGameObjectWithTag("Car");
         levelTransform = transform.parent.parent.parent.transform;
         unit *= levelTransform.localScale.x;
+        eventsManager = FindObjectOfType<EventsManager>();
     }
 
     public bool Motionless()

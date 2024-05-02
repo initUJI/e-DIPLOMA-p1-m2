@@ -142,6 +142,8 @@ public class LevelManager : NumberOfBlocks
         {
             s.startCreatingBlocks();
         }
+
+        eventsManager.sceneCleaned();
     }
 
     private void createLevel(int num)
@@ -182,6 +184,8 @@ public class LevelManager : NumberOfBlocks
             case 2: PlayerPrefs.SetInt("Level2Completed", 1); break;
             case 1: PlayerPrefs.SetInt("Level1Completed", 1); break;
         }
+
+        eventsManager.levelCompleted(num);
     }
 
     public bool checkCompletedLevel(int num)
@@ -284,6 +288,8 @@ public class LevelManager : NumberOfBlocks
         {
             textPro.text = "No clue avalible";
         }
+
+        eventsManager.clueUsed(textPro.text);
     }
 }
 

@@ -34,6 +34,7 @@ public class MainBlock : Block, WithBottomSocket
 
     bool activeFor = false;
     ForBlock forBlock;
+    EventsManager eventsManager;
 
     public XRSocketInteractor getBottomSocket()
     {
@@ -44,7 +45,7 @@ public class MainBlock : Block, WithBottomSocket
         base.Start();
         variables = new Dictionary<string, int>();
         paused = false;
-
+        eventsManager = FindObjectOfType<EventsManager>();
         //Execute();
     }
 
@@ -70,7 +71,7 @@ public class MainBlock : Block, WithBottomSocket
             {
                 StopCoroutine(currentCoroutine);
             }
-
+            eventsManager.playPressed();
             currentCoroutine = StartCoroutine(c_Execute());
 
         } else

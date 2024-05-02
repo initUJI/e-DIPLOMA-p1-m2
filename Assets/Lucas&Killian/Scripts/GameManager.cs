@@ -38,12 +38,14 @@ public class GameManager : MonoBehaviour
     public static List<GameObject> originalObstacles;
     public static List<GameObject> executionObstacles;
 
+    private EventsManager eventsManager;
 
     public void Start()
     {
         whichHand = false;
         errorMaterial = errorMaterialGiven;
         warningMaterial = warningMaterialGiven;
+        eventsManager = FindObjectOfType<EventsManager>();
     }
 
     public void NewLevel()
@@ -116,6 +118,8 @@ public class GameManager : MonoBehaviour
             case "Right": character.TurnRight(); break;
             case "Left": character.TurnLeft(); break;
         }
+
+        eventsManager.characterMoving(direction);
     }
 
     public static void Reset()

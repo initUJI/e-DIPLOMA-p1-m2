@@ -14,6 +14,7 @@ public class CanBeDeleted : MonoBehaviour
     public GameObject currentWindow;
 
     [SerializeField] GameObject deleteWindowPrefab;
+    private EventsManager eventsManager;
 
     private void Start()
     {
@@ -42,10 +43,18 @@ public class CanBeDeleted : MonoBehaviour
                 {
                     // faire apparaitre la fenetre si elle n'existe pas
                     currentWindow = Instantiate(deleteWindowPrefab, transform);
+                    currentWindow.transform.parent = transform;
                     currentWindow.transform.localPosition = new Vector3(0, transform.position.y + 0.5f, transform.position.z - 0.5f);
 
                     openWindow = true;
                     Debug.Log("Ouverture !");
+
+                    if (eventsManager == null)
+                    {
+                        eventsManager = FindFirstObjectByType<EventsManager>();
+                    }
+
+                    eventsManager.deleteWindowOpen();
                 } else if(!primaryButtonValue && openWindow)
                 {
                     // fermer la fenetre
@@ -53,6 +62,13 @@ public class CanBeDeleted : MonoBehaviour
                     //Destroy(currentWindow);
                     Debug.Log("Fermeture !");
                     openWindow = false;
+
+                    if (eventsManager == null)
+                    {
+                        eventsManager = FindFirstObjectByType<EventsManager>();
+                    }
+
+                    eventsManager.deleteWindowClose();
                 }
             }
         }

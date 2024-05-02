@@ -18,7 +18,7 @@ public class DeleteWindowController : NumberOfBlocks
 
     private bool isInstantiate;
     private int i;
-
+    private EventsManager eventsManager;
 
 
     // Start is called before the first frame update
@@ -44,15 +44,30 @@ public class DeleteWindowController : NumberOfBlocks
                 deleteWindow = Instantiate(deleteWindowPrefabs, transform);
                 deleteWindow.transform.position = new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z + 0.25f);
                 isInstantiate = true;
+
+                if (eventsManager == null)
+                {
+                    eventsManager = FindFirstObjectByType<EventsManager>();
+                }
+
+                eventsManager.deleteWindowOpen();
             }
         }
     }
+
     public void Delete()
     {
         Debug.Log(FindChildDeleteWindow());
         
         try
         {
+            if (eventsManager == null)
+            {
+                eventsManager = FindFirstObjectByType<EventsManager>();
+            }
+
+            eventsManager.deleteBlock(FindChildDeleteWindow().parent.gameObject);
+
             sumNumberOfBlocks(FindChildDeleteWindow().parent.gameObject);
             Destroy(FindChildDeleteWindow().parent.gameObject);
         }
