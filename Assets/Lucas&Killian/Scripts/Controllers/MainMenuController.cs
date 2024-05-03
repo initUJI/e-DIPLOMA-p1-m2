@@ -102,14 +102,14 @@ public class MainMenuController : MonoBehaviour
     public IEnumerator InvokeTutorialInstruccions(Instruccion ins, TextMeshProUGUI text)
     {
         text.text = ins.getControlsString(1);
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(1));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(1, grabInteractable));
 
         text.text = ins.getControlsString(2);
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(2));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(2, grabInteractable));
 
         text.text = ins.getControlsString(3);
         platform = Instantiate(platformPrefab);
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(3));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(3, grabInteractable, platform));
 
         text.text = ins.getControlsString(4);
         xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = true;
@@ -119,12 +119,12 @@ public class MainMenuController : MonoBehaviour
         teleportationProvider.endLocomotion += OnTeleportationEnd;
         Destroy(cube);
         Destroy(platform);
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(4));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(4, null, null, teleportCompleted));
 
         text.text = ins.getControlsString(5);
         platform = Instantiate(platformPrefab);
         platform.transform.position = platformLocation;
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(5));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(5, grabInteractable, platform));
 
         text.text = "Tutorial completed!";
     }
@@ -241,15 +241,15 @@ public class Instruccion : MainMenuController
         }
     }
 
-    public bool checkControlsInstruccion(int num)
+    public bool checkControlsInstruccion(int num, XRGrabInteractable grab = null, GameObject platform = null, bool teleport = false)
     {
         switch (num)
         {
-            case 5: return checkControls5();
-            case 4: return checkControls4();
-            case 3: return checkControls3();
-            case 2: return checkControls2();
-            case 1: return checkControls1();
+            case 5: return checkControls5(grab, platform);
+            case 4: return checkControls4(teleport);
+            case 3: return checkControls3(grab, platform);
+            case 2: return checkControls2(grab);
+            case 1: return checkControls1(grab);
             default: return false;
         }
     }
@@ -282,43 +282,43 @@ public class Instruccion : MainMenuController
         return false;
     }
 
-    public bool checkControls5()
+    public bool checkControls5(XRGrabInteractable grab, GameObject platform)
     {
-        if (!grabInteractable.isSelected && platform != null && platform.GetComponent<platformController>().cubeColliding)
+        if (!grab.isSelected && platform != null && platform.GetComponent<platformController>().cubeColliding)
         {
             return true;
         }
         return false;
     }
-    public bool checkControls4()
+    public bool checkControls4(bool teleport)
     {
-        if (teleportCompleted)
-        {
-            return true;
-        }
-        return false;
-    }
-
-    public bool checkControls3()
-    {
-        if (!grabInteractable.isSelected && platform != null && platform.GetComponent<platformController>().cubeColliding)
+        if (teleport)
         {
             return true;
         }
         return false;
     }
 
-    public bool checkControls1()
+    public bool checkControls3(XRGrabInteractable grab, GameObject platform)
     {
-        if (grabInteractable.isSelected)
+        if (!grab.isSelected && platform != null && platform.GetComponent<platformController>().cubeColliding)
         {
             return true;
         }
         return false;
     }
-    public bool checkControls2()
+
+    public bool checkControls1(XRGrabInteractable grab)
     {
-        if (grabInteractable.isSelected)
+        if (grab.isSelected)
+        {
+            return true;
+        }
+        return false;
+    }
+    public bool checkControls2(XRGrabInteractable grab)
+    {
+        if (grab.isSelected)
         {
             return false;
         }
