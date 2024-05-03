@@ -21,6 +21,7 @@ public class MainMenuController : MonoBehaviour
     private GameObject MainOptions;
     private GameObject TutorialOptions;
     private GameObject ControlsTutorial;
+    private GameObject userOptions;
     [HideInInspector] public XRGrabInteractable grabInteractable;
     private GameObject cube;
     [HideInInspector] public GameObject platform;
@@ -46,6 +47,7 @@ public class MainMenuController : MonoBehaviour
         MainOptions = menuWindow.transform.GetChild(0).gameObject;
         TutorialOptions = menuWindow.transform.GetChild(1).gameObject;
         ControlsTutorial = menuWindow.transform.GetChild(2).gameObject;
+        userOptions = menuWindow.transform.GetChild(3).gameObject;
 
         MainOptions.SetActive(true);
         TutorialOptions.SetActive(false);
@@ -65,6 +67,13 @@ public class MainMenuController : MonoBehaviour
         string inputField = userInputField.text;
         PlayerPrefs.SetString("UserID", inputField);
         eventsManager.setUserID(inputField);
+    }
+
+    public void loadUserOptions() 
+    {
+        eventsManager.buttonClicked("USER OPTIONS");
+        MainOptions.SetActive(false);
+        userOptions.SetActive(true);
     }
     public void startGameplay()
     {

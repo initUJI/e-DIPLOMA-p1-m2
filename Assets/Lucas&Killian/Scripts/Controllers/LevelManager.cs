@@ -77,6 +77,11 @@ public class LevelManager : NumberOfBlocks
         }
     }
 
+    public void goToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void resetScene()
     {
         eventsManager.buttonClicked("NEXT LEVEL");
