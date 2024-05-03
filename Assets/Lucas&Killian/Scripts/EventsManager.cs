@@ -13,11 +13,14 @@ using System.Net.Sockets;
 public class EventsManager : MonoBehaviour
 {
     [SerializeField] private GameObject xrOrigin;
+    [SerializeField] private GameObject popAudio;
+    [SerializeField] private GameObject buttonAudio;
     private XRGrabInteractable[] grabInteractables;
 
-    private string userID;
-    private string fileName = "";
+    private string userID = "anom";
+    private string fileName = "anom";
     private LevelManager levelManager;
+    private string directoryPath;
     private string filePath;
     private TextMeshProUGUI errorText;
     private GameObject canvas;
@@ -44,9 +47,12 @@ public class EventsManager : MonoBehaviour
         errorText.text = string.Empty;
         grabInteractables = FindObjectsOfType<XRGrabInteractable>();
 
+        string projectDirectory = Directory.GetParent(Application.dataPath).FullName;
+        directoryPath = Path.Combine(projectDirectory, "Data");
+        filePath = Path.Combine(directoryPath, "data.json");
+
         Data data = new Data("userID", "DateTime", "actualLevel", "action");
         writeInJson(data);
-        filePath = Path.Combine(Application.persistentDataPath, fileName);
 
         TeleportationProvider teleportationProvider = xrOrigin.GetComponent<TeleportationProvider>();
         teleportationProvider.endLocomotion += OnTeleportationEnd;
@@ -66,7 +72,7 @@ public class EventsManager : MonoBehaviour
         {
             data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "BUTTON PLAY PRESSED");
         }
-
+        buttonAudio.GetComponent<AudioSource>().Play();
         writeInJson(data);
     }
 
@@ -94,6 +100,8 @@ public class EventsManager : MonoBehaviour
             data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "SCENE CLEANED, ALL BLOCKS RESETED");
             writeInJson(data);
         }
+
+        buttonAudio.GetComponent<AudioSource>().Play();
     }
 
     public void clueUsed(string clue)
@@ -107,6 +115,7 @@ public class EventsManager : MonoBehaviour
             data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "USED CLUE: " + clue);
             writeInJson(data);
         }
+        buttonAudio.GetComponent<AudioSource>().Play();
     }
 
     public void testStandUsed(string direction)
@@ -120,6 +129,7 @@ public class EventsManager : MonoBehaviour
             data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "PRESSED TEST STAND: " + direction);
             writeInJson(data);
         }
+        buttonAudio.GetComponent<AudioSource>().Play();
     }
 
     public void characterMoving(string direction)
@@ -190,7 +200,7 @@ public class EventsManager : MonoBehaviour
         {
             data = new Data(userID, DateTime.Now.ToString(),"MAIN MENU", "DELETED BLOCK: " + block.name);
         }
-
+        buttonAudio.GetComponent<AudioSource>().Play();
         writeInJson(data);
     }
 
@@ -274,6 +284,11 @@ public class EventsManager : MonoBehaviour
                 "OBJECT GRABBED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
 
+        if (popAudio != null)
+        {
+            popAudio.GetComponent<AudioSource>().Play();
+        }
+
         writeInJson(data);
     }
 
@@ -322,6 +337,11 @@ public class EventsManager : MonoBehaviour
         {
             if (filePath != null && filePath.Length > 0)
             {
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
                 string jsonString = JsonUtility.ToJson(data);
                 StreamWriter writer = new StreamWriter(filePath, true);
                 writer.WriteLine(jsonString);
@@ -332,6 +352,7 @@ public class EventsManager : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogError("Error al escribir en el archivo JSON con Path " +filePath+ ": " + ex.Message);
+            errorMessage("Error al escribir en el archivo JSON con Path " + filePath + ": " + ex.Message);
         }
     }
 
@@ -351,43 +372,71 @@ public class EventsManager : MonoBehaviour
 
     private void OnTeleportationEnd(LocomotionSystem locomotionSystem)
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
+        try
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "TELEPORTATION");
-        }
-        else
-        {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "TELEPORTATION");
-        }
+            Data data;
 
-        writeInJson(data);
+            tryFindingLevelManager();
+
+            if (levelManager != null)
+            {
+                data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "TELEPORTATION");
+            }
+            else
+            {
+                data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "TELEPORTATION");
+            }
+
+            writeInJson(data);
+        }
+        catch 
+        {
+            errorMessage("Error trying to write in Json on teleportation");
+        }
     }
 
     public void setUserID(string s)
     {
-        userID = s;
-        fileName = "data_" + userID + "_" + DateTime.Now.ToString();
-        filePath = Path.Combine(Application.persistentDataPath, fileName);
-
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
+        try
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "USER REGISTERED");
+             userID = s;
+
+            string dataFolderPath = Directory.GetParent(Application.dataPath).FullName;
+
+            if (!Directory.Exists(dataFolderPath))
+            {
+                Directory.CreateDirectory(dataFolderPath);
+                Debug.Log("Carpeta 'data' creada en la ruta: " + dataFolderPath);
+            }
+            else
+            {
+                Debug.Log("La carpeta 'data' ya existe en la ruta: " + dataFolderPath);
+            }
+
+            fileName = "data_" + userID + "_" + DateTime.Now.ToString() + ".json";
+            filePath = Path.Combine(dataFolderPath, fileName);
+
+            Data data;
+
+            tryFindingLevelManager();
+
+            if (levelManager != null)
+            {
+                data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "USER REGISTERED");
+            }
+            else
+            {
+                data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "USER REGISTERED");
+            }
+            buttonAudio.GetComponent<AudioSource>().Play();
+            writeInJson(data);
         }
-        else
+        catch
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "USER REGISTERED");
-        } 
-
-        writeInJson(data);
+            errorMessage("Error trying to write in Json on set user");
+        }
     }
+        
 
     public void buttonClicked(string button)
     {
@@ -405,12 +454,12 @@ public class EventsManager : MonoBehaviour
             {
                 data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "PRESSED BUTTON: " + button);
             }
-
+            buttonAudio.GetComponent<AudioSource>().Play();
             writeInJson(data);
         }
         catch 
         {
-            errorMessage("Error trying to write in Json");
+            errorMessage("Error trying to write in Json on button clicked");
         }
     }
 }
@@ -418,10 +467,10 @@ public class EventsManager : MonoBehaviour
 [Serializable]
 public class Data
 {
-    private string id;
-    private string dateTime;
-    private string actualLevel;
-    private string action;
+    public string id;
+    public string dateTime;
+    public string actualLevel;
+    public string action;
 
     // Optional constructor to initialize the data
     public Data(string id, string dateTime, string actualLevel, string action)

@@ -24,6 +24,7 @@ public class LevelManager : NumberOfBlocks
     [SerializeField] private GameObject clueImage;
     [SerializeField] private GameObject noClueImage;
     [SerializeField] private GameObject optionsWindow;
+    [SerializeField] private GameObject confettiSystem;
 
     private GameObject optionsInGameplay;
     private GameObject optionsLevelCompleted;
@@ -184,7 +185,11 @@ public class LevelManager : NumberOfBlocks
             case 2: PlayerPrefs.SetInt("Level2Completed", 1); break;
             case 1: PlayerPrefs.SetInt("Level1Completed", 1); break;
         }
-
+        if (confettiSystem != null)
+        {
+            confettiSystem.GetComponent<ParticleSystem>().Play();
+            confettiSystem.GetComponent<AudioSource>().Play();
+        }
         eventsManager.levelCompleted(num);
     }
 

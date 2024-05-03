@@ -43,6 +43,7 @@ public class Character : MonoBehaviour
         levelTransform = transform.parent.parent.parent.transform;
         unit *= levelTransform.localScale.x;
         eventsManager = FindObjectOfType<EventsManager>();
+        targetPosition = transform.position;
     }
 
     public bool Motionless()
