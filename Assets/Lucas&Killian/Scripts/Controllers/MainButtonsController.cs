@@ -35,6 +35,7 @@ public class MainButtonsController : MonoBehaviour
         */
 
         transform.localScale = transform.localScale - new Vector3(0, 0.3f, 0);
+        gameObject.transform.parent.gameObject.GetComponent<MainBlock>().Execute();
         yield return new WaitForSeconds(0.5f);
         transform.localScale = transform.localScale + new Vector3(0, 0.3f, 0);
     }

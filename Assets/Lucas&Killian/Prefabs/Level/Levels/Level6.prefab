@@ -2220,6 +2220,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnSection
       objectReference: {fileID: 0}
+    - target: {fileID: 5496203520335789034, guid: 64d665dc38524cb4984c321ec207524b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496203520335789034, guid: 64d665dc38524cb4984c321ec207524b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496203520335789034, guid: 64d665dc38524cb4984c321ec207524b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d665dc38524cb4984c321ec207524b, type: 3}
 --- !u!4 &3671625138722197740 stripped

@@ -38,6 +38,7 @@ public class LevelManager : NumberOfBlocks
     // Start is called before the first frame update
     void Start()
     {
+        resetAllsaves();
         optionsInGameplay = optionsWindow.transform.GetChild(0).gameObject;
         optionsLevelCompleted = optionsWindow.transform.GetChild(1).gameObject;
         eventsManager = FindObjectOfType<EventsManager>();
@@ -48,8 +49,7 @@ public class LevelManager : NumberOfBlocks
         clueImage.SetActive(false);
         noClueImage.SetActive(true);
         gameManager = FindObjectOfType<GameManager>();
-        changeLevel(lastLevelCompleted() + 0);
-        //changeLevel(0);
+        changeLevel(lastLevelCompleted() + 1);
     }
 
     private void Update()
