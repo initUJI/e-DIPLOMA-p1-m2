@@ -273,8 +273,12 @@ public class Character : MonoBehaviour
     private void PlayAnimation(string animation)
     {
         isAnimated = true;
-        animator.enabled = true;
-        animator.Play(animation);
+        if (animator != null)
+        {
+            animator.enabled = true;
+            animator.Play(animation);
+        }
+        
     }
 
 }

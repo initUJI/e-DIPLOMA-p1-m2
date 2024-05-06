@@ -1,0 +1,6 @@
+userID;fecha
+FakeUser42;06/05/2024_13:01
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1714993323,32294;4,08521;Test1;ENTRA_HEAD;Platform
+1714993333,14658;13,90947;Test1;SALE_HEAD;Platform
+1714993333,28566;14,04842;Test1;ENTRA_HEAD;Right Wall

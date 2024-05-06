@@ -124,6 +124,7 @@ public class MainMenuController : MonoBehaviour
         text.text = ins.getControlsString(5);
         platform = Instantiate(platformPrefab);
         platform.transform.position = platformLocation;
+        cube = Instantiate(cubePrefab);
         yield return new WaitUntil(() => ins.checkControlsInstruccion(5, grabInteractable, platform));
 
         text.text = "Tutorial completed!";
@@ -134,7 +135,6 @@ public class MainMenuController : MonoBehaviour
         eventsManager.buttonClicked("DYNAMICS TUTORIAL");
         ControlsTutorial.SetActive(true);
         TutorialOptions.SetActive(false);
-        grabInteractable = cube.GetComponent<XRGrabInteractable>();
         Instruccion instruccion = new Instruccion();
         StartCoroutine(InvokeDynamicsInstruccions(instruccion, ControlsTutorial.transform.GetChild(0).GetComponent<TextMeshProUGUI>()));
     }
@@ -146,7 +146,7 @@ public class MainMenuController : MonoBehaviour
         moveForwardBlock = Instantiate(moveForwardPrefab);
         mainBlock.transform.position = block1Location;
         moveForwardBlock.transform.position = block2Location;
-        yield return new WaitUntil(() => ins.checkDynamicsInstruccion(1));
+        yield return new WaitUntil(() => ins.checkDynamicsInstruccion(1, mainBlock));
 
         Destroy(moveForwardBlock);
         text.text = ins.getDynamicsString(2);
@@ -160,7 +160,7 @@ public class MainMenuController : MonoBehaviour
         Instantiate(tutorialLevelPrefab);
         GameObject.FindObjectOfType<GameManager>().NewLevel();
         text.text = ins.getDynamicsString(3);
-        yield return new WaitUntil(() => ins.checkDynamicsInstruccion(3));
+        yield return new WaitUntil(() => ins.checkDynamicsInstruccion(3, mainBlock, dynamicTutorialCompleted));
 
         text.text = "Tutorial completed!";
     }
@@ -230,13 +230,13 @@ public class Instruccion : MainMenuController
         }
     }
 
-    public bool checkDynamicsInstruccion(int num)
+    public bool checkDynamicsInstruccion(int num, GameObject mainBlock = null, bool dynamicTutorialCompleted = false)
     {
         switch (num)
         {
-            case 3: return checkDynamics3();
+            case 3: return checkDynamics3(dynamicTutorialCompleted);
             case 2: return checkDynamics2();
-            case 1: return checkDynamics1();
+            case 1: return checkDynamics1(mainBlock);
             default: return false;
         }
     }
@@ -254,7 +254,7 @@ public class Instruccion : MainMenuController
         }
     }
 
-    public bool checkDynamics3()
+    public bool checkDynamics3(bool dynamicTutorialCompleted)
     {
         return dynamicTutorialCompleted;
     }
@@ -268,16 +268,21 @@ public class Instruccion : MainMenuController
         return false;
     }
 
-    public bool checkDynamics1()
+    public bool checkDynamics1(GameObject mainBlock)
     {
         if (mainBlock != null)
         {
             MainBlock mainBlockType = mainBlock.GetComponent<MainBlock>();
-            Block nextBlock = mainBlockType.currentBlock.getSocketBlock(((WithBottomSocket)mainBlockType.currentBlock).getBottomSocket());
-            if (nextBlock.GetType().ToString() == "MoveForward")
+
+            if (mainBlockType.getBottonSocketControled() != null)
             {
-                return true;
+                Block nextBlock = mainBlockType.getBottonSocketControled();
+                if (nextBlock != null && nextBlock.GetType().ToString() == "ForwardBlock")
+                {
+                    return true;
+                }
             }
+            
         }
         return false;
     }

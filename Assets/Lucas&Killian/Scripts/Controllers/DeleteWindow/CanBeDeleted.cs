@@ -25,16 +25,17 @@ public class CanBeDeleted : MonoBehaviour
         GameManager.InvokeAfterInit(this, () =>
         {
             principalHandController = GameManager.principalHandController;
-            principalRay = principalHandController.GetComponent<XRRayInteractor>();
-        });
-
-        
+            if (principalHandController != null)
+            {
+                principalRay = principalHandController.GetComponent<XRRayInteractor>();
+            }   
+        });       
     }
 
     private void Update()
     {
         
-        if (interactable != null && principalHandController != null)
+        if (interactable != null && principalHandController != null && principalRay != null)
         {
             InputDevice device = principalHandController.inputDevice;
             if (device != null && device.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonValue))
@@ -72,8 +73,5 @@ public class CanBeDeleted : MonoBehaviour
                 }
             }
         }
-        
-
     }
-
 }

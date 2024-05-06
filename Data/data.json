@@ -333,3 +333,230 @@
 {"id":"anom","dateTime":"06/05/2024 10:35:35","actualLevel":"1","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
 {"id":"anom","dateTime":"06/05/2024 10:35:35","actualLevel":"1","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
 {"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 10:46:24","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 10:46:25","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:29:21","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:29:22","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:38:03","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:38:04","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:41:24","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:41:25","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:42:54","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:42:55","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:44:42","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:44:43","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:49:18","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:49:21","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: CONTROLS TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:49:32","actualLevel":"MAIN MENU","action":"TELEPORTATION"}
+{"id":"anom","dateTime":"06/05/2024 12:49:32","actualLevel":"MAIN MENU","action":"TELEPORTATION"}
+{"id":"anom","dateTime":"06/05/2024 12:49:41","actualLevel":"MAIN MENU","action":"TELEPORTATION"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:52:16","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:52:17","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:52:26","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: RESET MAIN MENU (HOUSE ICON)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:54:01","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:54:02","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 12:55:30","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 12:55:37","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:03:04","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:03:05","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:05:12","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:05:13","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:07:10","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:07:11","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:09:11","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:09:12","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:11:32","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:11:32","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:13:09","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"06/05/2024 13:13:09","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"06/05/2024 13:13:11","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"06/05/2024 13:13:11","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"06/05/2024 13:13:11","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"06/05/2024 13:13:11","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"06/05/2024 13:13:14","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"06/05/2024 13:13:14","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"06/05/2024 13:13:15","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"06/05/2024 13:13:15","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"06/05/2024 13:13:49","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:13:52","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:13:52","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:13:53","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:13:56","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:13:56","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:13:56","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:13:58","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:01","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:01","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:14:01","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:02","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:11","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:14","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:16","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:14:16","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:14:17","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:23","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:29","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:30","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:31","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:32","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:34","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:35","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:36","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:37","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:37","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:37","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:39","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:40","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:41","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:14:44","actualLevel":"1","action":"TELEPORTATION"}
+{"id":"anom","dateTime":"06/05/2024 13:14:54","actualLevel":"1","action":"TELEPORTATION"}
+{"id":"anom","dateTime":"06/05/2024 13:14:59","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:01","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:01","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:01","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:02","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:02","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:04","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:04","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:05","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:13","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:14","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:15","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:20","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:24","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:24","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:32","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:32","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:34","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:34","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:36","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:15:45","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:15:45","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:15:45","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:15:45","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:15:45","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:15:45","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:17:19","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:17:20","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:17:20","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:17:21","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:18:43","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"06/05/2024 13:18:47","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"06/05/2024 13:18:49","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:18:50","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:18:52","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:18:53","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:18:57","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:19:03","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:03","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:03","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:04","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:06","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:13","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:13","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:18","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:19:30","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:31","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:33","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:36","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:36","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:19:36","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:39","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:19:45","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:48","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:19:48","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:19:48","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:12","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:20:25","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:27","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:27","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:20:27","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:29","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:20:36","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:39","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:39","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:20:39","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:20:40","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:20:42","actualLevel":"1","action":"LEVEL COMPLETED: 1"}
+{"id":"anom","dateTime":"06/05/2024 13:21:57","actualLevel":"1","action":"TELEPORTATION"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:22:06","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:23:13","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:32:08","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:10","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:10","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:10","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:11","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:11","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:32:11","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:12","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:13","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:13","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:32:13","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:13","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:14","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:14","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:32:14","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:15","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:17","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:17","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"06/05/2024 13:32:17","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:18","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"06/05/2024 13:32:20","actualLevel":"1","action":"LEVEL COMPLETED: 1"}
+{"id":"anom","dateTime":"06/05/2024 13:32:23","actualLevel":"1","action":"TELEPORTATION"}
+{"id":"anom","dateTime":"06/05/2024 13:32:26","actualLevel":"1","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"anom","dateTime":"06/05/2024 13:32:26","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:26","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:26","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:26","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"06/05/2024 13:32:26","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:36:47","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:36:48","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:45:41","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:45:41","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:46:44","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:46:45","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:47:45","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:47:46","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"06/05/2024 13:50:49","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"06/05/2024 13:50:50","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}

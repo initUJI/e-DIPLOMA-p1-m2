@@ -87,6 +87,11 @@ public class MainBlock : Block, WithBottomSocket
      * and another as long as the pause attribute is not equal to false. 
      * In this way, the user has time to see the character perform each step and has the option of pausing.
      */
+    public ExecutableBlock getBottonSocketControled()
+    {
+        return (ExecutableBlock)getSocketBlock(bottomSocket);
+    }
+
     IEnumerator c_Execute() {
 
         bool wasIfBlock = false;

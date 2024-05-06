@@ -25,7 +25,7 @@ public class MainBlockMovementController : MonoBehaviour
 
     private void Update()
     {
-        if (interactable != null && interactable.isHovered)
+        if (interactable != null && interactable.isHovered && principalHandController != null)
         {
             InputDevice device = principalHandController.inputDevice;
 

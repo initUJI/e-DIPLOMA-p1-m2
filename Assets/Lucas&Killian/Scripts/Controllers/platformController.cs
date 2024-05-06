@@ -8,7 +8,7 @@ public class platformController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Cube")
+        if (collision.gameObject.name.Contains("Cube"))
         {
             cubeColliding = true;
         }
@@ -16,9 +16,9 @@ public class platformController : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Cube")
+        if (collision.gameObject.name.Contains("Cube"))
         {
-            cubeColliding = false;
+            //cubeColliding = false;
         }
     }
 }

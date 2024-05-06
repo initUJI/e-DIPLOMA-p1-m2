@@ -17,7 +17,7 @@ public class ShelfController : MonoBehaviour
     public GameObject currentBlock;
     [SerializeField] public int numberForNumberBlock;
 
-    private LevelManager levelManager;
+    public LevelManager levelManager;
 
     protected virtual void Start()
     {
