@@ -63,7 +63,11 @@ public class Character : MonoBehaviour
         }
         else
         {
-            GameManager.printScreenTMP.text = "Cannot forwarding because there is a " + GameManager.objectInFront.tag;
+            if (GameManager.printScreenTMP != null)
+            {
+                GameManager.printScreenTMP.text = "Cannot forwarding because there is a " + GameManager.objectInFront.tag;
+            }
+            
         }
     }
 
@@ -105,7 +109,10 @@ public class Character : MonoBehaviour
         }
         else
         {
-            GameManager.printScreenTMP.text = "There is no rock!";
+            if (GameManager.printScreenTMP != null)
+            {
+                GameManager.printScreenTMP.text = "There is no rock!";
+            }     
         }
     }
 

@@ -71,7 +71,7 @@ public class ForwardBlock : ActionCharacterBlock, WithRightSocket
 
     public override bool IsFinished()
     {
-        return base.IsFinished() && isFinished;
+        return /*base.IsFinished() && */isFinished;
     }
 
 

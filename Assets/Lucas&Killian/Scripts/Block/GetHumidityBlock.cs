@@ -1,3 +1,4 @@
+using LevelGenerator.Scripts.Helpers;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,12 +28,17 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 
         foreach (Plant p in plants)
         {
+            if ((SceneManager.GetActiveScene().buildIndex == 0))
+            {
+                yield return new WaitUntil(() => p.characterInPlant());
+            }    
+
             if (p.characterInPlant())
             {
                 p.humidityChecked = true;
-
                 if (allPlantsChecked())
                 {
+                    Debug.Log(SceneManager.GetActiveScene().buildIndex);
                     if (SceneManager.GetActiveScene().buildIndex == 0)
                     {
                         MainMenuController mMC = FindObjectOfType<MainMenuController>();

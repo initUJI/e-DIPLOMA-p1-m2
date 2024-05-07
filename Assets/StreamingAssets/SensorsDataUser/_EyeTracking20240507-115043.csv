@@ -1,0 +1,6 @@
+userID;fecha
+FakeUser42;07/05/2024_11:50
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1715075443,85700;,09070;Test1;ENTRA_HEAD;Center Wall
+1715075445,85175;2,08584;Test1;SALE_HEAD;Center Wall
+1715075446,75411;2,98822;Test1;ENTRA_HEAD;Center Wall

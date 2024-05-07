@@ -110,6 +110,7 @@ public class MainMenuController : MonoBehaviour
         text.text = ins.getControlsString(3);
         platform = Instantiate(platformPrefab);
         yield return new WaitUntil(() => ins.checkControlsInstruccion(3, grabInteractable, platform));
+        yield return new WaitForSeconds(1);
 
         text.text = ins.getControlsString(4);
         xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = true;

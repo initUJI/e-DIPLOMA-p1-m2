@@ -630,3 +630,138 @@
 {"id":"anom","dateTime":"07/05/2024 10:39:07","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
 {"id":"anom","dateTime":"07/05/2024 10:39:15","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
 {"id":"anom","dateTime":"07/05/2024 10:39:19","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:39:21","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:39:22","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:39:30","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:39:34","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:43:13","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:43:14","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:43:22","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:43:23","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 11:43:24","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:43:25","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 11:43:26","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:45:26","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:45:26","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:45:31","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:45:32","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 11:45:33","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 11:45:37","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"07/05/2024 11:45:42","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"07/05/2024 11:45:46","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"07/05/2024 11:45:47","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:48:12","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:48:13","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:48:16","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:48:17","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 11:48:18","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 11:48:24","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:50:47","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:50:48","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:50:51","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:50:52","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 11:50:53","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 11:50:57","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:53:07","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:53:08","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:53:11","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:53:12","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 11:53:12","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 11:53:18","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 11:56:38","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:56:39","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 11:56:42","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 11:56:43","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 11:56:43","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 11:56:48","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:00:01","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:00:02","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:00:06","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:00:07","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:00:07","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:00:12","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:03:59","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:04:00","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:04:03","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:04:04","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:04:04","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:04:09","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:10:41","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:10:41","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:10:45","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:10:46","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:10:46","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:10:51","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:12:31","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:12:31","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:12:34","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:12:35","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:12:35","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:12:39","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:13:43","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:13:43","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:13:46","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:13:47","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:13:47","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:13:52","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:15:04","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:15:04","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:15:07","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:15:08","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:15:08","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:15:12","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:16:14","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:16:14","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:16:18","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:16:19","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:16:19","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:16:24","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:17:42","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:17:43","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:17:46","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:17:47","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:17:47","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:17:52","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:19:28","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:19:28","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:19:31","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:19:32","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:19:32","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:19:36","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:20:33","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:20:34","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:20:36","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:20:37","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:20:37","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:20:41","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:21:55","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:21:55","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:21:59","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:22:00","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:22:00","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:22:05","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"07/05/2024 12:25:10","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:25:11","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: DYNAMICS TUTORIAL"}
+{"id":"anom","dateTime":"07/05/2024 12:25:14","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"07/05/2024 12:25:15","actualLevel":"MAIN MENU","action":"DELETED BLOCK: MainBlock(Clone)"}
+{"id":"anom","dateTime":"07/05/2024 12:25:15","actualLevel":"MAIN MENU","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"07/05/2024 12:25:20","actualLevel":"MAIN MENU","action":"BUTTON PLAY PRESSED"}

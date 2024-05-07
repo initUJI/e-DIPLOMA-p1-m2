@@ -42,13 +42,9 @@ public class CanBeDeleted : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(interactable);
-        Debug.Log(principalHandController);
-        Debug.Log(principalRay);
         if (interactable != null && principalHandController != null && principalRay != null)
         {
             InputDevice device = principalHandController.inputDevice;
-            Debug.Log(device);
             if (device != null && device.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonValue))
             {
                 if (principalRay.IsHovering(interactable) && primaryButtonValue && !openWindow)
@@ -60,7 +56,7 @@ public class CanBeDeleted : MonoBehaviour
                     currentWindow.transform.localPosition = currentWindow.transform.right * -0.2f;
 
                     openWindow = true;
-                    Debug.Log("Ouverture !");
+                    //Debug.Log("Ouverture !");
 
                     if (eventsManager == null)
                     {
@@ -73,7 +69,7 @@ public class CanBeDeleted : MonoBehaviour
                     // fermer la fenetre
                     currentWindow.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
                     //Destroy(currentWindow);
-                    Debug.Log("Fermeture !");
+                    //Debug.Log("Fermeture !");
                     openWindow = false;
 
                     if (eventsManager == null)

@@ -9,6 +9,7 @@ public class Plant : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.tag);
         if (other.CompareTag("Character"))
         {
             character = other.gameObject;
@@ -17,14 +18,16 @@ public class Plant : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+       /* Debug.Log(other.tag);
         if (other.CompareTag("Character"))
         {
             character = null;
-        }
+        }*/
     }
 
     public bool characterInPlant()
     {
+        Debug.Log(character);
         return character != null;
     }
 }

@@ -198,6 +198,7 @@ public class MainBlock : Block, WithBottomSocket
             currentBlock.SetGlowing(false);
             
             currentBlock = (ExecutableBlock)currentBlock.getSocketBlock(((WithBottomSocket)currentBlock).getBottomSocket()); // Go to the next block  
+            //Debug.Log(currentBlock);
         }
 
         SetGlowing(false);

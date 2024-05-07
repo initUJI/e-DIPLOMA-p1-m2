@@ -63,7 +63,11 @@ public class GameManager : MonoBehaviour
         characterInitialRotation = character.transform.rotation;
         characterInitialScale = character.transform.localScale;
 
-        printScreenTMP = GameObject.FindGameObjectWithTag("TextScreenPrint").GetComponent<TMP_Text>();
+        if (GameObject.FindGameObjectWithTag("TextScreenPrint") != null)
+        {
+            printScreenTMP = GameObject.FindGameObjectWithTag("TextScreenPrint").GetComponent<TMP_Text>();
+        }
+        
 
         if(!whichHand)
         {
@@ -147,7 +151,12 @@ public class GameManager : MonoBehaviour
 
     public static void ReportError(MonoBehaviour obj, string message)
     {
-        printScreenTMP.text = "ERROR in " + obj.ToString() + " : " + message;
+        if (printScreenTMP != null)
+        {
+            printScreenTMP.text = "ERROR in " + obj.ToString() + " : " + message;
+        }
+
+        
         MainBlock.error = true;
         
         if(obj as Block)
@@ -159,7 +168,11 @@ public class GameManager : MonoBehaviour
 
     public static void ReportWarning(MonoBehaviour obj, string message)
     {
-        printScreenTMP.text = "WARNING in " + obj.ToString() + " : " + message;
+        if (printScreenTMP != null)
+        {
+            printScreenTMP.text = "WARNING in " + obj.ToString() + " : " + message;
+        }
+
 
         if (obj as Block)
         {
@@ -171,17 +184,23 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0; i < 3; i++)
         {
-            block.ChangeBlockMaterial(material);
-            yield return new WaitForSeconds(0.3f);
-            block.InitBlockMaterial();
-            yield return new WaitForSeconds(0.3f);
-        }
-        
+            if (block != null && material != null)
+            {
+                block.ChangeBlockMaterial(material);
+                yield return new WaitForSeconds(0.3f);
+                block.InitBlockMaterial();
+                yield return new WaitForSeconds(0.3f);
+            }          
+        }      
     }
 
     public static void DisplayOnPrompt(string message)
     {
-        printScreenTMP.text = message;
+        if (printScreenTMP != null)
+        {
+            printScreenTMP.text = message;
+        }
+
     }
 
 }
