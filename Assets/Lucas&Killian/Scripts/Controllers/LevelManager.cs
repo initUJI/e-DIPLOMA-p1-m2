@@ -38,9 +38,7 @@ public class LevelManager : NumberOfBlocks
     // Start is called before the first frame update
     void Start()
     {
-#if UNITY_EDITOR
-        resetAllsaves();
-#endif
+        
 
         ShelfController[] shelfControllers = FindObjectsOfType<ShelfController>();
         foreach (ShelfController controller in shelfControllers)

@@ -428,6 +428,7 @@ public class EventsManager : MonoBehaviour
             {
                 data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "USER REGISTERED");
             }
+            PlayerPrefs.DeleteAll();
             buttonAudio.GetComponent<AudioSource>().Play();
             writeInJson(data);
         }

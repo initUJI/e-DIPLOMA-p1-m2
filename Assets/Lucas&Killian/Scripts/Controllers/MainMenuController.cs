@@ -147,11 +147,13 @@ public class MainMenuController : MonoBehaviour
         mainBlock.transform.position = block1Location;
         moveForwardBlock.transform.position = block2Location;
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(1, mainBlock));
+        yield return new WaitForSeconds(1);
 
         Destroy(moveForwardBlock);
         text.text = ins.getDynamicsString(2);
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(2));
 
+        mainBlock = Instantiate(mainBlockPrefab);
         mainBlock.transform.position = block1Location;
         moveForwardBlock = Instantiate(moveForwardPrefab);
         moveForwardBlock.transform.position = block2Location;

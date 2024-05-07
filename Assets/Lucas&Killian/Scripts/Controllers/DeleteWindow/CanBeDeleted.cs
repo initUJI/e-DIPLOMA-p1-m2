@@ -15,6 +15,7 @@ public class CanBeDeleted : MonoBehaviour
 
     [SerializeField] GameObject deleteWindowPrefab;
     private EventsManager eventsManager;
+    private GameManager gameManager;
 
     private void Start()
     {
@@ -22,22 +23,32 @@ public class CanBeDeleted : MonoBehaviour
         currentWindow = null;
         openWindow = false;
 
-        GameManager.InvokeAfterInit(this, () =>
+        principalHandController = GameObject.Find("RightHand Controller").GetComponent<XRController>();
+        if (principalHandController != null)
         {
-            principalHandController = GameManager.principalHandController;
+            principalRay = principalHandController.GetComponent<XRRayInteractor>();
+        }
+
+        /*gameManager = FindAnyObjectByType<GameManager>();
+        gameManager.InvokeAfterInit(this, () =>
+        {
+            principalHandController = gameManager.principalHandController;
             if (principalHandController != null)
             {
                 principalRay = principalHandController.GetComponent<XRRayInteractor>();
             }   
-        });       
+        });*/
     }
 
     private void Update()
     {
-        
+        Debug.Log(interactable);
+        Debug.Log(principalHandController);
+        Debug.Log(principalRay);
         if (interactable != null && principalHandController != null && principalRay != null)
         {
             InputDevice device = principalHandController.inputDevice;
+            Debug.Log(device);
             if (device != null && device.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonValue))
             {
                 if (principalRay.IsHovering(interactable) && primaryButtonValue && !openWindow)
@@ -45,7 +56,8 @@ public class CanBeDeleted : MonoBehaviour
                     // faire apparaitre la fenetre si elle n'existe pas
                     currentWindow = Instantiate(deleteWindowPrefab, transform);
                     currentWindow.transform.parent = transform;
-                    currentWindow.transform.localPosition = new Vector3(0, transform.position.y + 0.5f, transform.position.z - 0.5f);
+                    currentWindow.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, -transform.localEulerAngles.y, transform.localEulerAngles.z);
+                    currentWindow.transform.localPosition = currentWindow.transform.right * -0.2f;
 
                     openWindow = true;
                     Debug.Log("Ouverture !");
