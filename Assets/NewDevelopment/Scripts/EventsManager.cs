@@ -272,7 +272,7 @@ public class EventsManager : MonoBehaviour
 
     private void OnGrabbed(SelectEnterEventArgs interactor)
     {
-        Debug.Log("Objeto cogido");
+        //Debug.Log("Objeto cogido");
 
         Data data;
 
@@ -300,7 +300,7 @@ public class EventsManager : MonoBehaviour
     // Método llamado cuando se suelta el objeto
     private void OnReleased(SelectExitEventArgs interactor)
     {
-        Debug.Log("Objeto soltado");
+        //Debug.Log("Objeto soltado");
 
         Data data;
 
