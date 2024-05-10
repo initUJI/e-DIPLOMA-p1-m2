@@ -54,12 +54,13 @@ public class EventsManager : MonoBehaviour
         Data data = new Data("userID", "DateTime", "actualLevel", "action");
         writeInJson(data);
 
-        TeleportationProvider teleportationProvider = xrOrigin.GetComponent<TeleportationProvider>();
-        teleportationProvider.endLocomotion += OnTeleportationEnd;
+       
 
         if (xrOrigin == null && GameObject.Find("XR Origin") != null)
         {
             xrOrigin = GameObject.Find("XR Origin");
+            TeleportationProvider teleportationProvider = xrOrigin.GetComponent<TeleportationProvider>();
+            teleportationProvider.endLocomotion += OnTeleportationEnd;
         }
     }
 
@@ -323,7 +324,11 @@ public class EventsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xrOrigin.transform.position = new Vector3(xrOrigin.transform.position.x, 0, xrOrigin.transform.position.z);
+        if (xrOrigin != null)
+        {
+            xrOrigin.transform.position = new Vector3(xrOrigin.transform.position.x, 0, xrOrigin.transform.position.z);
+        }
+        
 
         if (canvas.activeInHierarchy)
         {
