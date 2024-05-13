@@ -76,3 +76,168 @@
 {"id":"anom","dateTime":"10/05/2024 10:08:21","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
 {"id":"anom","dateTime":"10/05/2024 10:08:22","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
 {"id":"anom","dateTime":"10/05/2024 10:09:21","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 10:06:39","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:06:42","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:06:43","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:06:43","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:06:43","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:06:45","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:06:46","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:06:48","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:06:48","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:06:52","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:06:58","actualLevel":"1","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:06:59","actualLevel":"1","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:00","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:07:04","actualLevel":"1","action":"DELETED BLOCK: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:04","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:07:07","actualLevel":"1","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:08","actualLevel":"1","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:09","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:10","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:10","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:07:12","actualLevel":"1","action":"DELETED BLOCK: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:07:13","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:07:16","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 10:17:13","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:17:14","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:17:14","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:17:16","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:17:16","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:17:19","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:17:20","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 10:19:23","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:19:23","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:19:24","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:19:25","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 10:26:37","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:38","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:39","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:26:42","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:43","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:26:46","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:26:47","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:26:47","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:51","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:52","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:26:55","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:26:55","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:26:56","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 10:26:57","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:57","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:26:58","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 10:27:03","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 10:27:04","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:15:50","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:15:51","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:15:51","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:15:53","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:15:53","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:15:54","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:15:54","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:15:57","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:15:58","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:16:01","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:16:02","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:19:12","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:19:13","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:19:13","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:19:18","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:19:19","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:19:21","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:19:21","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:19:29","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:19:30","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:19:34","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:19:34","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:22:50","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:22:51","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:22:52","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:22:53","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:22:54","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:26:54","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:26:54","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:26:55","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:27:01","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:27:02","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:27:03","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:27:04","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:27:06","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:27:06","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:27:09","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:27:09","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:31:42","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:31:42","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:31:43","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:31:45","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:31:45","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:31:46","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:31:47","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:36:22","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:36:24","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:36:24","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:36:25","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:36:26","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:41:27","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:28","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:28","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:41:31","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:38","actualLevel":"1","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:39","actualLevel":"1","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:39","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:41:52","actualLevel":"1","action":"DELETED BLOCK: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:55","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:41:55","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:41:55","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:41:57","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:57","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 12:41:57","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:58","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:41:58","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:00","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:42:02","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:02","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 12:42:02","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:02","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:42:03","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:03","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:04","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:42:06","actualLevel":"1","action":"DELETED BLOCK: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:06","actualLevel":"1","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 12:42:06","actualLevel":"1","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:06","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:42:06","actualLevel":"1","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:06","actualLevel":"1","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:09","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:09","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:10","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:42:17","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:42:17","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:17","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:18","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:18","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:19","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:20","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:42:20","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:42:21","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 12:47:36","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:47:37","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:47:38","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 12:47:39","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:47:40","actualLevel":"1","action":"DELETE BLOCK WINDOW CLOSE"}
+{"id":"anom","dateTime":"13/05/2024 12:47:42","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:47:42","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:47:43","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 12:47:44","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}

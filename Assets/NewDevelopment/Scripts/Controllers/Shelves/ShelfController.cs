@@ -11,7 +11,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShelfController : MonoBehaviour
 {
-    [SerializeField] GameObject blockPrefab;
+    public GameObject blockPrefab;
     [SerializeField] GameObject attach;
 
     public GameObject currentBlock;
@@ -105,5 +105,10 @@ public class ShelfController : MonoBehaviour
                 GetComponentInChildren<TextMeshProUGUI>().text = "";
             }
         }
+    }
+
+    public void actualiceText()
+    {
+        transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString() + 1;
     }
 }

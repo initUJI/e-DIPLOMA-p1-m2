@@ -61,8 +61,11 @@ public class NumberOfBlocks : MonoBehaviour
         switch (block.name)
         {
             case "TurnBlock": numberOfTurn--; break;
+            case "TurnBlock(Clone)": numberOfTurn--; break;
             case "TurnRightBlock": numberOfRight--; break;
+            case "TurnRightBlock(Clone)": numberOfRight--; break;
             case "ObjectBlock": numberOfObject--; break;
+            case "ObjectBlock(Clone)": numberOfObject--; break;
             case "NumberBlock":
                 switch (n)
                 {
@@ -77,13 +80,34 @@ public class NumberOfBlocks : MonoBehaviour
                     default: numberOfNumber--; break;
                 }
                 break;
+            case "NumberBlock(Clone)":
+                switch (n)
+                {
+                    case 9: numberOfNumber9--; break;
+                    case 8: numberOfNumber8--; break;
+                    case 7: numberOfNumber7--; break;
+                    case 6: numberOfNumber6--; break;
+                    case 5: numberOfNumber5--; break;
+                    case 4: numberOfNumber4--; break;
+                    case 3: numberOfNumber3--; break;
+                    case 2: numberOfNumber2--; break;
+                    default: numberOfNumber--; break;
+                }
+                break;
             case "TurnLeftBlock": numberOfLeft--; break;
+            case "TurnLeftBlock(Clone)": numberOfLeft--; break;
             case "IfBlock": numberOfIf--; break;
+            case "IfBlock(Clone)": numberOfIf--; break;
             case "GetHumidityBlock": numberOfGetHumidity--; break;
+            case "GetHumidityBlock(Clone)": numberOfGetHumidity--; break;
             case "ForwardBlock": numberOfForward--; break;
+            case "ForwardBlock(Clone)": numberOfForward--; break;
             case "ForBlock": numberOfFor--; break;
+            case "ForBlock(Clone)": numberOfFor--; break;
             case "EndIfBlock": numberOfEndIf--; break;
+            case "EndIfBlock(Clone)": numberOfEndIf--; break;
             case "EndForBlock": numberOfEndFor--; break;
+            case "EndForBlock(Clone)": numberOfEndFor--; break;
             default: break;
         }
     }
@@ -93,8 +117,11 @@ public class NumberOfBlocks : MonoBehaviour
         switch (block.name)
         {
             case "TurnBlock": numberOfTurn++; break;
+            case "TurnBlock(Clone)": numberOfTurn++; break;
             case "TurnRightBlock": numberOfRight++; break;
+            case "TurnRightBlock(Clone)": numberOfRight++; break;
             case "ObjectBlock": numberOfObject++; break;
+            case "ObjectBlock(Clone)": numberOfObject++; break;
             case "NumberBlock":
                 switch (n)
                 {
@@ -109,13 +136,34 @@ public class NumberOfBlocks : MonoBehaviour
                     default: numberOfNumber++; break;
                 }
                 break;
+            case "NumberBlock(Clone)":
+                switch (n)
+                {
+                    case 9: numberOfNumber9++; break;
+                    case 8: numberOfNumber8++; break;
+                    case 7: numberOfNumber7++; break;
+                    case 6: numberOfNumber6++; break;
+                    case 5: numberOfNumber5++; break;
+                    case 4: numberOfNumber4++; break;
+                    case 3: numberOfNumber3++; break;
+                    case 2: numberOfNumber2++; break;
+                    default: numberOfNumber++; break;
+                }
+                break;
             case "TurnLeftBlock": numberOfLeft++; break;
+            case "TurnLeftBlock(Clone)": numberOfLeft++; break;
             case "IfBlock": numberOfIf++; break;
+            case "IfBlock(Clone)": numberOfIf++; break;
             case "GetHumidityBlock": numberOfGetHumidity++; break;
+            case "GetHumidityBlock(Clone)": numberOfGetHumidity++; break;
             case "ForwardBlock": numberOfForward++; break;
+            case "ForwardBlock(Clone)": numberOfForward++; break;
             case "ForBlock": numberOfFor++; break;
+            case "ForBlock(Clone)": numberOfFor++; break;
             case "EndIfBlock": numberOfEndIf++; break;
+            case "EndIfBlock(Clone)": numberOfEndIf++; break;
             case "EndForBlock": numberOfEndFor++; break;
+            case "EndForBlock(Clone)": numberOfEndFor++; break;
             default: break;
         }
     }

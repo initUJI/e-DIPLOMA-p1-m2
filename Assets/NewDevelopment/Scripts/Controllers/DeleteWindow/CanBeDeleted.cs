@@ -53,7 +53,8 @@ public class CanBeDeleted : MonoBehaviour
                     currentWindow = Instantiate(deleteWindowPrefab, transform);
                     currentWindow.transform.parent = transform;
                     currentWindow.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, -transform.localEulerAngles.y, transform.localEulerAngles.z);
-                    currentWindow.transform.localPosition = currentWindow.transform.right * -0.2f;
+                    currentWindow.transform.localPosition = currentWindow.transform.right * -0.5f;
+                    currentWindow.transform.LookAt(principalHandController.gameObject.transform);
 
                     openWindow = true;
                     //Debug.Log("Ouverture !");

@@ -48,7 +48,7 @@ public class Character : MonoBehaviour
 
     public bool Motionless()
     {
-        return !(isForwarding || isRotating || isCutting || isBreaking || isAnimated || objectIsFalling /*|| animator.enabled*/);
+        return !(isForwarding || isRotating /*|| isCutting || isBreaking || isAnimated || objectIsFalling || animator.enabled*/);
     }
 
     public void Forward()
@@ -178,7 +178,7 @@ public class Character : MonoBehaviour
             }
         }
 
-        if (isCutting)
+        /*if (isCutting)
         {
             if (timeAnimationCutOrBreak >= 0f)
             {
@@ -219,9 +219,9 @@ public class Character : MonoBehaviour
                 }
 
             }
-        }
+        }*/
 
-        if (isBreaking)
+       /* if (isBreaking)
         {
             if (timeAnimationCutOrBreak >= 0f)
             {
@@ -261,7 +261,7 @@ public class Character : MonoBehaviour
                 }
 
             }
-        }
+        }*/
 
         // This case is useful for keeping the animation fluid. When the isAnimated variable is set to false,
         // we wait until the character has recovered its original position before stopping the animation.
