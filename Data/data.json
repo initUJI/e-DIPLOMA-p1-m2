@@ -248,3 +248,478 @@
 {"id":"anom","dateTime":"13/05/2024 13:00:40","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
 {"id":"anom","dateTime":"13/05/2024 13:00:45","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
 {"id":"anom","dateTime":"13/05/2024 13:00:47","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:08:53","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:08:54","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:08:54","actualLevel":"1","action":"DELETE BLOCK WINDOW OPEN"}
+{"id":"anom","dateTime":"13/05/2024 13:08:55","actualLevel":"1","action":"DELETED BLOCK: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:08:58","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:01","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:03","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:06","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:07","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:08","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:08","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:13","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:13","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:14","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:14","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:16","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:16","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:19","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:19","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:21","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:21","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:22","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:22","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:24","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:24","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:26","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:26","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:28","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"anom","dateTime":"13/05/2024 13:09:28","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"13/05/2024 13:09:31","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:32","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:32","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:09:32","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:33","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:35","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:35","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:09:35","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:36","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:38","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:38","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:09:38","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:38","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:40","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:40","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:09:40","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:09:43","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:11:15","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:14:48","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:15:05","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:07","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:07","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:08","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:09","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:09","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:15:09","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:09","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:10","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:10","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:15:10","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:11","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:12","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:12","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:15:12","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:14","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:16","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:16","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:15:16","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:15:17","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:16:18","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:20:00","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:01","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:01","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:02","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:02","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:02","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:02","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:03","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:04","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:04","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:04","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:04","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:05","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:05","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:05","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:06","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:07","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:07","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:07","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:08","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:20:10","actualLevel":"1","action":"LEVEL COMPLETED: 1"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:16","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:20:23","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:24","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:24","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:25","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:26","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:26","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:28","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:29","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:29","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:29","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:30","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:32","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:32","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:32","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:34","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:37","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:37","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:37","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:41","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:43","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:43","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:43","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:43","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:44","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:44","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:44","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:45","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:46","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:20:46","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:20:47","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:24:11","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:12","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:12","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:12","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:13","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:13","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:13","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:13","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:14","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:14","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:14","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:16","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:18","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:18","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:18","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:19","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:21","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:21","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:21","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:22","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:23","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:23","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:23","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:23","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:24","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:24","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:24","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:25","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:26","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:24:26","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:24:32","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:25:46","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:30:34","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:35","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:35","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:36","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:36","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:36","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:38","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:39","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:39","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:39","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:40","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:40","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:40","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:40","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:41","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:43","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:43","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:43","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:46","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:47","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:47","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:47","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:48","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:49","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:49","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:49","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:50","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:51","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:51","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:30:51","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:30:52","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:31:06","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:33:56","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:57","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:57","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:57","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:58","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:58","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:33:58","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:58","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:59","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:33:59","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:33:59","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:01","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:02","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:03","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:04","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:04","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:34:04","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:04","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:05","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:05","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:34:05","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:07","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:07","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:07","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:34:07","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:08","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:08","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:09","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:10","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:10","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:34:10","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:11","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:12","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:12","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:34:12","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:13","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:34:22","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:22","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:22","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:34:22","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:38:27","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:27","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:27","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:28","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:38:34","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:35","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:38:35","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:35","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:36","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:36","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:38:36","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:37","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:38","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:38","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:38:38","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:39","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:41","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:41","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:38:41","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:41","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:42","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:42","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:38:42","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:38:43","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:38:53","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:41:35","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:45:39","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:45:46","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:45:46","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:46:01","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:46:01","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:46:19","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:46:50","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:46:50","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:46:50","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:46:50","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:46:50","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:51:46","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:51:56","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:51:56","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:52:10","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:52:10","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:52:15","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:52:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:52:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:52:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:52:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:52:26","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:54:17","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:19","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:19","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:20","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:21","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:21","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:54:21","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:21","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:22","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:22","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:54:22","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:23","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:54:27","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:54:38","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:38","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:38","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:38","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:54:38","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 13:56:13","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:56:22","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:56:22","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:56:27","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 13:56:27","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:56:30","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 13:56:48","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:56:48","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:56:48","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 13:56:48","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:00:03","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:00:14","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:00:14","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:00:23","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:00:23","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:00:26","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:05:27","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:05:35","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:05:35","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:05:40","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:05:47","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:05:47","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:05:47","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:09:22","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:09:31","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:09:31","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:09:33","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:12:04","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:12:04","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:12:11","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:12:11","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:12:15","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:12:15","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:12:26","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:12:26","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:14:06","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:14:30","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:16:14","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:18:18","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:18:27","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:18:27","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:18:34","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:18:34","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:18:39","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:22:12","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:22:18","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:22:18","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:22:23","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:22:23","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:22:25","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:22:32","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:22:32","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:22:32","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:22:32","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:24:55","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:25:05","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:25:05","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:25:12","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:25:12","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:25:16","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:25:37","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:25:37","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:25:37","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"13/05/2024 14:27:39","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:27:53","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:27:53","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:02","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:28:02","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:08","actualLevel":"2","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:28:08","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:14","actualLevel":"2","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:28:14","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:18","actualLevel":"2","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"13/05/2024 14:28:18","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:22","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"13/05/2024 14:28:28","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock(Clone)"}

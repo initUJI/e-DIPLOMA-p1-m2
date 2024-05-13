@@ -31,8 +31,8 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
             if ((SceneManager.GetActiveScene().buildIndex == 0))
             {
                 yield return new WaitUntil(() => p.characterInPlant());
-            }    
-
+            }
+            yield return new WaitForSeconds(1f);
             if (p.characterInPlant())
             {
                 p.humidityChecked = true;

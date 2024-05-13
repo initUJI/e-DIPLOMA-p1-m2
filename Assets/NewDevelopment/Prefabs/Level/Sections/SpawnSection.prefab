@@ -173,7 +173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451138713855006024, guid: 0184c24a75f15a74a84c715a37de9c32, type: 3}
       propertyPath: m_Radius
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 778980346642704611, guid: 0184c24a75f15a74a84c715a37de9c32, type: 3}
       propertyPath: m_LocalRotation.w

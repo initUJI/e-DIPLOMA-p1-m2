@@ -196,7 +196,9 @@ public class MainBlock : Block, WithBottomSocket
             Debug.Log("B");
 
             currentBlock.SetGlowing(false);
-            
+
+            yield return new WaitForSeconds(0.5f);
+            yield return new WaitUntil(() => GameObject.FindObjectOfType<Character>().Motionless());
             currentBlock = (ExecutableBlock)currentBlock.getSocketBlock(((WithBottomSocket)currentBlock).getBottomSocket()); // Go to the next block  
             //Debug.Log(currentBlock);
         }

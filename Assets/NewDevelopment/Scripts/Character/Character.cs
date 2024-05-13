@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     private GameObject child;
     private float unit = 2f;
     private const float speed = 2f;
-    private const float rotateSpeed = 90f;
+    private const float rotateSpeed = 150f;
     private float timeAnimationCutOrBreak = ANIMATION_TIME_OBJECT;
     private Transform levelTransform;
     private EventsManager eventsManager;
@@ -48,6 +48,8 @@ public class Character : MonoBehaviour
 
     public bool Motionless()
     {
+        Debug.Log(isForwarding);
+        Debug.Log(isRotating);
         return !(isForwarding || isRotating /*|| isCutting || isBreaking || isAnimated || objectIsFalling || animator.enabled*/);
     }
 
@@ -137,9 +139,14 @@ public class Character : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-            if (Mathf.Approximately(transform.position.z, targetPosition.z) 
-                && Mathf.Approximately(transform.position.y, targetPosition.y) 
-                && Mathf.Approximately(transform.position.x, targetPosition.x))
+            // Obtiene las posiciones de los objetos, pero establece sus valores de y en 0
+            Vector3 position1 = new Vector3(transform.position.x, 0, transform.position.z);
+            Vector3 position2 = new Vector3(targetPosition.x, 0, targetPosition.z);
+
+            // Calcula la distancia entre los dos puntos en el plano XY y muestra el resultado en la consola
+            float distance = Vector3.Distance(position1, position2);
+
+            if (distance < 0.01 && distance > -0.01)
             {
                 isForwarding = false;
                 isAnimated = false;
