@@ -109,6 +109,6 @@ public class ShelfController : MonoBehaviour
 
     public void actualiceText()
     {
-        transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString() + 1;
+        transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock) + 1).ToString();
     }
 }

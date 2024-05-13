@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class LevelManager : NumberOfBlocks
 {
@@ -59,6 +61,7 @@ public class LevelManager : NumberOfBlocks
         changeLevel(lastLevelCompleted() + 1);
     }
 
+
     private void Update()
     {
         timerForClues += Time.deltaTime;
@@ -81,6 +84,11 @@ public class LevelManager : NumberOfBlocks
             optionsLevelCompleted.SetActive(true);
 
             optionsLevelCompleted.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Math.Round(allLevelTimer).ToString()  + " seconds";
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            resetAllsaves();
         }
     }
 
