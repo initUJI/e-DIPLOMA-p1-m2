@@ -65,22 +65,27 @@ public class CanBeDeleted : MonoBehaviour
                     }
 
                     eventsManager.deleteWindowOpen();
-                } else if(!primaryButtonValue && openWindow)
+                } /*else if(!primaryButtonValue && openWindow)
                 {
-                    // fermer la fenetre
-                    currentWindow.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
-                    //Destroy(currentWindow);
-                    //Debug.Log("Fermeture !");
-                    openWindow = false;
-
-                    if (eventsManager == null)
-                    {
-                        eventsManager = FindFirstObjectByType<EventsManager>();
-                    }
-
-                    eventsManager.deleteWindowClose();
-                }
+                    closeDeleteWindow();
+                }*/
             }
         }
+    }
+
+    public void closeDeleteWindow()
+    {
+        // fermer la fenetre
+        currentWindow.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
+        //Destroy(currentWindow);
+        //Debug.Log("Fermeture !");
+        openWindow = false;
+
+        if (eventsManager == null)
+        {
+            eventsManager = FindFirstObjectByType<EventsManager>();
+        }
+
+        eventsManager.deleteWindowClose();
     }
 }

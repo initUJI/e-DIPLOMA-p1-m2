@@ -34,4 +34,18 @@ private bool _deadTimeActive = false;
        
         }
     }
+
+    public void closeDeleteWindow()
+    {
+        // fermer la fenetre
+        gameObject.transform.parent.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
+        //Destroy(currentWindow);
+
+        if (eventsManager == null)
+        {
+            eventsManager = FindFirstObjectByType<EventsManager>();
+        }
+
+        eventsManager.deleteWindowClose();
+    }
 }

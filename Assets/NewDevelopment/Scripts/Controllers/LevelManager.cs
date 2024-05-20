@@ -84,6 +84,15 @@ public class LevelManager : NumberOfBlocks
             optionsLevelCompleted.SetActive(true);
 
             optionsLevelCompleted.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Math.Round(allLevelTimer).ToString()  + " seconds";
+
+            GameObject.Find("phoneik").GetComponent<AudioSource>().Play();
+
+            CenterWallController centerWallController = GameObject.FindObjectOfType<CenterWallController>();
+
+            if (!centerWallController.wallUP)
+            {
+                centerWallController.centerWallUp();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.I))

@@ -204,7 +204,7 @@ public class Instruccion : MainMenuController
 
     private string dynamics1 = "This is the ‘Main block’. It is in charge of executing all the instructions from top to bottom. " +
     "To place a block, simply grab it and pull it underneath the previous block.";
-    private string dynamics2 = "To delete a block press the A button to display the delete window. To confirm, keep the A button pressed, " +
+    private string dynamics2 = "To delete a block press the A button to display the delete window. To confirm " +
         "point the delete button with the controller and press the trigger.";
     private string dynamics3 = "The objective will be to drive the car to the plant to collect the humidity from it. "
         + "In this example, we will need a ‘Move forward’ block to move the car forward one square and a ‘Get humidity’ block to collect humidity.";

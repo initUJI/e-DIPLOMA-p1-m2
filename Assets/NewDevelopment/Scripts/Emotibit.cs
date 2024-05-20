@@ -71,6 +71,7 @@ public class Emotibit : MonoBehaviour
     {
         myUDPClient = gameObject.AddComponent<ClienteUDP>();
         myUDPClient.onDataReceived = OnNewData;
+        Play();
     }
 
     private void Awake()
@@ -262,7 +263,7 @@ public class Emotibit : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-
+        Stop("");
     }
 
     // Validates the given path to ensure it is a usable file path.
