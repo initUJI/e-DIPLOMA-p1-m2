@@ -49,11 +49,10 @@ public class EventsManager : MonoBehaviour
 
         string projectDirectory = Directory.GetParent(Application.dataPath).FullName;
         directoryPath = Path.Combine(projectDirectory, "Data");
-        filePath = Path.Combine(directoryPath, "data.json");
+        filePath = Path.Combine(directoryPath, "data_" + DateTime.Now.ToString() +".json");
 
         Data data = new Data("userID", "DateTime", "actualLevel", "action");
         writeInJson(data);
-
        
 
         if (xrOrigin == null && GameObject.Find("XR Origin") != null)
@@ -72,11 +71,11 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "BUTTON PLAY PRESSED");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "BUTTON PLAY PRESSED");
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "BUTTON PLAY PRESSED");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "BUTTON PLAY PRESSED");
         }
         buttonAudio.GetComponent<AudioSource>().Play();
         writeInJson(data);
@@ -90,7 +89,7 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "LEVEL COMPLETED: " + num.ToString());
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "LEVEL COMPLETED: " + num.ToString());
             writeInJson(data);
         }
     }
@@ -103,7 +102,7 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "SCENE CLEANED, ALL BLOCKS RESETED");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "SCENE CLEANED, ALL BLOCKS RESETED");
             writeInJson(data);
         }
 
@@ -118,7 +117,7 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "USED CLUE: " + clue);
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "USED CLUE: " + clue);
             writeInJson(data);
         }
         buttonAudio.GetComponent<AudioSource>().Play();
@@ -132,7 +131,7 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "PRESSED TEST STAND: " + direction);
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "PRESSED TEST STAND: " + direction);
             writeInJson(data);
         }
         buttonAudio.GetComponent<AudioSource>().Play();
@@ -146,11 +145,11 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "CHARACTER START MOVING: " + direction);
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "CHARACTER START MOVING: " + direction);
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "CHARACTER START MOVING: " + direction);
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "CHARACTER START MOVING: " + direction);
         }
 
         writeInJson(data);
@@ -164,11 +163,11 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW OPEN");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW OPEN");
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "DELETE BLOCK WINDOW OPEN");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "DELETE BLOCK WINDOW OPEN");
         }
 
         writeInJson(data);
@@ -182,11 +181,11 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW CLOSE");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW CLOSE");
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "DELETE BLOCK WINDOW CLOSE");
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "DELETE BLOCK WINDOW CLOSE");
         }
 
         writeInJson(data);
@@ -200,11 +199,11 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "DELETED BLOCK: " + block.name);
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "DELETED BLOCK: " + block.name);
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(),"MAIN MENU", "DELETED BLOCK: " + block.name);
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(),"MAIN MENU", "DELETED BLOCK: " + block.name);
         }
         buttonAudio.GetComponent<AudioSource>().Play();
         writeInJson(data);
@@ -234,13 +233,13 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(),
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
                 "OBJECT " + interactor.interactableObject.transform.gameObject.name + 
                 " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU",
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU",
                  "OBJECT " + interactor.interactableObject.transform.gameObject.name +
                 " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
         }
@@ -259,12 +258,12 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(),
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
                 "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(),
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(),
                 "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
 
@@ -281,12 +280,12 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), 
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), 
                 "OBJECT GRABBED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", 
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", 
                 "OBJECT GRABBED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
 
@@ -309,12 +308,12 @@ public class EventsManager : MonoBehaviour
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), 
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), 
                 "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
         else
         {
-            data = new Data(userID, DateTime.Now.ToString(), 
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), 
                 "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
 
@@ -392,11 +391,11 @@ public class EventsManager : MonoBehaviour
 
             if (levelManager != null)
             {
-                data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "TELEPORTATION");
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "TELEPORTATION");
             }
             else
             {
-                data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "TELEPORTATION");
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "TELEPORTATION");
             }
 
             writeInJson(data);
@@ -425,7 +424,7 @@ public class EventsManager : MonoBehaviour
                 Debug.Log("La carpeta 'data' ya existe en la ruta: " + dataFolderPath);
             }
 
-            fileName = "data_" + userID + "_" + DateTime.Now.ToString() + ".json";
+            fileName = "data_" + userID + "_" + DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString() + ".json";
             filePath = Path.Combine(dataFolderPath, fileName);
 
             Data data;
@@ -434,11 +433,11 @@ public class EventsManager : MonoBehaviour
 
             if (levelManager != null)
             {
-                data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "USER REGISTERED");
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "USER REGISTERED");
             }
             else
             {
-                data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "USER REGISTERED");
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "USER REGISTERED");
             }
             PlayerPrefs.DeleteAll();
             buttonAudio.GetComponent<AudioSource>().Play();
@@ -461,11 +460,11 @@ public class EventsManager : MonoBehaviour
 
             if (levelManager != null)
             {
-                data = new Data(userID, DateTime.Now.ToString(), levelManager.getActualLevel().ToString(), "PRESSED BUTTON: " + button);
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "PRESSED BUTTON: " + button);
             }
             else
             {
-                data = new Data(userID, DateTime.Now.ToString(), "MAIN MENU", "PRESSED BUTTON: " + button);
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "PRESSED BUTTON: " + button);
             }
             buttonAudio.GetComponent<AudioSource>().Play();
             writeInJson(data);

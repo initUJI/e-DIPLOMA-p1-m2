@@ -340,6 +340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass
       objectReference: {fileID: 0}
+    - target: {fileID: 5121088121055413810, guid: 4cae4d1d46397e64b81ba3795aac3a18, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cae4d1d46397e64b81ba3795aac3a18, type: 3}
 --- !u!4 &2372796101599896583 stripped
