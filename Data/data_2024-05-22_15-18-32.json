@@ -1,0 +1,40 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1716383917","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383918","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383919","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383920","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383921","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383922","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383922","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383923","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383924","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383924","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1716383924","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383925","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383926","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383926","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1716383926","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383928","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383929","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383929","actualLevel":"1","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1716383929","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383930","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1716383931","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1716383931","actualLevel":"1","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1716383931","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1716383932","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1716383936","actualLevel":"1","action":"LEVEL COMPLETED: 1"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1716383940","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1716383944","actualLevel":"2","action":"CHARACTER START MOVING: Forward"}
+{"id":"anom","dateTime":"1716383944","actualLevel":"2","action":"PRESSED TEST STAND: FORWARD"}
+{"id":"anom","dateTime":"1716383945","actualLevel":"2","action":"CHARACTER START MOVING: Forward"}
+{"id":"anom","dateTime":"1716383945","actualLevel":"2","action":"PRESSED TEST STAND: FORWARD"}

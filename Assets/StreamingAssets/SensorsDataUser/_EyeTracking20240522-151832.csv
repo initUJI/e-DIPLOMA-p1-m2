@@ -1,0 +1,29 @@
+userID;fecha
+FakeUser42;22/05/2024_15:18
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1716383913,01226;,08329;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1716383917,13793;4,20869;Test1;SALE_HEAD;Water: Part of the level
+1716383917,29093;4,36226;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1716383917,95824;5,02957;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1716383918,22291;5,29349;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1716383919,98880;7,05919;Test1;SALE_HEAD;Limit (7): Part of the level
+1716383920,16889;7,23960;Test1;ENTRA_HEAD;Limit (7): Part of the level
+1716383922,72427;9,79558;Test1;SALE_HEAD;Limit (23): Part of the level
+1716383922,80804;9,87844;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1716383923,46069;10,53164;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1716383923,61308;10,68368;Test1;ENTRA_HEAD;Water: Part of the level
+1716383924,96086;12,03154;Test1;SALE_HEAD;Limit (23): Part of the level
+1716383925,04464;12,11500;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1716383925,46059;12,53159;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1716383925,53123;12,60255;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1716383927,90523;14,97578;Test1;SALE_HEAD;Limit (3): Part of the level
+1716383927,94639;15,01742;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1716383928,51587;15,58647;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1716383928,57187;15,64273;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1716383929,97371;17,04473;Test1;SALE_HEAD;Limit (22): Part of the level
+1716383930,39118;17,46218;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1716383940,65737;27,72799;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1716383944,22310;31,29426;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1716383944,37624;31,44724;Test1;ENTRA_HEAD;Grass: Part of the level
+1716383945,79257;32,86383;Test1;SALE_HEAD;Water: Part of the level
+1716383945,86207;32,93322;Test1;ENTRA_HEAD;Center Wall (1): Part of Player Area

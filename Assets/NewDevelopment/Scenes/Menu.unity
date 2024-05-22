@@ -6228,6 +6228,7 @@ MonoBehaviour:
   moveForwardPrefab: {fileID: 3981423829743781137, guid: 027355580f7ba624692cb8553285cb56, type: 3}
   getHumidityPrefab: {fileID: 4977639878174293425, guid: b3ff0ac935f3bcb4e86ff97475975b59, type: 3}
   tutorialLevelPrefab: {fileID: 9065288786484025024, guid: 24a2070311c27644bbbd910cdabb486e, type: 3}
+  testStandPrefab: {fileID: 4395284579927362054, guid: ac53258bb1dfa8d4eaa3076000f27d91, type: 3}
   grabInteractable: {fileID: 0}
   platform: {fileID: 0}
   mainBlock: {fileID: 0}

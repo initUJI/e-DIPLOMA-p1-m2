@@ -144,6 +144,20 @@ public class SensorsData : MonoBehaviour
         if (Physics.Raycast(origin, headDir.normalized, out hit, Mathf.Infinity))
         {
             _objectLookingWithHeadName = hit.collider.gameObject.name;
+
+            if (GetHighestParent(hit.collider.gameObject.transform).name.Contains("Level"))
+            {
+                _objectLookingWithHeadName += ": Part of the level";
+            }
+            else if (GetHighestParent(hit.collider.gameObject.transform).name.Contains("Block"))
+            {
+                _objectLookingWithHeadName += ": Part of a Block";
+            }
+            else
+            {
+                _objectLookingWithHeadName += ": Part of " + GetHighestParent(hit.collider.gameObject.transform).name;
+            }
+
             if (!lookingAtObjectWithHead)
             {
                 lookingAtObjectWithHead = true;
@@ -168,6 +182,20 @@ public class SensorsData : MonoBehaviour
         if (Physics.Raycast(origin, eyeDir.normalized, out hit, Mathf.Infinity))
         {
             _objectLookingName = hit.collider.gameObject.name;
+
+            if (GetHighestParent(hit.collider.gameObject.transform).name.Contains("Level"))
+            {
+                _objectLookingName += ": Part of the level";
+            }
+            else if (GetHighestParent(hit.collider.gameObject.transform).name.Contains("Block"))
+            {
+                _objectLookingName += ": Part of a Block";
+            }
+            else
+            {
+                _objectLookingName += ": Part of " + GetHighestParent(hit.collider.gameObject.transform).name;
+            }
+
             if (!lookingAtObject)
             {
                 lookingAtObject = true;
@@ -201,5 +229,17 @@ public class SensorsData : MonoBehaviour
         Transform[] ts = fromGameObject.transform.GetComponentsInChildren<Transform>();
         foreach (Transform t in ts) if (t.gameObject.name == withName) return t.gameObject;
         return null;
+    }
+
+    public static Transform GetHighestParent(Transform currentTransform)
+    {
+        // Iterar a través de los padres hasta llegar al padre más alto
+        while (currentTransform.parent != null)
+        {
+            currentTransform = currentTransform.parent;
+        }
+
+        // Devuelve el Transform del padre más alto
+        return currentTransform;
     }
 }

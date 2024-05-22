@@ -27,6 +27,7 @@ public class LevelManager : NumberOfBlocks
     [SerializeField] private GameObject noClueImage;
     [SerializeField] private GameObject optionsWindow;
     [SerializeField] private GameObject confettiSystem;
+    [SerializeField] private GameObject phone;
 
     private GameObject optionsInGameplay;
     private GameObject optionsLevelCompleted;
@@ -85,7 +86,7 @@ public class LevelManager : NumberOfBlocks
 
             optionsLevelCompleted.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Math.Round(allLevelTimer).ToString()  + " seconds";
 
-            GameObject.Find("phoneik").GetComponent<AudioSource>().Play();
+            phone.GetComponent<AudioSource>().Play();
 
             CenterWallController centerWallController = GameObject.FindObjectOfType<CenterWallController>();
 

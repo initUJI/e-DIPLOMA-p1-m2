@@ -17,6 +17,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject moveForwardPrefab;
     [SerializeField] private GameObject getHumidityPrefab;
     [SerializeField] private GameObject tutorialLevelPrefab;
+    [SerializeField] private GameObject testStandPrefab;
 
     private GameObject MainOptions;
     private GameObject TutorialOptions;
@@ -36,6 +37,7 @@ public class MainMenuController : MonoBehaviour
     private Vector3 block2Location;
     private Vector3 block3Location;
     private Vector3 levelLocation;
+    private Vector3 testStandLocation;
 
     private EventsManager eventsManager;
 
@@ -60,6 +62,7 @@ public class MainMenuController : MonoBehaviour
         block2Location = new Vector3(-0.3f, 0.8f, -0.82f);
         block3Location = new Vector3(0.13f, 1.0f, -0.92f);
         levelLocation = new Vector3(-0.233f, -0.46f, -0.746f);
+        testStandLocation = new Vector3(0.036f, 0.35f, -0.68f);
     }
 
     public void saveUserId()
@@ -160,10 +163,21 @@ public class MainMenuController : MonoBehaviour
         moveForwardBlock.transform.position = block2Location;
         getHumidityBlock = Instantiate(getHumidityPrefab);
         getHumidityBlock.transform.position = block3Location;
-        Instantiate(tutorialLevelPrefab);
+        GameObject tutorialLevel = Instantiate(tutorialLevelPrefab);
         GameObject.FindObjectOfType<GameManager>().NewLevel();
         text.text = ins.getDynamicsString(3);
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(3, mainBlock, dynamicTutorialCompleted));
+
+        Destroy(moveForwardBlock);
+        Destroy(getHumidityBlock);
+        Destroy(mainBlock);
+        Destroy(tutorialLevel);
+        tutorialLevel = Instantiate(tutorialLevelPrefab);
+        GameObject testStand = Instantiate(testStandPrefab);
+        testStand.transform.position = testStandLocation;
+        testStand.AddComponent<ButtonManager>();
+        text.text = ins.getDynamicsString(4);
+        yield return new WaitUntil(() => ins.checkDynamicsInstruccion(4, null, false, testStand));
 
         text.text = "Tutorial completed!";
     }
@@ -208,11 +222,13 @@ public class Instruccion : MainMenuController
         "point the delete button with the controller and press the trigger.";
     private string dynamics3 = "The objective will be to drive the car to the plant to collect the humidity from it. "
         + "In this example, we will need a ‘Move forward’ block to move the car forward one square and a ‘Get humidity’ block to collect humidity.";
+    private string dynamics4 = "This is the test stand, use it to help you visualise the path before you start programming. Press all the buttons to see what they do.";
 
     public string getDynamicsString(int num)
     {
         switch (num)
         {
+            case 4: return dynamics4;
             case 3: return dynamics3;
             case 2: return dynamics2;
             case 1: return dynamics1;
@@ -233,10 +249,11 @@ public class Instruccion : MainMenuController
         }
     }
 
-    public bool checkDynamicsInstruccion(int num, GameObject mainBlock = null, bool dynamicTutorialCompleted = false)
+    public bool checkDynamicsInstruccion(int num, GameObject mainBlock = null, bool dynamicTutorialCompleted = false, GameObject testStand = null)
     {
         switch (num)
         {
+            case 4: return checkDynamics4(testStand);
             case 3: return checkDynamics3(dynamicTutorialCompleted);
             case 2: return checkDynamics2();
             case 1: return checkDynamics1(mainBlock);
@@ -255,6 +272,11 @@ public class Instruccion : MainMenuController
             case 1: return checkControls1(grab);
             default: return false;
         }
+    }
+
+    public bool checkDynamics4(GameObject testStand)
+    {
+        return testStand.GetComponent<ButtonManager>().CheckAllButtonsPressed();
     }
 
     public bool checkDynamics3(bool dynamicTutorialCompleted)

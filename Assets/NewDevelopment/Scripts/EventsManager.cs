@@ -49,7 +49,7 @@ public class EventsManager : MonoBehaviour
 
         string projectDirectory = Directory.GetParent(Application.dataPath).FullName;
         directoryPath = Path.Combine(projectDirectory, "Data");
-        filePath = Path.Combine(directoryPath, "data_" + DateTime.Now.ToString() +".json");
+        filePath = Path.Combine(directoryPath, "data_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") +".json");
 
         Data data = new Data("userID", "DateTime", "actualLevel", "action");
         writeInJson(data);
