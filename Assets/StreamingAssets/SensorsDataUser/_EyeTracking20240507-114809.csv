@@ -1,6 +1,0 @@
-userID;fecha
-FakeUser42;07/05/2024_11:48
-unixTimestamp;Timestamp;Situacion;Accion;Objeto
-1715075289,09034;,08999;Test1;ENTRA_HEAD;Center Wall
-1715075290,89886;1,89807;Test1;SALE_HEAD;Center Wall
-1715075291,78195;2,78161;Test1;ENTRA_HEAD;Center Wall
