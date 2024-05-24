@@ -49,6 +49,14 @@ public class SensorsData : MonoBehaviour
 
     MeshRenderer selected = null;
 
+    // Variables para el seguimiento de la dirección de la mirada
+    private Vector3 initialGazeDirection;
+    private bool initialGazeDirectionSet = false;
+    private bool isLookingBackward = false;
+    private bool isLookingLeftOrRight = false;
+    private float angleThreshold = 45f; // Umbral para determinar los cambios de dirección
+    private float backwardAngleThreshold = 135f; // Umbral para determinar si el jugador está mirando hacia atrás
+
     public void Awake()
     {
         xrHead = Camera.main.gameObject;
@@ -120,7 +128,100 @@ public class SensorsData : MonoBehaviour
     {
         _eyeTracking = new Vector3(-eyeTracking.CombinedGaze.X, eyeTracking.CombinedGaze.Y, eyeTracking.CombinedGaze.Z);
         //_eyeTracking = new Vector3(-eyeTracking.LeftEye.Gaze.X, eyeTracking.LeftEye.Gaze.Y, eyeTracking.LeftEye.Gaze.Z); // saca el vector solo del ojo izquierdo
-        if(_EyeTrackVectorText) _EyeTrackVectorText.SetText(_eyeTracking + "");
+
+        if (!initialGazeDirectionSet)
+        {
+            initialGazeDirection = _eyeTracking;
+            initialGazeDirectionSet = true;
+            Debug.Log("La dirección inicial se ha establecido como centro.");
+            return;
+        }
+
+        // Calcula el ángulo entre la dirección de la mirada actual y la dirección inicial
+        float angleToInitialDirection = Vector3.Angle(_eyeTracking, initialGazeDirection);
+
+        // Determina la dirección del cambio de dirección
+        Vector3 crossProduct = Vector3.Cross(initialGazeDirection, _eyeTracking);
+        float directionChange = crossProduct.y;
+
+        // Detecta los cambios de dirección específicos
+        if (angleToInitialDirection > angleThreshold)
+        {
+            if (directionChange > 0)
+            {
+                if (!isLookingLeftOrRight)
+                {
+                    Debug.Log("El jugador cambió su mirada de centro a derecha.");
+                    HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador cambió su mirada de centro a derecha.");
+                    isLookingLeftOrRight = true;
+                }
+            }
+            else
+            {
+                if (!isLookingLeftOrRight)
+                {
+                    Debug.Log("El jugador cambió su mirada de centro a izquierda.");
+                    HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador cambió su mirada de centro a izquierda.");
+                    isLookingLeftOrRight = true;
+                }
+            }
+        }
+        else if (directionChange > 0 && angleToInitialDirection > backwardAngleThreshold && !isLookingBackward)
+        {
+            Debug.Log("El jugador cambió su mirada de centro a atrás pasando por la derecha.");
+            HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador cambió su mirada de centro a atrás pasando por la derecha.");
+            isLookingBackward = true;
+            isLookingLeftOrRight = false;
+        }
+        else if (directionChange < 0 && angleToInitialDirection > backwardAngleThreshold && !isLookingBackward)
+        {
+            Debug.Log("El jugador cambió su mirada de centro a atrás pasando por la izquierda.");
+            HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador cambió su mirada de centro a atrás pasando por la izquierda.");
+            isLookingBackward = true;
+            isLookingLeftOrRight = false;
+        }
+        else if (angleToInitialDirection < angleThreshold && (isLookingBackward || isLookingLeftOrRight))
+        {
+            if (isLookingBackward)
+            {
+                if (isLookingLeftOrRight)
+                {
+                    if (directionChange > 0)
+                    {
+                        Debug.Log("El jugador volvió a mirar hacia adelante desde atrás después de pasar por la derecha.");
+                        HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador volvió a mirar hacia adelante desde atrás después de pasar por la derecha.");
+                    }
+                    else
+                    {
+                        Debug.Log("El jugador volvió a mirar hacia adelante desde atrás después de pasar por la izquierda.");
+                        HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador volvió a mirar hacia adelante desde atrás después de pasar por la izquierda.");
+                    }
+                    isLookingLeftOrRight = false;
+                }
+                else
+                {
+                    Debug.Log("El jugador volvió a mirar hacia adelante desde atrás.");
+                    HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador volvió a mirar hacia adelante desde atrás.");
+                }
+                isLookingBackward = false;
+            }
+            else if (isLookingLeftOrRight)
+            {
+                if (directionChange > 0)
+                {
+                    Debug.Log("El jugador volvió a mirar hacia adelante desde la derecha.");
+                    HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador volvió a mirar hacia adelante desde la derecha.");
+                }
+                else
+                {
+                    Debug.Log("El jugador volvió a mirar hacia adelante desde la izquierda.");
+                    HPGameManager.Instance._dataManager.AddEyeAction(eDataEyeTracking.DIRECTION_CHANGE, "El jugador volvió a mirar hacia adelante desde la izquierda.");
+                }
+                isLookingLeftOrRight = false;
+            }
+        }
+
+        if (_EyeTrackVectorText) _EyeTrackVectorText.SetText(_eyeTracking + "");
     }
     private void AccumulateHeartRate(HeartRate heartRate)
     {

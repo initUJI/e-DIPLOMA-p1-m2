@@ -11,7 +11,7 @@ public class cDataManager : MonoBehaviour {
     private static cDataManager instance;
     private static bool iniciado = false;
     private static float offsetTime;
-    private static cDataSituaciones dataSituaciones;
+    //private static cDataSituaciones dataSituaciones;
     private static cDataEyeTracking dataEyeTracking;
     private static cDataCognitiveLoad dataCognitiveLoad;
     private static cDataHeartRate dataHeartRate;
@@ -33,7 +33,7 @@ public class cDataManager : MonoBehaviour {
 
         nfi.NumberDecimalSeparator = ".";
 
-        dataSituaciones = new cDataSituaciones();
+        //dataSituaciones = new cDataSituaciones();
         dataEyeTracking = new cDataEyeTracking();
         dataCognitiveLoad = new cDataCognitiveLoad();
         dataHeartRate = new cDataHeartRate();
@@ -43,7 +43,7 @@ public class cDataManager : MonoBehaviour {
 
 
     private void OnApplicationQuit() {
-        if (null != dataSituaciones) dataSituaciones.CSVCerrar();
+        //if (null != dataSituaciones) dataSituaciones.CSVCerrar();
         if (null != dataEyeTracking) dataEyeTracking.CSVCerrar();
         if (null != dataCognitiveLoad) dataCognitiveLoad.CSVCerrar();
         if (null != dataHeartRate) dataHeartRate.CSVCerrar();
@@ -66,13 +66,13 @@ public class cDataManager : MonoBehaviour {
         return time.ToString(nfi);
     }
 
-    public void AddSituacionAction(eDataSitAction accion, string dato1 = "", float id1 = -1, string extra = "") {
+    /*public void AddSituacionAction(eDataSitAction accion, string dato1 = "", float id1 = -1, string extra = "") {
         if (!iniciado) {
             Debug.LogError("<b>[Save]</b>Intentando guardar situacion sin iniciar sistema de datos");
             return;
         }
         dataSituaciones.AddResponse(HPGameManager.SitActualEnum, accion, dato1, id1, extra);
-    }
+    }*/
     public void AddEyeAction(eDataEyeTracking accion, string objeto) {
         if (!iniciado) {
             Debug.LogError("<b>[Save]</b>Intentando guardar eyetracking sin iniciar sistema de datos");

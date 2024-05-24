@@ -11,7 +11,8 @@ public enum eDataEyeTracking {
     ENTRA,
     SALE,
     ENTRA_HEAD,
-    SALE_HEAD
+    SALE_HEAD,
+    DIRECTION_CHANGE
 }
 public class cDataEyeTracking {
     private float offsetTime;

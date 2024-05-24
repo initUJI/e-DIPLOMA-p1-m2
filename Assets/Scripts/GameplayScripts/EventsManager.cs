@@ -33,11 +33,6 @@ public class EventsManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    //Faltan eventos: evento se da al boton de abandonar nivel,
-    //evento se confirma abandonar nivel
-
-    //Falta funcionalidad: poder abandonar nivel
-
     // Start is called before the first frame update
     void Start()
     {
@@ -413,19 +408,20 @@ public class EventsManager : MonoBehaviour
              userID = s;
 
             string dataFolderPath = Directory.GetParent(Application.dataPath).FullName;
+            directoryPath = Path.Combine(dataFolderPath, "Data");
 
-            if (!Directory.Exists(dataFolderPath))
+            if (!Directory.Exists(directoryPath))
             {
-                Directory.CreateDirectory(dataFolderPath);
-                Debug.Log("Carpeta 'data' creada en la ruta: " + dataFolderPath);
+                Directory.CreateDirectory(directoryPath);
+                Debug.Log("Carpeta 'data' creada en la ruta: " + directoryPath);
             }
             else
             {
-                Debug.Log("La carpeta 'data' ya existe en la ruta: " + dataFolderPath);
+                Debug.Log("La carpeta 'data' ya existe en la ruta: " + directoryPath);
             }
 
             fileName = "data_" + userID + "_" + DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString() + ".json";
-            filePath = Path.Combine(dataFolderPath, fileName);
+            filePath = Path.Combine(directoryPath, fileName);
 
             Data data;
 
