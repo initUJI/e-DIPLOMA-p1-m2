@@ -185,7 +185,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5578588983296
-    m_Localized: Aim at the cube and hold down the controller grip to pick it up.
+    m_Localized: "\xB7 Aim at the cube with the controller.\r\n\n\xB7 Hold down the
+      controller grip to move the cube.\r\n\n\xB7 Release the controller grip to
+      drop the cube"
     m_Metadata:
       m_Items: []
   - m_Id: 5602379075584

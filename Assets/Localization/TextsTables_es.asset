@@ -222,8 +222,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5578588983296
-    m_Localized: "Apunta al cubo y mant\xE9n pulsada la empu\xF1adura del mando para
-      recogerlo."
+    m_Localized: "\xB7 Apunta al cubo con el control.\r\n\n\xB7 Mant\xE9n presionado
+      el agarre del control para mover el cubo.\r\n\n\xB7 Suelta el agarre del control
+      para soltar el cubo."
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
