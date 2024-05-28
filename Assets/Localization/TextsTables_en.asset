@@ -185,13 +185,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5578588983296
-    m_Localized: "\xB7 Aim at the cube with the controller.\r\n\n\xB7 Hold down the
-      controller grip to move the cube.\r\n\n\xB7 Release the controller grip to
-      drop the cube"
+    m_Localized: "Aim at the cube with the controller.\r\n\nHold down the controller
+      grip to move the cube.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 5602379075584
-    m_Localized: Release the grip to release the cube.
+    m_Localized: Release the controller grip to drop the cube
     m_Metadata:
       m_Items: []
   - m_Id: 5613250711552
@@ -199,8 +198,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5635396636672
-    m_Localized: Aim at the platform floor and press the grip once to move to that
-      location. You can also rotate the view with the left joystick.
+    m_Localized: 'Aim at the platform floor .
+
+      
+
+      Press the grip once
+      to move to that location.
+
+      
+
+      Rotate the view with the left joystick.'
     m_Metadata:
       m_Items: []
   - m_Id: 5647811776512
@@ -208,21 +215,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5840078671872
-    m_Localized: "This is the \u2018Main block\u2019. It is in charge of executing
-      all the instructions from top to bottom. To place a block, simply grab it and
-      pull it underneath the previous block."
+    m_Localized: 'This is the "Main block", responsible for executing all instructions
+      from top to bottom.
+
+
+      To place a block, grab it and put it underneath
+      the previous block.'
     m_Metadata:
       m_Items: []
   - m_Id: 5856621006848
-    m_Localized: To delete a block press the A button to display the delete window.
-      To confirm point the delete button with the controller and press the trigger.
+    m_Localized: 'To delete a block, press the A button to display the delete window.
+
+
+      To
+      confirm, point at the delete button with the controller and press the trigger.'
     m_Metadata:
       m_Items: []
   - m_Id: 5871015858176
-    m_Localized: "The objective will be to drive the car to the plant to collect
-      the humidity from it. In this example, we will need a \u2018Move forward\u2019
-      block to move the car forward one square and a \u2018Get humidity\u2019 block
-      to collect humidity."
+    m_Localized: "The objective is to drive the car to the plant to collect humidity.\r\n\nWe
+      need a 'Move forward' block to \nmove the car forward one square.\r\n\nWe need
+      a 'Get humidity' block to collect humidity."
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
@@ -250,8 +262,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 715094267826176
-    m_Localized: This is the test stand, use it to help you visualise the path before
-      you start programming. Press all the buttons to see what they do.
+    m_Localized: 'This is the test stand, use it to help you visualize the path before
+      you start programming.
+
+
+      Press all the buttons to see what they do.'
     m_Metadata:
       m_Items: []
   - m_Id: 729998936805376

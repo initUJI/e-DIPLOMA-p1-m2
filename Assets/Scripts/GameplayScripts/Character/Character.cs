@@ -48,8 +48,6 @@ public class Character : MonoBehaviour
 
     public bool Motionless()
     {
-        Debug.Log(isForwarding);
-        Debug.Log(isRotating);
         return !(isForwarding || isRotating /*|| isCutting || isBreaking || isAnimated || objectIsFalling || animator.enabled*/);
     }
 
@@ -148,6 +146,7 @@ public class Character : MonoBehaviour
 
             if (distance < 0.01 && distance > -0.01)
             {
+                child = GameObject.FindGameObjectWithTag("Car");
                 isForwarding = false;
                 isAnimated = false;
                 targetPosition = transform.position;
@@ -163,6 +162,7 @@ public class Character : MonoBehaviour
                 && Mathf.Approximately(transform.position.y, targetPosition.y)
                 && Mathf.Approximately(transform.position.x, targetPosition.x))
             {
+                child = GameObject.FindGameObjectWithTag("Car");
                 isBehinding = false;
                 isAnimated = false;
                 targetPosition = transform.position;
@@ -178,6 +178,7 @@ public class Character : MonoBehaviour
             }
             else
             {
+                child = GameObject.FindGameObjectWithTag("Car");
                 isRotating = false;
                 isAnimated = false;
                 targetRotation = transform.rotation;

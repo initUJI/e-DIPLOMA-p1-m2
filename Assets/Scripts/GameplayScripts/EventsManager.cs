@@ -58,6 +58,11 @@ public class EventsManager : MonoBehaviour
         }
     }
 
+    public string getUserID()
+    {
+        return userID;
+    }
+
     public void playPressed()
     {
         Data data;
@@ -220,7 +225,7 @@ public class EventsManager : MonoBehaviour
 
     private void OnSocketEntered(SelectEnterEventArgs interactor)
     {
-        Debug.Log("Objeto cogido");
+        //Debug.Log("Objeto cogido");
 
         Data data;
 

@@ -40,7 +40,6 @@ public class SocketsControl : MonoBehaviour
 
     public void f_ToogleSockets(SelectEnterEventArgs args)
     {
-        print("");
         bool setTo = args.interactorObject.transform.GetComponent<XRRayInteractor>() ? false : true;
         foreach (XRSocketInteractor s in sockets)
         {

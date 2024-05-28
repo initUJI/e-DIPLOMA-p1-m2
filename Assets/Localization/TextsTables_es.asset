@@ -186,22 +186,28 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5871015858176
-    m_Localized: "El objetivo ser\xE1 conducir el coche hasta la planta para recoger
-      la humedad de la misma. En este ejemplo, necesitaremos un bloque 'Avanzar'
-      para hacer avanzar el coche una casilla y un bloque 'Obtener humedad' para
-      recoger la humedad."
+    m_Localized: 'El objetivo es conducir el coche hasta la planta para recoger la
+      humedad.
+
+
+      Necesitamos un bloque de ''Avanzar'' para mover el coche una
+      casilla hacia adelante.
+
+
+      Necesitamos un bloque de ''Obtener humedad''
+      para recoger la humedad.'
     m_Metadata:
       m_Items: []
   - m_Id: 5856621006848
-    m_Localized: "Para borrar un bloque pulse el bot\xF3n A para mostrar la ventana
-      de borrado. Para confirmar, apunte al bot\xF3n de borrado con el mando y pulse
-      el disparador."
+    m_Localized: "Para eliminar un bloque, presiona el bot\xF3n A para mostrar la
+      ventana de eliminaci\xF3n.\r\n\nPara confirmar, apunta al bot\xF3n de eliminaci\xF3n
+      con el control y presiona el gatillo."
     m_Metadata:
       m_Items: []
   - m_Id: 5840078671872
-    m_Localized: "Este es el \xABbloque principal\xBB. Se encarga de ejecutar todas
-      las instrucciones de arriba abajo. Para colocar un bloque, basta con agarrarlo
-      y tirar de \xE9l por debajo del bloque anterior."
+    m_Localized: "Este es el \xABbloque principal\xBB, responsable de ejecutar todas
+      las instrucciones de arriba a abajo.\r\n\r\nPara colocar un bloque, c\xF3gelo
+      y ponlo debajo del bloque anterior."
     m_Metadata:
       m_Items: []
   - m_Id: 5647811776512
@@ -209,8 +215,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5635396636672
-    m_Localized: "Apunta al suelo de la plataforma y pulsa el agarre una vez para
-      moverte a ese lugar. Tambi\xE9n puedes girar la vista con el joystick izquierdo."
+    m_Localized: "Apunta al suelo de la plataforma.\r\n\nPresiona el agarre una vez
+      para moverte a esa ubicaci\xF3n.\r\n\nGira la vista con el joystick izquierdo."
     m_Metadata:
       m_Items: []
   - m_Id: 5613250711552
@@ -218,13 +224,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5602379075584
-    m_Localized: "Suelte la empu\xF1adura para liberar el cubo."
+    m_Localized: Suelta el agarre del control para soltar el cubo.
     m_Metadata:
       m_Items: []
   - m_Id: 5578588983296
-    m_Localized: "\xB7 Apunta al cubo con el control.\r\n\n\xB7 Mant\xE9n presionado
-      el agarre del control para mover el cubo.\r\n\n\xB7 Suelta el agarre del control
-      para soltar el cubo."
+    m_Localized: "Apunta al cubo con el control.\r\n\nMant\xE9n presionado el agarre
+      del control para mover el cubo.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
@@ -252,9 +257,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 715094267826176
-    m_Localized: "Este es el banco de pruebas, util\xEDzalo para ayudarte a visualizar
-      el recorrido antes de empezar a programar. Pulsa todos los botones para ver
-      lo que hacen."
+    m_Localized: "Este es el banco de pruebas, \xFAsalo para ayudarte a visualizar
+      el camino antes de empezar a programar.\r\n\nPresiona todos los botones para
+      ver qu\xE9 hacen."
     m_Metadata:
       m_Items: []
   - m_Id: 729998936805376

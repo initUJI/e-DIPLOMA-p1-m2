@@ -41,8 +41,6 @@ public class LevelManager : NumberOfBlocks
     // Start is called before the first frame update
     void Start()
     {
-        
-
         ShelfController[] shelfControllers = FindObjectsOfType<ShelfController>();
         foreach (ShelfController controller in shelfControllers)
         {
@@ -133,6 +131,7 @@ public class LevelManager : NumberOfBlocks
 
         switch (num)
         {
+            case 7: break;
             case 6: blocksForLevel6(); actualLevel = 6; break;
             case 5: blocksForLevel5(); actualLevel = 5; break;
             case 4: blocksForLevel4(); actualLevel = 4; break;

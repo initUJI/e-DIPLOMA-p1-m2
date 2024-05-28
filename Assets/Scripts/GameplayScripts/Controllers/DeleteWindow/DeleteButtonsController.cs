@@ -19,9 +19,12 @@ private bool _deadTimeActive = false;
         if (levelManager == null)
         {
             levelManager = FindFirstObjectByType<LevelManager>();
+            if (levelManager != null)
+            {
+                levelManager.sumNumberOfBlocks(transform.parent.parent.gameObject);
+            }
         }
 
-        levelManager.sumNumberOfBlocks(transform.parent.parent.gameObject);
         eventsManager.deleteBlock(transform.parent.parent.gameObject);
 
         ShelfController[] shelves = FindObjectsOfType<ShelfController>();

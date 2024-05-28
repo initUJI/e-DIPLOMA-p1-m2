@@ -48,6 +48,11 @@ public class GameManager : MonoBehaviour
         eventsManager = FindObjectOfType<EventsManager>();
     }
 
+    public void setCharacter(Character c)
+    {
+        character = c;
+    }
+
     public void NewLevel()
     {
         objectsFound = false;
@@ -128,25 +133,42 @@ public class GameManager : MonoBehaviour
 
     public static void Reset()
     {
-        character.transform.position = characterInitialPosition;
-        character.transform.rotation = characterInitialRotation;
-        character.transform.localScale = characterInitialScale;
-        character.ResetTheTargetPosition(character.transform.position, character.transform.rotation);
-
-        foreach(GameObject go in originalObstacles)
+        if (character != null)
         {
-            go.SetActive(true);
-            Rigidbody goRigidbody = go.GetComponent<Rigidbody>();
-            if (goRigidbody != null)
+            character.transform.position = characterInitialPosition;
+            character.transform.rotation = characterInitialRotation;
+            character.transform.localScale = characterInitialScale;
+            character.ResetTheTargetPosition(character.transform.position, character.transform.rotation);
+        }
+        
+
+        if (originalObstacles.Count > 0)
+        {
+            foreach (GameObject go in originalObstacles)
             {
-                goRigidbody.detectCollisions = true;
+                if (go != null)
+                {
+                    go.SetActive(true);
+                    Rigidbody goRigidbody = go.GetComponent<Rigidbody>();
+                    if (goRigidbody != null)
+                    {
+                        goRigidbody.detectCollisions = true;
+                    }
+                }
+                
+            }
+            foreach (GameObject go in executionObstacles)
+            {
+                Destroy(go);
             }
         }
-        foreach (GameObject go in executionObstacles)
-        {
-            Destroy(go);
-        }
+        
 
+    }
+
+    public void resetCar()
+    {
+        Reset();
     }
 
     public static void ReportError(MonoBehaviour obj, string message)

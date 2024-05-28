@@ -19,7 +19,7 @@ public class DynamicTextUpdater : MonoBehaviour
     public void UpdateLocalizedString(string newKey)
     {
         // Cambia la clave del LocalizedString
-        localizedString.TableReference = "TextsTable"; // Reemplaza con el nombre de tu tabla
+        localizedString.TableReference = "TextsTables"; // Reemplaza con el nombre de tu tabla
         localizedString.TableEntryReference = newKey;
 
         // Asigna el LocalizedString al evento de localización

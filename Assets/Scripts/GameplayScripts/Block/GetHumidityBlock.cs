@@ -38,7 +38,7 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
                 p.humidityChecked = true;
                 if (allPlantsChecked())
                 {
-                    Debug.Log(SceneManager.GetActiveScene().buildIndex);
+                    //Debug.Log(SceneManager.GetActiveScene().buildIndex);
                     if (SceneManager.GetActiveScene().buildIndex == 0)
                     {
                         MainMenuController mMC = FindObjectOfType<MainMenuController>();

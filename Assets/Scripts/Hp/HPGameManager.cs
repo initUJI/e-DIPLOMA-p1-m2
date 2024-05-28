@@ -19,10 +19,11 @@ public class HPGameManager : MonoBehaviour
 
     [HideInInspector] public cDataManager _dataManager;
 
-
-    void Awake()
+    private void Awake()
     {
-        if (Instance == null) 
+        UserID = GameObject.FindFirstObjectByType<EventsManager>().getUserID();
+
+        if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
             Instance = this;

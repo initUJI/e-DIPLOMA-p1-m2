@@ -38,7 +38,7 @@ public class SceneFirstTimeChecker : MonoBehaviour
         return false;
     }
 
-    private void OnDestroy()
+    private void OnApplicationQuit()
     {
         PlayerPrefs.DeleteAll();
     }

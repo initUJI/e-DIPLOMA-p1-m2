@@ -18,6 +18,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject getHumidityPrefab;
     [SerializeField] private GameObject tutorialLevelPrefab;
     [SerializeField] private GameObject testStandPrefab;
+    [SerializeField] private GameObject gameManagerPrefab;
 
     private GameObject MainOptions;
     private GameObject TutorialOptions;
@@ -62,7 +63,7 @@ public class MainMenuController : MonoBehaviour
         block2Location = new Vector3(-0.3f, 0.8f, -0.82f);
         block3Location = new Vector3(0.13f, 1.0f, -0.92f);
         levelLocation = new Vector3(-0.233f, -0.46f, -0.746f);
-        testStandLocation = new Vector3(0.036f, 0.35f, -0.68f);
+        testStandLocation = new Vector3(0.5f, 0.35f, -0.68f);
     }
 
     public void saveUserId()
@@ -170,6 +171,8 @@ public class MainMenuController : MonoBehaviour
         dynamicTextUpdater.UpdateLocalizedString("dynamics2");
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(2));
 
+        GameObject testStand = Instantiate(testStandPrefab);
+        Destroy(testStand.transform.GetChild(0).gameObject);
         mainBlock = Instantiate(mainBlockPrefab);
         mainBlock.transform.position = block1Location;
         moveForwardBlock = Instantiate(moveForwardPrefab);
@@ -186,12 +189,17 @@ public class MainMenuController : MonoBehaviour
         Destroy(getHumidityBlock);
         Destroy(mainBlock);
         Destroy(tutorialLevel);
+        Destroy(testStand);
+
         tutorialLevel = Instantiate(tutorialLevelPrefab);
-        GameObject testStand = Instantiate(testStandPrefab);
+        testStand = Instantiate(testStandPrefab);
         testStand.transform.position = testStandLocation;
+        testStand.transform.eulerAngles = new Vector3(0f, 0f, 0f);
         testStand.AddComponent<ButtonManager>();
         text.text = ins.getDynamicsString(4);
         dynamicTextUpdater.UpdateLocalizedString("dynamics4");
+        GameObject.FindObjectOfType<GameManager>().setCharacter(GameObject.FindObjectOfType<Character>());
+        GameObject.FindObjectOfType<GameManager>().resetCar();
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(4, null, false, testStand));
 
         text.text = "Tutorial completed!";
@@ -226,7 +234,7 @@ public class MainMenuController : MonoBehaviour
 
 public class Instruccion : MainMenuController
 {
-    private string controls1 = "Aim at the cube and hold down the controller grip to pick it up.";
+    private string controls1 = "Aim at the cube with the controller.\r\n\r\nHold down the controller grip to move the cube.\r\n";
     private string controls2 = "Release the grip to release the cube.";
     private string controls3 = "Move the controller while holding the cube to place it on the platform.";
     private string controls4 = "Aim at the platform floor and press the grip once to move to that location. You can also rotate the view with the left joystick.";

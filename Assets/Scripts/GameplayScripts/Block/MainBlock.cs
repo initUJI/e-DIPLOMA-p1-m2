@@ -190,10 +190,10 @@ public class MainBlock : Block, WithBottomSocket
                 }
             }
 
-            Debug.Log("W");
+            //Debug.Log("W");
             yield return new WaitUntil(() => !error);
             yield return new WaitUntil(() => currentBlock.IsFinished()); // Wait until the end of the previous block;
-            Debug.Log("B");
+            //Debug.Log("B");
 
             currentBlock.SetGlowing(false);
 

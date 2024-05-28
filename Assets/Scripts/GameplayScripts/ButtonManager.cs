@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     private Button[] buttons;
-    private bool[] buttonsPressed;
+    private bool[] buttonsPressed = new bool[0];
 
     void Start()
     {
@@ -33,11 +33,19 @@ public class ButtonManager : MonoBehaviour
 
     public bool CheckAllButtonsPressed()
     {
-        foreach (bool pressed in buttonsPressed)
+        if (buttonsPressed != null && buttonsPressed.Length > 0)
         {
-            if (!pressed) return false;
+            foreach (bool pressed in buttonsPressed)
+            {
+                if (!pressed) return false;
+            }
+            return true;
         }
-        return true;
+        else
+        {
+            return false;
+        }
+        
     }
 
 }
