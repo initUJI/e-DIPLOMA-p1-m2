@@ -270,6 +270,11 @@ MonoBehaviour:
     m_Localized: No hay pista disponible
     m_Metadata:
       m_Items: []
+  - m_Id: 2890108836548608
+    m_Localized: "\xA1Enhorabuena! Has completado todos los niveles. \xBFTe gustar\xEDa
+      repetir alguno?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

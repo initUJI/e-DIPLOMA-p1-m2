@@ -117,8 +117,19 @@ public class LevelManager : NumberOfBlocks
         return actualLevel;
     }
 
-    public void changeLevel(int num)
+    public void SetLevelAndChange(int level)
     {
+        changeLevel(level, "Button");
+    }
+
+    public void changeLevel(int num, string source = null)
+    {
+
+        if (source == "Button")
+        {
+            eventsManager.buttonClicked("LEVEL:" + num.ToString());
+        }
+
         Block[] blocks = GameObject.FindObjectsOfType<Block>();
 
         foreach (Block block in blocks)
@@ -131,7 +142,7 @@ public class LevelManager : NumberOfBlocks
 
         switch (num)
         {
-            case 7: break;
+            case 7: blocksNo(); changeToOptionsFinish(); actualLevel = 7; break;
             case 6: blocksForLevel6(); actualLevel = 6; break;
             case 5: blocksForLevel5(); actualLevel = 5; break;
             case 4: blocksForLevel4(); actualLevel = 4; break;
@@ -142,6 +153,13 @@ public class LevelManager : NumberOfBlocks
         }
 
         createLevel(actualLevel);
+    }
+
+    public void changeToOptionsFinish()
+    {
+        optionsWindow.transform.GetChild(0).gameObject.SetActive(false);
+        optionsWindow.transform.GetChild(1).gameObject.SetActive(false);
+        optionsWindow.transform.GetChild(2).gameObject.SetActive(true);
     }
 
     public void resetLevelBlocks()
@@ -188,7 +206,7 @@ public class LevelManager : NumberOfBlocks
             case 3: level = Instantiate(Level3); break;
             case 2: level = Instantiate(Level2); break;
             case 1: level = Instantiate(Level1); break;
-            default: level = Instantiate(Level0); break;
+            default: break;
         }
 
         level.transform.SetParent(this.transform);

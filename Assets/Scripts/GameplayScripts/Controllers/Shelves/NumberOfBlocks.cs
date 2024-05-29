@@ -168,6 +168,31 @@ public class NumberOfBlocks : MonoBehaviour
         }
     }
 
+    public bool blocksNo()
+    {
+        numberOfFor = 0;
+        numberOfForward = 0;
+        numberOfGetHumidity = 0;
+        numberOfIf = 0;
+        numberOfLeft = 0;
+        numberOfNumber = 0;
+        numberOfObject = 0;
+        numberOfRight = 0;
+        numberOfTurn = 0;
+        numberOfEndFor = numberOfFor;
+        numberOfEndIf = numberOfIf;
+        numberOfNumber2 = numberOfNumber;
+        numberOfNumber3 = numberOfNumber;
+        numberOfNumber4 = numberOfNumber;
+        numberOfNumber5 = numberOfNumber;
+        numberOfNumber6 = numberOfNumber;
+        numberOfNumber7 = numberOfNumber;
+        numberOfNumber8 = numberOfNumber;
+        numberOfNumber9 = numberOfNumber;
+
+        return true;
+    }
+
     public bool blocksForTest()
     {
         numberOfFor = 10;

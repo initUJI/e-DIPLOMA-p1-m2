@@ -21,7 +21,10 @@ public class CommandLineArgs : MonoBehaviour
 
         if (getFirstArgument() != null)
         {
-            eventsManager.setUserID(getFirstArgument());
+            if (PlayerPrefs.GetString("UserID") != getFirstArgument())
+            {
+                eventsManager.setUserID(getFirstArgument());
+            }          
         }
     }
 

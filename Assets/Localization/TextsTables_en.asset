@@ -200,12 +200,12 @@ MonoBehaviour:
   - m_Id: 5635396636672
     m_Localized: 'Aim at the platform floor .
 
-      
 
-      Press the grip once
-      to move to that location.
 
-      
+      Press the grip once to move
+      to that location.
+
+
 
       Rotate the view with the left joystick.'
     m_Metadata:
@@ -275,6 +275,11 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 734799909130240
     m_Localized: No clue avalible
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2890108836548608
+    m_Localized: Congratulations! You have completed all levels, would you like to
+      repeat any of them?
     m_Metadata:
       m_Items: []
   references:
