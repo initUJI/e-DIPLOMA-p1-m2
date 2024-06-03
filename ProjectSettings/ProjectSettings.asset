@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Andriy Kokhan
+  companyName: INIT
   productName: Bloky
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -42,10 +42,6 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
-  - logo: {fileID: 21300000, guid: f141476d711afe649ac38f6cce863214, type: 3}
-    duration: 2
-  - logo: {fileID: 21300000, guid: 9a413cfcf0e22924ebd01c33515401ee, type: 3}
-    duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -141,7 +137,10 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -7084160340270529781, guid: d245c64801b2be3438e837ec48718d85, type: 2}
+  - {fileID: -4592395511793407669, guid: 59fea65713308e941addefc4de3adcb7, type: 2}
+  - {fileID: 11400000, guid: 38074d7b4a2efd44890419b0ea21cbc5, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
