@@ -107,6 +107,7 @@ public class MainBlock : Block, WithBottomSocket
 
 
         Debug.Log("MainBlock : BEGIN");
+        GameManager.character.activeGlow();
         currentBlock = (ExecutableBlock) getSocketBlock(bottomSocket);
 
         while (currentBlock != null && !error)
@@ -199,6 +200,7 @@ public class MainBlock : Block, WithBottomSocket
 
         SetGlowing(false);
 
+        GameManager.character.desactiveGlow();
         Debug.Log("MainBlock : END");
 
     }

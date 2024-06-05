@@ -275,6 +275,22 @@ MonoBehaviour:
       repetir alguno?"
     m_Metadata:
       m_Items: []
+  - m_Id: 5522172722221056
+    m_Localized: Reiniciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5522576809857024
+    m_Localized: Giro izquierda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5522639959298048
+    m_Localized: Giro derecha
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5522710222278656
+    m_Localized: Avance
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

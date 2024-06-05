@@ -247,6 +247,22 @@ MonoBehaviour:
     m_Key: allLevelsCompleted
     m_Metadata:
       m_Items: []
+  - m_Id: 5522172722221056
+    m_Key: resetCharacter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5522576809857024
+    m_Key: turnLeft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5522639959298048
+    m_Key: turnRight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5522710222278656
+    m_Key: advance
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

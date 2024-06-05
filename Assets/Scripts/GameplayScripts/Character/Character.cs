@@ -27,6 +27,9 @@ public class Character : MonoBehaviour
     public bool isCutting;
     public bool isBreaking;
     public bool objectIsFalling;
+    public Material carGlow;
+    
+    private Material initialMaterial;
 
     public Animator animator;
 
@@ -45,6 +48,17 @@ public class Character : MonoBehaviour
         eventsManager = FindObjectOfType<EventsManager>();
         targetPosition = transform.position;
         targetRotation = transform.rotation;
+        initialMaterial = child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1];
+    }
+
+    public void activeGlow()
+    {
+        child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1] = carGlow;
+    }
+
+    public void desactiveGlow()
+    {
+        child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1] = initialMaterial;
     }
 
     public bool Motionless()
