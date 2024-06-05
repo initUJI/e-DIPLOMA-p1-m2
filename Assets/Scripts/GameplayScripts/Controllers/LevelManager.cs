@@ -57,7 +57,9 @@ public class LevelManager : NumberOfBlocks
         clueImage.SetActive(false);
         noClueImage.SetActive(true);
         gameManager = FindObjectOfType<GameManager>();
+        actualLevel = lastLevelCompleted() + 1;
         changeLevel(lastLevelCompleted() + 1);
+        //changeLevel(4);
     }
 
 

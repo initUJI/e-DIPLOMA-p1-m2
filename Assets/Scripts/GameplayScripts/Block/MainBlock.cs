@@ -23,14 +23,16 @@ public class MainBlock : Block, WithBottomSocket
 
     [SerializeField] XRSocketInteractor bottomSocket;
     [HideInInspector] public ExecutableBlock currentBlock;
+    [HideInInspector] public bool wasIfBlock = false;
+    [HideInInspector] public bool ifConditionChecked = false;
 
     public static bool paused;
     public static bool error;
 
     Coroutine currentCoroutine;
 
-    bool activeIf = false;
-    IfBlock ifBlock;
+    [HideInInspector] public bool activeIf = false;
+    [HideInInspector] public IfBlock ifBlock;
 
     bool activeFor = false;
     ForBlock forBlock;
@@ -72,6 +74,7 @@ public class MainBlock : Block, WithBottomSocket
                 StopCoroutine(currentCoroutine);
             }
             eventsManager.playPressed();
+            GameManager.Reset();
             currentCoroutine = StartCoroutine(c_Execute());
 
         } else
@@ -92,17 +95,16 @@ public class MainBlock : Block, WithBottomSocket
         return (ExecutableBlock)getSocketBlock(bottomSocket);
     }
 
-    IEnumerator c_Execute() {
+    public IEnumerator c_Execute() {
 
-        bool wasIfBlock = false;
-        bool ifConditionChecked = false;
+        
+        bool executingBlock = false;
 
         SetGlowing(true);
 
-        Debug.Log("MainBlock : We wait 1 second...");
+        //Debug.Log("MainBlock : We wait 1 second...");
         yield return new WaitForSeconds(1);
 
-        GameManager.Reset();
 
         Debug.Log("MainBlock : BEGIN");
         currentBlock = (ExecutableBlock) getSocketBlock(bottomSocket);
@@ -112,6 +114,7 @@ public class MainBlock : Block, WithBottomSocket
             GameManager.currentBlock = currentBlock;
 
             currentBlock.SetGlowing(true);
+            //Debug.Log(currentBlock.name);
 
             yield return new WaitUntil(() => !paused); // Wait until pause equals false
                                                        //Debug.Log("MainBlock : Next block !");
@@ -121,6 +124,7 @@ public class MainBlock : Block, WithBottomSocket
                 activeFor = true;
                 forBlock = (ForBlock)currentBlock;
                 currentBlock.Execute(variables);
+                executingBlock = true;
             }
 
             else if (currentBlock as IfBlock)
@@ -131,24 +135,25 @@ public class MainBlock : Block, WithBottomSocket
                 if (ifBlock.conditionChecked(variables))
                 {
                     ifConditionChecked = true;
-                    ifBlock.Execute(variables);
+                    //ifBlock.Execute(variables);
                     activeIf = true;
                 } else
                 {
                     ifBlock.isFinished = true;
                 }
             }
-            else if (currentBlock as EndIfBlock)
+            else if (currentBlock.name.Contains("EndIf"))
             {
                 activeIf = false;
                 ifBlock = null;
-                currentBlock.Execute(variables);
+                //currentBlock.Execute(variables);
             }
             else if (currentBlock as EndForBlock)
             {
                 
                 activeFor = false;
-                currentBlock.Execute(variables);
+                forBlock = null;
+                //currentBlock.Execute(variables);
             }
             else if (currentBlock as ElseBlock) {
                 ElseBlock elseBlock = (ElseBlock) currentBlock;
@@ -166,33 +171,22 @@ public class MainBlock : Block, WithBottomSocket
                     GameManager.ReportError(elseBlock, "An else block must be preceded by an if block");
                 }
             } else {
-                if (activeIf && ifBlock != null)
+                if ((activeIf && ifBlock != null || !activeIf && ifBlock == null) && (forBlock == null && !activeFor))
                 {
                     currentBlock.Execute(variables); // Execute the current block
-                }
-                else if (ifBlock == null && !activeIf)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
+                    executingBlock = true;
                 }
 
-                else if (activeFor && forBlock != null)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
-                }
-                else if (forBlock == null && !activeFor)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
-                }
-
-                else if(ifBlock == null && !activeIf || forBlock == null && !activeFor)
-                {
-                    currentBlock.Execute(variables); // Execute the current block
-                }
             }
 
             //Debug.Log("W");
             yield return new WaitUntil(() => !error);
-            yield return new WaitUntil(() => currentBlock.IsFinished()); // Wait until the end of the previous block;
+            if (executingBlock)
+            {
+                yield return new WaitUntil(() => currentBlock.IsFinished()); // Wait until the end of the previous block;
+                executingBlock = false;
+            }
+            
             //Debug.Log("B");
 
             currentBlock.SetGlowing(false);

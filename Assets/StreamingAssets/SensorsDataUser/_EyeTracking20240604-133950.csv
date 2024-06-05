@@ -1,0 +1,41 @@
+userID;fecha
+anom;04/06/2024_13:39
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717501190,82709;,24369;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717501194,87686;4,29350;Test1;SALE_HEAD;Rock: Part of the level
+1717501194,90456;4,32111;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1717501196,67015;6,08693;Test1;SALE_HEAD;Limit (23): Part of the level
+1717501199,19892;8,61545;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717501200,28225;9,69838;Test1;SALE_HEAD;Limit (5): Part of the level
+1717501200,38057;9,79731;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717501203,39334;12,80986;Test1;SALE_HEAD;Attach: Part of Player Area
+1717501203,49052;12,90689;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717501203,94925;13,36534;Test1;SALE_HEAD;Limit (14): Part of the level
+1717501203,96530;13,38135;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1717501204,26895;13,68489;Test1;SALE_HEAD;Limit (23): Part of the level
+1717501204,37867;13,79532;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717501204,92156;14,33834;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717501205,05915;14,47602;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717501205,43477;14,85143;Test1;SALE_HEAD;BehindCollider: Part of the level
+1717501205,44916;14,86543;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1717501205,93578;15,35171;Test1;SALE_HEAD;Limit (5): Part of the level
+1717501206,07438;15,49056;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717501206,31021;15,72663;Test1;SALE_HEAD;Attach: Part of Player Area
+1717501206,47745;15,89345;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717501208,14224;17,55889;Test1;SALE_HEAD;Attach: Part of Player Area
+1717501208,27021;17,68625;Test1;ENTRA_HEAD;EndIfBlock(Clone): Part of a Block
+1717501208,37825;17,79510;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717501209,25400;18,67064;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717501209,47710;18,89299;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717501210,22649;19,64299;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717501210,37899;19,79527;Test1;SALE_HEAD;EndIfBlock(Clone): Part of a Block
+1717501210,76884;20,18483;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717501211,08905;20,50560;Test1;SALE_HEAD;Attach: Part of Player Area
+1717501211,35136;20,76808;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1717501211,39319;20,80982;Test1;SALE_HEAD;Action_Left: Part of a Block
+1717501211,71336;21,12936;Test1;ENTRA_HEAD;EndIfBlock(Clone): Part of a Block
+1717501213,04573;22,46211;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717501214,89402;24,31009;Test1;ENTRA_HEAD;Limit (9): Part of the level
+1717501214,99013;24,40697;Test1;SALE_HEAD;Fence: Part of the level
+1717501215,03210;24,44859;Test1;ENTRA_HEAD;Limit (9): Part of the level
+1717501217,83673;27,25349;Test1;SALE_HEAD;Grass: Part of the level

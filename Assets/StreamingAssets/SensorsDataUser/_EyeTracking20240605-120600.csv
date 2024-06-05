@@ -1,0 +1,47 @@
+userID;fecha
+anom;05/06/2024_12:06
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717581960,99182;,29960;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717581966,98545;6,29371;Test1;SALE_HEAD;Fence: Part of the level
+1717581967,33311;6,64132;Test1;ENTRA_HEAD;Fence: Part of the level
+1717581968,41640;7,72485;Test1;SALE_HEAD;Limit (6): Part of the level
+1717581968,56888;7,87763;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717581969,62464;8,93274;Test1;SALE_HEAD;Attach: Part of Player Area
+1717581970,67956;9,98832;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717581971,08244;10,39122;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717581971,49927;10,80789;Test1;ENTRA_HEAD;MainBlock: Part of a Block
+1717581971,62580;10,93362;Test1;SALE_HEAD;ForBlock(Clone): Part of a Block
+1717581971,75026;11,05859;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717581975,29172;14,59987;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717581975,48648;14,79429;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717581975,73605;15,04446;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717581976,12426;15,43261;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717581976,91699;16,22493;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717581977,29185;16,59978;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717581977,56986;16,87772;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717581978,34738;17,65536;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717581980,93057;20,23851;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717581981,05526;20,36355;Test1;ENTRA_HEAD;Shelf (7): Part of Player Area
+1717581981,94412;21,25193;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717581982,27748;21,58603;Test1;ENTRA_HEAD;TurnBlock(Clone): Part of a Block
+1717581985,27720;24,58575;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717581985,29101;24,59955;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717581985,35975;24,66844;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717581985,59672;24,90514;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581985,65232;24,96060;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581985,77772;25,08574;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581985,83323;25,14137;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581985,91640;25,22467;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581985,97192;25,28039;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581986,33299;25,64119;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581986,36056;25,66856;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581986,51370;25,82179;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581986,55539;25,86343;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581986,69385;26,00227;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581986,77733;26,08568;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581986,84715;26,15509;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581986,91617;26,22458;Test1;SALE_HEAD;Limit (10): Part of the level
+1717581987,05519;26,36342;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717581997,77770;37,08623;Test1;SALE_HEAD;Grass: Part of the level
+1717581997,85848;37,16668;Test1;ENTRA_HEAD;Platform: Part of Player Area
+1717581997,88893;37,19706;Test1;SALE_HEAD;Platform: Part of Player Area

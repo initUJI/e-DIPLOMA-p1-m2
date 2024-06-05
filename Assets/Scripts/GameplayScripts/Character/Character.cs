@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     private GameObject child;
     private float unit = 2f;
     private const float speed = 2f;
-    private const float rotateSpeed = 150f;
+    private const float rotateSpeed = 200f;
     private float timeAnimationCutOrBreak = ANIMATION_TIME_OBJECT;
     private Transform levelTransform;
     private EventsManager eventsManager;
@@ -44,6 +44,7 @@ public class Character : MonoBehaviour
         unit *= levelTransform.localScale.x;
         eventsManager = FindObjectOfType<EventsManager>();
         targetPosition = transform.position;
+        targetRotation = transform.rotation;
     }
 
     public bool Motionless()
@@ -172,7 +173,7 @@ public class Character : MonoBehaviour
 
         if (isRotating)
         {
-            if (!Mathf.Approximately(transform.rotation.eulerAngles.y, targetRotation.eulerAngles.y))
+            if (transform.rotation.eulerAngles.y != targetRotation.eulerAngles.y)
             {
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
             }

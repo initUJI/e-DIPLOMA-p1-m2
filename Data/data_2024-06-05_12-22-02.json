@@ -1,0 +1,7 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1717582928","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717582932","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717582932","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717582933","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717582943","actualLevel":"4","action":"OBJECT GRABBED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717582944","actualLevel":"4","action":"OBJECT RELEASED: ForBlock(Clone)"}

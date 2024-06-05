@@ -1,0 +1,67 @@
+userID;fecha
+anom;04/06/2024_15:29
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717507746,87726;,12436;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717507750,66970;3,91663;Test1;SALE_HEAD;Limit (23): Part of the level
+1717507750,83688;4,08394;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717507751,05946;4,30647;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717507752,04644;5,29319;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717507753,35160;6,59900;Test1;SALE_HEAD;Limit (3): Part of the level
+1717507753,62999;6,87687;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717507754,26849;7,51599;Test1;SALE_HEAD;Limit (14): Part of the level
+1717507754,28385;7,53061;Test1;ENTRA_HEAD;Fence: Part of the level
+1717507754,39503;7,64175;Test1;SALE_HEAD;Limit (10): Part of the level
+1717507754,42262;7,66945;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717507754,44962;7,69655;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717507754,81030;8,05769;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717507756,72726;9,97439;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717507756,76896;10,01603;Test1;ENTRA_HEAD;Shelf (7): Part of Player Area
+1717507756,94971;10,19655;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717507757,03369;10,28084;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717507758,81080;12,05770;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717507759,53340;12,78058;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717507761,64419;14,89152;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717507761,85196;15,09930;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1717507772,43635;25,68304;Test1;SALE_HEAD;Limit (12): Part of the level
+1717507772,46520;25,71179;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717507772,65764;25,90511;Test1;SALE_HEAD;EndForBlock(Clone): Part of a Block
+1717507772,79674;26,04393;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717507773,74163;26,98853;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717507774,12957;27,37672;Test1;ENTRA_HEAD;EndForBlock(Clone): Part of a Block
+1717507775,00553;28,25249;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717507778,14407;31,39086;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1717507778,51872;31,76616;Test1;SALE_HEAD;Limit (10): Part of the level
+1717507778,58799;31,83487;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1717507798,64293;51,89001;Test1;SALE_HEAD;EndForBlock(Clone): Part of a Block
+1717507799,05972;52,30660;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717507799,11547;52,36285;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717507799,32336;52,57055;Test1;ENTRA_HEAD;Limit (21): Part of the level
+1717507799,42097;52,66774;Test1;SALE_HEAD;Limit (23): Part of the level
+1717507799,53186;52,77850;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717507800,03112;53,27846;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717507800,26734;53,51441;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717507800,49071;53,73750;Test1;SALE_HEAD;Limit (16): Part of the level
+1717507800,61587;53,86254;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717507800,71183;53,95902;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717507800,97594;54,22344;Test1;ENTRA_HEAD;Shelf (7): Part of Player Area
+1717507802,26788;55,51439;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717507802,36488;55,61237;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1717507802,57403;55,82079;Test1;SALE_HEAD;Action_Left: Part of a Block
+1717507803,43483;56,68150;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717507812,25378;65,50079;Test1;SALE_HEAD;TurnBlock(Clone): Part of a Block
+1717507812,42040;65,66762;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717507812,80831;66,05560;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717507813,35050;66,59734;Test1;ENTRA_HEAD;TurnBlock(Clone): Part of a Block
+1717507826,51723;79,76384;Test1;SALE_HEAD;Action_Left: Part of a Block
+1717507826,53027;79,77699;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1717507826,54465;79,79156;Test1;SALE_HEAD;Action_Left: Part of a Block
+1717507826,57147;79,81877;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717507827,32304;80,56976;Test1;SALE_HEAD;Attach: Part of Player Area
+1717507827,43395;80,68076;Test1;ENTRA_HEAD;Action_Right: Part of a Block
+1717507827,44667;80,69392;Test1;SALE_HEAD;Action_Right: Part of a Block
+1717507827,46189;80,70848;Test1;ENTRA_HEAD;Action_Right: Part of a Block
+1717507827,54486;80,79185;Test1;SALE_HEAD;Action_Right: Part of a Block
+1717507827,76648;81,01398;Test1;ENTRA_HEAD;TurnBlock(Clone): Part of a Block
+1717507837,57175;90,81847;Test1;SALE_HEAD;Limit (5): Part of the level
+1717507837,61246;90,85918;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717507837,69784;90,94481;Test1;SALE_HEAD;Right Wall: Part of Player Area

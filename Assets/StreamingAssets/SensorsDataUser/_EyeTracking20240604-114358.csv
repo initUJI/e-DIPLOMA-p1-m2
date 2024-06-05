@@ -1,0 +1,37 @@
+userID;fecha
+anom;04/06/2024_11:43
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717494241,23862;2,74659;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717494247,56444;9,07291;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717494251,61407;13,12264;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717494251,66940;13,17747;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717494255,11598;16,62413;Test1;ENTRA_HEAD;Shelf (11): Part of Player Area
+1717494256,00438;17,51280;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717494256,82396;18,33192;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717494257,79312;19,30199;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717494258,15502;19,66356;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717494258,16809;19,67669;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717494258,18331;19,69128;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717494258,19744;19,70594;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717494258,21023;19,71827;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717494258,22476;19,73279;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717494258,60324;20,11196;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717494259,44725;20,95550;Test1;SALE_HEAD;MainBlock: Part of a Block
+1717494259,89248;21,40063;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717494260,76630;22,27510;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717494261,36700;22,87572;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717494262,69931;24,20760;Test1;SALE_HEAD;MainBlock: Part of a Block
+1717494263,14454;24,65285;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717494263,96296;25,47120;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717494264,46126;25,96960;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717494264,84921;26,35752;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717494265,61278;27,12138;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717494266,43493;27,94303;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717494267,20939;28,71821;Test1;ENTRA_HEAD;MainBlock: Part of a Block
+1717494269,09982;30,60859;Test1;SALE_HEAD;MainBlock: Part of a Block
+1717494269,90527;31,41347;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1717494269,93306;31,44163;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1717494269,96082;31,46939;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717494270,16757;31,67650;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717494270,50073;32,00950;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717494270,88932;32,39826;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block

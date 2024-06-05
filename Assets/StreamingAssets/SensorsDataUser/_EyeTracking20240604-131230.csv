@@ -1,0 +1,30 @@
+userID;fecha
+anom;04/06/2024_13:12
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717499550,46515;,19052;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717499557,66534;7,39054;Test1;SALE_HEAD;Limit (3): Part of the level
+1717499558,01197;7,73739;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717499558,30420;8,02973;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717499558,70682;8,43251;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717499560,74826;10,47377;Test1;SALE_HEAD;Limit (5): Part of the level
+1717499561,42847;11,15368;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717499563,19181;12,91770;Test1;SALE_HEAD;Attach: Part of Player Area
+1717499563,27632;13,00165;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717499563,65068;13,37610;Test1;SALE_HEAD;BehindCollider: Part of the level
+1717499563,66490;13,39080;Test1;ENTRA_HEAD;Rock: Part of the level
+1717499563,90154;13,62670;Test1;SALE_HEAD;Limit (23): Part of the level
+1717499564,01122;13,73719;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717499564,48620;14,21207;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717499564,63785;14,36331;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717499564,99776;14,72370;Test1;SALE_HEAD;Limit (14): Part of the level
+1717499565,16513;14,89051;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717499565,24809;14,97317;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717499565,26223;14,98771;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717499565,28906;15,01474;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717499565,49800;15,22399;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717499566,51175;16,23701;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717499566,74816;16,47369;Test1;ENTRA_HEAD;EndIfBlock(Clone): Part of a Block
+1717499570,23409;19,95964;Test1;SALE_HEAD;Limit (10): Part of the level
+1717499570,26164;19,98737;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1717499571,28889;21,01464;Test1;SALE_HEAD;Grass: Part of the level
+1717499571,34729;21,07240;Test1;ENTRA_HEAD;Platform: Part of Player Area

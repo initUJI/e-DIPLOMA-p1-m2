@@ -1,0 +1,77 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1717507751","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507751","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507751","actualLevel":"4","action":"OBJECT GRABBED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507752","actualLevel":"4","action":"OBJECT RELEASED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507752","actualLevel":"4","action":"OBJECT GRABBED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507753","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507754","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507754","actualLevel":"4","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507754","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507756","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507757","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507757","actualLevel":"4","action":"OBJECT NumberBlock(Clone) IN Bottom Socket FROM ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507757","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507758","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507759","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507759","actualLevel":"4","action":"OBJECT EndForBlock(Clone) IN Bottom Socket FROM ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507759","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507761","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507768","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507772","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507772","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507772","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507773","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507773","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507774","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507774","actualLevel":"4","action":"OBJECT NumberBlock(Clone) IN Bottom Socket FROM ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507774","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507774","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507783","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507786","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507788","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507791","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507798","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507798","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507798","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507799","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507800","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717507801","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717507801","actualLevel":"4","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717507801","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717507801","actualLevel":"4","action":"OBJECT GRABBED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507802","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507802","actualLevel":"4","action":"OBJECT TurnLeftBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717507802","actualLevel":"4","action":"OBJECT GRABBED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507803","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507803","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507803","actualLevel":"4","action":"OBJECT EndForBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717507803","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507804","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507811","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507811","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507811","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507812","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507812","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507813","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507813","actualLevel":"4","action":"OBJECT NumberBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717507813","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717507814","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507826","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507826","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507826","actualLevel":"4","action":"OBJECT GRABBED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507826","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717507827","actualLevel":"4","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"1717507827","actualLevel":"4","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"1717507827","actualLevel":"4","action":"OBJECT TurnRightBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717507827","actualLevel":"4","action":"OBJECT GRABBED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"1717507828","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507833","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}
+{"id":"anom","dateTime":"1717507904","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnRightBlock(Clone)"}

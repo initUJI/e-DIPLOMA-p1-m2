@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081367523723977958}
-  - component: {fileID: 4462461218512766944}
   - component: {fileID: 5204407791422986682}
   m_Layer: 0
   m_Name: Emotibit
@@ -33,18 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4462461218512766944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6174271600544037040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: defee4c28da0efb4393cc297c704bfd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5204407791422986682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,5 +58,5 @@ MonoBehaviour:
     values: []
   isRecording: 0
   isDebugMode: 0
-  dataTimeout: 3
+  dataTimeout: 5
   isReady: 1

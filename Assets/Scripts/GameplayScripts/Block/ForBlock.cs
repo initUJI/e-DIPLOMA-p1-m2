@@ -12,12 +12,14 @@ public class ForBlock : ConditionalBlock
     bool forIsFinished;
     Coroutine forCoroutine;
     bool endfinded;
+    Block endIfBlock;
 
     public override void Start()
     {
         base.Start();
         forIsFinished = false;
         endfinded = false;
+        endIfBlock = null;
     }
     public override void Execute(Dictionary<string, int> variables)
     {
@@ -31,8 +33,75 @@ public class ForBlock : ConditionalBlock
         forCoroutine = StartCoroutine(c_ExecuteFor());
     }
 
+    private IEnumerator ExecuteBlockChain()
+    {
+        ExecutableBlock block = (ExecutableBlock)this.getSocketBlock(bottomSocket);
+        bool activeIf = false;
+        IfBlock ifBlock = null;
+
+        // Asegurarnos de que no hay bucle infinito
+        HashSet<ExecutableBlock> executedBlocks = new HashSet<ExecutableBlock>();
+
+        while (block != null && !checkIfEnd(block) && !endfinded)
+        {
+            // Evitar ejecutar el mismo bloque más de una vez
+            if (executedBlocks.Contains(block))
+            {
+                Debug.LogError("Detected a loop. Block already executed: " + block.GetType().Name);
+                yield break;
+            }
+            executedBlocks.Add(block);
+
+            yield return new WaitForSeconds(1f);
+
+            if (block is IfBlock)
+            {
+                ifBlock = (IfBlock)block;
+                if (ifBlock.conditionChecked(variables))
+                {
+                    activeIf = true;
+                }
+                else
+                {
+                    ifBlock.isFinished = true;
+                }
+            }
+            else if (block is EndIfBlock)
+            {
+                ifBlock = null;
+                activeIf = false;
+                endIfBlock = block;
+            }
+
+            else if (activeIf && ifBlock != null || !activeIf && ifBlock == null)
+            {
+                Debug.Log("Executing block: " + block.GetType().Name);
+                block.Execute(variables);
+                yield return new WaitUntil(() => block.IsFinished());
+            }
+
+            if (block is EndForBlock)
+            {
+                Debug.Log("Found EndForBlock, breaking out of the loop.");
+                endfinded = true;
+                break;
+            }
+
+            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
+
+            if (block == null)
+            {
+                Debug.Log("Next block is null, breaking out of the loop.");
+                break;
+            }
+        }
+
+        yield return null;
+    }
+
     public IEnumerator c_ExecuteFor()
     {
+
         forIsFinished = false;
 
         Block block = getSocketBlock(rightSocket);
@@ -44,18 +113,21 @@ public class ForBlock : ConditionalBlock
         {
             endfinded = false;
             Debug.Log("Condition vérifiée !");
-            if (currentCoroutine != null)
+            //Debug.Log(number);
+            /*if (currentCoroutine != null)
             {
                 StopCoroutine(currentCoroutine);
-            }
-
-            // Launch and wait the end of c_Execute
-            yield return (currentCoroutine = StartCoroutine(c_Execute()));
-            StartCoroutine(startFor());
+            }*/
             number--;
+            MainBlock mainBlock = FindObjectOfType<MainBlock>();
+            mainBlock.activeIf = false;
+            mainBlock.ifBlock = null;
+            yield return StartCoroutine(ExecuteBlockChain());
+            
         }
 
         forIsFinished = true;
+        yield return null;
     }
 
     public override bool IsFinished()
@@ -63,93 +135,9 @@ public class ForBlock : ConditionalBlock
         return forIsFinished;
     }
 
-    public IEnumerator startFor()
-    {
-        ExecutableBlock block = this;
-        if ((ExecutableBlock)getSocketBlock(bottomSocket) != null)
-        {
-            block = (ExecutableBlock)getSocketBlock(bottomSocket);
-        } 
-
-        if (block != null && !checkIfEnd(block) && !endfinded)
-        {
-            block.Execute(variables);
-        }
-        else if (checkIfEnd(block))
-        {
-            endfinded = true;
-        }
-
-        yield return new  WaitForSeconds(1f);
-
-        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
-        {
-            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
-        }
-
-        if (block != null && !checkIfEnd(block) && !endfinded)
-        {
-            block.Execute(variables);
-        }
-        else if (checkIfEnd(block))
-        {
-            endfinded = true;
-        }
-
-        yield return new WaitForSeconds(1f);
-
-        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
-        {
-            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
-        }
-
-        if (block != null && !checkIfEnd(block) && !endfinded)
-        {
-            block.Execute(variables);
-        }
-        else if (checkIfEnd(block))
-        {
-            endfinded = true;
-        }
-
-        yield return new WaitForSeconds(1f);
-
-        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
-        {
-            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
-        }
-
-        if (block != null && !checkIfEnd(block) && !endfinded)
-        {
-            block.Execute(variables);
-        }
-        else if (checkIfEnd(block))
-        {
-            endfinded = true;
-        }
-
-        yield return new WaitForSeconds(1f);
-
-        if ((ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket()) != null)
-        {
-            block = (ExecutableBlock)getSocketBlock(((WithBottomSocket)block).getBottomSocket());
-        }
-
-        if (block != null && !checkIfEnd(block) && !endfinded)
-        {
-            block.Execute(variables);
-        }
-        else if (checkIfEnd(block))
-        {
-            endfinded = true;
-        }
-
-        yield return new WaitForSeconds(1f);
-    }
-
     private bool checkIfEnd(Block block)
     {
-        if (block.name.Contains("End"))
+        if (block.name.Contains("EndFor"))
         {
             return true;
         }

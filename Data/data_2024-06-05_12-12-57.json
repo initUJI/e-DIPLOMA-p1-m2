@@ -1,0 +1,3 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1717582381","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717582383","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}

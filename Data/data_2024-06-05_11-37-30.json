@@ -1,0 +1,134 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1717580261","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580262","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580262","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580262","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717580265","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580265","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580265","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580266","actualLevel":"4","action":"OBJECT GRABBED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580267","actualLevel":"4","action":"OBJECT RELEASED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580268","actualLevel":"4","action":"OBJECT GRABBED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580268","actualLevel":"4","action":"OBJECT RELEASED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580268","actualLevel":"4","action":"OBJECT GRABBED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580269","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580269","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580269","actualLevel":"4","action":"OBJECT NumberBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580269","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580279","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580280","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580282","actualLevel":"4","action":"OBJECT GRABBED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580283","actualLevel":"4","action":"OBJECT RELEASED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580283","actualLevel":"4","action":"OBJECT IfBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580283","actualLevel":"4","action":"OBJECT GRABBED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580284","actualLevel":"4","action":"OBJECT GRABBED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580285","actualLevel":"4","action":"OBJECT RELEASED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580285","actualLevel":"4","action":"OBJECT ObjectBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580285","actualLevel":"4","action":"OBJECT GRABBED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580286","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580287","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580287","actualLevel":"4","action":"OBJECT TurnBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580287","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580288","actualLevel":"4","action":"OBJECT GRABBED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580289","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580289","actualLevel":"4","action":"OBJECT TurnLeftBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580289","actualLevel":"4","action":"OBJECT GRABBED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580289","actualLevel":"4","action":"OBJECT GRABBED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580290","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580290","actualLevel":"4","action":"OBJECT EndIfBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580290","actualLevel":"4","action":"OBJECT GRABBED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580293","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580294","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580294","actualLevel":"4","action":"OBJECT ForwardBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580294","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580295","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580296","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580296","actualLevel":"4","action":"OBJECT EndForBlock(Clone) IN Right Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580296","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580298","actualLevel":"4","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580299","actualLevel":"4","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580299","actualLevel":"4","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580299","actualLevel":"4","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580301","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT RELEASED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT RELEASED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT GRABBED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT RELEASED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580349","actualLevel":"4","action":"OBJECT RELEASED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580350","actualLevel":"4","action":"OBJECT RELEASED: IfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580350","actualLevel":"4","action":"OBJECT TurnBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580350","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580350","actualLevel":"4","action":"OBJECT ObjectBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580350","actualLevel":"4","action":"OBJECT GRABBED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580351","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580351","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580351","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580352","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580352","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580353","actualLevel":"4","action":"OBJECT RELEASED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580353","actualLevel":"4","action":"OBJECT NumberBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580353","actualLevel":"4","action":"OBJECT GRABBED: NumberBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580354","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT RELEASED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT TurnBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT GRABBED: TurnBlock(Clone)"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT EndIfBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT GRABBED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT TurnLeftBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580355","actualLevel":"4","action":"OBJECT GRABBED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT GRABBED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580356","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580357","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580357","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580357","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580357","actualLevel":"4","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580357","actualLevel":"4","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT EndForBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT GRABBED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT GetHumidityBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT EndIfBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580358","actualLevel":"4","action":"OBJECT GRABBED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT GRABBED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT RELEASED: GetHumidityBlock(Clone)"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT EndIfBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580363","actualLevel":"4","action":"OBJECT GRABBED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580364","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580364","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580364","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580365","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580366","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580366","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580366","actualLevel":"4","action":"OBJECT ForwardBlock(Clone) IN Bottom Socket FROM Player Area"}
+{"id":"anom","dateTime":"1717580366","actualLevel":"4","action":"OBJECT GRABBED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580367","actualLevel":"4","action":"BUTTON PLAY PRESSED"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: ForwardBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: EndForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: ObjectBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: EndIfBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: ForBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}
+{"id":"anom","dateTime":"1717580384","actualLevel":"4","action":"OBJECT RELEASED: TurnLeftBlock(Clone)"}

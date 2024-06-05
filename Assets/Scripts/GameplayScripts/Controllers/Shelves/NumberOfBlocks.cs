@@ -29,8 +29,11 @@ public class NumberOfBlocks : MonoBehaviour
         switch (block.name)
         {
             case "TurnBlock": return numberOfTurn;
+            case "TurnBlock(Clone)": return numberOfTurn;
             case "TurnRightBlock": return numberOfRight;
+            case "TurnRightBlock(Clone)": return numberOfRight;
             case "ObjectBlock": return numberOfObject;
+            case "ObjectBlock(Clone)": return numberOfObject;
             case "NumberBlock":
                 switch (n)
                 {
@@ -44,14 +47,34 @@ public class NumberOfBlocks : MonoBehaviour
                     case 2: return numberOfNumber2;
                     default: return numberOfNumber;
                 }
-                
+            case "NumberBlock(Clone)":
+                switch (n)
+                {
+                    case 9: return numberOfNumber9;
+                    case 8: return numberOfNumber8;
+                    case 7: return numberOfNumber7;
+                    case 6: return numberOfNumber6;
+                    case 5: return numberOfNumber5;
+                    case 4: return numberOfNumber4;
+                    case 3: return numberOfNumber3;
+                    case 2: return numberOfNumber2;
+                    default: return numberOfNumber;
+                }
+
             case "TurnLeftBlock": return numberOfLeft;
+            case "TurnLeftBlock(Clone)": return numberOfLeft;
             case "IfBlock": return numberOfIf;
+            case "IfBlock(Clone)": return numberOfIf;
             case "GetHumidityBlock": return numberOfGetHumidity;
+            case "GetHumidityBlock(Clone)": return numberOfGetHumidity;
             case "ForwardBlock": return numberOfForward;
+            case "ForwardBlock(Clone)": return numberOfForward;
             case "ForBlock": return numberOfFor;
+            case "ForBlock(Clone)": return numberOfFor;
             case "EndIfBlock": return numberOfEndIf;
+            case "EndIfBlock(Clone)": return numberOfEndIf;
             case "EndForBlock": return numberOfEndFor;
+            case "EndForBlock(Clone)": return numberOfEndFor;
             default: return 0;
         }
     }
@@ -89,7 +112,7 @@ public class NumberOfBlocks : MonoBehaviour
                     case 6: numberOfNumber6--; break;
                     case 5: numberOfNumber5--; break;
                     case 4: numberOfNumber4--; break;
-                    case 3: numberOfNumber3--; break;
+                    case 3: numberOfNumber3--;Debug.Log("aqui"); break;
                     case 2: numberOfNumber2--; break;
                     default: numberOfNumber--; break;
                 }
@@ -225,7 +248,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfGetHumidity = 2;
         numberOfIf = 0;
         numberOfLeft = 2;
-        numberOfNumber = 0;
+        numberOfNumber = numberOfFor;
         numberOfObject = 0;
         numberOfRight = 2;
         numberOfTurn = 2;
@@ -248,7 +271,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfGetHumidity = 2;
         numberOfIf = 0;
         numberOfLeft = 2;
-        numberOfNumber = 0;
+        numberOfNumber = numberOfFor;
         numberOfObject = 0;
         numberOfRight = 2;
         numberOfTurn = 2;
@@ -271,7 +294,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfGetHumidity = 2;
         numberOfIf = 0;
         numberOfLeft = 0;
-        numberOfNumber = 0;
+        numberOfNumber = numberOfFor;
         numberOfObject = 0;
         numberOfRight = 0;
         numberOfTurn = 0;
@@ -294,7 +317,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfGetHumidity = 2;
         numberOfIf = 1;
         numberOfLeft = 2;
-        numberOfNumber = 1;
+        numberOfNumber = numberOfFor;
         numberOfObject = 1;
         numberOfRight = 2;
         numberOfTurn = 2;
@@ -317,7 +340,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfGetHumidity = 2;
         numberOfIf = 1;
         numberOfLeft = 2;
-        numberOfNumber = 1;
+        numberOfNumber = numberOfFor;
         numberOfObject = 1;
         numberOfRight = 2;
         numberOfTurn = 2;
@@ -340,7 +363,7 @@ public class NumberOfBlocks : MonoBehaviour
         numberOfGetHumidity = 2;
         numberOfIf = 1;
         numberOfLeft = 2;
-        numberOfNumber = 1;
+        numberOfNumber = numberOfFor;
         numberOfObject = 1;
         numberOfRight = 2;
         numberOfTurn = 2;

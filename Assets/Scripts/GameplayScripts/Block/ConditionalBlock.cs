@@ -59,6 +59,7 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
 
     public bool InterpretConditionalExpression(string expression, Dictionary<string, int> variables)
     {
+        //Debug.Log(GameManager.objectInFront);
         bool result = false;
         switch(expression)
         {

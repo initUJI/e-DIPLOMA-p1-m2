@@ -250,7 +250,7 @@ public class EventsManager : MonoBehaviour
     // Método llamado cuando se suelta el objeto
     private void OnSocketExit(SelectExitEventArgs interactor)
     {
-        Debug.Log("Objeto soltado");
+        //Debug.Log("Objeto soltado");
 
         Data data;
 
@@ -362,7 +362,7 @@ public class EventsManager : MonoBehaviour
         }
         catch (Exception ex)
         {
-            Debug.LogError("Error al escribir en el archivo JSON con Path " +filePath+ ": " + ex.Message);
+            //Debug.LogError("Error al escribir en el archivo JSON con Path " +filePath+ ": " + ex.Message);
             errorMessage("Error al escribir en el archivo JSON con Path " + filePath + ": " + ex.Message);
         }
     }

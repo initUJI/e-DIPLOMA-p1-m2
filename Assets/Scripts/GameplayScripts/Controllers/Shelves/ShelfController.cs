@@ -94,7 +94,22 @@ public class ShelfController : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
         if (other.gameObject == currentBlock || (other.gameObject.transform.parent != null && other.gameObject.transform.parent.gameObject == currentBlock)){
-            if (levelManager.returnNumberOfBlocks(blockPrefab) > 0)
+
+            if (blockPrefab.name.Contains("Number"))
+            {
+                if (levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock) > 0)
+                {
+                    CreateNewBlock();
+                    Debug.Log(numberForNumberBlock);
+                    levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
+                    GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString();
+                }
+                else
+                {
+                    GetComponentInChildren<TextMeshProUGUI>().text = "";
+                }
+            }
+            else if (levelManager.returnNumberOfBlocks(blockPrefab) > 0)
             {
                 GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString();
                 CreateNewBlock();

@@ -902,7 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 591670403447120844}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -935,7 +935,7 @@ GameObject:
   - component: {fileID: 694164660281001679}
   - component: {fileID: 8098880639519661101}
   - component: {fileID: 5923459262584790215}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Right Socket
   m_TagString: RightSocket
   m_Icon: {fileID: 0}

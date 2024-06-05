@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7271921006491362947}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3134163408268498838}
   - component: {fileID: 1981089654318185877}
   - component: {fileID: 2334563434830831753}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: TurnRightBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 2641961834773775321}
   - component: {fileID: 2641961834773775335}
   - component: {fileID: 2641961834773775320}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Bottom Socket
   m_TagString: BottomSocket
   m_Icon: {fileID: 0}
@@ -421,7 +421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 563923429704613197}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 2865971546773385662}
   - component: {fileID: 8784947185080456582}
   - component: {fileID: 5951907661513762417}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2493453268308349682}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8715639188540688736}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 4825182886355177916}
   - component: {fileID: 889859015115097151}
   - component: {fileID: 7747691273581938822}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Action_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 133470664778862462}
   - component: {fileID: 8655079282653140380}
   - component: {fileID: 6506680121253205366}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Right Socket
   m_TagString: RightSocket
   m_Icon: {fileID: 0}
@@ -910,7 +910,7 @@ GameObject:
   - component: {fileID: 4761806971238574906}
   - component: {fileID: 1916976048715826556}
   - component: {fileID: 7619508115561953042}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Local Context Socket
   m_TagString: LocalContextSocket
   m_Icon: {fileID: 0}

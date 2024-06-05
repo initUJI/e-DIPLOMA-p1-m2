@@ -1,0 +1,36 @@
+userID;fecha
+anom;04/06/2024_11:36
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717493802,87264;2,70232;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717493805,14832;4,97767;Test1;ENTRA_HEAD;Brick: Part of the level
+1717493808,12362;7,95348;Test1;SALE_HEAD;Water: Part of the level
+1717493809,33211;9,16148;Test1;ENTRA_HEAD;Water: Part of the level
+1717493811,52560;11,35491;Test1;SALE_HEAD;Limit (3): Part of the level
+1717493811,56697;11,39666;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717493812,23409;12,06344;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717493812,38678;12,21616;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717493813,27487;13,10439;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717493813,35789;13,18801;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717493814,81649;14,64607;Test1;SALE_HEAD;Limit (3): Part of the level
+1717493814,85787;14,68766;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717493815,56740;15,39670;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717493815,63600;15,46568;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717493816,69200;16,52204;Test1;SALE_HEAD;Limit (3): Part of the level
+1717493816,74795;16,57747;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717493817,20585;17,03576;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717493817,24820;17,07743;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717493817,26174;17,09135;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717493817,27544;17,10471;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1717493817,28897;17,11903;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1717493817,30354;17,13320;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717493818,38637;18,21627;Test1;SALE_HEAD;Limit (3): Part of the level
+1717493818,89996;18,73005;Test1;ENTRA_HEAD;Water: Part of the level
+1717493819,91387;19,74328;Test1;SALE_HEAD;Limit (3): Part of the level
+1717493820,05338;19,88321;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717493821,78906;21,61880;Test1;SALE_HEAD;Limit (23): Part of the level
+1717493822,02519;21,85503;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1717493822,20712;22,03670;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1717493822,35863;22,18791;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1717493829,99869;29,82810;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717493830,48306;30,31304;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1717493830,91412;30,74351;Test1;ENTRA_HEAD;Center Wall: Part of Player Area

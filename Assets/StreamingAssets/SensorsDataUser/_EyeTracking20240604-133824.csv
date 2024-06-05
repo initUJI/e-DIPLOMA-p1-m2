@@ -1,0 +1,33 @@
+userID;fecha
+anom;04/06/2024_13:38
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717501104,54670;,24839;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717501108,09966;3,80144;Test1;SALE_HEAD;Grass: Part of the level
+1717501108,28049;3,98247;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717501108,37813;4,07993;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717501108,76821;4,46986;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717501111,01988;6,72157;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1717501111,15896;6,86047;Test1;ENTRA_HEAD;Limit (11): Part of the level
+1717501137,47630;33,17833;Test1;SALE_HEAD;Limit (10): Part of the level
+1717501138,11712;33,81906;Test1;ENTRA_HEAD;Bottom Socket: Part of Player Area
+1717501138,51989;34,22153;Test1;SALE_HEAD;EndIfBlock(Clone): Part of Player Area
+1717501138,57579;34,27708;Test1;ENTRA_HEAD;EndIfBlock(Clone): Part of Player Area
+1717501138,65808;34,35972;Test1;SALE_HEAD;EndIfBlock(Clone): Part of Player Area
+1717501138,71477;34,41600;Test1;ENTRA_HEAD;EndIfBlock(Clone): Part of Player Area
+1717501139,35414;35,05588;Test1;SALE_HEAD;Bottom Socket: Part of Player Area
+1717501139,52033;35,22247;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717501139,81272;35,51473;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717501139,93770;35,63928;Test1;ENTRA_HEAD;Fence: Part of the level
+1717501140,25720;35,95889;Test1;SALE_HEAD;Limit (21): Part of the level
+1717501140,80116;36,50322;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1717501141,29960;37,00165;Test1;SALE_HEAD;IfBlock(Clone): Part of a Block
+1717501141,49513;37,19685;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717501143,32924;39,03138;Test1;SALE_HEAD;Shelf (7): Part of Player Area
+1717501144,69045;40,39241;Test1;ENTRA_HEAD;EndForBlock(Clone): Part of a Block
+1717501144,78852;40,48997;Test1;SALE_HEAD;EndForBlock(Clone): Part of a Block
+1717501145,06616;40,76757;Test1;ENTRA_HEAD;EndForBlock(Clone): Part of a Block
+1717501145,17665;40,87845;Test1;SALE_HEAD;EndForBlock(Clone): Part of a Block
+1717501149,53738;45,23873;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717501149,62079;45,32211;Test1;SALE_HEAD;Limit (5): Part of the level
+1717501149,80165;45,50371;Test1;ENTRA_HEAD;Platform: Part of Player Area
+1717501149,89776;45,59917;Test1;SALE_HEAD;Platform: Part of Player Area

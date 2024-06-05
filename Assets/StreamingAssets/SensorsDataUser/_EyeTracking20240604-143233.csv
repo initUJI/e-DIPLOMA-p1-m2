@@ -1,0 +1,60 @@
+userID;fecha
+anom;04/06/2024_14:32
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717504353,57304;,24631;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717504360,15017;6,82346;Test1;SALE_HEAD;Grass: Part of the level
+1717504360,76188;7,43496;Test1;ENTRA_HEAD;Grass: Part of the level
+1717504363,87344;10,54673;Test1;SALE_HEAD;Limit (3): Part of the level
+1717504364,58287;11,25596;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717504367,19290;13,86602;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504367,23480;13,90776;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717504368,33204;15,00496;Test1;SALE_HEAD;Attach: Part of Player Area
+1717504368,38700;15,06006;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504370,56745;17,24056;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504370,60954;17,28273;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717504372,22114;18,89378;Test1;SALE_HEAD;Attach: Part of Player Area
+1717504372,24792;18,92089;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504374,41520;21,08813;Test1;SALE_HEAD;Limit (23): Part of the level
+1717504375,24761;21,92105;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717504376,58175;23,25454;Test1;SALE_HEAD;Limit (3): Part of the level
+1717504377,45725;24,12992;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717504378,35889;25,03251;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504379,03946;25,71307;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717504379,12256;25,79562;Test1;SALE_HEAD;Attach: Part of Player Area
+1717504379,87305;26,54644;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717504383,55348;30,22666;Test1;SALE_HEAD;Attach: Part of Player Area
+1717504383,60902;30,28215;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504387,44204;34,11542;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504387,48551;34,15836;Test1;ENTRA_HEAD;Attach: Part of Player Area
+1717504388,87289;35,54604;Test1;SALE_HEAD;Attach: Part of Player Area
+1717504388,94266;35,61532;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504432,46820;79,14091;Test1;SALE_HEAD;Limit (11): Part of the level
+1717504432,48282;79,15550;Test1;ENTRA_HEAD;IfBlock(Clone): Part of Player Area
+1717504432,60696;79,27978;Test1;SALE_HEAD;Bottom Socket: Part of Player Area
+1717504432,62064;79,29414;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1717504433,88397;80,55720;Test1;SALE_HEAD;Grass: Part of the level
+1717504434,49600;81,16924;Test1;ENTRA_HEAD;Grass: Part of the level
+1717504448,99575;95,66907;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504449,05075;95,72431;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717504450,41257;97,08542;Test1;SALE_HEAD;Shelf (5): Part of Player Area
+1717504450,48101;97,15423;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504451,27336;97,94638;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504451,30024;97,97364;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717504456,50938;103,18249;Test1;SALE_HEAD;Shelf (5): Part of Player Area
+1717504456,53772;103,21041;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504457,07813;103,75173;Test1;SALE_HEAD;Grass: Part of the level
+1717504457,87019;104,54320;Test1;ENTRA_HEAD;Grass: Part of the level
+1717504458,71761;105,39042;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504458,78574;105,45914;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717504459,36967;106,04308;Test1;SALE_HEAD;Shelf (5): Part of Player Area
+1717504459,41201;106,08494;Test1;ENTRA_HEAD;EndForBlock(Clone): Part of a Block
+1717504459,43994;106,11264;Test1;SALE_HEAD;EndForBlock(Clone): Part of a Block
+1717504459,57875;106,25166;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504464,39827;111,07119;Test1;SALE_HEAD;Grass: Part of the level
+1717504465,27295;111,94609;Test1;ENTRA_HEAD;Grass: Part of the level
+1717504465,89764;112,57119;Test1;SALE_HEAD;Limit (5): Part of the level
+1717504465,96728;112,64056;Test1;ENTRA_HEAD;Shelf (5): Part of Player Area
+1717504467,81435;114,48756;Test1;SALE_HEAD;Shelf (5): Part of Player Area
+1717504467,92452;114,59811;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1717504494,71656;141,38933;Test1;SALE_HEAD;Grass: Part of the level
+1717504494,88171;141,55524;Test1;ENTRA_HEAD;Platform: Part of Player Area
