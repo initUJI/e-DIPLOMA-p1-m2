@@ -1,0 +1,7 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1717591698","actualLevel":"1","action":"PRESSED TEST STAND: FORWARD"}
+{"id":"anom","dateTime":"1717591701","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"1717591703","actualLevel":"1","action":"PRESSED TEST STAND: LEFT"}
+{"id":"anom","dateTime":"1717591704","actualLevel":"1","action":"PRESSED TEST STAND: LEFT"}
+{"id":"anom","dateTime":"1717591705","actualLevel":"1","action":"PRESSED TEST STAND: RIGHT"}
+{"id":"anom","dateTime":"1717591706","actualLevel":"1","action":"PRESSED TEST STAND: RESET CHARACTER POSITION AND ROTATION"}

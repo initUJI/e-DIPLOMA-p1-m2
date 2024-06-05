@@ -25,6 +25,7 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
     IEnumerator c_Execute(Dictionary<string, int> variables)
     {
         isFinished = false;
+        bool solved = true;
 
         foreach (Plant p in plants)
         {
@@ -46,11 +47,18 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
                     }
                     else
                     {
-                        //levelcompleted
-                        LevelManager lm = FindObjectOfType<LevelManager>();
-                        lm.saveCompletedLevel(lm.getActualLevel());
+                        if (solved && AreBlocksCorrectlyPaired())
+                        {
+                            //levelcompleted
+                            LevelManager lm = FindObjectOfType<LevelManager>();
+                            lm.saveCompletedLevel(lm.getActualLevel());
+                        }
                     }                   
                 }
+            }
+            else if (!IsCollidingWithAny(character.gameObject, ConvertPlantListToGameObjectList(plants)))
+            {
+                solved = false;
             }
         }
 
@@ -73,5 +81,77 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
     public override bool IsFinished()
     {
         return base.IsFinished() && isFinished;
+    }
+
+    bool AreBlocksCorrectlyPaired()
+    {
+        ForBlock[] forBlocks = FindObjectsOfType<ForBlock>();
+        EndForBlock[] endForBlocks = FindObjectsOfType<EndForBlock>();
+        IfBlock[] ifBlocks = FindObjectsOfType<IfBlock>();
+        EndIfBlock[] endIfBlocks = FindObjectsOfType<EndIfBlock>();
+
+        if (forBlocks.Length != endForBlocks.Length)
+        {
+            Debug.LogError($"Mismatch in number of ForBlocks ({forBlocks.Length}) and EndForBlocks ({endForBlocks.Length})");
+            return false;
+        }
+
+        if (ifBlocks.Length != endIfBlocks.Length)
+        {
+            Debug.LogError($"Mismatch in number of IfBlocks ({ifBlocks.Length}) and EndIfBlocks ({endIfBlocks.Length})");
+            return false;
+        }
+
+        // Further checking could be done here to ensure the blocks are correctly paired in order
+
+        return true;
+    }
+
+    List<GameObject> ConvertPlantListToGameObjectList(Plant[] plants)
+    {
+        List<GameObject> gameObjects = new List<GameObject>();
+
+        foreach (Plant plant in plants)
+        {
+            if (plant != null)
+            {
+                gameObjects.Add(plant.gameObject);
+            }
+        }
+
+        return gameObjects;
+    }
+
+    bool IsCollidingWithAny(GameObject target, List<GameObject> objects)
+    {
+        Collider targetCollider = target.GetComponent<Collider>();
+
+        if (targetCollider == null)
+        {
+            Debug.LogError("Target object does not have a collider.");
+            return false;
+        }
+
+        foreach (GameObject obj in objects)
+        {
+            if (obj == null)
+            {
+                continue;
+            }
+
+            Collider objCollider = obj.GetComponent<Collider>();
+            if (objCollider == null)
+            {
+                Debug.LogWarning("Object in the list does not have a collider: " + obj.name);
+                continue;
+            }
+
+            if (targetCollider.bounds.Intersects(objCollider.bounds))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

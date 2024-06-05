@@ -227,24 +227,36 @@ public class EventsManager : MonoBehaviour
     {
         //Debug.Log("Objeto cogido");
 
-        Data data;
+        Data data = new Data("", "", "", "");
 
         tryFindingLevelManager();
 
         if (levelManager != null)
         {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
-                "OBJECT " + interactor.interactableObject.transform.gameObject.name + 
+            if (!socket.gameObject.transform.root.gameObject.name.Contains("Player Area"))
+            {
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
+                "OBJECT " + interactor.interactableObject.transform.gameObject.name +
                 " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
+            }
+            
         }
         else
         {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU",
+            if (!socket.gameObject.transform.root.gameObject.name.Contains("Player Area"))
+            {
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU",
                  "OBJECT " + interactor.interactableObject.transform.gameObject.name +
                 " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
+            }
+            
         }
 
-        writeInJson(data);
+        if (data.id != "")
+        {
+            writeInJson(data);
+        }
+
     }
 
     // Método llamado cuando se suelta el objeto
@@ -353,6 +365,7 @@ public class EventsManager : MonoBehaviour
                     Directory.CreateDirectory(directoryPath);
                 }
 
+                CleanData(data);
                 string jsonString = JsonUtility.ToJson(data);
                 StreamWriter writer = new StreamWriter(filePath, true);
                 writer.WriteLine(jsonString);
@@ -474,6 +487,21 @@ public class EventsManager : MonoBehaviour
         {
             errorMessage("Error trying to write in Json on button clicked");
         }
+    }
+
+    public Data CleanData(Data data)
+    {
+        data.id = RemoveClone(data.id);
+        data.dateTime = RemoveClone(data.dateTime);
+        data.actualLevel = RemoveClone(data.actualLevel);
+        data.action = RemoveClone(data.action);
+
+        return data;
+    }
+
+    private string RemoveClone(string input)
+    {
+        return input.Replace("(Clone)", "");
     }
 }
 

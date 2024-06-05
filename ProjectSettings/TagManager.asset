@@ -40,9 +40,9 @@ TagManager:
   - UI
   - InsideBlock
   - BottomBlock
-  - 
-  - 
-  - 
+  - InsideBlockObject
+  - InsideBlockNumber
+  - InsideBlockDirection
   - 
   - 
   - 

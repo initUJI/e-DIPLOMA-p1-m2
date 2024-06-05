@@ -1,0 +1,125 @@
+{"id":"-projectpath","dateTime":"1717591676","actualLevel":"MAIN MENU","action":"USER REGISTERED"}
+{"id":"-projectpath","dateTime":"1717591683","actualLevel":"MAIN MENU","action":"PRESSED BUTTON: START"}
+{"id":"-projectpath","dateTime":"1717591698","actualLevel":"1","action":"CHARACTER START MOVING: Forward"}
+{"id":"-projectpath","dateTime":"1717591701","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"-projectpath","dateTime":"1717591703","actualLevel":"1","action":"CHARACTER START MOVING: Left"}
+{"id":"-projectpath","dateTime":"1717591704","actualLevel":"1","action":"CHARACTER START MOVING: Left"}
+{"id":"-projectpath","dateTime":"1717591705","actualLevel":"1","action":"CHARACTER START MOVING: Right"}
+{"id":"-projectpath","dateTime":"1717591711","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591713","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591714","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591716","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591716","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591717","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591718","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591718","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591720","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591721","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591721","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591726","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591728","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591728","actualLevel":"1","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591731","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591733","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591733","actualLevel":"1","action":"OBJECT GRABBED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591735","actualLevel":"1","action":"BUTTON PLAY PRESSED"}
+{"id":"-projectpath","dateTime":"1717591739","actualLevel":"1","action":"LEVEL COMPLETED: 1"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"1","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591743","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591752","actualLevel":"2","action":"CHARACTER START MOVING: Forward"}
+{"id":"-projectpath","dateTime":"1717591753","actualLevel":"2","action":"CHARACTER START MOVING: Forward"}
+{"id":"-projectpath","dateTime":"1717591759","actualLevel":"2","action":"CHARACTER START MOVING: Left"}
+{"id":"-projectpath","dateTime":"1717591764","actualLevel":"2","action":"CHARACTER START MOVING: Left"}
+{"id":"-projectpath","dateTime":"1717591766","actualLevel":"2","action":"CHARACTER START MOVING: Right"}
+{"id":"-projectpath","dateTime":"1717591767","actualLevel":"2","action":"CHARACTER START MOVING: Right"}
+{"id":"-projectpath","dateTime":"1717591770","actualLevel":"2","action":"CHARACTER START MOVING: Right"}
+{"id":"-projectpath","dateTime":"1717591855","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591856","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591856","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591857","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591858","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591858","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591860","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591861","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591861","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591862","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock"}
+{"id":"-projectpath","dateTime":"1717591863","actualLevel":"2","action":"OBJECT RELEASED: TurnBlock"}
+{"id":"-projectpath","dateTime":"1717591863","actualLevel":"2","action":"OBJECT GRABBED: TurnBlock"}
+{"id":"-projectpath","dateTime":"1717591879","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock"}
+{"id":"-projectpath","dateTime":"1717591880","actualLevel":"2","action":"OBJECT RELEASED: TurnRightBlock"}
+{"id":"-projectpath","dateTime":"1717591880","actualLevel":"2","action":"OBJECT GRABBED: TurnRightBlock"}
+{"id":"-projectpath","dateTime":"1717591884","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591886","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591886","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591887","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591889","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591889","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591890","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591891","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591892","actualLevel":"2","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591893","actualLevel":"2","action":"OBJECT GRABBED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591894","actualLevel":"2","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591894","actualLevel":"2","action":"OBJECT GRABBED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591896","actualLevel":"2","action":"BUTTON PLAY PRESSED"}
+{"id":"-projectpath","dateTime":"1717591902","actualLevel":"2","action":"LEVEL COMPLETED: 2"}
+{"id":"-projectpath","dateTime":"1717591906","actualLevel":"2","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"2","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnRightBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnRightBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: TurnBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591907","actualLevel":"MAIN MENU","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591918","actualLevel":"3","action":"OBJECT GRABBED: ForBlock"}
+{"id":"-projectpath","dateTime":"1717591919","actualLevel":"3","action":"OBJECT RELEASED: ForBlock"}
+{"id":"-projectpath","dateTime":"1717591919","actualLevel":"3","action":"OBJECT GRABBED: ForBlock"}
+{"id":"-projectpath","dateTime":"1717591926","actualLevel":"3","action":"OBJECT GRABBED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591927","actualLevel":"3","action":"OBJECT RELEASED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591927","actualLevel":"3","action":"OBJECT GRABBED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591928","actualLevel":"3","action":"OBJECT RELEASED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591928","actualLevel":"3","action":"OBJECT RELEASED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591928","actualLevel":"3","action":"OBJECT GRABBED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591929","actualLevel":"3","action":"OBJECT RELEASED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591929","actualLevel":"3","action":"OBJECT GRABBED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591936","actualLevel":"3","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591938","actualLevel":"3","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591938","actualLevel":"3","action":"OBJECT ForwardBlock IN Bottom Socket FROM ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591938","actualLevel":"3","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591938","actualLevel":"3","action":"OBJECT GRABBED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591939","actualLevel":"3","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591939","actualLevel":"3","action":"OBJECT GRABBED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591940","actualLevel":"3","action":"OBJECT GRABBED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591941","actualLevel":"3","action":"OBJECT RELEASED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591941","actualLevel":"3","action":"OBJECT GRABBED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591941","actualLevel":"3","action":"BUTTON PLAY PRESSED"}
+{"id":"-projectpath","dateTime":"1717591955","actualLevel":"3","action":"LEVEL COMPLETED: 3"}
+{"id":"-projectpath","dateTime":"1717591961","actualLevel":"3","action":"OBJECT RELEASED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591961","actualLevel":"3","action":"OBJECT RELEASED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591961","actualLevel":"3","action":"OBJECT GRABBED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591962","actualLevel":"3","action":"OBJECT RELEASED: EndForBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"PRESSED BUTTON: NEXT LEVEL"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: GetHumidityBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: ForBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: NumberBlock"}
+{"id":"-projectpath","dateTime":"1717591972","actualLevel":"3","action":"OBJECT RELEASED: NumberBlock"}
