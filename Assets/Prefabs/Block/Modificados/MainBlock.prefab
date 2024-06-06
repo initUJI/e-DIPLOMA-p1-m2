@@ -971,6 +971,7 @@ GameObject:
   - component: {fileID: 3999710674519891484}
   - component: {fileID: 3999710674519891491}
   - component: {fileID: 2807496929128118045}
+  - component: {fileID: 6277515637663727}
   m_Layer: 7
   m_Name: Bottom Socket
   m_TagString: BottomSocket
@@ -1074,6 +1075,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2897277, y: 0.063737154, z: 0.09618219}
   m_Center: {x: -0.14352587, y: -0.01812756, z: -0.0021007953}
+--- !u!114 &6277515637663727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3999710674519891489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36375ca97b2c24a44a1b41d149e0a999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3999710675124569885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +1431,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 32a2963455fd65e4fae063d7f644b4ad, type: 2}
   bottomSocket: {fileID: 3999710674519891484}
   currentBlock: {fileID: 0}
+  wasIfBlock: 0
+  ifConditionChecked: 0
+  allCorrect: 0
+  activeIf: 0
+  ifBlock: {fileID: 0}
 --- !u!114 &2780242033712439381
 MonoBehaviour:
   m_ObjectHideFlags: 0

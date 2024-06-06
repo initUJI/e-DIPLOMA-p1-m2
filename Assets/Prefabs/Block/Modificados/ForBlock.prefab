@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 9159120423273730600}
   - component: {fileID: 494429917773547722}
   - component: {fileID: 2633984261860968480}
+  - component: {fileID: 4888085317945167728}
   m_Layer: 9
   m_Name: Right Socket
   m_TagString: RightSocket
@@ -226,6 +227,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4888085317945167728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216945745185357589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36375ca97b2c24a44a1b41d149e0a999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1486444178831399210
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +645,7 @@ GameObject:
   - component: {fileID: 6515503500523298481}
   - component: {fileID: 6515503500523298446}
   - component: {fileID: 347857514319023657}
+  - component: {fileID: 5430401249969436798}
   m_Layer: 7
   m_Name: Bottom Socket
   m_TagString: BottomSocket
@@ -759,6 +773,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38209316, y: 0.063737154, z: 0.09618219}
   m_Center: {x: -0.18970852, y: -0.01812756, z: -0.00210081}
+--- !u!114 &5430401249969436798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515503500523298444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36375ca97b2c24a44a1b41d149e0a999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6515503501265242032
 GameObject:
   m_ObjectHideFlags: 0

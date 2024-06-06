@@ -38,6 +38,10 @@ public class MainBlock : Block, WithBottomSocket
     bool activeFor = false;
     ForBlock forBlock;
     EventsManager eventsManager;
+    int forBloks = 0;
+    int endForBlocks = 0;
+    int ifBlocks = 0;
+    int endIfBlocks = 0;
 
     public XRSocketInteractor getBottomSocket()
     {
@@ -124,6 +128,7 @@ public class MainBlock : Block, WithBottomSocket
             if (currentBlock as ForBlock)
             {
                 activeFor = true;
+                forBloks++;
                 forBlock = (ForBlock)currentBlock;
                 currentBlock.Execute(variables);
                 executingBlock = true;
@@ -131,6 +136,7 @@ public class MainBlock : Block, WithBottomSocket
 
             else if (currentBlock as IfBlock)
             {
+                ifBlocks++;
                 wasIfBlock = true;
                 ifConditionChecked = false;
                 ifBlock = (IfBlock)currentBlock;
@@ -148,12 +154,14 @@ public class MainBlock : Block, WithBottomSocket
             {
                 activeIf = false;
                 ifBlock = null;
+                endIfBlocks++;
                 //currentBlock.Execute(variables);
             }
             else if (currentBlock as EndForBlock)
             {
                 
                 activeFor = false;
+                endForBlocks++;
                 forBlock = null;
                 //currentBlock.Execute(variables);
             }
@@ -201,7 +209,8 @@ public class MainBlock : Block, WithBottomSocket
 
         SetGlowing(false);
 
-        if (allCorrect && IsCollidingWithAny(GameManager.character.gameObject, ConvertPlantListToGameObjectList(FindObjectsOfType<Plant>())))
+        if (allCorrect && IsCollidingWithAny(GameManager.character.gameObject, ConvertPlantListToGameObjectList(FindObjectsOfType<Plant>())) &&
+            forBloks == endForBlocks && ifBlocks == endIfBlocks)
         {
             completeLevel();
         }

@@ -276,6 +276,9 @@ GameObject:
   - component: {fileID: 4977639877704049840}
   - component: {fileID: 4977639877704049807}
   - component: {fileID: 3335654937759326396}
+  - component: {fileID: 4085052563875022843}
+  - component: {fileID: 4984336293245475557}
+  - component: {fileID: 214509326477784930}
   m_Layer: 7
   m_Name: Bottom Socket
   m_TagString: BottomSocket
@@ -403,6 +406,42 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.22160216, y: 0.063737154, z: 0.09618219}
   m_Center: {x: -0.10946301, y: -0.01812756, z: -0.00210081}
+--- !u!114 &4085052563875022843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4977639877704049805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36375ca97b2c24a44a1b41d149e0a999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4984336293245475557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4977639877704049805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36375ca97b2c24a44a1b41d149e0a999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &214509326477784930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4977639877704049805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36375ca97b2c24a44a1b41d149e0a999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4977639878174293425
 GameObject:
   m_ObjectHideFlags: 0
