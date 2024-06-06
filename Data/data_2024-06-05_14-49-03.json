@@ -1,9 +1,0 @@
-{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
-{"id":"anom","dateTime":"1717591752","actualLevel":"2","action":"PRESSED TEST STAND: FORWARD"}
-{"id":"anom","dateTime":"1717591753","actualLevel":"2","action":"PRESSED TEST STAND: FORWARD"}
-{"id":"anom","dateTime":"1717591759","actualLevel":"2","action":"PRESSED TEST STAND: LEFT"}
-{"id":"anom","dateTime":"1717591764","actualLevel":"2","action":"PRESSED TEST STAND: LEFT"}
-{"id":"anom","dateTime":"1717591766","actualLevel":"2","action":"PRESSED TEST STAND: RIGHT"}
-{"id":"anom","dateTime":"1717591767","actualLevel":"2","action":"PRESSED TEST STAND: RIGHT"}
-{"id":"anom","dateTime":"1717591770","actualLevel":"2","action":"PRESSED TEST STAND: RIGHT"}
-{"id":"anom","dateTime":"1717591813","actualLevel":"2","action":"PRESSED TEST STAND: RESET CHARACTER POSITION AND ROTATION"}

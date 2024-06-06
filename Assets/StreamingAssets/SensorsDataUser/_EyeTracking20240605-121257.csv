@@ -1,6 +1,0 @@
-userID;fecha
-anom;05/06/2024_12:12
-unixTimestamp;Timestamp;Situacion;Accion;Objeto
-1717582377,49759;,29904;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
-1717582380,76620;3,56765;Test1;SALE_HEAD;Limit (5): Part of the level
-1717582380,82198;3,62331;Test1;ENTRA_HEAD;Attach: Part of Player Area

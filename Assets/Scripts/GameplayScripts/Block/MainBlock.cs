@@ -25,6 +25,7 @@ public class MainBlock : Block, WithBottomSocket
     [HideInInspector] public ExecutableBlock currentBlock;
     [HideInInspector] public bool wasIfBlock = false;
     [HideInInspector] public bool ifConditionChecked = false;
+    [HideInInspector] public bool allCorrect = false;
 
     public static bool paused;
     public static bool error;
@@ -200,6 +201,11 @@ public class MainBlock : Block, WithBottomSocket
 
         SetGlowing(false);
 
+        if (allCorrect && IsCollidingWithAny(GameManager.character.gameObject, ConvertPlantListToGameObjectList(FindObjectsOfType<Plant>())))
+        {
+            completeLevel();
+        }
+
         GameManager.character.desactiveGlow();
         Debug.Log("MainBlock : END");
 
@@ -210,5 +216,58 @@ public class MainBlock : Block, WithBottomSocket
         paused = !paused;
     }
 
-    
+    private void completeLevel()
+    {
+        //levelcompleted
+        LevelManager lm = FindObjectOfType<LevelManager>();
+        lm.saveCompletedLevel(lm.getActualLevel());
+    }
+
+    List<GameObject> ConvertPlantListToGameObjectList(Plant[] plants)
+    {
+        List<GameObject> gameObjects = new List<GameObject>();
+
+        foreach (Plant plant in plants)
+        {
+            if (plant != null)
+            {
+                gameObjects.Add(plant.gameObject);
+            }
+        }
+
+        return gameObjects;
+    }
+
+    bool IsCollidingWithAny(GameObject target, List<GameObject> objects)
+    {
+        Collider targetCollider = target.GetComponent<Collider>();
+
+        if (targetCollider == null)
+        {
+            Debug.LogError("Target object does not have a collider.");
+            return false;
+        }
+
+        foreach (GameObject obj in objects)
+        {
+            if (obj == null)
+            {
+                continue;
+            }
+
+            Collider objCollider = obj.GetComponent<Collider>();
+            if (objCollider == null)
+            {
+                Debug.LogWarning("Object in the list does not have a collider: " + obj.name);
+                continue;
+            }
+
+            if (targetCollider.bounds.Intersects(objCollider.bounds))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

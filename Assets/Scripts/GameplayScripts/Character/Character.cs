@@ -53,12 +53,42 @@ public class Character : MonoBehaviour
 
     public void activeGlow()
     {
-        child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1] = carGlow;
+        MeshRenderer renderer = child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>();
+
+        // Obtener una copia del array de materiales
+        Material[] materials = renderer.materials;
+
+        // Imprimir el material antes de cambiarlo
+       // Debug.Log("Antes: " + materials[1]);
+
+        // Cambiar el segundo material
+        materials[1] = carGlow;
+
+        // Asignar el array modificado de vuelta al MeshRenderer
+        renderer.materials = materials;
+
+        // Imprimir el material después de cambiarlo
+       // Debug.Log("Después: " + materials[1]);
     }
 
     public void desactiveGlow()
     {
-        child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1] = initialMaterial;
+        MeshRenderer renderer = child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>();
+
+        // Obtener una copia del array de materiales
+        Material[] materials = renderer.materials;
+
+        // Imprimir el material antes de cambiarlo
+        // Debug.Log("Antes: " + materials[1]);
+
+        // Cambiar el segundo material
+        materials[1] = initialMaterial;
+
+        // Asignar el array modificado de vuelta al MeshRenderer
+        renderer.materials = materials;
+
+        // Imprimir el material después de cambiarlo
+        // Debug.Log("Después: " + materials[1]);
     }
 
     public bool Motionless()

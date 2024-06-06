@@ -1,16 +1,25 @@
 using System.Collections;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
-using UnityEngine.UIElements;
 
 public class LanguageChanger : MonoBehaviour
 {
+    public Sprite spanish;
+    public Sprite english;
+    //public GameObject button; // Asigna tu botón desde el Inspector
+    public Image imageComponent;
 
     void Start()
     {
         SetDefaultLanguage();
+        Debug.Log(gameObject);
+        // Obtener el componente Image del botón y cambiar su sprite
+        //Image buttonImage = button.GetComponent<Image>();
     }
+
+    
 
     public void SetDefaultLanguage()
     {
@@ -92,9 +101,13 @@ public class LanguageChanger : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (GetCurrentLanguage() == "es" && imageComponent != null && imageComponent.sprite != english)
         {
-            ToggleLanguage();
+            imageComponent.sprite = english;
+        }
+        else if (GetCurrentLanguage() == "en" && imageComponent != null && imageComponent.sprite != spanish)
+        {
+            imageComponent.sprite = spanish;
         }
     }
 }

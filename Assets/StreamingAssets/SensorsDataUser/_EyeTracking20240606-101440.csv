@@ -1,0 +1,7 @@
+userID;fecha
+anom;06/06/2024_10:14
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1717661680,31613;,13978;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1717661686,98598;6,80944;Test1;SALE_HEAD;Water: Part of the level
+1717661687,54200;7,36572;Test1;ENTRA_HEAD;Limit (3): Part of the level
+1717661696,13950;15,96357;Test1;SALE_HEAD;Grass: Part of the level

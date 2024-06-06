@@ -1,0 +1,5 @@
+{"id":"userID","dateTime":"DateTime","actualLevel":"actualLevel","action":"action"}
+{"id":"anom","dateTime":"1717661687","actualLevel":"3","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"anom","dateTime":"1717661688","actualLevel":"3","action":"OBJECT RELEASED: ForwardBlock"}
+{"id":"anom","dateTime":"1717661688","actualLevel":"3","action":"OBJECT GRABBED: ForwardBlock"}
+{"id":"anom","dateTime":"1717661688","actualLevel":"3","action":"BUTTON PLAY PRESSED"}

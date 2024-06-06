@@ -1,3 +1,4 @@
+using Google.Protobuf.WellKnownTypes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -58,8 +59,16 @@ public class LevelManager : NumberOfBlocks
         noClueImage.SetActive(true);
         gameManager = FindObjectOfType<GameManager>();
         actualLevel = lastLevelCompleted() + 1;
+
+        /*saveCompletedLevel(1);
+        saveCompletedLevel(2);
+        saveCompletedLevel(3);
+        saveCompletedLevel(4);
+        saveCompletedLevel(5);
+        saveCompletedLevel(6);*/
+
         changeLevel(lastLevelCompleted() + 1);
-        //changeLevel(5);
+        //changeLevel(3);
     }
 
 
@@ -121,6 +130,10 @@ public class LevelManager : NumberOfBlocks
 
     public void SetLevelAndChange(int level)
     {
+        GameObject.Find("OptionsFinish").SetActive(false);
+        GameObject.Find("OptionsWindow").transform.GetChild(0).gameObject.SetActive(false);
+        deleteCompletedLevel(level);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 2);
         changeLevel(level, "Button");
     }
 
@@ -240,6 +253,19 @@ public class LevelManager : NumberOfBlocks
             confettiSystem.GetComponent<AudioSource>().Play();
         }
         eventsManager.levelCompleted(num);
+    }
+
+    public void deleteCompletedLevel(int num)
+    {
+        switch (num)
+        {
+            case 6: PlayerPrefs.SetInt("Level6Completed", 0); break;
+            case 5: PlayerPrefs.SetInt("Level5Completed", 0); break;
+            case 4: PlayerPrefs.SetInt("Level4Completed", 0); break;
+            case 3: PlayerPrefs.SetInt("Level3Completed", 0); break;
+            case 2: PlayerPrefs.SetInt("Level2Completed", 0); break;
+            case 1: PlayerPrefs.SetInt("Level1Completed", 0); break;
+        }
     }
 
     public bool checkCompletedLevel(int num)

@@ -50,8 +50,9 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
                         if (solved && AreBlocksCorrectlyPaired())
                         {
                             //levelcompleted
-                            LevelManager lm = FindObjectOfType<LevelManager>();
-                            lm.saveCompletedLevel(lm.getActualLevel());
+                            //LevelManager lm = FindObjectOfType<LevelManager>();
+                            //lm.saveCompletedLevel(lm.getActualLevel());
+                            FindObjectOfType<MainBlock>().allCorrect = true;
                         }
                     }                   
                 }
