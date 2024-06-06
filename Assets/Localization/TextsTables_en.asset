@@ -287,11 +287,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5522576809857024
-    m_Localized: Turn Left
+    m_Localized: 'Turn
+
+      Left'
     m_Metadata:
       m_Items: []
   - m_Id: 5522639959298048
-    m_Localized: Turn right
+    m_Localized: 'Turn
+
+      right'
     m_Metadata:
       m_Items: []
   - m_Id: 5522710222278656
