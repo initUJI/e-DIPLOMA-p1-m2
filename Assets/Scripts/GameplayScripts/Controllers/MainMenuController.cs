@@ -4,10 +4,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class MainMenuController : MonoBehaviour
 {
+    public Button startButton;
+
     [SerializeField] private GameObject menuWindow;
     [SerializeField] private GameObject cubePrefab;
     [SerializeField] private GameObject platformPrefab;
@@ -39,6 +42,7 @@ public class MainMenuController : MonoBehaviour
     private Vector3 block3Location;
     private Vector3 levelLocation;
     private Vector3 testStandLocation;
+    private const string TUTORIAL_COMPLETED_KEY = "TutorialCompleted_";
 
     private EventsManager eventsManager;
 
@@ -64,6 +68,18 @@ public class MainMenuController : MonoBehaviour
         block3Location = new Vector3(0.13f, 1.0f, -0.92f);
         levelLocation = new Vector3(-0.233f, -0.46f, -0.746f);
         testStandLocation = new Vector3(0.5f, 0.35f, -0.68f);
+    }
+
+    private void Update()
+    {
+        if (IsTutorialCompleted("Controls") && IsTutorialCompleted("Dynamics"))
+        {
+            startButton.interactable = true;
+        }
+        else
+        {
+            startButton.interactable = false;
+        }
     }
 
     public void saveUserId()
@@ -141,6 +157,7 @@ public class MainMenuController : MonoBehaviour
 
         text.text = "Tutorial completed!";
         dynamicTextUpdater.UpdateLocalizedString("completedTutorial");
+        SaveTutorialState("Controls", true);
     }
 
     public void startDynamicsTutorial()
@@ -204,6 +221,7 @@ public class MainMenuController : MonoBehaviour
 
         text.text = "Tutorial completed!";
         dynamicTextUpdater.UpdateLocalizedString("completedTutorial");
+        SaveTutorialState("Dynamics", true);
     }
 
     private void OnTeleportationStart(LocomotionSystem locomotionSystem)
@@ -229,6 +247,30 @@ public class MainMenuController : MonoBehaviour
         eventsManager.buttonClicked("RESET MAIN MENU (HOUSE ICON)");
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
+    }
+    public void SaveTutorialState(string tutorialName, bool isCompleted)
+    {
+        int value = isCompleted ? 1 : 0;
+        PlayerPrefs.SetInt(TUTORIAL_COMPLETED_KEY + tutorialName, value);
+        PlayerPrefs.Save();
+        Debug.Log($"Tutorial '{tutorialName}' completado: {isCompleted}");
+    }
+
+    public bool LoadTutorialState(string tutorialName)
+    {
+        if (PlayerPrefs.HasKey(TUTORIAL_COMPLETED_KEY + tutorialName))
+        {
+            return PlayerPrefs.GetInt(TUTORIAL_COMPLETED_KEY + tutorialName) == 1;
+        }
+        else
+        {
+            return false; // Si no hay un valor guardado, asumimos que no ha sido completado
+        }
+    }
+
+    public bool IsTutorialCompleted(string tutorialName)
+    {
+        return LoadTutorialState(tutorialName);
     }
 }
 

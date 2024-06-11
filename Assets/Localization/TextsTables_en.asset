@@ -47,8 +47,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 932646522880
-    m_Localized: Welcome to Block Programming Test! Move the car to the plant  and
-      get its humidity.
+    m_Localized: Place blocks under the main to bring the car to the plant and catch
+      its humidity.
     m_Metadata:
       m_Items: []
   - m_Id: 1355700801536
@@ -300,6 +300,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5522710222278656
     m_Localized: Advance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616732487159808
+    m_Localized: Check your code
     m_Metadata:
       m_Items: []
   references:

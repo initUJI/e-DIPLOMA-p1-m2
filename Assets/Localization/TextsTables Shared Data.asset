@@ -263,6 +263,10 @@ MonoBehaviour:
     m_Key: advance
     m_Metadata:
       m_Items: []
+  - m_Id: 7616732487159808
+    m_Key: checkCode
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

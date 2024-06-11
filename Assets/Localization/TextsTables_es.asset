@@ -47,8 +47,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 932646522880
-    m_Localized: "\xA1Bienvenido a la prueba de programaci\xF3n con bloques! Mueva
-      el coche a la planta y obten su humedad."
+    m_Localized: Coloca bloques debajo del main para llevar el coche hasta la planta
+      y coger su humedad.
     m_Metadata:
       m_Items: []
   - m_Id: 1355700801536
@@ -293,6 +293,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5522710222278656
     m_Localized: Avance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616732487159808
+    m_Localized: "Revisa tu c\xF3digo\n"
     m_Metadata:
       m_Items: []
   references:

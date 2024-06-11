@@ -22,6 +22,7 @@ public class MainBlock : Block, WithBottomSocket
     public static Dictionary<string, int> variables;
 
     [SerializeField] XRSocketInteractor bottomSocket;
+    [SerializeField] GameObject canvasFail;
     [HideInInspector] public ExecutableBlock currentBlock;
     [HideInInspector] public bool wasIfBlock = false;
     [HideInInspector] public bool ifConditionChecked = false;
@@ -53,6 +54,7 @@ public class MainBlock : Block, WithBottomSocket
         variables = new Dictionary<string, int>();
         paused = false;
         eventsManager = FindObjectOfType<EventsManager>();
+        canvasFail.SetActive(false);
         //Execute();
     }
 
@@ -114,6 +116,11 @@ public class MainBlock : Block, WithBottomSocket
         Debug.Log("MainBlock : BEGIN");
         GameManager.character.activeGlow();
         currentBlock = (ExecutableBlock) getSocketBlock(bottomSocket);
+        forBloks = 0;
+        endForBlocks = 0;
+        ifBlocks = 0;
+        endIfBlocks = 0;
+
 
         while (currentBlock != null && !error)
         {
@@ -213,6 +220,10 @@ public class MainBlock : Block, WithBottomSocket
             forBloks == endForBlocks && ifBlocks == endIfBlocks)
         {
             completeLevel();
+        }
+        else
+        {
+            canvasFail.SetActive(true);
         }
 
         GameManager.character.desactiveGlow();
