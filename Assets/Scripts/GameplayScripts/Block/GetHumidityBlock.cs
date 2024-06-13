@@ -37,6 +37,7 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
             if (p.characterInPlant())
             {
                 p.humidityChecked = true;
+                character.activeWater();
                 if (allPlantsChecked())
                 {
                     //Debug.Log(SceneManager.GetActiveScene().buildIndex);

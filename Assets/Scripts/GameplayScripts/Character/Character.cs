@@ -28,6 +28,7 @@ public class Character : MonoBehaviour
     public bool isBreaking;
     public bool objectIsFalling;
     public Material carGlow;
+    public GameObject waterEffect;
     
     private Material initialMaterial;
 
@@ -49,6 +50,12 @@ public class Character : MonoBehaviour
         targetPosition = transform.position;
         targetRotation = transform.rotation;
         initialMaterial = child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1];
+    }
+
+    public void activeWater()
+    {
+        waterEffect.GetComponent<ParticleSystem>().Play();
+        waterEffect.GetComponent<AudioSource>().Play();
     }
 
     public void activeGlow()
