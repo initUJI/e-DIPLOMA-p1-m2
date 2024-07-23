@@ -1,0 +1,21 @@
+userID;fecha
+anom;23/07/2024_13:02
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1721732541,48343;,41198;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721732549,32557;8,25375;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1721732549,92538;8,85322;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1721732561,81559;20,74347;Test1;SALE_HEAD;Attach: Part of Player Area
+1721732563,26361;22,19175;Test1;ENTRA_HEAD;Shelf (6): Part of Player Area
+1721732563,48616;22,41463;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1721732563,80682;22,73489;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721732588,43348;47,36135;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1721732589,76919;48,69790;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1721732590,38326;49,31102;Test1;SALE_HEAD;Left Wall: Part of Player Area
+1721732590,52263;49,45054;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721732595,47889;54,40681;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721732640,39128;99,32001;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1721732640,43385;99,36194;Test1;ENTRA_HEAD;Platform: Part of Player Area
+1721732641,58934;100,51729;Test1;SALE_HEAD;Platform: Part of Player Area
+1721732641,89550;100,82362;Test1;ENTRA_HEAD;Right Wall: Part of Player Area
+1721732642,77249;101,70071;Test1;SALE_HEAD;Right Wall: Part of Player Area
+1721732642,86936;101,79774;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
