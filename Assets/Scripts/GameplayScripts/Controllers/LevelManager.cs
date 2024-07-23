@@ -68,7 +68,6 @@ public class LevelManager : NumberOfBlocks
         saveCompletedLevel(6);*/
 
         changeLevel(lastLevelCompleted() + 1);
-        //changeLevel(3);
     }
 
 
@@ -285,6 +284,16 @@ public class LevelManager : NumberOfBlocks
     public void resetAllsaves()
     {
         PlayerPrefs.DeleteAll();
+        RestartScene();
+
+    }
+
+    public void RestartScene()
+    {
+        // Obtener el nombre de la escena actual
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        // Cargar la escena actual nuevamente
+        SceneManager.LoadScene(currentSceneName);
     }
 
     public int lastLevelCompleted()

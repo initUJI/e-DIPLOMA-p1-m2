@@ -65,10 +65,7 @@ public class CanBeDeleted : MonoBehaviour
                     }
 
                     eventsManager.deleteWindowOpen();
-                } /*else if(!primaryButtonValue && openWindow)
-                {
-                    closeDeleteWindow();
-                }*/
+                } 
             }
         }
     }

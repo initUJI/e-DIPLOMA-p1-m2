@@ -8,6 +8,7 @@ public float deadTime = 1.0f;
 private bool _deadTimeActive = false;
     private EventsManager eventsManager;
     private LevelManager levelManager;
+
     public void onTriggerEnterDelete() 
     {
         transform.parent.parent.gameObject.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
@@ -24,6 +25,10 @@ private bool _deadTimeActive = false;
                 levelManager.sumNumberOfBlocks(transform.parent.parent.gameObject);
             }
         }
+        else
+        {
+            levelManager.sumNumberOfBlocks(transform.parent.parent.gameObject);
+        }
 
         eventsManager.deleteBlock(transform.parent.parent.gameObject);
 
@@ -32,6 +37,10 @@ private bool _deadTimeActive = false;
         {
             if (transform.parent.parent.gameObject.name.Contains(s.blockPrefab.name))
             {
+                if (levelManager.returnNumberOfBlocks(transform.parent.parent.gameObject) == 1)
+                {
+                    s.callCreateNewBlock();
+                }
                 s.actualiceText();
             }
        
@@ -40,9 +49,8 @@ private bool _deadTimeActive = false;
 
     public void closeDeleteWindow()
     {
-        // fermer la fenetre
         gameObject.transform.parent.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
-        //Destroy(currentWindow);
+        transform.parent.parent.gameObject.GetComponent<CanBeDeleted>().openWindow = false;
 
         if (eventsManager == null)
         {

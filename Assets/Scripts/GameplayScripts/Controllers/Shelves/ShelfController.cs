@@ -39,6 +39,11 @@ public class ShelfController : MonoBehaviour
         }
     }
 
+    public void callCreateNewBlock()
+    {
+        levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
+        CreateNewBlock();
+    }
     protected virtual void CreateNewBlock()
     {
         currentBlock = Instantiate(blockPrefab);
@@ -93,37 +98,51 @@ public class ShelfController : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == currentBlock || (other.gameObject.transform.parent != null && other.gameObject.transform.parent.gameObject == currentBlock)){
+        if (other.gameObject == currentBlock || (other.gameObject.transform.parent != null && other.gameObject.transform.parent.gameObject == currentBlock)
+            || other.gameObject.transform.parent.gameObject.name == currentBlock.name)
+        {
 
             if (blockPrefab.name.Contains("Number"))
             {
                 if (levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock) > 0)
                 {
                     CreateNewBlock();
-                    Debug.Log(numberForNumberBlock);
                     levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
-                    GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString();
+                    transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) - 1).ToString();
                 }
                 else
                 {
-                    GetComponentInChildren<TextMeshProUGUI>().text = "";
+                    transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "";
                 }
             }
             else if (levelManager.returnNumberOfBlocks(blockPrefab) > 0)
             {
-                GetComponentInChildren<TextMeshProUGUI>().text = levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock).ToString();
-                CreateNewBlock();
+                transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) - 1).ToString();
                 levelManager.substractNumberOfBlocks(blockPrefab, numberForNumberBlock);
+                CreateNewBlock();
             }
-            else
+            else if (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) > 0)
             {
-                GetComponentInChildren<TextMeshProUGUI>().text = "";
+                transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) - 1).ToString();
+            }
+
+            if (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) <= 0)
+            {
+                transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "";
             }
         }
     }
 
     public void actualiceText()
     {
-        transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock) + 1).ToString();
+        //transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock) + 1).ToString();
+        if (transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text == "")
+        {
+            transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "1";
+        }
+        else
+        {
+            transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) + 1).ToString();
+        }  
     }
 }

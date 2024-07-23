@@ -129,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_Colliders:
-  - {fileID: 7416704008849595901}
+  - {fileID: 3821310455610162515}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 6428263369218232001}
   - component: {fileID: 6472120333568788765}
   - component: {fileID: 4872416339974923508}
-  - component: {fileID: 7416704008849595901}
+  - component: {fileID: 3821310455610162515}
   m_Layer: 10
   m_Name: Action_Left
   m_TagString: Untagged
@@ -563,7 +563,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7416704008849595901
+--- !u!65 &3821310455610162515
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

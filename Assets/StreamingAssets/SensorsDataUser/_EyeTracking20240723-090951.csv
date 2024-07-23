@@ -1,0 +1,20 @@
+userID;fecha
+anom;23/07/2024_09:09
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1721718591,67446;,14147;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721718595,14568;3,61314;Test1;SALE_HEAD;Limit (5): Part of the level
+1721718595,70177;4,16880;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721718595,77099;4,23829;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721718597,24361;5,71149;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721718597,31392;5,78105;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721718599,49433;7,96216;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721718600,35537;8,82313;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721718605,52231;13,99034;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721718606,24390;14,71271;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721718606,75782;15,22627;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721718606,82781;15,29608;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721718613,34060;21,80981;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721718613,42342;21,89335;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721718613,43742;21,90675;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721718613,45146;21,92109;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721718621,11805;29,58825;Test1;ENTRA_HEAD;Platform: Part of Player Area

@@ -1,0 +1,56 @@
+userID;fecha
+anom;23/07/2024_09:36
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1721720162,31512;,17559;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721720165,24548;3,10572;Test1;SALE_HEAD;Platform: Part of Player Area
+1721720165,46790;3,32881;Test1;ENTRA_HEAD;Grass: Part of the level
+1721720165,48189;3,34222;Test1;SALE_HEAD;Grass: Part of the level
+1721720167,20537;5,06667;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720167,26160;5,12221;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720167,42829;5,28890;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1721720167,45529;5,31624;Test1;SALE_HEAD;Limit (5): Part of the level
+1721720167,91353;5,77456;Test1;ENTRA_HEAD;Limit (6): Part of the level
+1721720169,24771;7,10884;Test1;SALE_HEAD;Limit (5): Part of the level
+1721720169,26209;7,12289;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1721720169,28909;7,15040;Test1;SALE_HEAD;Limit (5): Part of the level
+1721720172,62314;10,48422;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720172,70642;10,56729;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720176,16474;14,02662;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720176,56785;14,42909;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720178,88700;16,74843;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720179,70701;17,56824;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720180,47010;18,33199;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720180,53958;18,40129;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720183,47008;21,33173;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720183,49808;21,35963;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720184,10934;21,97106;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720184,17841;22,04014;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720184,76129;22,62350;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720185,74772;23,60939;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720185,76072;23,62328;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720185,81571;23,67821;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720186,20556;24,06798;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720186,21960;24,08165;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720186,34462;24,20650;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720186,37169;24,23367;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720186,38573;24,24816;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720186,73248;24,59498;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720189,64988;27,51222;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720189,70497;27,56777;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720191,48297;29,34531;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720193,46886;31,33150;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720194,14871;32,01168;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721720196,48265;34,34532;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720198,51018;36,37285;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720198,53795;36,40073;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720199,03789;36,90067;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720199,10698;36,97009;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720199,74632;37,60904;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720199,82929;37,69228;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720210,74505;48,60860;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720210,78666;48,65039;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721720211,50855;49,37246;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721720212,16134;50,02509;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721720212,17444;50,03834;Test1;ENTRA_HEAD;Grass: Part of the level
+1721720212,25857;50,12224;Test1;SALE_HEAD;Grass: Part of the level
+1721720212,43923;50,30264;Test1;ENTRA_HEAD;Platform: Part of Player Area

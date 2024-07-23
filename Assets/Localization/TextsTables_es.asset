@@ -299,6 +299,10 @@ MonoBehaviour:
     m_Localized: "Revisa tu c\xF3digo\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 17770376903196672
+    m_Localized: Con
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

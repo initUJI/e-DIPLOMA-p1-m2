@@ -1,45 +1,63 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class SingleObjectSocket : MonoBehaviour
+public class SingleObjectSocket : XRSocketInteractor
 {
-    private XRSocketInteractor socketInteractor;
-
-    void Start()
+    protected override void Start()
     {
-        socketInteractor = GetComponent<XRSocketInteractor>();
-
-        if (socketInteractor == null)
-        {
-            Debug.LogError("No XRSocketInteractor found on the GameObject.");
-            return;
-        }
-
+        base.Start();
         // Agregar listeners para los eventos de selección y deselección
-        socketInteractor.selectEntered.AddListener(OnSelectEntered);
-        socketInteractor.selectExited.AddListener(OnSelectExited);
+        selectEntered.AddListener(OnSelectEntered);
+        selectExited.AddListener(OnSelectExited);
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
-        if (socketInteractor != null)
+        if (this != null)
         {
             // Eliminar listeners cuando el objeto se destruya
-            socketInteractor.selectEntered.RemoveListener(OnSelectEntered);
-            socketInteractor.selectExited.RemoveListener(OnSelectExited);
+            selectEntered.RemoveListener(OnSelectEntered);
+            selectExited.RemoveListener(OnSelectExited);
         }
+        base.OnDestroy();
     }
 
-    private void OnSelectEntered(SelectEnterEventArgs args)
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
+        base.OnSelectEntered(args);
         // Desactivar el socket para evitar que se seleccionen nuevos objetos
-        socketInteractor.socketActive = false;
+        socketActive = false;
     }
 
-    private void OnSelectExited(SelectExitEventArgs args)
+    protected override void OnSelectExited(SelectExitEventArgs args)
     {
+        base.OnSelectExited(args);
         // Reactivar el socket cuando el objeto se retire
-        socketInteractor.socketActive = true;
+        socketActive = true;
+    }
+
+    public override bool CanSelect(IXRSelectInteractable interactable)
+    {
+        if (hasSelection)
+        {
+            // El socket ya tiene un objeto seleccionado, no se puede seleccionar otro
+            return false;
+        }
+
+        GameObject currentBlock = interactable.transform.gameObject;
+
+        Block newBlockComponent = currentBlock.GetComponent<Block>();
+        if (newBlockComponent != null && newBlockComponent.bottomBlock != null)
+        {
+            if (newBlockComponent.bottomBlock == this.gameObject)
+            {
+                // Si el bottomBlock del nuevo bloque es este mismo socket, no permitir la selección
+                return false;
+            }
+        }
+
+        return base.CanSelect(interactable);
     }
 }
+
 

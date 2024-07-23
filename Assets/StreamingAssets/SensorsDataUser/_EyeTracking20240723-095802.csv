@@ -1,0 +1,12 @@
+userID;fecha
+anom;23/07/2024_09:58
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1721721483,14427;,25333;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721721486,55125;3,66017;Test1;SALE_HEAD;Grass: Part of the level
+1721721488,87292;5,98214;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721721489,05334;6,16261;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721721500,11026;17,21988;Test1;ENTRA_HEAD;Action_Left: Part of a Block
+1721721500,16631;17,27552;Test1;SALE_HEAD;Action_Left: Part of a Block
+1721721504,67771;21,78790;Test1;ENTRA_HEAD;Action_Left: Part of Player Area
+1721721504,78955;21,89972;Test1;SALE_HEAD;Action_Left: Part of Player Area
+1721721506,31764;23,42702;Test1;ENTRA_HEAD;Grass: Part of the level

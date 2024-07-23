@@ -1,0 +1,9 @@
+userID;fecha
+anom;23/07/2024_10:21
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1721722863,97420;,36997;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1721722867,05830;3,45403;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1721722867,99059;4,38691;Test1;ENTRA_HEAD;TurnLeftBlock(Clone): Part of a Block
+1721722868,06033;4,45648;Test1;SALE_HEAD;TurnLeftBlock(Clone): Part of a Block
+1721722877,81536;14,21123;Test1;ENTRA_HEAD;TurnLeftBlock(Clone): Part of Player Area
+1721722878,02352;14,41971;Test1;SALE_HEAD;Right Wall: Part of Player Area
