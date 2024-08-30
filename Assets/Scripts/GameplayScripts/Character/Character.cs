@@ -49,6 +49,7 @@ public class Character : MonoBehaviour
         eventsManager = FindObjectOfType<EventsManager>();
         targetPosition = transform.position;
         targetRotation = transform.rotation;
+        Debug.Log(child);
         initialMaterial = child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1];
     }
 

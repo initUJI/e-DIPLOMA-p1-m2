@@ -1,0 +1,6 @@
+userID;fecha
+anom;25/07/2024_09:24
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1721892287,38123;4,44022;Test1;ENTRA_HEAD;Platform: Part of Player Area
+1721892287,95874;5,01768;Test1;SALE_HEAD;Platform: Part of Player Area
+1721892287,98673;5,04554;Test1;ENTRA_HEAD;Center Wall: Part of Player Area

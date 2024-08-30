@@ -54,7 +54,11 @@ public class MainBlock : Block, WithBottomSocket
         variables = new Dictionary<string, int>();
         paused = false;
         eventsManager = FindObjectOfType<EventsManager>();
-        canvasFail.SetActive(false);
+        if (canvasFail != null)
+        {
+            canvasFail.SetActive(false);
+        }
+
         //Execute();
     }
 
@@ -223,7 +227,11 @@ public class MainBlock : Block, WithBottomSocket
         }
         else
         {
-            canvasFail.SetActive(true);
+            if (canvasFail != null)
+            {
+                canvasFail.SetActive(true);
+            }
+
         }
 
         GameManager.character.desactiveGlow();

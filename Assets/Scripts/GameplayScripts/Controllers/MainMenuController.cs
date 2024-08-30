@@ -78,7 +78,7 @@ public class MainMenuController : MonoBehaviour
         }
         else
         {
-            startButton.interactable = false;
+            //startButton.interactable = false;
         }
     }
 

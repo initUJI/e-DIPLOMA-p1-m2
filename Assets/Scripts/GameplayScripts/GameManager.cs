@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
     private void FindObjects()
     {
         Debug.Log("Init GameManager");
-        character = GameObject.FindGameObjectWithTag("Character").GetComponent<Character>();
+        character = FindObjectOfType<Character>();
         characterInitialPosition = character.transform.position;
         characterInitialRotation = character.transform.rotation;
         characterInitialScale = character.transform.localScale;

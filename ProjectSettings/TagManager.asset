@@ -10,7 +10,6 @@ TagManager:
   - DeleteWindow
   - BottomSocket
   - RightSocket
-  - LocalContextSocket
   - TextScreenPrint
   - corridor
   - dead

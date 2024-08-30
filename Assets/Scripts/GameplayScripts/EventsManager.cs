@@ -264,7 +264,7 @@ public class EventsManager : MonoBehaviour
     {
         //Debug.Log("Objeto soltado");
 
-        Data data;
+        /*Data data;
 
         tryFindingLevelManager();
 
@@ -279,7 +279,7 @@ public class EventsManager : MonoBehaviour
                 "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
         }
 
-        writeInJson(data);
+        writeInJson(data);*/
     }
 
     private void OnGrabbed(SelectEnterEventArgs interactor)
@@ -313,23 +313,25 @@ public class EventsManager : MonoBehaviour
     private void OnReleased(SelectExitEventArgs interactor)
     {
         //Debug.Log("Objeto soltado");
-
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
+        if (interactor.interactableObject.transform.gameObject.name.ToString() != "Platform")
         {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), 
-                "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), 
-                "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-        }
+            Data data;
 
-        writeInJson(data);
+            tryFindingLevelManager();
+
+            if (levelManager != null)
+            {
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
+                    "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
+            }
+            else
+            {
+                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(),
+                    "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
+            }
+
+            writeInJson(data);
+        }
     }
 
     // Update is called once per frame

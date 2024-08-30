@@ -60,12 +60,12 @@ public class LevelManager : NumberOfBlocks
         gameManager = FindObjectOfType<GameManager>();
         actualLevel = lastLevelCompleted() + 1;
 
-        /*saveCompletedLevel(1);
+        saveCompletedLevel(1);
         saveCompletedLevel(2);
         saveCompletedLevel(3);
         saveCompletedLevel(4);
         saveCompletedLevel(5);
-        saveCompletedLevel(6);*/
+        saveCompletedLevel(6);
 
         changeLevel(lastLevelCompleted() + 1);
     }
@@ -205,6 +205,7 @@ public class LevelManager : NumberOfBlocks
             s.startCreatingBlocks();
         }
 
+        gameManager.resetCar();
         eventsManager.sceneCleaned();
     }
 
