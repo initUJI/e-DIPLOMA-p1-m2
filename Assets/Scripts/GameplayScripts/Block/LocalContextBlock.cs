@@ -58,15 +58,12 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
     public void TransmitAllBlocksToReferent()
     {
         currentFirstBlock = getSocketBlock(localContextSocket);
-        currentFirstBlock.referentBlock = this;
         currentFirstBlock.TransmitNextBlocksToReferent();
         BrowseChildAndUpdate();
     }
     public void ResetAllBlocks()
     {
-        currentFirstBlock.referentBlock = null;
         currentFirstBlock.ResetNextBlocks();
-        value = 1;
         TranslateBottomSocket();
         BrowseChildAndUpdate();
     }
@@ -74,27 +71,15 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
     public void TranslateBottomSocket()
     {
         Debug.Log("TranslateBottomSocket !");
-        Debug.Log(value);
-        blockLink.transform.localScale = new Vector3(0.1f, (value / 2.0f) - 0.5f, 0.1f);
-        blockLink.transform.localPosition = Vector3.down * ((value / 2.0f));
-        bottomSocket.transform.localPosition = -Vector3.up * value;
     }
 
     public void BrowseChildAndUpdate()
     {
 
-        value = 1;
-
         Block currentBlock = getSocketBlock(((WithLocalContextSocket)this).getLocalContextSocket());
         while (currentBlock != null)
         {
-            value += currentBlock.value;
             currentBlock = getSocketBlock(((WithBottomSocket)currentBlock).getBottomSocket());
-        }
-
-        if (referentBlock != null)
-        {
-            InformReferent();
         }
 
         TranslateBottomSocket();
@@ -120,8 +105,6 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
         {
             GameManager.currentBlock = currentBlock;
 
-            currentBlock.SetGlowing(true);
-
             yield return new WaitUntil(() => !MainBlock.paused); // Wait until pause equals false
             //Debug.Log("MainBlock : Next block !");                     
 
@@ -146,7 +129,7 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
                     currentIfBlock = ifBlock;
                 }
             }
-            else if (currentBlock as ElseBlock)
+            /*else if (currentBlock as ElseBlock)
             {
                 ElseBlock elseBlock = (ElseBlock)currentBlock;
                 if (wasIfBlock)
@@ -160,15 +143,13 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
                 {
                     GameManager.ReportError(elseBlock, "An else block must be preceded by an if block");
                 }
-            }
+            }*/
             else
             {
             }
 
             yield return new WaitUntil(() => !MainBlock.error);
             yield return new WaitUntil(() => currentBlock.IsFinished()); // Wait until the end of the previous block;
-
-            currentBlock.SetGlowing(false);
 
             currentBlock = (ExecutableBlock)currentBlock.getSocketBlock(((WithBottomSocket)currentBlock).getBottomSocket()); // Go to the next block  
         }

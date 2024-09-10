@@ -4,53 +4,62 @@ using UnityEngine;
 
 public class DeleteButtonsController : MonoBehaviour
 {
-public float deadTime = 1.0f;
-private bool _deadTimeActive = false;
+    public float deadTime = 1.0f;
+    private bool _deadTimeActive = false;
     private EventsManager eventsManager;
     private LevelManager levelManager;
 
-    public void onTriggerEnterDelete() 
+    public void onTriggerEnterDelete()
     {
-        transform.parent.parent.gameObject.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
+        var parentObject = transform.parent.parent.gameObject;
+        parentObject.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
 
+        // Inicializar EventsManager y LevelManager si no están ya asignados
         if (eventsManager == null)
         {
             eventsManager = FindFirstObjectByType<EventsManager>();
         }
+
         if (levelManager == null)
         {
             levelManager = FindFirstObjectByType<LevelManager>();
-            if (levelManager != null)
-            {
-                levelManager.sumNumberOfBlocks(transform.parent.parent.gameObject);
-            }
         }
-        else
+
+        // Sumar bloques en LevelManager si está asignado
+        if (levelManager != null)
         {
-            levelManager.sumNumberOfBlocks(transform.parent.parent.gameObject);
+            levelManager.sumNumberOfBlocks(parentObject);
         }
 
-        eventsManager.deleteBlock(transform.parent.parent.gameObject);
+        // Notificar al EventsManager
+        eventsManager.deleteBlock(parentObject);
 
+        // Actualizar estantes (shelves)
+        UpdateShelves(parentObject);
+    }
+
+    private void UpdateShelves(GameObject parentObject)
+    {
         ShelfController[] shelves = FindObjectsOfType<ShelfController>();
-        foreach (ShelfController s in shelves)
+        foreach (ShelfController shelf in shelves)
         {
-            if (transform.parent.parent.gameObject.name.Contains(s.blockPrefab.name))
+            if (parentObject.name.Contains(shelf.blockPrefab.name))
             {
-                if (levelManager.returnNumberOfBlocks(transform.parent.parent.gameObject) == 1)
+                if (levelManager != null && levelManager.returnNumberOfBlocks(parentObject) == 1)
                 {
-                    s.callCreateNewBlock();
+                    shelf.callCreateNewBlock();
                 }
-                s.actualiceText();
+                shelf.actualiceText();
             }
-       
         }
     }
 
     public void closeDeleteWindow()
     {
+        var parentObject = transform.parent.parent.gameObject;
+
         gameObject.transform.parent.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
-        transform.parent.parent.gameObject.GetComponent<CanBeDeleted>().openWindow = false;
+        parentObject.GetComponent<CanBeDeleted>().openWindow = false;
 
         if (eventsManager == null)
         {

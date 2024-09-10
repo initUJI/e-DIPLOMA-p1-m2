@@ -179,13 +179,7 @@ public class GameManager : MonoBehaviour
         }
 
         
-        MainBlock.error = true;
-        
-        if(obj as Block)
-        {
-            obj.StartCoroutine(MakeBlockFlash((Block)obj, errorMaterial));
-        }
-        
+        MainBlock.error = true; 
     }
 
     public static void ReportWarning(MonoBehaviour obj, string message)
@@ -194,26 +188,6 @@ public class GameManager : MonoBehaviour
         {
             printScreenTMP.text = "WARNING in " + obj.ToString() + " : " + message;
         }
-
-
-        if (obj as Block)
-        {
-            obj.StartCoroutine(MakeBlockFlash((Block)obj, warningMaterial));
-        }
-    }
-
-    static IEnumerator MakeBlockFlash(Block block, Material material)
-    {
-        for(int i = 0; i < 3; i++)
-        {
-            if (block != null && material != null)
-            {
-                block.ChangeBlockMaterial(material);
-                yield return new WaitForSeconds(0.3f);
-                block.InitBlockMaterial();
-                yield return new WaitForSeconds(0.3f);
-            }          
-        }      
     }
 
     public static void DisplayOnPrompt(string message)

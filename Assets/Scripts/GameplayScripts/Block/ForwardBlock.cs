@@ -73,7 +73,4 @@ public class ForwardBlock : ActionCharacterBlock, WithRightSocket
     {
         return /*base.IsFinished() && */isFinished;
     }
-
-
-
 }

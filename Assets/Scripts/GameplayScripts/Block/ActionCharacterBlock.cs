@@ -20,7 +20,5 @@ public abstract class ActionCharacterBlock : ActionBlock
         {
             character = GameManager.character;
         });
-    }
-
-   
+    }   
 }

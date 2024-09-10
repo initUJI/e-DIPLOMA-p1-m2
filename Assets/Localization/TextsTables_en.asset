@@ -186,7 +186,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5578588983296
     m_Localized: "Aim at the cube with the controller.\r\n\nHold down the controller
-      grip to move the cube.\r"
+      grip to move the cube.\r You can zoom in and out with the joystick."
     m_Metadata:
       m_Items: []
   - m_Id: 5602379075584
@@ -224,17 +224,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5856621006848
-    m_Localized: 'To delete a block, press the A button to display the delete window.
+    m_Localized: 'To delete a block, point to the block and press the A button to
+      display the delete window.
 
+      
 
-      To
-      confirm, point at the delete button with the controller and press the trigger.'
+      To confirm, point to the delete
+      button with the control and press the trigger.'
     m_Metadata:
       m_Items: []
   - m_Id: 5871015858176
     m_Localized: "The objective is to drive the car to the plant to collect humidity.\r\n\nWe
       need a 'Move forward' block to \nmove the car forward one square.\r\n\nWe need
-      a 'Get humidity' block to collect humidity."
+      a 'Get humidity' block to collect humidity.\n\nPress the \u2018Start\u2019
+      button to run the code."
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
@@ -308,6 +311,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 17770376903196672
     m_Localized: With
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40614453451505664
+    m_Localized: This will delete all your save files and you will lose all your
+      progress. Are you sure?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40614857404923904
+    m_Localized: Yes
     m_Metadata:
       m_Items: []
   references:

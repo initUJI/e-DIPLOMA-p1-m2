@@ -24,6 +24,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject gameManagerPrefab;
 
     private GameObject MainOptions;
+    private GameObject resetOptions;
     private GameObject TutorialOptions;
     private GameObject ControlsTutorial;
     private GameObject userOptions;
@@ -55,10 +56,12 @@ public class MainMenuController : MonoBehaviour
         TutorialOptions = menuWindow.transform.GetChild(1).gameObject;
         ControlsTutorial = menuWindow.transform.GetChild(2).gameObject;
         userOptions = menuWindow.transform.GetChild(3).gameObject;
+        resetOptions = menuWindow.transform.GetChild(4).gameObject;
 
         MainOptions.SetActive(true);
         TutorialOptions.SetActive(false);
         ControlsTutorial.SetActive(false);
+        resetOptions.SetActive(false);
 
         teleportCompleted = false;
         dynamicTutorialCompleted= false;
@@ -80,6 +83,24 @@ public class MainMenuController : MonoBehaviour
         {
             //startButton.interactable = false;
         }
+    }
+
+    public void openResetOptions()
+    {
+        resetOptions.SetActive(true);
+        MainOptions.SetActive(false);
+    }
+
+    public void closeResetOptions()
+    {
+        MainOptions.SetActive(true);
+        resetOptions.SetActive(false);
+    }
+
+    public void ClearAllPlayerPrefs()
+    {
+        // Borra todos los PlayerPrefs
+        PlayerPrefs.DeleteAll();
     }
 
     public void saveUserId()

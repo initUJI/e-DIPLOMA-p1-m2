@@ -186,22 +186,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5871015858176
-    m_Localized: 'El objetivo es conducir el coche hasta la planta para recoger la
-      humedad.
-
-
-      Necesitamos un bloque de ''Avanzar'' para mover el coche una
-      casilla hacia adelante.
-
-
-      Necesitamos un bloque de ''Obtener humedad''
-      para recoger la humedad.'
+    m_Localized: "El objetivo es conducir el coche hasta la planta para recoger la
+      humedad.\n\nNecesitamos un bloque de 'Avanzar' para mover el coche una casilla
+      hacia adelante.\n\nNecesitamos un bloque de 'Obtener humedad' para recoger
+      la humedad.\n\nPulsa el bot\xF3n 'Start' para que se ejecute el c\xF3digo."
     m_Metadata:
       m_Items: []
   - m_Id: 5856621006848
-    m_Localized: "Para eliminar un bloque, presiona el bot\xF3n A para mostrar la
-      ventana de eliminaci\xF3n.\r\n\nPara confirmar, apunta al bot\xF3n de eliminaci\xF3n
-      con el control y presiona el gatillo."
+    m_Localized: "Para eliminar un bloque, apunta al bloque y presiona el bot\xF3n
+      A para mostrar la ventana de eliminaci\xF3n.\r\n\nPara confirmar, apunta al
+      bot\xF3n de eliminaci\xF3n con el control y presiona el gatillo."
     m_Metadata:
       m_Items: []
   - m_Id: 5840078671872
@@ -229,7 +223,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5578588983296
     m_Localized: "Apunta al cubo con el control.\r\n\nMant\xE9n presionado el agarre
-      del control para mover el cubo.\r"
+      del control para mover el cubo.\r Puedes acercarlo y alejarlo con el joystick."
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
@@ -301,6 +295,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 17770376903196672
     m_Localized: Con
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40614453451505664
+    m_Localized: "Esto borrar\xE1 todos los archivos de guardado y perderas todo
+      el progreso. \xBFEst\xE1s seguro?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 40614857404923904
+    m_Localized: "S\xED"
     m_Metadata:
       m_Items: []
   references:

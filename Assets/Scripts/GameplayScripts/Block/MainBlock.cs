@@ -111,8 +111,6 @@ public class MainBlock : Block, WithBottomSocket
         
         bool executingBlock = false;
 
-        SetGlowing(true);
-
         //Debug.Log("MainBlock : We wait 1 second...");
         yield return new WaitForSeconds(1);
 
@@ -130,7 +128,6 @@ public class MainBlock : Block, WithBottomSocket
         {
             GameManager.currentBlock = currentBlock;
 
-            currentBlock.SetGlowing(true);
             //Debug.Log(currentBlock.name);
 
             yield return new WaitUntil(() => !paused); // Wait until pause equals false
@@ -210,15 +207,11 @@ public class MainBlock : Block, WithBottomSocket
             
             //Debug.Log("B");
 
-            currentBlock.SetGlowing(false);
-
             yield return new WaitForSeconds(0.5f);
             yield return new WaitUntil(() => GameObject.FindObjectOfType<Character>().Motionless());
             currentBlock = (ExecutableBlock)currentBlock.getSocketBlock(((WithBottomSocket)currentBlock).getBottomSocket()); // Go to the next block  
             //Debug.Log(currentBlock);
         }
-
-        SetGlowing(false);
 
         if (allCorrect && IsCollidingWithAny(GameManager.character.gameObject, ConvertPlantListToGameObjectList(FindObjectsOfType<Plant>())) &&
             forBloks == endForBlocks && ifBlocks == endIfBlocks)

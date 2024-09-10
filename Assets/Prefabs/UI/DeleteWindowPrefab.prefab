@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 5960909082493203242}
   - component: {fileID: 5960909082493203221}
   - component: {fileID: 3664200163731419800}
+  - component: {fileID: 6032680316302778626}
   m_Layer: 0
   m_Name: DeleteWindowPrefab
   m_TagString: DeleteWindow
@@ -583,6 +584,18 @@ MonoBehaviour:
   destroyWhenScaledToZero: 1
   particleEffect: 1
   effect: {fileID: 0}
+--- !u!114 &6032680316302778626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5960909082493203223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112ac43db702bb048a43313460ed9624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5960909082721284707
 GameObject:
   m_ObjectHideFlags: 0

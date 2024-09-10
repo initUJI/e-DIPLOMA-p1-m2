@@ -1,13 +1,6 @@
-using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
-//using System.Collections.Generic;
-//using System.Collections;
-//using Unity.VisualScripting;
-//using UnityEditor.Experimental.GraphView;
-//using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShelfController : MonoBehaviour
 {

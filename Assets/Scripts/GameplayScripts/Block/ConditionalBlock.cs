@@ -10,8 +10,6 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
 
     [SerializeField] protected XRSocketInteractor rightSocket;
 
-    [SerializeField] Material TODELETE;
-
     int substraction = 0;
     public XRSocketInteractor getRightSocket()
     {
@@ -123,6 +121,3 @@ public abstract class ConditionalBlock : LocalContextBlock, WithRightSocket
         
     }
 }
-
-       
-   

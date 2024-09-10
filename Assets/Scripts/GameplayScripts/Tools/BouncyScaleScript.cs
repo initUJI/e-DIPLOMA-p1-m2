@@ -83,5 +83,4 @@ public class BouncyScaleScript : MonoBehaviour
 
         if (scaleUp && destroyWhenScaledToZero) GameObject.Destroy(gameObject); // Destroy if scaled to Zero and inspector Boolean of destroying active
     }
-
 }

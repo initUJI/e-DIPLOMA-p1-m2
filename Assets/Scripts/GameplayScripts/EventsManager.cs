@@ -1,22 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
-using System.Data;
-using static System.IO.StreamWriter;
-using UnityEngine.Rendering;
 using TMPro;
 using UnityEngine.XR.Interaction.Toolkit;
-using System.Net.Sockets;
 
 public class EventsManager : MonoBehaviour
 {
     [SerializeField] private GameObject xrOrigin;
     [SerializeField] private GameObject popAudio;
     [SerializeField] private GameObject buttonAudio;
-    private XRGrabInteractable[] grabInteractables;
 
+    private XRGrabInteractable[] grabInteractables;
     private string userID = "anom";
     private string fileName = "anom";
     private LevelManager levelManager;
@@ -33,23 +27,33 @@ public class EventsManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Start is called before the first frame update
     void Start()
+    {
+        SetupUI();
+        SetupFilePath();
+        SetupXROrigin();
+
+        Data initialData = new Data(userID, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "actualLevel", "action");
+        writeInJson(initialData);
+    }
+
+    private void SetupUI()
     {
         canvas = transform.GetChild(0).gameObject;
         canvas.SetActive(false);
-        errorText = canvas.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>();
+        errorText = canvas.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         errorText.text = string.Empty;
-        grabInteractables = FindObjectsOfType<XRGrabInteractable>();
+    }
 
+    private void SetupFilePath()
+    {
         string projectDirectory = Directory.GetParent(Application.dataPath).FullName;
         directoryPath = Path.Combine(projectDirectory, "Data");
-        filePath = Path.Combine(directoryPath, "data_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") +".json");
+        filePath = Path.Combine(directoryPath, "data_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".json");
+    }
 
-        Data data = new Data("userID", "DateTime", "actualLevel", "action");
-        writeInJson(data);
-       
-
+    private void SetupXROrigin()
+    {
         if (xrOrigin == null && GameObject.Find("XR Origin") != null)
         {
             xrOrigin = GameObject.Find("XR Origin");
@@ -58,157 +62,61 @@ public class EventsManager : MonoBehaviour
         }
     }
 
-    public string getUserID()
+    public string getUserID() // El nombre de este método se mantiene como "getUserID"
     {
         return userID;
     }
 
     public void playPressed()
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "BUTTON PLAY PRESSED");
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "BUTTON PLAY PRESSED");
-        }
         buttonAudio.GetComponent<AudioSource>().Play();
-        writeInJson(data);
+        RecordEvent("BUTTON PLAY PRESSED");
     }
 
-    public void levelCompleted(int num)
+    public void levelCompleted(int num) // El nombre de este método se mantiene como "levelCompleted"
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "LEVEL COMPLETED: " + num.ToString());
-            writeInJson(data);
-        }
+        Data data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), $"LEVEL COMPLETED: {num}");
+        writeInJson(data);
     }
 
     public void sceneCleaned()
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "SCENE CLEANED, ALL BLOCKS RESETED");
-            writeInJson(data);
-        }
-
         buttonAudio.GetComponent<AudioSource>().Play();
+        RecordEvent("SCENE CLEANED, ALL BLOCKS RESET");
     }
 
     public void clueUsed(string clue)
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "USED CLUE: " + clue);
-            writeInJson(data);
-        }
         buttonAudio.GetComponent<AudioSource>().Play();
+        RecordEvent($"USED CLUE: {clue}");
     }
 
     public void testStandUsed(string direction)
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "PRESSED TEST STAND: " + direction);
-            writeInJson(data);
-        }
         buttonAudio.GetComponent<AudioSource>().Play();
+        RecordEvent($"PRESSED TEST STAND: {direction}");
     }
 
     public void characterMoving(string direction)
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "CHARACTER START MOVING: " + direction);
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "CHARACTER START MOVING: " + direction);
-        }
-
-        writeInJson(data);
+        RecordEvent($"CHARACTER START MOVING: {direction}");
     }
 
     public void deleteWindowOpen()
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW OPEN");
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "DELETE BLOCK WINDOW OPEN");
-        }
-
-        writeInJson(data);
+        RecordEvent("DELETE BLOCK WINDOW OPEN");
     }
 
     public void deleteWindowClose()
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "DELETE BLOCK WINDOW CLOSE");
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "DELETE BLOCK WINDOW CLOSE");
-        }
-
-        writeInJson(data);
+        RecordEvent("DELETE BLOCK WINDOW CLOSE");
     }
 
     public void deleteBlock(GameObject block)
     {
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "DELETED BLOCK: " + block.name);
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(),"MAIN MENU", "DELETED BLOCK: " + block.name);
-        }
         buttonAudio.GetComponent<AudioSource>().Play();
-        writeInJson(data);
+        RecordEvent($"DELETED BLOCK: {block.name}");
     }
-
 
     public void subscribeGrabEvents(XRGrabInteractable grab)
     {
@@ -220,251 +128,7 @@ public class EventsManager : MonoBehaviour
     {
         socket = xRSocket;
         xRSocket.selectEntered.AddListener(OnSocketEntered);
-        xRSocket.selectExited.AddListener(OnSocketExit);
     }
-
-    private void OnSocketEntered(SelectEnterEventArgs interactor)
-    {
-        //Debug.Log("Objeto cogido");
-
-        Data data = new Data("", "", "", "");
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            if (!socket.gameObject.transform.root.gameObject.name.Contains("Player Area"))
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
-                "OBJECT " + interactor.interactableObject.transform.gameObject.name +
-                " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
-            }
-            
-        }
-        else
-        {
-            if (!socket.gameObject.transform.root.gameObject.name.Contains("Player Area"))
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU",
-                 "OBJECT " + interactor.interactableObject.transform.gameObject.name +
-                " IN " + socket.gameObject.name + " FROM " + socket.gameObject.transform.root.gameObject.name);
-            }
-            
-        }
-
-        if (data.id != "")
-        {
-            writeInJson(data);
-        }
-
-    }
-
-    // Método llamado cuando se suelta el objeto
-    private void OnSocketExit(SelectExitEventArgs interactor)
-    {
-        //Debug.Log("Objeto soltado");
-
-        /*Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
-                "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(),
-                "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-        }
-
-        writeInJson(data);*/
-    }
-
-    private void OnGrabbed(SelectEnterEventArgs interactor)
-    {
-        //Debug.Log("Objeto cogido");
-
-        Data data;
-
-        tryFindingLevelManager();
-
-        if (levelManager != null)
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), 
-                "OBJECT GRABBED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-        }
-        else
-        {
-            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", 
-                "OBJECT GRABBED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-        }
-
-        if (popAudio != null)
-        {
-            popAudio.GetComponent<AudioSource>().Play();
-        }
-
-        writeInJson(data);
-    }
-
-    // Método llamado cuando se suelta el objeto
-    private void OnReleased(SelectExitEventArgs interactor)
-    {
-        //Debug.Log("Objeto soltado");
-        if (interactor.interactableObject.transform.gameObject.name.ToString() != "Platform")
-        {
-            Data data;
-
-            tryFindingLevelManager();
-
-            if (levelManager != null)
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(),
-                    "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-            }
-            else
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(),
-                    "MAIN MENU", "OBJECT RELEASED: " + interactor.interactableObject.transform.gameObject.name.ToString());
-            }
-
-            writeInJson(data);
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (xrOrigin != null)
-        {
-            xrOrigin.transform.position = new Vector3(xrOrigin.transform.position.x, 0, xrOrigin.transform.position.z);
-        }
-        
-
-        if (canvas.activeInHierarchy)
-        {
-            timer += Time.deltaTime;
-        }
-
-        if (timer >= timeShowingError)
-        {
-            canvas.SetActive(false);
-            errorText.text = string.Empty;
-            timer = 0;
-        }
-    }
-
-    private void writeInJson(Data data) 
-    {
-        try
-        {
-            if (filePath != null && filePath.Length > 0)
-            {
-                if (!Directory.Exists(directoryPath))
-                {
-                    Directory.CreateDirectory(directoryPath);
-                }
-
-                CleanData(data);
-                string jsonString = JsonUtility.ToJson(data);
-                StreamWriter writer = new StreamWriter(filePath, true);
-                writer.WriteLine(jsonString);
-
-                writer.Close();
-            }
-        }
-        catch (Exception ex)
-        {
-            //Debug.LogError("Error al escribir en el archivo JSON con Path " +filePath+ ": " + ex.Message);
-            errorMessage("Error al escribir en el archivo JSON con Path " + filePath + ": " + ex.Message);
-        }
-    }
-
-    private void errorMessage(string error)
-    {
-        canvas.SetActive(true);
-        errorText.text = error;
-    }
-
-    private void tryFindingLevelManager()
-    {
-        if (levelManager == null && FindObjectOfType<LevelManager>() != null)
-        {
-            levelManager = FindObjectOfType<LevelManager>();
-        }
-    }
-
-    private void OnTeleportationEnd(LocomotionSystem locomotionSystem)
-    {
-        try
-        {
-            Data data;
-
-            tryFindingLevelManager();
-
-            if (levelManager != null)
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "TELEPORTATION");
-            }
-            else
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "TELEPORTATION");
-            }
-
-            writeInJson(data);
-        }
-        catch 
-        {
-            errorMessage("Error trying to write in Json on teleportation");
-        }
-    }
-
-    public void setUserID(string s)
-    {
-        try
-        {
-             userID = s;
-
-            string dataFolderPath = Directory.GetParent(Application.dataPath).FullName;
-            directoryPath = Path.Combine(dataFolderPath, "Data");
-
-            if (!Directory.Exists(directoryPath))
-            {
-                Directory.CreateDirectory(directoryPath);
-                Debug.Log("Carpeta 'data' creada en la ruta: " + directoryPath);
-            }
-            else
-            {
-                Debug.Log("La carpeta 'data' ya existe en la ruta: " + directoryPath);
-            }
-
-            fileName = "data_" + userID + "_" + DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString() + ".json";
-            filePath = Path.Combine(directoryPath, fileName);
-
-            Data data;
-
-            tryFindingLevelManager();
-
-            if (levelManager != null)
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "USER REGISTERED");
-            }
-            else
-            {
-                data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "USER REGISTERED");
-            }
-            PlayerPrefs.DeleteAll();
-            buttonAudio.GetComponent<AudioSource>().Play();
-            writeInJson(data);
-        }
-        catch
-        {
-            errorMessage("Error trying to write in Json on set user");
-        }
-    }
-        
 
     public void buttonClicked(string button)
     {
@@ -482,13 +146,158 @@ public class EventsManager : MonoBehaviour
             {
                 data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "PRESSED BUTTON: " + button);
             }
+
             buttonAudio.GetComponent<AudioSource>().Play();
             writeInJson(data);
         }
-        catch 
+        catch
         {
             errorMessage("Error trying to write in Json on button clicked");
         }
+    }
+    private void tryFindingLevelManager()
+    {
+        if (levelManager == null)
+        {
+            levelManager = FindObjectOfType<LevelManager>();
+        }
+    }
+
+
+    private void OnSocketEntered(SelectEnterEventArgs interactor)
+    {
+        string objectName = interactor.interactableObject.transform.gameObject.name;
+        string socketName = socket.gameObject.name;
+        string rootName = socket.gameObject.transform.root.gameObject.name;
+
+        if (!rootName.Contains("Player Area"))
+        {
+            RecordEvent($"OBJECT {objectName} IN {socketName} FROM {rootName}");
+        }
+    }
+
+    private void OnGrabbed(SelectEnterEventArgs interactor)
+    {
+        string objectName = interactor.interactableObject.transform.gameObject.name;
+        popAudio?.GetComponent<AudioSource>().Play();
+        RecordEvent($"OBJECT GRABBED: {objectName}");
+    }
+
+    private void OnReleased(SelectExitEventArgs interactor)
+    {
+        string objectName = interactor.interactableObject.transform.gameObject.name;
+        if (objectName != "Platform")
+        {
+            RecordEvent($"OBJECT RELEASED: {objectName}");
+        }
+    }
+
+    private void RecordEvent(string action)
+    {
+        FindLevelManager();
+        string actualLevel = levelManager != null ? levelManager.getActualLevel().ToString() : "MAIN MENU";
+        Data data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), actualLevel, action);
+        writeInJson(data);
+    }
+
+    private void FindLevelManager()
+    {
+        if (levelManager == null)
+        {
+            levelManager = FindObjectOfType<LevelManager>();
+        }
+    }
+
+    public void setUserID(string id)
+    {
+        userID = id;
+
+        string dataFolderPath = Directory.GetParent(Application.dataPath).FullName;
+        directoryPath = Path.Combine(dataFolderPath, "Data");
+
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory(directoryPath);
+            Debug.Log("Carpeta 'Data' creada en la ruta: " + directoryPath);
+        }
+
+        fileName = "data_" + userID + "_" + DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString() + ".json";
+        filePath = Path.Combine(directoryPath, fileName);
+
+        Data data;
+
+        tryFindingLevelManager();
+
+        if (levelManager != null)
+        {
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), levelManager.getActualLevel().ToString(), "USER REGISTERED");
+        }
+        else
+        {
+            data = new Data(userID, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString(), "MAIN MENU", "USER REGISTERED");
+        }
+
+        PlayerPrefs.DeleteAll();
+        buttonAudio.GetComponent<AudioSource>().Play();
+        writeInJson(data);
+    }
+
+
+    private void writeInJson(Data data)
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                CleanData(data);
+                string jsonString = JsonUtility.ToJson(data);
+                using (StreamWriter writer = new StreamWriter(filePath, true))
+                {
+                    writer.WriteLine(jsonString);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage($"Error writing to JSON file at {filePath}: {ex.Message}");
+        }
+    }
+
+    private void errorMessage(string error)
+    {
+        canvas.SetActive(true);
+        errorText.text = error;
+        timer = 0; // Reinicia el temporizador para que el mensaje de error se muestre por un tiempo específico
+    }
+
+
+    void Update()
+    {
+        if (xrOrigin != null)
+        {
+            xrOrigin.transform.position = new Vector3(xrOrigin.transform.position.x, 0, xrOrigin.transform.position.z);
+        }
+
+        if (canvas.activeInHierarchy)
+        {
+            timer += Time.deltaTime;
+            if (timer >= timeShowingError)
+            {
+                canvas.SetActive(false);
+                errorText.text = string.Empty;
+                timer = 0;
+            }
+        }
+    }
+
+    private void OnTeleportationEnd(LocomotionSystem locomotionSystem)
+    {
+        RecordEvent("TELEPORTATION");
     }
 
     public Data CleanData(Data data)
@@ -497,14 +306,10 @@ public class EventsManager : MonoBehaviour
         data.dateTime = RemoveClone(data.dateTime);
         data.actualLevel = RemoveClone(data.actualLevel);
         data.action = RemoveClone(data.action);
-
         return data;
     }
 
-    private string RemoveClone(string input)
-    {
-        return input.Replace("(Clone)", "");
-    }
+    private string RemoveClone(string input) => input.Replace("(Clone)", "");
 }
 
 [Serializable]
@@ -515,7 +320,6 @@ public class Data
     public string actualLevel;
     public string action;
 
-    // Optional constructor to initialize the data
     public Data(string id, string dateTime, string actualLevel, string action)
     {
         this.id = id;
