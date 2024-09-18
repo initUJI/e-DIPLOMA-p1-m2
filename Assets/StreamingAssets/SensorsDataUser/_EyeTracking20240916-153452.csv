@@ -1,0 +1,52 @@
+userID;fecha
+anom;16/09/2024_15:34
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726493692,52948;,20109;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726493697,43966;5,11144;Test1;SALE_HEAD;Limit (21): Part of the level
+1726493697,60717;5,27871;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726493698,61372;6,28523;Test1;SALE_HEAD;Col (3): Part of Limits
+1726493698,72233;6,39367;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493699,09779;6,76949;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1726493699,16827;6,83979;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493699,28010;6,95190;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,15703;7,82839;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,17055;7,84281;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,18492;7,85711;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,22624;7,89841;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,64426;8,31640;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,72784;8,40006;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493700,88126;8,55305;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493700,97838;8,65058;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1726493701,59198;9,26335;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493702,10666;9,77846;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493703,79207;11,46345;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493704,04172;11,71393;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493704,11109;11,78331;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493704,15280;11,82458;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1726493704,20877;11,88088;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493704,22255;11,89471;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1726493706,04674;13,71858;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493706,39422;14,06602;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493707,63281;15,30456;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1726493709,20711;16,87871;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493712,06100;19,73313;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1726493712,82727;20,49862;Test1;SALE_HEAD;Limit (15): Part of the level
+1726493712,84123;20,51257;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726493716,73880;24,41070;Test1;SALE_HEAD;Limit (13): Part of the level
+1726493716,75304;24,42437;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726493718,47954;26,15092;Test1;SALE_HEAD;Limit (14): Part of the level
+1726493718,49259;26,16424;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1726493719,10599;26,77746;Test1;SALE_HEAD;Limit (9): Part of the level
+1726493720,67820;28,35071;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493720,69181;28,36410;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493720,70724;28,37856;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493720,80417;28,47597;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493721,19349;28,86530;Test1;ENTRA_HEAD;Limit (8): Part of the level
+1726493742,82849;50,50065;Test1;SALE_HEAD;Limit (8): Part of the level
+1726493744,98664;52,65858;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493745,00081;52,67249;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493745,13989;52,81181;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726493745,15338;52,82509;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726493746,65681;54,32888;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1726493746,67117;54,34318;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1726493746,74082;54,41299;Test1;ENTRA_HEAD;Col (4): Part of Limits

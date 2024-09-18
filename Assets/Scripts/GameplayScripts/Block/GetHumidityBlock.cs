@@ -18,15 +18,18 @@ public class GetHumidityBlock : ActionCharacterBlock, WithRightSocket
 
     public override void Execute(Dictionary<string, int> variables)
     {
+        Debug.Log("Execute humidity");
         plants = GameObject.FindObjectsOfType<Plant>();
         StartCoroutine(c_Execute(variables));
     }
 
     IEnumerator c_Execute(Dictionary<string, int> variables)
     {
+        Debug.Log("c_Execute humidity");
         isFinished = false;
         bool solved = true;
 
+        Debug.Log("Plants: " + plants.Length);
         foreach (Plant p in plants)
         {
             if ((SceneManager.GetActiveScene().buildIndex == 0))

@@ -1,0 +1,10 @@
+userID;fecha
+anom;16/09/2024_15:26
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726493187,07106;,18286;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726493191,77343;4,88453;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726493197,28371;10,39491;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726493197,75626;10,86756;Test1;SALE_HEAD;Col (3): Part of Limits
+1726493202,14573;15,25722;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726493207,82121;20,93329;Test1;ENTRA_HEAD;MainBlock: Part of a Block
+1726493208,81020;21,92165;Test1;SALE_HEAD;Shelf (4): Part of Player Area

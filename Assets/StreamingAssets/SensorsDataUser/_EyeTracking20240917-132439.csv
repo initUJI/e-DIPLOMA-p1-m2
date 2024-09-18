@@ -1,0 +1,19 @@
+userID;fecha
+anom;17/09/2024_13:24
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726572280,16680;,23038;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726572285,25876;5,32181;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726572285,78145;5,84496;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726572285,94942;6,01254;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726572286,17270;6,23596;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726572286,27018;6,33336;Test1;SALE_HEAD;Col (3): Part of Limits
+1726572286,45192;6,51566;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726572286,59050;6,65443;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726572289,41856;9,48219;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726572289,55813;9,62128;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726572289,71127;9,77448;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726572290,82516;10,88874;Test1;SALE_HEAD;Col (3): Part of Limits
+1726572291,20092;11,26428;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726572291,22835;11,29224;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726572294,43107;14,49479;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726572295,89227;15,95629;Test1;SALE_HEAD;Center Wall: Part of Player Area

@@ -1,0 +1,80 @@
+userID;fecha
+anom;18/09/2024_09:09
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726643372,02213;,40486;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643372,13494;,51774;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643375,11364;3,49641;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643377,55677;5,94013;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643380,37010;8,75332;Test1;ENTRA_HEAD;Brick: Part of the level
+1726643381,12127;9,50433;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643381,17724;9,56014;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643381,26057;9,64414;Test1;SALE_HEAD;Limit (23): Part of the level
+1726643381,27432;9,65767;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643382,98448;11,36821;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643383,44338;11,82664;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643384,06945;12,45225;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643384,22096;12,60450;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643385,48552;13,86849;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643386,26337;14,64621;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1726643387,99962;16,38264;Test1;SALE_HEAD;Limit (23): Part of the level
+1726643388,15237;16,53534;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643388,24900;16,63240;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643388,56884;16,95172;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643391,33142;19,71479;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643391,51162;19,89532;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643393,22021;21,60324;Test1;SALE_HEAD;Limit (23): Part of the level
+1726643393,33150;21,71425;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643393,38589;21,76932;Test1;SALE_HEAD;Limit (23): Part of the level
+1726643393,51195;21,89469;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643393,56598;21,94938;Test1;SALE_HEAD;Limit (23): Part of the level
+1726643393,63630;22,01975;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643396,78778;25,17144;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643396,81643;25,19917;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643397,28809;25,67126;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643397,96860;26,35177;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1726643397,98127;26,36482;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643398,01032;26,39338;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726643398,19107;26,57384;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1726643398,46795;26,85147;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1726643398,55170;26,93485;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643398,64911;27,03207;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1726643398,70353;27,08691;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643398,82946;27,21245;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1726643398,87114;27,25403;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643399,30063;27,68364;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643400,48042;28,86402;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643400,81485;29,19779;Test1;ENTRA_HEAD;TurnBlock(Clone): Part of a Block
+1726643401,07846;29,46161;Test1;SALE_HEAD;TurnBlock(Clone): Part of a Block
+1726643407,46078;35,84435;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726643409,06235;37,44511;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643409,09022;37,47318;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726643409,20108;37,58398;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643409,22898;37,61185;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1726643409,45080;37,83404;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1726643409,46402;37,84768;Test1;ENTRA_HEAD;Limit (22): Part of the level
+1726643409,58936;37,97281;Test1;SALE_HEAD;Limit (22): Part of the level
+1726643409,60398;37,98674;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643427,59040;55,97385;Test1;ENTRA_HEAD;Rock: Part of the level
+1726643428,48595;56,86938;Test1;SALE_HEAD;Limit (23): Part of the level
+1726643428,51418;56,89722;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643429,87400;58,25704;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643429,91576;58,29890;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643434,26212;62,64531;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643434,29122;62,67402;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1726643457,47695;85,85984;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643459,43411;87,81701;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643459,55906;87,94238;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643459,62911;88,01210;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643459,67068;88,05354;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643459,80865;88,19217;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643459,83627;88,21992;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643460,08638;88,47009;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643460,14232;88,52541;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643462,55810;90,94145;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643463,00262;91,38593;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726643463,25121;91,63478;Test1;SALE_HEAD;Col (3): Part of Limits
+1726643463,57105;91,95424;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643463,76635;92,14911;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726643467,18168;95,56521;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643473,52809;101,91094;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726643479,05001;107,43287;Test1;ENTRA_HEAD;Center Wall: Part of Player Area

@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
@@ -29,6 +30,7 @@ public class LevelManager : NumberOfBlocks
     [SerializeField] private GameObject optionsWindow;
     [SerializeField] private GameObject confettiSystem;
     [SerializeField] private GameObject phone;
+    [SerializeField] private TextMeshProUGUI levelText;
 
     private GameObject optionsInGameplay;
     private GameObject optionsLevelCompleted;
@@ -59,13 +61,6 @@ public class LevelManager : NumberOfBlocks
         noClueImage.SetActive(true);
         gameManager = FindObjectOfType<GameManager>();
         actualLevel = lastLevelCompleted() + 1;
-
-        saveCompletedLevel(1);
-        saveCompletedLevel(2);
-        saveCompletedLevel(3);
-        saveCompletedLevel(4);
-        saveCompletedLevel(5);
-        saveCompletedLevel(6);
 
         changeLevel(lastLevelCompleted() + 1);
     }
@@ -127,10 +122,32 @@ public class LevelManager : NumberOfBlocks
         return actualLevel;
     }
 
+    public void changeLevelText(int level)
+    {
+        string localizedText;
+
+        // Detectar el idioma actual del sistema de localización
+        var selectedLocale = LocalizationSettings.SelectedLocale;
+
+        if (selectedLocale.Identifier.Code == "es") // Para español
+        {
+            localizedText = "Nivel " + level.ToString() + "/6";
+        }
+        else // Para inglés u otros idiomas
+        {
+            localizedText = "Level " + level.ToString() + "/6";
+        }
+
+        // Asignar el texto traducido al componente de texto
+        levelText.text = localizedText;
+    }
+
+
     public void SetLevelAndChange(int level)
     {
-        GameObject.Find("OptionsFinish").SetActive(false);
-        GameObject.Find("OptionsWindow").transform.GetChild(0).gameObject.SetActive(false);
+        optionsWindow.transform.GetChild(0).gameObject.SetActive(true);
+        optionsWindow.transform.GetChild(1).gameObject.SetActive(false);
+        optionsWindow.transform.GetChild(2).gameObject.SetActive(false);
         deleteCompletedLevel(level);
         gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z + 2);
         changeLevel(level, "Button");
@@ -138,7 +155,7 @@ public class LevelManager : NumberOfBlocks
 
     public void changeLevel(int num, string source = null)
     {
-
+        changeLevelText(num);
         if (source == "Button")
         {
             eventsManager.buttonClicked("LEVEL:" + num.ToString());
@@ -387,6 +404,7 @@ public class LevelManager : NumberOfBlocks
 
         eventsManager.clueUsed(textPro.text);
     }
+   
 }
 
 public class Clue: MonoBehaviour

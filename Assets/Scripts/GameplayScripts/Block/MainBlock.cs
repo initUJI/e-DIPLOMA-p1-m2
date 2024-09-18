@@ -79,6 +79,10 @@ public class MainBlock : Block, WithBottomSocket
             GameManager.DisplayOnPrompt("Execution !");
             error = false;
             variables = new Dictionary<string, int>();
+            if (canvasFail != null)
+            {
+                canvasFail.SetActive(false);
+            }
 
             if (currentCoroutine != null)
             {
@@ -239,6 +243,10 @@ public class MainBlock : Block, WithBottomSocket
 
     private void completeLevel()
     {
+        if (canvasFail != null)
+        {
+            canvasFail.SetActive(false);
+        }
         //levelcompleted
         LevelManager lm = FindObjectOfType<LevelManager>();
         lm.saveCompletedLevel(lm.getActualLevel());
@@ -290,5 +298,20 @@ public class MainBlock : Block, WithBottomSocket
         }
 
         return false;
+    }
+
+    public List<ExecutableBlock> GetAttachedBlocks()
+    {
+        List<ExecutableBlock> attachedBlocks = new List<ExecutableBlock>();
+        ExecutableBlock currentBlock = (ExecutableBlock)getSocketBlock(bottomSocket); // Obtener el bloque conectado al socket inferior
+
+        // Recorrer todos los bloques conectados
+        while (currentBlock != null)
+        {
+            attachedBlocks.Add(currentBlock); // Añadir el bloque a la lista
+            currentBlock = (ExecutableBlock)currentBlock.getSocketBlock(((WithBottomSocket)currentBlock).getBottomSocket()); // Obtener el siguiente bloque
+        }
+
+        return attachedBlocks; // Devolver la lista de bloques conectados
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Localization.Settings;
 using System.Collections;
+using UnityEngine.XR;
 
 public class FPSCounter : MonoBehaviour
 {
@@ -15,6 +16,16 @@ public class FPSCounter : MonoBehaviour
 
     void Start()
     {
+        QualitySettings.vSyncCount = 0;
+        QualitySettings.shadows = ShadowQuality.Disable;
+        QualitySettings.antiAliasing = 0;
+        Application.targetFrameRate = -1;
+        QualitySettings.masterTextureLimit = 2; // Reduce la calidad de las texturas
+        Time.fixedDeltaTime = 0.02f; // Disminuye la frecuencia de simulación física
+        Application.targetFrameRate = 90; // Apunta a 90 FPS
+        XRSettings.eyeTextureResolutionScale = 0.75f; // Escala al 75% de la resolución nativa
+        QualitySettings.shadowDistance = 50f; // Reduce la distancia de renderizado de sombras
+
         // Detecta el idioma de la aplicación
         var selectedLocale = LocalizationSettings.SelectedLocale;
         var culture = selectedLocale.Identifier.Code;
@@ -25,13 +36,13 @@ public class FPSCounter : MonoBehaviour
         }
         else
         {
-            // Por defecto, se usa inglés
             warningMessage = "Low performance detected. The scene will restart shortly...";
         }
     }
 
     void Update()
     {
+
         // Calcula el FPS actual
         deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
         float fps = 1.0f / deltaTime;
@@ -55,12 +66,14 @@ public class FPSCounter : MonoBehaviour
         isRestarting = true;  // Marca que el proceso de verificación ha comenzado
         yield return new WaitForSeconds(restartDelay);  // Espera un tiempo antes de verificar
 
-        // Recalcula el FPS después de esperar
+        // Recalcula el deltaTime y el FPS después de esperar
+        deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
         float fps = 1.0f / deltaTime;
 
         // Si los FPS siguen por debajo del umbral, reinicia la escena
         if (fps < fpsThreshold)
         {
+
             Debug.LogWarning("FPS no se han recuperado. Reiniciando escena...");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

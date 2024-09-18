@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4248877801026892010}
-  - component: {fileID: 9145254197281190670}
   m_Layer: 0
   m_Name: PlantSection
   m_TagString: Untagged
@@ -36,27 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9145254197281190670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230274014167667921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93ed874b023a43dbaf8a4a73ced13dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Tags:
-  - obstacle
-  - rock
-  CreatesTags:
-  - corridor
-  - corridor
-  Exits: {fileID: 5348158657978319082}
-  Bounds: {fileID: 9071179301429229122}
-  DeadEndChance: 5
 --- !u!1 &3440812580021198358
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,7 +44,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3061785993717896433}
-  - component: {fileID: 5348158657978319082}
   m_Layer: 0
   m_Name: Exits
   m_TagString: Untagged
@@ -90,18 +67,6 @@ Transform:
   m_Father: {fileID: 4248877801026892010}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5348158657978319082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3440812580021198358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2766fdc05dd54584d840bb9a9909d899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3851663045800759682
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +237,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2490035073280705483}
-  - component: {fileID: 9071179301429229122}
   m_Layer: 0
   m_Name: Bounds
   m_TagString: Untagged
@@ -296,18 +260,6 @@ Transform:
   m_Father: {fileID: 4248877801026892010}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9071179301429229122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7129587528751557858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4cf8f74dac63e3468e42385f6c59d9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7169877356871385268
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +371,10 @@ PrefabInstance:
     - target: {fileID: 2982298750922465824, guid: 29d490814c90bae418bc6c38321d8ff5, type: 3}
       propertyPath: m_Name
       value: plantA_forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982298750922465824, guid: 29d490814c90bae418bc6c38321d8ff5, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29d490814c90bae418bc6c38321d8ff5, type: 3}

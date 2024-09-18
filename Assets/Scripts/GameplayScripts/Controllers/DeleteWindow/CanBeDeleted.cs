@@ -44,9 +44,18 @@ public class CanBeDeleted : MonoBehaviour
 
     private void OpenDeleteWindow()
     {
+        float marginright = 1.5f;
+        float marginforward = 0.4f;
+
+        // Instanciar la ventana y posicionarla
         currentWindow = Instantiate(deleteWindowPrefab, transform);
         currentWindow.transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, -transform.localEulerAngles.y, transform.localEulerAngles.z);
-        currentWindow.transform.localPosition = currentWindow.transform.right * -0.5f;
+        BoxCollider parentBoxCollider = transform.GetComponent<BoxCollider>();
+
+        // Mueve la ventana hacia la derecha en función del ancho del BoxCollider del padre
+        currentWindow.transform.localPosition = currentWindow.transform.right * (-parentBoxCollider.size.x + marginright);
+        currentWindow.transform.localPosition = currentWindow.transform.forward * (-parentBoxCollider.size.z + marginforward);
+
         currentWindow.transform.LookAt(principalHandController.transform);
 
         openWindow = true;

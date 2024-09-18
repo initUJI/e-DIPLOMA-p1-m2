@@ -187,9 +187,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5871015858176
     m_Localized: "El objetivo es conducir el coche hasta la planta para recoger la
-      humedad.\n\nNecesitamos un bloque de 'Avanzar' para mover el coche una casilla
-      hacia adelante.\n\nNecesitamos un bloque de 'Obtener humedad' para recoger
-      la humedad.\n\nPulsa el bot\xF3n 'Start' para que se ejecute el c\xF3digo."
+      humedad. Comprueba la direcci\xF3n del coche.\n\nNecesitamos un bloque de 'Avanzar'
+      para mover el coche una casilla hacia adelante.\n\nNecesitamos un bloque de
+      'Obtener humedad' para recoger la humedad.\n\nPulsa el bot\xF3n 'Start' para
+      que se ejecute el c\xF3digo."
     m_Metadata:
       m_Items: []
   - m_Id: 5856621006848
@@ -223,7 +224,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5578588983296
     m_Localized: "Apunta al cubo con el control.\r\n\nMant\xE9n presionado el agarre
-      del control para mover el cubo.\r Puedes acercarlo y alejarlo con el joystick."
+      del control para mover el cubo.\r \nPuedes acercarlo y alejarlo con el joystick."
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
@@ -304,6 +305,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 40614857404923904
     m_Localized: "S\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43120289660821504
+    m_Localized: "Interact\xFAa con la interfaz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43121049429630976
+    m_Localized: Abre la ventana para eliminar un bloque
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43121468558041088
+    m_Localized: "Mant\xE9n para sujetar un bloque"
     m_Metadata:
       m_Items: []
   references:

@@ -39,62 +39,79 @@ public class ShelfController : MonoBehaviour
     }
     protected virtual void CreateNewBlock()
     {
-        currentBlock = Instantiate(blockPrefab);
-        currentBlock.transform.parent = attach.transform;
+        if (currentBlock == null)
+        {
+            currentBlock = Instantiate(blockPrefab);
+            currentBlock.transform.parent = attach.transform;
 
-        if (currentBlock.name.Contains("NumberBlock"))
-        {
-            currentBlock.GetComponent<ObjectBlock>().setAssociatedString(numberForNumberBlock.ToString());
-        }
-
-        float xPos;
-        float yPos;
-        if (blockPrefab.name == "TurnLeftBlock" || blockPrefab.name == "TurnRightBlock" || blockPrefab.name == "ObjectBlock"
-            || blockPrefab.name == "NumberBlock")
-        {
-            xPos = 0;
-            yPos = 0;
-        }
-        else
-        {
-            if (currentBlock.GetComponent<BoxCollider>() != null)
+            if (currentBlock.name.Contains("NumberBlock"))
             {
-                xPos = currentBlock.GetComponent<BoxCollider>().size.z * 4;
+                currentBlock.GetComponent<ObjectBlock>().setAssociatedString(numberForNumberBlock.ToString());
+            }
+
+            float xPos;
+            float yPos;
+            if (blockPrefab.name == "TurnLeftBlock" || blockPrefab.name == "TurnRightBlock" || blockPrefab.name == "ObjectBlock"
+                || blockPrefab.name == "NumberBlock")
+            {
+                xPos = 0;
+                yPos = 0;
             }
             else
             {
-                xPos = currentBlock.transform.GetChild(0).GetComponent<BoxCollider>().size.z * 4;
-            }
-            yPos = 0.2f;
-        }
-        
-        currentBlock.transform.localPosition = new Vector3(xPos, yPos, 0);
-        currentBlock.transform.localRotation = blockPrefab.transform.rotation;
-
-        EventsManager eventsManager;
-        if (FindObjectOfType<EventsManager>() != null)
-        {
-            eventsManager = FindObjectOfType<EventsManager>();
-            eventsManager.subscribeGrabEvents(currentBlock.GetComponent<XRGrabInteractable>());
-
-            if (currentBlock.GetComponent<SocketsControl>() != null)
-            {
-                XRSocketInteractor[] xRSockets = currentBlock.GetComponent<SocketsControl>().getSockets();
-
-                foreach (XRSocketInteractor socket in xRSockets)
+                if (currentBlock.GetComponent<BoxCollider>() != null)
                 {
-                    if (socket != null) eventsManager.subscribeSocketsEvents(socket);
+                    xPos = currentBlock.GetComponent<BoxCollider>().size.z * 4;
+                }
+                else
+                {
+                    xPos = currentBlock.transform.GetChild(0).GetComponent<BoxCollider>().size.z * 4;
+                }
+                yPos = 0.2f;
+            }
+
+            currentBlock.transform.localPosition = new Vector3(xPos, yPos, 0);
+            currentBlock.transform.localRotation = blockPrefab.transform.rotation;
+
+            EventsManager eventsManager;
+            if (FindObjectOfType<EventsManager>() != null)
+            {
+                eventsManager = FindObjectOfType<EventsManager>();
+                eventsManager.subscribeGrabEvents(currentBlock.GetComponent<XRGrabInteractable>());
+
+                if (currentBlock.GetComponent<SocketsControl>() != null)
+                {
+                    XRSocketInteractor[] xRSockets = currentBlock.GetComponent<SocketsControl>().getSockets();
+
+                    if (xRSockets != null && xRSockets.Length > 0)
+                    {
+                        foreach (XRSocketInteractor socket in xRSockets)
+                        {
+                            if (socket != null) eventsManager.subscribeSocketsEvents(socket);
+                        }
+                    }
+
                 }
             }
-        }
+
+            if (currentBlock.GetComponent<SocketsControl>())
+            {
+                currentBlock.GetComponent<SocketsControl>().DeactivateSockets();
+            }
+        }   
     }
 
     public void OnTriggerExit(Collider other)
     {
         if (other.gameObject == currentBlock || (other.gameObject.transform.parent != null && other.gameObject.transform.parent.gameObject == currentBlock)
-            || other.gameObject.transform.parent.gameObject.name == currentBlock.name)
+            /*|| other.gameObject.transform.parent.gameObject.name == currentBlock.name*/)
         {
+            if (currentBlock.GetComponent<SocketsControl>())
+            {
+                currentBlock.GetComponent<SocketsControl>().ActivateSockets();
+            }
 
+            currentBlock = null;
             if (blockPrefab.name.Contains("Number"))
             {
                 if (levelManager.returnNumberOfBlocks(blockPrefab, numberForNumberBlock) > 0)
@@ -105,6 +122,7 @@ public class ShelfController : MonoBehaviour
                 }
                 else
                 {
+                    transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "";
                     transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "";
                 }
             }
@@ -119,9 +137,13 @@ public class ShelfController : MonoBehaviour
                 transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) - 1).ToString();
             }
 
-            if (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) <= 0)
+            int number;
+            if (int.TryParse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text, out number))
             {
-                transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "";
+                if (number <= 0)
+                {
+                    transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "";
+                }
             }
         }
     }
@@ -138,4 +160,17 @@ public class ShelfController : MonoBehaviour
             transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = (int.Parse(transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text) + 1).ToString();
         }  
     }
+
+    public void UpdateShelfTextWithString(string restoredText)
+    {
+        TextMeshProUGUI textComponent = transform.GetChild(1).transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        textComponent.text = restoredText;
+
+        if (!string.IsNullOrEmpty(restoredText))
+        {
+            // Si hay texto (bloques disponibles), crear un bloque
+            CreateNewBlock();
+        }
+    }
+
 }

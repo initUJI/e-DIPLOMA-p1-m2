@@ -8,38 +8,40 @@ public class LanguageChanger : MonoBehaviour
 {
     public Sprite spanish;
     public Sprite english;
-    //public GameObject button; // Asigna tu botón desde el Inspector
     public Image imageComponent;
+
+    private const string LanguagePrefKey = "SelectedLanguage";  // Clave para PlayerPrefs
 
     void Start()
     {
         SetDefaultLanguage();
-        Debug.Log(gameObject);
-        // Obtener el componente Image del botón y cambiar su sprite
-        //Image buttonImage = button.GetComponent<Image>();
-    }
 
-    
+        // Actualizar el sprite del botón basado en el idioma actual
+        UpdateButtonSprite();
+    }
 
     public void SetDefaultLanguage()
     {
-        Locale defaultLocale = LocalizationSettings.AvailableLocales.GetLocale("es");
-        LocalizationSettings.SelectedLocale = defaultLocale;
+        // Si existe un idioma guardado en PlayerPrefs, lo utilizamos, si no, usamos el español por defecto
+        string savedLanguage = PlayerPrefs.GetString(LanguagePrefKey, "es");
+        StartCoroutine(SetLocale(savedLanguage));
     }
 
-    // Llama a esta función con el identificador del idioma que deseas establecer, por ejemplo, "en" para inglés, "es" para español, etc.
+    // Cambiar el idioma y guardarlo en PlayerPrefs
     public void ChangeLanguage(string languageCode)
     {
+        PlayerPrefs.SetString(LanguagePrefKey, languageCode);  // Guardar el idioma seleccionado
+        PlayerPrefs.Save();  // Asegurar que se guarde
         StartCoroutine(SetLocale(languageCode));
     }
 
+    // Corrutina para establecer el idioma
     private IEnumerator SetLocale(string localeIdentifier)
     {
-        Debug.Log(localeIdentifier);
-        // Espera a que el sistema de localización esté inicializado
+        // Esperar a que el sistema de localización esté inicializado
         yield return LocalizationSettings.InitializationOperation;
-        Debug.Log("aaa");
-        // Busca el Locale correspondiente
+
+        // Buscar el Locale correspondiente
         Locale selectedLocale = null;
         foreach (var locale in LocalizationSettings.AvailableLocales.Locales)
         {
@@ -59,22 +61,12 @@ public class LanguageChanger : MonoBehaviour
         {
             Debug.LogWarning("No se encontró el idioma: " + localeIdentifier);
         }
+
+        // Actualiza el sprite del botón después de cambiar el idioma
+        UpdateButtonSprite();
     }
 
-    public string GetCurrentLanguage()
-    {
-        // Asegúrate de que el sistema de localización esté inicializado
-        if (LocalizationSettings.InitializationOperation.IsDone)
-        {
-            Locale currentLocale = LocalizationSettings.SelectedLocale;
-            return currentLocale != null ? currentLocale.Identifier.Code : "Idioma no seleccionado";
-        }
-        else
-        {
-            return "Inicialización de localización aún en proceso";
-        }
-    }
-
+    // Alternar entre idiomas (es/en)
     public void ToggleLanguage()
     {
         StartCoroutine(ToggleLanguageCoroutine());
@@ -87,28 +79,51 @@ public class LanguageChanger : MonoBehaviour
 
         Locale currentLocale = LocalizationSettings.SelectedLocale;
 
-        Debug.Log(currentLocale.Identifier.Code);
-        // Cambia el idioma basado en el idioma actual
+        // Cambiar entre inglés y español
         if (currentLocale.Identifier.Code == "en")
         {
-            StartCoroutine(SetLocale("es"));
+            ChangeLanguage("es");
         }
         else if (currentLocale.Identifier.Code == "es")
         {
-            StartCoroutine(SetLocale("en"));
+            ChangeLanguage("en");
+        }
+    }
+
+    // Obtener el idioma actual
+    public string GetCurrentLanguage()
+    {
+        if (LocalizationSettings.InitializationOperation.IsDone)
+        {
+            Locale currentLocale = LocalizationSettings.SelectedLocale;
+            return currentLocale != null ? currentLocale.Identifier.Code : "Idioma no seleccionado";
+        }
+        else
+        {
+            return "Inicialización de localización aún en proceso";
+        }
+    }
+
+    // Actualizar el sprite del botón según el idioma actual
+    private void UpdateButtonSprite()
+    {
+        string currentLanguage = GetCurrentLanguage();
+
+        if (currentLanguage == "es" && imageComponent != null)
+        {
+            imageComponent.sprite = spanish;
+        }
+        else if (currentLanguage == "en" && imageComponent != null)
+        {
+            imageComponent.sprite = english;
         }
     }
 
     private void Update()
     {
-        if (GetCurrentLanguage() == "es" && imageComponent != null && imageComponent.sprite != english)
-        {
-            imageComponent.sprite = english;
-        }
-        else if (GetCurrentLanguage() == "en" && imageComponent != null && imageComponent.sprite != spanish)
-        {
-            imageComponent.sprite = spanish;
-        }
+        // Revisa constantemente si el idioma ha cambiado para actualizar el botón
+        UpdateButtonSprite();
     }
 }
+
 

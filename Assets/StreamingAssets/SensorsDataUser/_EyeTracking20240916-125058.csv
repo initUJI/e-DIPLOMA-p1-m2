@@ -1,0 +1,15 @@
+userID;fecha
+anom;16/09/2024_12:50
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726483858,86884;,20520;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726483858,95738;,29356;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726483864,89358;6,23019;Test1;ENTRA_HEAD;Grass: Part of the level
+1726483866,60089;7,93707;Test1;SALE_HEAD;Limit (16): Part of the level
+1726483866,61545;7,95153;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1726483866,89365;8,23003;Test1;SALE_HEAD;Limit (15): Part of the level
+1726483866,92152;8,25769;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726483871,65550;12,99197;Test1;SALE_HEAD;Limit (14): Part of the level
+1726483872,94976;14,28637;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1726483873,18645;14,52304;Test1;SALE_HEAD;Limit (9): Part of the level
+1726483873,26982;14,60640;Test1;ENTRA_HEAD;Col (4): Part of Limits
+1726483877,36219;18,69846;Test1;ENTRA_HEAD;Col (7): Part of Limits

@@ -18,11 +18,10 @@ public class Plant : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-       /* Debug.Log(other.tag);
         if (other.CompareTag("Character"))
         {
             character = null;
-        }*/
+        }
     }
 
     public bool characterInPlant()

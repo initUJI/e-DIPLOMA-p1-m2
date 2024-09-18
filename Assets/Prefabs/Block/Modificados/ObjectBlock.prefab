@@ -143,7 +143,8 @@ GameObject:
   - component: {fileID: 29627158980927932}
   - component: {fileID: 3488519731815254975}
   - component: {fileID: 4123284712198168590}
-  m_Layer: 8
+  - component: {fileID: 520638962319981381}
+  m_Layer: 12
   m_Name: ObjectBlock
   m_TagString: Block
   m_Icon: {fileID: 0}
@@ -174,12 +175,12 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134250661231422668}
   serializedVersion: 2
-  m_Mass: 0.1
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 2
 --- !u!114 &1134250661231422671
@@ -201,7 +202,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1024
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -294,7 +295,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -405,3 +406,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bottomBlock: {fileID: 0}
   associatedString: OBSTACLE
+--- !u!65 &520638962319981381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134250661231422668}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1338931, y: 0.056213617, z: 0.08561345}
+  m_Center: {x: 0.0050065387, y: 0.0009113252, z: 0.0030646361}

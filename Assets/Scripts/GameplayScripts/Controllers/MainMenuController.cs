@@ -101,6 +101,7 @@ public class MainMenuController : MonoBehaviour
     {
         // Borra todos los PlayerPrefs
         PlayerPrefs.DeleteAll();
+        closeResetOptions();
     }
 
     public void saveUserId()
@@ -418,7 +419,8 @@ public class Instruccion : MainMenuController
 
     public bool checkControls3(XRGrabInteractable grab, GameObject platform)
     {
-        if (!grab.isSelected && platform != null && platform.GetComponent<platformController>().cubeColliding)
+        if ((!grab.isSelected && platform != null && platform.GetComponent<platformController>().cubeColliding) ||
+            platform != null && platform.GetComponent<XRSocketInteractor>().hasSelection)
         {
             return true;
         }

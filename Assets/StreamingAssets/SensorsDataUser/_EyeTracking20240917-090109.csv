@@ -1,0 +1,8 @@
+userID;fecha
+anom;17/09/2024_09:01
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726556473,53080;4,49775;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726556485,87208;16,83850;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726556489,79719;20,76329;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726556495,48039;26,44726;Test1;SALE_HEAD;Limits: Part of Limits
+1726556501,92623;32,89312;Test1;ENTRA_HEAD;Limits: Part of Limits

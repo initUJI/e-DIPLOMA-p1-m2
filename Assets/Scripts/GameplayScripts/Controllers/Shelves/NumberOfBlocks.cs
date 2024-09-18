@@ -191,6 +191,72 @@ public class NumberOfBlocks : MonoBehaviour
         }
     }
 
+    public void setNumberOfBlocks(GameObject block, int count, int n = 0)
+    {
+        switch (block.name)
+        {
+            case "TurnBlock":
+            case "TurnBlock(Clone)":
+                numberOfTurn = count;
+                break;
+            case "TurnRightBlock":
+            case "TurnRightBlock(Clone)":
+                numberOfRight = count;
+                break;
+            case "ObjectBlock":
+            case "ObjectBlock(Clone)":
+                numberOfObject = count;
+                break;
+            case "NumberBlock":
+            case "NumberBlock(Clone)":
+                switch (n)
+                {
+                    case 9: numberOfNumber9 = count; break;
+                    case 8: numberOfNumber8 = count; break;
+                    case 7: numberOfNumber7 = count; break;
+                    case 6: numberOfNumber6 = count; break;
+                    case 5: numberOfNumber5 = count; break;
+                    case 4: numberOfNumber4 = count; break;
+                    case 3: numberOfNumber3 = count; break;
+                    case 2: numberOfNumber2 = count; break;
+                    default: numberOfNumber = count; break;
+                }
+                break;
+            case "TurnLeftBlock":
+            case "TurnLeftBlock(Clone)":
+                numberOfLeft = count;
+                break;
+            case "IfBlock":
+            case "IfBlock(Clone)":
+                numberOfIf = count;
+                break;
+            case "GetHumidityBlock":
+            case "GetHumidityBlock(Clone)":
+                numberOfGetHumidity = count;
+                break;
+            case "ForwardBlock":
+            case "ForwardBlock(Clone)":
+                numberOfForward = count;
+                break;
+            case "ForBlock":
+            case "ForBlock(Clone)":
+                numberOfFor = count;
+                break;
+            case "EndIfBlock":
+            case "EndIfBlock(Clone)":
+                numberOfEndIf = count;
+                break;
+            case "EndForBlock":
+            case "EndForBlock(Clone)":
+                numberOfEndFor = count;
+                break;
+            default:
+                Debug.LogWarning("No matching block type for setting count.");
+                break;
+        }
+    }
+
+
     public bool blocksNo()
     {
         numberOfFor = 0;

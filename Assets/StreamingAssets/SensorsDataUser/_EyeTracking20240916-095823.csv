@@ -1,0 +1,37 @@
+userID;fecha
+anom;16/09/2024_09:58
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1726473504,29628;,36915;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1726473510,20922;6,28175;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1726473510,29329;6,36591;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1726473510,81085;6,88428;Test1;SALE_HEAD;Limit (13): Part of the level
+1726473510,83699;6,91006;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726473511,22712;7,30034;Test1;SALE_HEAD;Limit (14): Part of the level
+1726473511,28431;7,35682;Test1;ENTRA_HEAD;Grass: Part of the level
+1726473512,03741;8,11022;Test1;SALE_HEAD;Grass: Part of the level
+1726473512,13433;8,20732;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726473512,71947;8,79282;Test1;SALE_HEAD;Limit (14): Part of the level
+1726473512,73353;8,80632;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726473512,76264;8,83544;Test1;SALE_HEAD;Limit (14): Part of the level
+1726473512,87210;8,94538;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1726473514,61372;10,68647;Test1;SALE_HEAD;Limit (3): Part of the level
+1726473514,64182;10,71489;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726473518,20638;14,27983;Test1;SALE_HEAD;Col (3): Part of Limits
+1726473518,29004;14,36273;Test1;ENTRA_HEAD;Water: Part of the level
+1726473518,66627;14,73893;Test1;SALE_HEAD;Water: Part of the level
+1726473518,81931;14,89228;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726473539,36896;35,44151;Test1;SALE_HEAD;Col (3): Part of Limits
+1726473539,43845;35,51118;Test1;ENTRA_HEAD;Water: Part of the level
+1726473540,67741;36,75014;Test1;SALE_HEAD;Water: Part of the level
+1726473540,78905;36,86179;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1726473551,36858;47,44168;Test1;SALE_HEAD;Platform: Part of Player Area
+1726473551,42528;47,49823;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1726473552,20519;48,27811;Test1;SALE_HEAD;Col (6): Part of Limits
+1726473552,24773;48,32064;Test1;ENTRA_HEAD;Platform: Part of Player Area
+1726473552,74797;48,82075;Test1;SALE_HEAD;Platform: Part of Player Area
+1726473552,80407;48,87680;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1726473552,87238;48,94540;Test1;SALE_HEAD;Col (3): Part of Limits
+1726473553,02627;49,09958;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1726473554,22370;50,29653;Test1;SALE_HEAD;Col (3): Part of Limits
+1726473554,25101;50,32428;Test1;ENTRA_HEAD;Water: Part of the level
+1726473554,75156;50,82463;Test1;SALE_HEAD;Center Wall: Part of Player Area

@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
 
     private void FindObjects()
     {
-        Debug.Log("Init GameManager");
+        //Debug.Log("Init GameManager");
         character = FindObjectOfType<Character>();
         characterInitialPosition = character.transform.position;
         characterInitialRotation = character.transform.rotation;
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
 
         executionObstacles = new List<GameObject>();
 
-        Debug.Log("End Init GameManager");
+        //Debug.Log("End Init GameManager");
         objectsFound = true;
     }
 

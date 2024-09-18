@@ -40,6 +40,7 @@ public class ForBlock : ConditionalBlock
 
         while (block != null && !checkIfEnd(block) && !endfinded)
         {
+            Debug.Log("Executing block: " + block.GetType().Name);
             // Evitar ejecutar el mismo bloque más de una vez
             if (executedBlocks.Contains(block))
             {
@@ -71,7 +72,6 @@ public class ForBlock : ConditionalBlock
 
             else if (activeIf && ifBlock != null || !activeIf && ifBlock == null)
             {
-                Debug.Log("Executing block: " + block.GetType().Name);
                 block.Execute(variables);
                 yield return new WaitUntil(() => block.IsFinished());
             }
@@ -108,7 +108,7 @@ public class ForBlock : ConditionalBlock
         while (number > 0)
         {
             endfinded = false;
-            Debug.Log("Condition vérifiée !");
+            //Debug.Log("Condition vérifiée !");
             //Debug.Log(number);
             /*if (currentCoroutine != null)
             {

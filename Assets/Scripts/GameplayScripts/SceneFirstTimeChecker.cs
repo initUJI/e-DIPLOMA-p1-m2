@@ -17,12 +17,12 @@ public class SceneFirstTimeChecker : MonoBehaviour
 
         if (isFirstTime)
         {
-            Debug.Log("Esta es la primera vez que se abre la escena '" + sceneName + "' en esta sesión.");
+            //Debug.Log("Esta es la primera vez que se abre la escena '" + sceneName + "' en esta sesión.");
             // Ejecuta tu código aquí
         }
         else
         {
-            Debug.Log("La escena '" + sceneName + "' ya se ha abierto antes en esta sesión.");
+            //Debug.Log("La escena '" + sceneName + "' ya se ha abierto antes en esta sesión.");
         }
     }
 

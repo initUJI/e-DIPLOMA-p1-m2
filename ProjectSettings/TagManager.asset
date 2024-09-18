@@ -30,6 +30,7 @@ TagManager:
   - PLANT
   - OBSTACLE
   - Car
+  - LocalContextSocket
   layers:
   - Default
   - TransparentFX
@@ -42,9 +43,9 @@ TagManager:
   - InsideBlockObject
   - InsideBlockNumber
   - InsideBlockDirection
-  - 
-  - 
-  - 
+  - Plant
+  - Block
+  - Car
   - 
   - 
   - 

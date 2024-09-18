@@ -49,7 +49,6 @@ public class Character : MonoBehaviour
         eventsManager = FindObjectOfType<EventsManager>();
         targetPosition = transform.position;
         targetRotation = transform.rotation;
-        Debug.Log(child);
         initialMaterial = child.transform.GetChild(0).transform.GetChild(0).GetComponent<MeshRenderer>().materials[1];
     }
 
@@ -111,7 +110,7 @@ public class Character : MonoBehaviour
         {
             PlayAnimation("Walking");
             isForwarding = true;
-            Debug.Log("Go forward!");
+            //Debug.Log("Go forward!");
             targetPosition += transform.forward * unit;
         }
         else
@@ -172,14 +171,14 @@ public class Character : MonoBehaviour
     public void TurnRight()
     {
         isRotating = true;
-        Debug.Log("Turn right!");
+        //Debug.Log("Turn right!");
         targetRotation *= Quaternion.Euler(0f, 90f, 0f);
     }
 
     public void TurnLeft()
     {
         isRotating = true;
-        Debug.Log("Turn left!");
+        //Debug.Log("Turn left!");
         targetRotation *= Quaternion.Euler(0f, -90f, 0f);
     }
 

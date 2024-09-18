@@ -55,12 +55,12 @@ public class ClienteUDP : MonoBehaviour
                     }
                     catch (SocketException ex)
                     {
-                        Debug.Log($"UDP Receive error: {ex.Message}");                        
+                        //Debug.Log($"UDP Receive error: {ex.Message}");                        
                     }
                 }
 
                 // Log when the listener task ends
-                Debug.Log("UDPListener Task End!");                
+                //Debug.Log("UDPListener Task End!");                
             }
         });
     }
@@ -73,7 +73,7 @@ public class ClienteUDP : MonoBehaviour
             isListening = false; // Ensure the listening loop ends            
             udpClient.Close(); // Close the UDP client
             udpClient = null; // Help with garbage collection
-            Debug.Log("Close UDP socket");
+            //Debug.Log("Close UDP socket");
         }
     }
 
