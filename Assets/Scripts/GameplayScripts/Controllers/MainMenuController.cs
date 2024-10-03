@@ -50,6 +50,7 @@ public class MainMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ClearManuallySelectedLevel();
         eventsManager = FindObjectOfType<EventsManager>();
 
         MainOptions = menuWindow.transform.GetChild(0).gameObject;
@@ -121,6 +122,56 @@ public class MainMenuController : MonoBehaviour
     {
         eventsManager.buttonClicked("START");
         SceneManager.LoadScene(1);
+    }
+
+    public void StartGameplay(int levelToLoad)
+    {
+        // Save the selected level number in PlayerPrefs with a custom key
+        PlayerPrefs.SetInt("ManuallySelectedLevel", levelToLoad);
+
+        // Ensure the changes in PlayerPrefs are saved
+        PlayerPrefs.Save();
+
+        // Register the button click event
+        eventsManager.buttonClicked("START");
+
+        // Load the scene with the provided level number
+        SceneManager.LoadScene(levelToLoad);
+    }
+
+    public void ClearManuallySelectedLevel()
+    {
+        // Remove the "ManuallySelectedLevel" from PlayerPrefs
+        PlayerPrefs.DeleteKey("ManuallySelectedLevel");
+
+        // Ensure the changes in PlayerPrefs are saved
+        PlayerPrefs.Save();
+    }
+
+    public void toggleOptionsFinish(GameObject gameObject)
+    {
+        // Toggle the active state of the GameObject
+        if (gameObject != null)
+        {
+            bool isActive = gameObject.activeSelf; // Check current active state
+
+            // Toggle the gameObject
+            gameObject.SetActive(!isActive);
+
+            // If the gameObject was active, deactivate MainOptions
+            if (gameObject.activeInHierarchy && MainOptions != null)
+            {
+                MainOptions.SetActive(false);
+            }
+            else
+            {
+                MainOptions.SetActive(true);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("GameObject is null");
+        }
     }
 
     public void startTutorial()

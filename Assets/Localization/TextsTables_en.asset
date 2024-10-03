@@ -334,6 +334,10 @@ MonoBehaviour:
     m_Localized: Hold to grab a block
     m_Metadata:
       m_Items: []
+  - m_Id: 48925754201440256
+    m_Localized: Do you want to practice a specific level?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

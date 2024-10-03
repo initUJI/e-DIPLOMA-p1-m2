@@ -291,6 +291,10 @@ MonoBehaviour:
     m_Key: GrabDescription
     m_Metadata:
       m_Items: []
+  - m_Id: 48925754201440256
+    m_Key: ManuallySelectedLevel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

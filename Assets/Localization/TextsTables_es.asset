@@ -319,6 +319,10 @@ MonoBehaviour:
     m_Localized: "Mant\xE9n para sujetar un bloque"
     m_Metadata:
       m_Items: []
+  - m_Id: 48925754201440256
+    m_Localized: "\xBFQuieres practicar un nivel en espec\xEDfico?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

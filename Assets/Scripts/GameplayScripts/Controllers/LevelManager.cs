@@ -60,9 +60,21 @@ public class LevelManager : NumberOfBlocks
         clueImage.SetActive(false);
         noClueImage.SetActive(true);
         gameManager = FindObjectOfType<GameManager>();
-        actualLevel = lastLevelCompleted() + 1;
 
-        changeLevel(lastLevelCompleted() + 1);
+        if (!PlayerPrefs.HasKey("ManuallySelectedLevel"))
+        {
+            actualLevel = lastLevelCompleted() + 1;
+
+            changeLevel(lastLevelCompleted() + 1);
+        }
+        else
+        {
+            int savedLevel = PlayerPrefs.GetInt("ManuallySelectedLevel", 1); // 1 is the default if no level is saved
+            actualLevel = savedLevel;
+
+            changeLevel(savedLevel);
+        }
+
     }
 
 
@@ -112,9 +124,18 @@ public class LevelManager : NumberOfBlocks
 
     public void resetScene()
     {
-        eventsManager.buttonClicked("NEXT LEVEL");
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        if (!PlayerPrefs.HasKey("ManuallySelectedLevel"))
+        {
+            eventsManager.buttonClicked("NEXT LEVEL");
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+        }
+        else
+        {
+            deleteCompletedLevel(PlayerPrefs.GetInt("ManuallySelectedLevel", 1));
+            SceneManager.LoadScene(0);
+        }
+
     }
 
     public int getActualLevel()

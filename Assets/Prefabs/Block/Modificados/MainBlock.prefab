@@ -390,7 +390,6 @@ GameObject:
   - component: {fileID: 600614187568865390}
   - component: {fileID: 2948892074523433254}
   - component: {fileID: 2780242033712439381}
-  - component: {fileID: 2013965405981801140}
   - component: {fileID: 3069866256178593180}
   m_Layer: 12
   m_Name: MainBlock
@@ -725,19 +724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24fbb02eba33014085a551a6e3c9159, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2013965405981801140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3999710675124569885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e04310b689e6e74eaaa27428f42fdfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystickValue: {x: 0, y: 0}
 --- !u!65 &3069866256178593180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -901,7 +887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 5826283185880373081}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -931,18 +918,6 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainBlock, Assembly-CSharp
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 8866275113564789680}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
         m_MethodName: Pressed

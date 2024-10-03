@@ -1,9 +1,0 @@
-userID;fecha
-anom;18/09/2024_09:49
-unixTimestamp;Timestamp;Situacion;Accion;Objeto
-1726645785,87882;,19085;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
-1726645785,96722;,27868;Test1;SALE_HEAD;Center Wall: Part of Player Area
-1726645788,95167;3,26346;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
-1726645792,60614;6,91759;Test1;SALE_HEAD;Col (6): Part of Limits
-1726645793,18188;7,49333;Test1;ENTRA_HEAD;Col (6): Part of Limits
-1726645803,27092;17,58262;Test1;SALE_HEAD;Col: Part of Limits
