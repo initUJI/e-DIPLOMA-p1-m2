@@ -267,6 +267,8 @@ GameObject:
   - component: {fileID: 6390981843126046797}
   - component: {fileID: 3229687323123176277}
   - component: {fileID: 8555027758803748240}
+  - component: {fileID: -1392452824683573159}
+  - component: {fileID: -7919548893070587231}
   m_Layer: 12
   m_Name: IfBlock
   m_TagString: Block
@@ -566,7 +568,7 @@ MonoBehaviour:
   animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
-  particleEffect: 1
+  particleEffect: 0
   effect: {fileID: 0}
 --- !u!114 &6390981843126046797
 MonoBehaviour:
@@ -615,6 +617,33 @@ MonoBehaviour:
   currentFirstBlock: {fileID: 0}
   isFinished: 0
   rightSocket: {fileID: 8098880639519661101}
+--- !u!114 &-1392452824683573159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229687323123176279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 0.2
+  maxDistance: 1.5
+--- !u!114 &-7919548893070587231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229687323123176279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetYRotation: 90
 --- !u!1 &3710463724042710824
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,7 +845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 694164660281001679}
   - component: {fileID: 8098880639519661101}
-  - component: {fileID: 5923459262584790215}
+  - component: {fileID: 1241532948217516507}
   m_Layer: 8
   m_Name: Right Socket
   m_TagString: RightSocket
@@ -894,8 +923,8 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!135 &5923459262584790215
-SphereCollider:
+--- !u!136 &1241532948217516507
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -904,6 +933,7 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.05
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.06291031
+  m_Height: 0.25374177
+  m_Direction: 2
+  m_Center: {x: 0.0021223123, y: -0.0019623116, z: -0.013383877}

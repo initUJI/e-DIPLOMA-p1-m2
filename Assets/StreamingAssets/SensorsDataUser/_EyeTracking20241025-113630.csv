@@ -1,0 +1,37 @@
+userID;fecha
+anom;25/10/2024_11:36
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1729848990,97324;,38781;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848992,88144;2,29518;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1729848993,71667;3,13041;Test1;ENTRA_HEAD;Brick: Part of the level
+1729848994,58121;3,99531;Test1;SALE_HEAD;Limit (20): Part of the level
+1729848994,69197;4,10651;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729848995,83467;5,24878;Test1;SALE_HEAD;Col (3): Part of Limits
+1729848999,15048;8,56476;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729848999,16455;8,57840;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729848999,26147;8,67573;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729848999,27471;8,68887;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729848999,28936;8,70380;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729848999,70758;9,12159;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729849000,22226;9,63649;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729849002,26923;11,68320;Test1;SALE_HEAD;Col (3): Part of Limits
+1729849007,46469;16,87846;Test1;ENTRA_HEAD;Bottom Socket: Part of Player Area
+1729849007,47591;16,88989;Test1;SALE_HEAD;Bottom Socket: Part of Player Area
+1729849007,79498;17,20932;Test1;ENTRA_HEAD;Bottom Socket: Part of Player Area
+1729849008,20004;17,61409;Test1;SALE_HEAD;Bottom Socket: Part of Player Area
+1729849010,07882;19,49337;Test1;ENTRA_HEAD;Col (4): Part of Limits
+1729849012,13989;21,55388;Test1;SALE_HEAD;Col (4): Part of Limits
+1729849021,76086;31,17466;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1729849021,89915;31,31327;Test1;SALE_HEAD;Limit (14): Part of the level
+1729849021,91267;31,32667;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1729849022,47023;31,88400;Test1;SALE_HEAD;Water: Part of the level
+1729849022,81696;32,23127;Test1;ENTRA_HEAD;Platform: Part of Player Area
+1729849022,88758;32,30169;Test1;SALE_HEAD;Platform: Part of Player Area
+1729849023,24892;32,66353;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729849024,58635;34,00041;Test1;SALE_HEAD;Limit (16): Part of the level
+1729849024,60021;34,01437;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1729849024,61373;34,02768;Test1;SALE_HEAD;Limit (15): Part of the level
+1729849024,62779;34,04231;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1729849024,66967;34,08397;Test1;SALE_HEAD;Limit (15): Part of the level
+1729849024,85096;34,26481;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1729849031,10220;40,51684;Test1;ENTRA_HEAD;Center Wall: Part of Player Area

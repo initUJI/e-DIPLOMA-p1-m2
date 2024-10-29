@@ -1,0 +1,32 @@
+userID;fecha
+anom;25/10/2024_10:28
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1729844937,19831;,26952;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729844939,35434;2,42533;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1729844942,37257;5,44365;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729844947,67754;10,74914;Test1;SALE_HEAD;Col (3): Part of Limits
+1729844951,61671;14,68840;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729844951,67448;14,74544;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729844952,87162;15,94261;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729844953,31678;16,38781;Test1;SALE_HEAD;Col (3): Part of Limits
+1729844954,33305;17,40489;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729844954,37525;17,44623;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729844954,69456;17,76612;Test1;ENTRA_HEAD;Col (4): Part of Limits
+1729844955,72308;18,79415;Test1;SALE_HEAD;Col (4): Part of Limits
+1729844956,94900;20,02067;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1729844957,53446;20,60560;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729844958,31425;21,38565;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1729844958,34285;21,41382;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729844961,29433;24,36555;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729844961,90694;24,97793;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729844963,02001;26,09095;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729844963,03508;26,10600;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729844963,07500;26,14669;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729844965,65169;28,72315;Test1;SALE_HEAD;Col (3): Part of Limits
+1729844965,76282;28,83442;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729844965,81805;28,88935;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729844967,64362;30,71487;Test1;ENTRA_HEAD;Limit (18): Part of the level
+1729844967,68435;30,75570;Test1;SALE_HEAD;Limit (18): Part of the level
+1729844967,69790;30,76898;Test1;ENTRA_HEAD;Limit (18): Part of the level
+1729844969,04881;32,12019;Test1;SALE_HEAD;Limit (16): Part of the level
+1729844971,08185;34,15334;Test1;ENTRA_HEAD;Col (5): Part of Limits

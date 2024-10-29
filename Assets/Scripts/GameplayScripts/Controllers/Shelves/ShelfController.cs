@@ -81,7 +81,7 @@ public class ShelfController : MonoBehaviour
 
                 if (currentBlock.GetComponent<SocketsControl>() != null)
                 {
-                    XRSocketInteractor[] xRSockets = currentBlock.GetComponent<SocketsControl>().getSockets();
+                    XRSocketInteractor[] xRSockets = currentBlock.GetComponent<SocketsControl>().GetSockets();
 
                     if (xRSockets != null && xRSockets.Length > 0)
                     {
@@ -106,10 +106,10 @@ public class ShelfController : MonoBehaviour
         if (other.gameObject == currentBlock || (other.gameObject.transform.parent != null && other.gameObject.transform.parent.gameObject == currentBlock)
             /*|| other.gameObject.transform.parent.gameObject.name == currentBlock.name*/)
         {
-            if (currentBlock.GetComponent<SocketsControl>())
+            /*if (currentBlock.GetComponent<SocketsControl>())
             {
                 currentBlock.GetComponent<SocketsControl>().ActivateSockets();
-            }
+            }*/
 
             currentBlock = null;
             if (blockPrefab.name.Contains("Number"))

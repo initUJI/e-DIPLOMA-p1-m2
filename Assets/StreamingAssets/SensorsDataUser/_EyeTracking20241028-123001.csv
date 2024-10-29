@@ -1,0 +1,66 @@
+userID;fecha
+anom;28/10/2024_12:30
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730115001,55896;,22146;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730115003,44833;2,11131;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730115005,42117;4,08381;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730115009,51690;8,17963;Test1;SALE_HEAD;Col (3): Part of Limits
+1730115010,96436;9,62703;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115012,31539;10,97860;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115013,41561;12,07864;Test1;ENTRA_HEAD;Limit (17): Part of the level
+1730115013,45813;12,12066;Test1;SALE_HEAD;Limit (17): Part of the level
+1730115013,54113;12,20381;Test1;ENTRA_HEAD;Limit (17): Part of the level
+1730115013,65208;12,31529;Test1;SALE_HEAD;Limit (17): Part of the level
+1730115013,69418;12,35697;Test1;ENTRA_HEAD;Limit (17): Part of the level
+1730115014,02783;12,69102;Test1;SALE_HEAD;Limit (17): Part of the level
+1730115014,09726;12,76066;Test1;ENTRA_HEAD;Limit (17): Part of the level
+1730115014,20919;12,87205;Test1;SALE_HEAD;Limit (17): Part of the level
+1730115014,29236;12,95581;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115017,23052;15,89316;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115023,50927;22,17200;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115023,57855;22,24166;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115024,14987;22,81242;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115024,28833;22,95177;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115024,35860;23,02131;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730115029,43977;28,10287;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115029,50909;28,17230;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115029,52278;28,18553;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115029,55111;28,21405;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115029,91251;28,57597;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115029,99678;28,65960;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115030,01009;28,67344;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115030,55360;29,21643;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115032,41955;31,08206;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115032,43309;31,09608;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115032,51625;31,17960;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115036,65157;35,31435;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115036,81785;35,48128;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115037,33416;35,99664;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1730115042,45718;41,11977;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1730115044,10001;42,76254;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115044,79526;43,45872;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115045,31065;43,97358;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115045,47731;44,14072;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115045,58954;44,25213;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115045,93706;44,60025;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115052,78659;51,44920;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115052,80091;51,46396;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115053,77578;52,43887;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115053,81711;52,48021;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,72572;55,38917;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,81041;55,47341;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,92127;55,58398;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,93622;55,59885;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,96271;55,62569;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,97715;55,64053;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115056,99199;55,65462;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730115062,70014;61,36262;Test1;SALE_HEAD;Col (3): Part of Limits
+1730115063,25647;61,91895;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115064,14690;62,81017;Test1;SALE_HEAD;Col (3): Part of Limits
+1730115064,66135;63,32442;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730115075,19153;73,85403;Test1;SALE_HEAD;Col (3): Part of Limits
+1730115075,25697;73,92007;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730115075,32612;73,98891;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730115075,41040;74,07339;Test1;ENTRA_HEAD;Limit (20): Part of the level
+1730115076,12078;74,78328;Test1;SALE_HEAD;Limit (16): Part of the level
+1730115076,49615;75,15941;Test1;ENTRA_HEAD;Col (5): Part of Limits

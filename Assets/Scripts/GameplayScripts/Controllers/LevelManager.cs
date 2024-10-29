@@ -12,7 +12,7 @@ using UnityEngine.UIElements;
 
 public class LevelManager : NumberOfBlocks
 {
-    private int actualLevel;
+    private int actualLevel = 0;
     private List<Clue> actualClues;
     private int cluesForLevel = 5;
     private bool clueAvalible = false;
@@ -38,7 +38,7 @@ public class LevelManager : NumberOfBlocks
 
     private GameManager gameManager;
     private float timerForClues = 0;
-    private float timeBetweenClues = 180f;
+    private float timeBetweenClues = 60f;
     private float allLevelTimer = 0;
 
     // Start is called before the first frame update
@@ -80,26 +80,29 @@ public class LevelManager : NumberOfBlocks
 
     private void Update()
     {
-        timerForClues += Time.deltaTime;
-        if (timerForClues >= timeBetweenClues)
+        // Actualizar el temporizador para las pistas
+        if (!clueAvalible)
         {
-            clueAvalible = true;
-            clueImage.SetActive(true);
-            noClueImage.SetActive(false);
-            timerForClues = 0;
+            timerForClues += Time.deltaTime;
+            if (timerForClues >= timeBetweenClues)
+            {
+                clueAvalible = true;
+                clueImage.SetActive(true);
+                noClueImage.SetActive(false);
+                timerForClues = 0;
+            }
         }
 
         if (!checkCompletedLevel(actualLevel))
         {
             allLevelTimer += Time.deltaTime;
         }
-
         else if (!optionsLevelCompleted.activeInHierarchy)
         {
             optionsInGameplay.SetActive(false);
             optionsLevelCompleted.SetActive(true);
 
-            optionsLevelCompleted.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Math.Round(allLevelTimer).ToString()  + " s";
+            optionsLevelCompleted.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = Mathf.Round(allLevelTimer).ToString() + " s";
 
             phone.GetComponent<AudioSource>().Play();
 
@@ -212,6 +215,18 @@ public class LevelManager : NumberOfBlocks
         optionsWindow.transform.GetChild(0).gameObject.SetActive(false);
         optionsWindow.transform.GetChild(1).gameObject.SetActive(false);
         optionsWindow.transform.GetChild(2).gameObject.SetActive(true);
+    }
+
+    public void toggleGameObject(GameObject gameObject)
+    {
+        if (gameObject.activeInHierarchy)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
     }
 
     public void resetLevelBlocks()
@@ -414,21 +429,39 @@ public class LevelManager : NumberOfBlocks
             clueAvalible = false;
             clueImage.SetActive(false);
             noClueImage.SetActive(true);
-
-            
         }
         else
         {
-            textPro.text = "No clue avalible";
-            dynamicTextUpdater.UpdateLocalizedString("noClue");
+            // Iniciar temporizador en el texto si no hay pista disponible
+            UpdateClueTimerText();
         }
 
         eventsManager.clueUsed(textPro.text);
     }
-   
+
+    private void UpdateClueTimerText()
+    {
+        float timeRemaining = timeBetweenClues - timerForClues;
+        string message;
+
+        // Detectar el idioma actual del sistema de localización
+        var selectedLocale = LocalizationSettings.SelectedLocale;
+
+        if (selectedLocale.Identifier.Code == "es")
+        {
+            message = "Siguiente pista disponible en: ";
+        }
+        else
+        {
+            message = "Next clue available in: ";
+        }
+
+        textPro.text = message + Mathf.Ceil(timeRemaining).ToString() + "s";
+    }
+
 }
 
-public class Clue: MonoBehaviour
+public class Clue
 {
     public int level;
     public string clue;

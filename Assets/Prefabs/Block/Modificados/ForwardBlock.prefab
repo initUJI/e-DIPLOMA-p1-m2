@@ -97,34 +97,10 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Block, Assembly-CSharp
-        m_MethodName: TransmitNextBlocksToReferent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Block, Assembly-CSharp
-        m_MethodName: ResetNextBlocks
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_OnHoverEntered:
@@ -243,6 +219,8 @@ GameObject:
   - component: {fileID: 4731510665908855330}
   - component: {fileID: 6042998156014592877}
   - component: {fileID: 5322129741125837004}
+  - component: {fileID: 4597609649287017212}
+  - component: {fileID: 2685118230528088208}
   m_Layer: 12
   m_Name: ForwardBlock
   m_TagString: Block
@@ -440,11 +418,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AttachTransform: {fileID: 3861011620398498121}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
-  m_AttachEaseInTime: 0.15
+  m_AttachEaseInTime: 0.1
   m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -454,7 +432,7 @@ MonoBehaviour:
   m_SmoothPosition: 1
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
-  m_TrackRotation: 1
+  m_TrackRotation: 0
   m_SmoothRotation: 1
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
@@ -478,7 +456,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
@@ -540,7 +518,7 @@ MonoBehaviour:
   animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
-  particleEffect: 1
+  particleEffect: 0
   effect: {fileID: 0}
 --- !u!114 &4731510665908855330
 MonoBehaviour:
@@ -584,6 +562,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.10000002, y: 0.077639185, z: 0.19714458}
   m_Center: {x: 3.7556e-16, y: -0.055649083, z: -0.098572284}
+--- !u!114 &4597609649287017212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981423829743781137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 0.2
+  maxDistance: 1.5
+--- !u!114 &2685118230528088208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981423829743781137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetYRotation: 90
 --- !u!1 &6841151848011276593
 GameObject:
   m_ObjectHideFlags: 0

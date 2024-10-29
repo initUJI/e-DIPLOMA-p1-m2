@@ -243,6 +243,8 @@ GameObject:
   - component: {fileID: 3746230839084243586}
   - component: {fileID: 6436785303989948026}
   - component: {fileID: 4697215339093414108}
+  - component: {fileID: 4657676859292122100}
+  - component: {fileID: 3482095778653927789}
   m_Layer: 12
   m_Name: GetHumidityBlock
   m_TagString: Block
@@ -540,7 +542,7 @@ MonoBehaviour:
   animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
-  particleEffect: 1
+  particleEffect: 0
   effect: {fileID: 0}
 --- !u!114 &3746230839084243586
 MonoBehaviour:
@@ -584,6 +586,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.10000002, y: 0.069986686, z: 0.22635065}
   m_Center: {x: 1.6803831e-16, y: -0.058078244, z: -0.113175325}
+--- !u!114 &4657676859292122100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4977639878174293425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 0.2
+  maxDistance: 1.5
+--- !u!114 &3482095778653927789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4977639878174293425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetYRotation: 90
 --- !u!1 &7977700469969900305
 GameObject:
   m_ObjectHideFlags: 0

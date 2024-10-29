@@ -1,0 +1,22 @@
+userID;fecha
+anom;25/10/2024_14:35
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1729859753,22793;,21579;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729859755,17500;2,16235;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1729859756,04427;3,03220;Test1;ENTRA_HEAD;Brick: Part of the level
+1729859756,79539;3,78235;Test1;SALE_HEAD;Limit (14): Part of the level
+1729859757,07380;4,06124;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729859757,96481;4,95266;Test1;SALE_HEAD;Col (3): Part of Limits
+1729859758,14607;5,13392;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1729859758,16210;5,14908;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729859759,09497;6,08224;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1729859770,05190;17,03971;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729859770,26126;17,24854;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1729859778,73970;25,72716;Test1;SALE_HEAD;Limit (14): Part of the level
+1729859778,76701;25,75450;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1729859778,89286;25,88029;Test1;SALE_HEAD;Limit (13): Part of the level
+1729859779,33891;26,32602;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729859779,38034;26,36768;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729859781,48241;28,46988;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729859781,66332;28,65072;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729859782,81880;29,80616;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block

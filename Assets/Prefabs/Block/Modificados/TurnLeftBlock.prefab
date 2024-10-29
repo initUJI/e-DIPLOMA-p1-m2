@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5649316647245923980}
   - component: {fileID: 4446453790820213359}
   - component: {fileID: 2219884087285206247}
+  - component: {fileID: 2629822411272045364}
+  - component: {fileID: -4974503587759562332}
   m_Layer: 12
   m_Name: TurnLeftBlock
   m_TagString: Block
@@ -261,7 +263,7 @@ MonoBehaviour:
   animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
-  particleEffect: 1
+  particleEffect: 0
   effect: {fileID: 0}
 --- !u!114 &4446453790820213359
 MonoBehaviour:
@@ -290,6 +292,33 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.121902674, y: 0.072399996, z: 0.087395936}
   m_Center: {x: -0.0034614652, y: 0, z: -0.006691903}
+--- !u!114 &2629822411272045364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2787814859326019467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 0.2
+  maxDistance: 1.5
+--- !u!114 &-4974503587759562332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2787814859326019467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetYRotation: 90
 --- !u!1 &5613395229101759336
 GameObject:
   m_ObjectHideFlags: 0

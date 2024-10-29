@@ -323,6 +323,23 @@ MonoBehaviour:
     m_Localized: "\xBFQuieres practicar un nivel en espec\xEDfico?"
     m_Metadata:
       m_Items: []
+  - m_Id: 51808855583780864
+    m_Localized: "Tu objetivo ser\xE1 llevar el coche hasta la planta y coger su
+      humendad"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58376654732476416
+    m_Localized: HERRAMIENTAS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58391730545836032
+    m_Localized: "\xBFEst\xE1s seguro de limpiar toda la escena?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58437793587740672
+    m_Localized: "\xBFEst\xE1s seguro de volver a la escena principal?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

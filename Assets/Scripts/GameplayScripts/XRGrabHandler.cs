@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRGrabHandler : MonoBehaviour
 {
-    private Rigidbody rb;
+   /* private Rigidbody rb;
     private XRGrabInteractable grabInteractable;
 
     void Awake()
@@ -14,8 +14,8 @@ public class XRGrabHandler : MonoBehaviour
         if (grabInteractable != null)
         {
             // Añadir listeners para los eventos de selección
-            grabInteractable.onSelectEntered.AddListener(OnGrab);
-            grabInteractable.onSelectExited.AddListener(OnRelease);
+            grabInteractable.selectEntered.AddListener(OnGrab);
+            grabInteractable.selectExited.AddListener(OnRelease);
         }
     }
 
@@ -47,6 +47,6 @@ public class XRGrabHandler : MonoBehaviour
             grabInteractable.onSelectEntered.RemoveListener(OnGrab);
             grabInteractable.onSelectExited.RemoveListener(OnRelease);
         }
-    }
+    }*/
 }
 

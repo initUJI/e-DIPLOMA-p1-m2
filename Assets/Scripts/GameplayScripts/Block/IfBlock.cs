@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class IfBlock : ConditionalBlock
 {
-    Coroutine currentCoroutine;
+    //Coroutine currentCoroutine;
 
     /* Calls the c_Execute coroutine */
     public override void Execute(Dictionary<string, int> variables)

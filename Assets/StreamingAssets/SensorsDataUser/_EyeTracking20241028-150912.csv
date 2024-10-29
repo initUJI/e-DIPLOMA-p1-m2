@@ -1,0 +1,25 @@
+userID;fecha
+anom;28/10/2024_15:09
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730124552,41925;,24734;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730124554,32424;2,15176;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730124555,13495;2,96244;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1730124555,22776;3,05549;Test1;SALE_HEAD;Limit (14): Part of the level
+1730124555,59161;3,41953;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1730124555,67500;3,50240;Test1;SALE_HEAD;Limit (14): Part of the level
+1730124556,30299;4,13053;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730124557,84887;5,67704;Test1;SALE_HEAD;Col (3): Part of Limits
+1730124558,04462;5,87212;Test1;ENTRA_HEAD;Limit (17): Part of the level
+1730124558,89411;6,72163;Test1;SALE_HEAD;Limit (11): Part of the level
+1730124562,38905;10,21725;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730124562,56990;10,39762;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730124562,79306;10,62046;Test1;ENTRA_HEAD;Grass: Part of the level
+1730124562,83463;10,66225;Test1;SALE_HEAD;Grass: Part of the level
+1730124562,98771;10,81566;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730124568,31868;16,14641;Test1;SALE_HEAD;Grass: Part of the level
+1730124568,36114;16,18885;Test1;ENTRA_HEAD;Limit (11): Part of the level
+1730124569,14140;16,96887;Test1;SALE_HEAD;Limit (6): Part of the level
+1730124569,84662;17,67489;Test1;ENTRA_HEAD;Limit (6): Part of the level
+1730124572,60681;20,43440;Test1;SALE_HEAD;Limit (22): Part of the level
+1730124572,70444;20,53244;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730124573,31588;21,14415;Test1;SALE_HEAD;Col (3): Part of Limits

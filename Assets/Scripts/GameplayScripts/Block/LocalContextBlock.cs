@@ -21,8 +21,7 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
 
     protected Coroutine currentCoroutine;
 
-    private bool activeIf = false;
-    private bool activeFor = false;
+
     private IfBlock currentIfBlock;
     private ForBlock currentForBlock;
 
@@ -95,8 +94,8 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
     {
 
         isFinished = false;
-        bool wasIfBlock = false;
-        bool ifConditionChecked = false;
+        //bool wasIfBlock = false;
+        //bool ifConditionChecked = false;
 
         Debug.Log("LocalContextBlock : BEGIN");
         ExecutableBlock currentBlock = (ExecutableBlock)getSocketBlock(localContextSocket);
@@ -110,7 +109,6 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
 
             if (currentBlock as ForBlock)
             {
-                activeFor = true;
                 currentForBlock = (ForBlock)currentBlock;
                 currentForBlock.Execute(variables);
                 
@@ -118,13 +116,12 @@ public abstract class LocalContextBlock : ExecutableBlock, WithBottomSocket, Wit
 
             else if (currentBlock as IfBlock)
             {
-                wasIfBlock = true;
-                ifConditionChecked = false;
+                //wasIfBlock = true;
+                //ifConditionChecked = false;
                 IfBlock ifBlock = (IfBlock)currentBlock;
-                activeIf = true;
                 if (ifBlock.conditionChecked(variables))
                 {
-                    ifConditionChecked = true;
+                    //ifConditionChecked = true;
                     ifBlock.Execute(variables);
                     currentIfBlock = ifBlock;
                 }

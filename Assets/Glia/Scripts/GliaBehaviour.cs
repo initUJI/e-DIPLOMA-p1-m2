@@ -119,10 +119,10 @@ namespace HP.Omnicept.Unity
         private void ConnectToOmniceptRuntime(GliaSettings settings, SessionLicense sessionLicense)
         {
             m_isConnected = false;
-            Debug.Log("Connecting to service");
+            //Debug.Log("Connecting to service");
             m_gliaClient = new Glia("UnityClient", sessionLicense);
             m_gliaValCache = new GliaValueCache(m_gliaClient.Connection);
-            Debug.Log("Connected To Omnicept Runtime");
+            //Debug.Log("Connected To Omnicept Runtime");
         }
 
         public void SetSubscriptions(SubscriptionList subList)

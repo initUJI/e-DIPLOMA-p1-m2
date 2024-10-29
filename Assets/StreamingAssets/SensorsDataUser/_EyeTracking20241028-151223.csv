@@ -1,0 +1,15 @@
+userID;fecha
+anom;28/10/2024_15:12
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730124744,24336;,28316;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730124746,04047;2,08079;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730124746,85565;2,89578;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730124747,92800;3,96799;Test1;SALE_HEAD;Limit (23): Part of the level
+1730124747,94165;3,98189;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730124749,07039;5,11057;Test1;SALE_HEAD;Col (3): Part of Limits
+1730124749,12633;5,16624;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1730124751,34127;7,38128;Test1;SALE_HEAD;Limit (5): Part of the level
+1730124751,43823;7,47798;Test1;ENTRA_HEAD;Col (4): Part of Limits
+1730124754,23643;10,27679;Test1;SALE_HEAD;Col (4): Part of Limits
+1730124754,33392;10,37405;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1730124754,65443;10,69444;Test1;SALE_HEAD;Limit (10): Part of the level

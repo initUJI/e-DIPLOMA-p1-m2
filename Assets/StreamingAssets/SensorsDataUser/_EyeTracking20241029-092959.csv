@@ -1,0 +1,33 @@
+userID;fecha
+anom;29/10/2024_09:29
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730190599,33880;,23234;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730190601,44160;2,33580;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730190602,30222;3,19646;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730190604,68356;5,57741;Test1;SALE_HEAD;Limit (20): Part of the level
+1730190604,78096;5,67443;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730190612,39754;13,29124;Test1;SALE_HEAD;Col (3): Part of Limits
+1730190612,73221;13,62615;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1730190613,17655;14,07073;Test1;SALE_HEAD;Limit (5): Part of the level
+1730190613,27514;14,16911;Test1;ENTRA_HEAD;Col (4): Part of Limits
+1730190614,41666;15,31080;Test1;SALE_HEAD;trash: Part of trash
+1730190614,55594;15,44966;Test1;ENTRA_HEAD;Grass: Part of the level
+1730190615,90653;16,80019;Test1;SALE_HEAD;Limit (14): Part of the level
+1730190615,91936;16,81326;Test1;ENTRA_HEAD;Limit (13): Part of the level
+1730190616,42085;17,31443;Test1;SALE_HEAD;Limit (12): Part of the level
+1730190616,45244;17,34601;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1730190616,58762;17,48236;Test1;SALE_HEAD;Limit (12): Part of the level
+1730190616,61646;17,51015;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1730190616,72796;17,62194;Test1;SALE_HEAD;Limit (10): Part of the level
+1730190616,93593;17,82993;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1730190616,95026;17,84462;Test1;SALE_HEAD;Limit (10): Part of the level
+1730190616,97743;17,87169;Test1;ENTRA_HEAD;Limit (10): Part of the level
+1730190616,99237;17,88610;Test1;SALE_HEAD;Limit (10): Part of the level
+1730190617,13134;18,02520;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1730190617,21556;18,10905;Test1;SALE_HEAD;Limit (12): Part of the level
+1730190617,25742;18,15105;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1730190617,64672;18,54077;Test1;SALE_HEAD;Limit (12): Part of the level
+1730190617,70145;18,59531;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1730190617,81340;18,70743;Test1;SALE_HEAD;Limit (12): Part of the level
+1730190617,92465;18,81870;Test1;ENTRA_HEAD;Limit (12): Part of the level
+1730190617,99477;18,88882;Test1;SALE_HEAD;Limit (12): Part of the level

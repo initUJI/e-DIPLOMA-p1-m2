@@ -55,7 +55,7 @@ public class ClienteUDP : MonoBehaviour
                     }
                     catch (SocketException ex)
                     {
-                        //Debug.Log($"UDP Receive error: {ex.Message}");                        
+                        Debug.Log($"UDP Receive error: {ex.Message}");                        
                     }
                 }
 

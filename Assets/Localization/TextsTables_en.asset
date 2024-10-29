@@ -338,6 +338,22 @@ MonoBehaviour:
     m_Localized: Do you want to practice a specific level?
     m_Metadata:
       m_Items: []
+  - m_Id: 51808855583780864
+    m_Localized: Your objective is to drive the car to the plant and take its humidity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58376654732476416
+    m_Localized: TOOLS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58391730545836032
+    m_Localized: Are you sure to clean up the whole scene?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58437793587740672
+    m_Localized: Are you sure you want to return to the main scene?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

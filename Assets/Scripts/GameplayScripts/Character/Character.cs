@@ -16,7 +16,7 @@ public class Character : MonoBehaviour
     private float unit = 2f;
     private const float speed = 2f;
     private const float rotateSpeed = 200f;
-    private float timeAnimationCutOrBreak = ANIMATION_TIME_OBJECT;
+    //private float timeAnimationCutOrBreak = ANIMATION_TIME_OBJECT;
     private Transform levelTransform;
     private EventsManager eventsManager;
 

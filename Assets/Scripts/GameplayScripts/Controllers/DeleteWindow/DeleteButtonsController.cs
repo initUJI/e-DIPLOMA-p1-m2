@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeleteButtonsController : MonoBehaviour
 {
     public float deadTime = 1.0f;
-    private bool _deadTimeActive = false;
+   // private bool _deadTimeActive = false;
     private EventsManager eventsManager;
     private LevelManager levelManager;
 
@@ -37,6 +37,7 @@ public class DeleteButtonsController : MonoBehaviour
         // Actualizar estantes (shelves)
         UpdateShelves(parentObject);
     }
+
 
     private void UpdateShelves(GameObject parentObject)
     {

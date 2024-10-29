@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7067727596844100572}
   - component: {fileID: 2004865792904556862}
-  - component: {fileID: 4144416709038502356}
+  - component: {fileID: 4558376498402679769}
   m_Layer: 10
   m_Name: Right Socket
   m_TagString: RightSocket
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!135 &4144416709038502356
-SphereCollider:
+--- !u!136 &4558376498402679769
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,9 +129,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.05
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.059544906
+  m_Height: 0.25374177
+  m_Direction: 2
+  m_Center: {x: 0.0000022947784, y: 0.0075755864, z: -0.013383877}
 --- !u!1 &3877151683798658742
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +182,8 @@ GameObject:
   - component: {fileID: 1566215082010381614}
   - component: {fileID: 6676136850694598651}
   - component: {fileID: 1322745703381994897}
+  - component: {fileID: -9188787734119481785}
+  - component: {fileID: 535233601372956585}
   m_Layer: 12
   m_Name: TurnBlock
   m_TagString: Block
@@ -479,7 +482,7 @@ MonoBehaviour:
   animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
-  particleEffect: 1
+  particleEffect: 0
   effect: {fileID: 0}
 --- !u!114 &1566215082010381614
 MonoBehaviour:
@@ -524,6 +527,33 @@ MonoBehaviour:
   bottomBlock: {fileID: 0}
   bottomSocket: {fileID: 5144676870911878981}
   rightSocket: {fileID: 2004865792904556862}
+--- !u!114 &-9188787734119481785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144676870174096964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 0.2
+  maxDistance: 1.5
+--- !u!114 &535233601372956585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5144676870174096964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetYRotation: 90
 --- !u!1 &5144676870911879032
 GameObject:
   m_ObjectHideFlags: 0

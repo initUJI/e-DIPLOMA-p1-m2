@@ -1,0 +1,30 @@
+userID;fecha
+anom;29/10/2024_09:00
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730188820,45443;,39141;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730188823,68362;3,62091;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730188829,87576;9,81344;Test1;ENTRA_HEAD;Rock: Part of the level
+1730188832,12832;12,06551;Test1;SALE_HEAD;Limit (23): Part of the level
+1730188832,17008;12,10774;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730188832,57418;12,51096;Test1;SALE_HEAD;Col (3): Part of Limits
+1730188832,70000;12,63744;Test1;ENTRA_HEAD;Limit (21): Part of the level
+1730188833,09164;13,02861;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1730188833,18761;13,12486;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1730188833,74512;13,68243;Test1;SALE_HEAD;Limit (19): Part of the level
+1730188833,81371;13,75119;Test1;ENTRA_HEAD;Limit (18): Part of the level
+1730188833,91194;13,84961;Test1;SALE_HEAD;Limit (18): Part of the level
+1730188836,40433;16,34155;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730188837,37919;17,31672;Test1;SALE_HEAD;Col (3): Part of Limits
+1730188837,90848;17,84579;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730188838,02002;17,95702;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730188838,08958;18,02657;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730188841,66803;21,60477;Test1;SALE_HEAD;GetHumidityBlock(Clone): Part of a Block
+1730188841,68145;21,61839;Test1;ENTRA_HEAD;Bottom Socket: Part of Player Area
+1730188842,09923;22,03622;Test1;SALE_HEAD;Bottom Socket: Part of Player Area
+1730188842,33486;22,27214;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730188846,65162;26,58845;Test1;SALE_HEAD;Col (3): Part of Limits
+1730188846,74866;26,68600;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1730188846,76319;26,70004;Test1;SALE_HEAD;Limit (23): Part of the level
+1730188846,79014;26,72773;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1730188846,90232;26,83911;Test1;SALE_HEAD;Limit (23): Part of the level
+1730188846,97154;26,90869;Test1;ENTRA_HEAD;Limit (23): Part of the level

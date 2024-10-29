@@ -26,7 +26,7 @@ public class EmotibitRecords
     public List<EmotibitRecordItem> values = new List<EmotibitRecordItem>();
 
     // Returns a JSON string representation of the record.
-    public string ToString()
+    public override string ToString()
     {
         return JsonUtility.ToJson(this);
     }
@@ -79,7 +79,7 @@ public class Emotibit : MonoBehaviour
         instance = this;
     }
 
-    string toDebugLog = null;
+    //string toDebugLog = null;
     void OnNewData(string data)
     {
         lastDataTime = 0;
@@ -175,7 +175,7 @@ public class Emotibit : MonoBehaviour
 
     public void Stop(string filePath)
     {
-        Debug.Log(Directory.GetCurrentDirectory());
+        //Debug.Log(Directory.GetCurrentDirectory());
 
         if (!isRecording) return;
 

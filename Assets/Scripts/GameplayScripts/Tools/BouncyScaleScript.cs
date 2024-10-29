@@ -28,19 +28,20 @@ public class BouncyScaleScript : MonoBehaviour
         scaleFrameTime = 1 / scaleFrameTime;
 
         scaleUp = true;
-        lastCoroutine = StartCoroutine(BouncyScale(null));
+        lastCoroutine = StartCoroutine(BouncyScale(null, transform.localScale));
     }
 
     public void f_ScaleUpOrDown()
     {
-        lastCoroutine = StartCoroutine(BouncyScale(lastCoroutine));
+        lastCoroutine = StartCoroutine(BouncyScale(lastCoroutine, transform.lossyScale));
     }
 
     /// <summary>
     /// It scales the object contrary to the last call. If not coroutine was active before, just pass a null
     /// </summary>
-    IEnumerator BouncyScale(Coroutine lastActive)
+    IEnumerator BouncyScale(Coroutine lastActive, Vector3 scale)
     {
+        objectOriginalScale = scale;
         Vector3 actualScale = objectOriginalScale;
         animationTime = originalAnimationTime;
         if (particleEffect && effect != null && scaleUp) Instantiate(effect, transform);

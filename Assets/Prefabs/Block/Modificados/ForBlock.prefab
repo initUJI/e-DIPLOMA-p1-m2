@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9159120423273730600}
   - component: {fileID: 494429917773547722}
-  - component: {fileID: 2633984261860968480}
+  - component: {fileID: 1408863510392809299}
   m_Layer: 9
   m_Name: Right Socket
   m_TagString: RightSocket
@@ -88,8 +88,8 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
---- !u!135 &2633984261860968480
-SphereCollider:
+--- !u!136 &1408863510392809299
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,9 +98,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.05
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.045705006
+  m_Height: 0.25374177
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.00757559, z: -0.013383877}
 --- !u!1 &1486444178831399210
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +505,7 @@ GameObject:
   - component: {fileID: 3317116955425735850}
   - component: {fileID: 7376482156413788085}
   - component: {fileID: 6515503501265242034}
+  - component: {fileID: 3909706866155626185}
   m_Layer: 12
   m_Name: ForBlock
   m_TagString: Block
@@ -803,7 +805,7 @@ MonoBehaviour:
   animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
-  particleEffect: 1
+  particleEffect: 0
   effect: {fileID: 0}
 --- !u!114 &3317116955425735850
 MonoBehaviour:
@@ -852,3 +854,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.102361985, y: 0.07961197, z: 0.38038418}
   m_Center: {x: 8.499209e-16, y: -0.055941038, z: -0.19019207}
+--- !u!114 &3909706866155626185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6515503501265242032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 0.2
+  maxDistance: 1.5

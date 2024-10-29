@@ -1,0 +1,16 @@
+userID;fecha
+anom;25/10/2024_14:31
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1729859496,64113;,21396;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729859498,65443;2,22713;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1729859499,49664;3,06934;Test1;ENTRA_HEAD;plantA_forest: Part of the level
+1729859499,62334;3,19628;Test1;SALE_HEAD;Limit (14): Part of the level
+1729859499,64185;3,21441;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1729859499,78722;3,36047;Test1;SALE_HEAD;Limit (16): Part of the level
+1729859500,02414;3,59743;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729859500,86138;4,43431;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1729859503,84301;7,41602;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729859504,02466;7,59722;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729859504,10790;7,68079;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1729859504,21925;7,79190;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729859512,72583;16,29856;Test1;ENTRA_HEAD;Limit (15): Part of the level

@@ -1,0 +1,30 @@
+userID;fecha
+anom;29/10/2024_09:33
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730190832,06140;,20823;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730190833,87089;2,01795;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730190834,68871;2,83527;Test1;ENTRA_HEAD;Grass: Part of the level
+1730190838,07142;6,21888;Test1;SALE_HEAD;Limit (15): Part of the level
+1730190838,16856;6,31558;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1730190838,23891;6,38606;Test1;SALE_HEAD;Limit (15): Part of the level
+1730190838,36386;6,51061;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1730190838,47630;6,62282;Test1;SALE_HEAD;Limit (15): Part of the level
+1730190838,51813;6,66471;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1730190839,11620;7,26350;Test1;SALE_HEAD;Limit (15): Part of the level
+1730190839,63156;7,77873;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1730190840,03542;8,18249;Test1;SALE_HEAD;Col (3): Part of Limits
+1730190841,12203;9,26886;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1730190841,23323;9,38004;Test1;SALE_HEAD;ForwardBlock(Clone): Part of a Block
+1730190841,30305;9,44968;Test1;ENTRA_HEAD;Col (4): Part of Limits
+1730190842,51434;10,66101;Test1;SALE_HEAD;Col (4): Part of Limits
+1730190842,56922;10,71593;Test1;ENTRA_HEAD;Limit (5): Part of the level
+1730190842,76360;10,91068;Test1;SALE_HEAD;Limit (10): Part of the level
+1730190843,20880;11,35615;Test1;ENTRA_HEAD;Shelf (3): Part of Player Area
+1730190843,22442;11,37099;Test1;SALE_HEAD;Shelf (3): Part of Player Area
+1730190843,39092;11,53789;Test1;ENTRA_HEAD;Shelf (3): Part of Player Area
+1730190843,40459;11,55119;Test1;SALE_HEAD;Shelf (3): Part of Player Area
+1730190843,78078;11,92777;Test1;ENTRA_HEAD;Shelf (3): Part of Player Area
+1730190843,89259;12,03927;Test1;SALE_HEAD;Shelf (3): Part of Player Area
+1730190843,93458;12,08113;Test1;ENTRA_HEAD;Shelf (3): Part of Player Area
+1730190844,22619;12,37268;Test1;SALE_HEAD;Shelf (3): Part of Player Area
+1730190846,92631;15,07342;Test1;ENTRA_HEAD;Col (5): Part of Limits

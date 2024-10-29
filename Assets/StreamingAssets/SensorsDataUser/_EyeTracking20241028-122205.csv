@@ -1,0 +1,9 @@
+userID;fecha
+anom;28/10/2024_12:22
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730114525,40212;,34558;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730114527,33839;2,28253;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730114529,76631;4,70988;Test1;ENTRA_HEAD;Brick: Part of the level
+1730114539,15299;14,09638;Test1;SALE_HEAD;Col (3): Part of Limits
+1730114539,18084;14,12417;Test1;ENTRA_HEAD;Limit (23): Part of the level
+1730114544,56795;19,51145;Test1;SALE_HEAD;Limit (14): Part of the level

@@ -1,0 +1,72 @@
+userID;fecha
+anom;25/10/2024_11:23
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1729848185,70974;,27482;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848187,78387;2,34899;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1729848192,02822;6,59304;Test1;ENTRA_HEAD;Col (5): Part of Limits
+1729848192,04744;6,61242;Test1;SALE_HEAD;Col (5): Part of Limits
+1729848192,50645;7,07128;Test1;ENTRA_HEAD;Limit (14): Part of the level
+1729848194,42774;8,99343;Test1;SALE_HEAD;Limit (22): Part of the level
+1729848194,48415;9,04930;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729848196,71249;11,27804;Test1;SALE_HEAD;Col (3): Part of Limits
+1729848199,19129;13,75660;Test1;ENTRA_HEAD;ForwardBlock(Clone): Part of a Block
+1729848199,69232;14,25799;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729848199,76223;14,32750;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1729848199,79012;14,35536;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729848199,80413;14,36938;Test1;ENTRA_HEAD;Bottom Socket: Part of a Block
+1729848199,92955;14,49476;Test1;SALE_HEAD;Bottom Socket: Part of a Block
+1729848221,33833;35,90347;Test1;ENTRA_HEAD;Limit (17): Part of the level
+1729848222,69332;37,25841;Test1;SALE_HEAD;Limit (22): Part of the level
+1729848222,87002;37,43516;Test1;ENTRA_HEAD;Col (3): Part of Limits
+1729848223,02168;37,58662;Test1;SALE_HEAD;Col (3): Part of Limits
+1729848223,44113;38,00616;Test1;ENTRA_HEAD;Limit (19): Part of the level
+1729848223,83153;38,39725;Test1;SALE_HEAD;Limit (16): Part of the level
+1729848223,84602;38,41104;Test1;ENTRA_HEAD;Limit (15): Part of the level
+1729848223,90050;38,46610;Test1;SALE_HEAD;Limit (15): Part of the level
+1729848224,59828;39,16307;Test1;ENTRA_HEAD;Col (5): Part of Limits
+1729848225,64329;40,20830;Test1;SALE_HEAD;Col (5): Part of Limits
+1729848226,51945;41,08477;Test1;ENTRA_HEAD;Col (5): Part of Limits
+1729848232,84598;47,41093;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848238,26178;52,82686;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848243,78590;58,35143;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848249,30792;63,87290;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848254,82235;69,38777;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848260,32311;74,88882;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848265,83847;80,40400;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848271,35268;85,91755;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848276,85543;91,42066;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848282,36102;96,92598;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848287,87571;102,44066;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848293,39621;107,96170;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848298,90796;113,47327;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848304,41934;118,98438;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848309,92634;124,49185;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848315,44968;130,01524;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848320,96017;135,52510;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848326,47616;141,04175;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848331,98949;146,55461;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848337,49727;152,06268;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848343,00931;157,57471;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848348,51762;163,08282;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848354,04449;168,60950;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848359,56029;174,12556;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848365,07878;179,64398;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848370,59006;185,15547;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848376,10699;190,67191;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848381,61697;196,18188;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848387,13013;201,69499;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848392,64734;207,21251;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848398,16499;212,73006;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848403,70570;218,27130;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848409,22841;223,79411;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848414,79198;229,35695;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848420,30983;234,87560;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848425,82814;240,39323;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848431,37612;245,94112;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848436,91252;251,47762;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848442,43853;257,00342;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848447,99877;262,56415;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848453,53187;268,09674;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848459,06106;273,62598;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848464,65022;279,21588;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1729848469,96814;284,53339;Test1;ENTRA_HEAD;Center Wall: Part of Player Area

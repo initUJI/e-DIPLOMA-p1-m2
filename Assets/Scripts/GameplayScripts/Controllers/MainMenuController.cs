@@ -22,6 +22,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject tutorialLevelPrefab;
     [SerializeField] private GameObject testStandPrefab;
     [SerializeField] private GameObject gameManagerPrefab;
+    [SerializeField] private GameObject countDownObject;
 
     private GameObject MainOptions;
     private GameObject resetOptions;
@@ -58,6 +59,7 @@ public class MainMenuController : MonoBehaviour
         ControlsTutorial = menuWindow.transform.GetChild(2).gameObject;
         userOptions = menuWindow.transform.GetChild(3).gameObject;
         resetOptions = menuWindow.transform.GetChild(4).gameObject;
+        countDownObject.SetActive(false);
 
         MainOptions.SetActive(true);
         TutorialOptions.SetActive(false);
@@ -121,7 +123,26 @@ public class MainMenuController : MonoBehaviour
     public void startGameplay()
     {
         eventsManager.buttonClicked("START");
-        SceneManager.LoadScene(1);
+        MainOptions.SetActive(false);
+        countDownObject.SetActive(true);
+
+        // Start the countdown before loading the new scene
+        StartCoroutine(CountdownAndLoadScene(5)); // Replace 10 with the desired duration
+    }
+
+    private IEnumerator CountdownAndLoadScene(int duration)
+    {
+        // Get the TextMeshPro component from the second child of countDownObject
+        TextMeshProUGUI countdownText = countDownObject.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+
+        for (int i = duration; i > 0; i--)
+        {
+            countdownText.text = i.ToString(); // Update the text with the countdown number
+            yield return new WaitForSeconds(1); // Wait for 1 second
+        }
+
+        // After the countdown, change to the next scene
+        SceneManager.LoadScene(1); // Change to your target scene index or name
     }
 
     public void StartGameplay(int levelToLoad)
@@ -136,7 +157,7 @@ public class MainMenuController : MonoBehaviour
         eventsManager.buttonClicked("START");
 
         // Load the scene with the provided level number
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(1);
     }
 
     public void ClearManuallySelectedLevel()
