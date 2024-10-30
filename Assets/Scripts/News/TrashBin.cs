@@ -19,7 +19,7 @@ public class TrashBin : MonoBehaviour
     public void onTriggerEnterDeleteRubish(GameObject gameObject)
     {
         //gameObject.GetComponent<BouncyScaleScript>().SetNextScaleDown();
-        gameObject.GetComponent<BouncyScaleScript>().f_ScaleUpOrDown();
+        Destroy(gameObject);
 
         // Inicializar EventsManager y LevelManager si no están ya asignados
         if (eventsManager == null)

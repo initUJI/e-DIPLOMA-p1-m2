@@ -23,6 +23,10 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject gameManagerPrefab;
     [SerializeField] private GameObject countDownObject;
     [SerializeField] private GameObject trashPrefab;
+    [SerializeField] private GameObject endFor;
+    [SerializeField] private GameObject endIf;
+    [SerializeField] private GameObject ifBlock;
+    [SerializeField] private GameObject forBlock;
 
     private GameObject MainOptions;
     private GameObject resetOptions;
@@ -45,9 +49,18 @@ public class MainMenuController : MonoBehaviour
     private Vector3 levelLocation;
     private Vector3 testStandLocation;
     private Vector3 trashLocation;
+    private Vector3 endForLocation;
+    private Vector3 endIfLocation;
+    private Vector3 ifBlockLocation;
+    private Vector3 forBlockLocation;
     private const string TUTORIAL_COMPLETED_KEY = "TutorialCompleted_";
 
     private EventsManager eventsManager;
+
+    GameObject endfor = null;
+    GameObject endif = null;
+    GameObject forblock = null;
+    GameObject ifblock = null;
 
     // Start is called before the first frame update
     void Start()
@@ -70,12 +83,16 @@ public class MainMenuController : MonoBehaviour
         teleportCompleted = false;
         dynamicTutorialCompleted= false;
         platformLocation = new Vector3(0.273f, 0.86f, 0.736f);
-        block1Location = new Vector3(0.65f, 0.78f, -0.93f);
+        block1Location = new Vector3(0.8f, 0.78f, -0.8f);
         block2Location = new Vector3(-0.3f, 0.8f, -0.82f);
         block3Location = new Vector3(0.13f, 1.0f, -0.92f);
         levelLocation = new Vector3(-0.233f, -0.46f, -0.746f);
         testStandLocation = new Vector3(0.5f, 0.35f, -0.68f);
-        trashLocation = new Vector3(0.5f, 0.35f, -0.68f);
+        trashLocation = new Vector3(0.17f, 0.35f, 0.15f);
+        endForLocation = new Vector3(0.76f, 0.87f, -0.73f);
+        endIfLocation = new Vector3(0.76f, 1.05f, -0.73f);
+        ifBlockLocation = new Vector3(-0.24f, 1.05f, -0.73f);
+        forBlockLocation = new Vector3(0.41f, 1.05f, -0.73f);
     }
 
     private void Update()
@@ -288,6 +305,7 @@ public class MainMenuController : MonoBehaviour
         dynamicTextUpdater.UpdateLocalizedString("dynamics2");
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(2));
 
+        Destroy(trash);
         GameObject testStand = Instantiate(testStandPrefab);
         Destroy(testStand.transform.GetChild(0).gameObject);
         mainBlock = Instantiate(mainBlockPrefab);
@@ -318,6 +336,20 @@ public class MainMenuController : MonoBehaviour
         GameObject.FindObjectOfType<GameManager>().setCharacter(GameObject.FindObjectOfType<Character>());
         GameObject.FindObjectOfType<GameManager>().resetCar();
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(4, null, false, testStand));
+
+        Destroy(tutorialLevel);
+        Destroy(testStand);
+        endfor = Instantiate(endFor);
+        endfor.transform.position =endForLocation;
+        endif = Instantiate(endIf);
+        endif.transform.position = endIfLocation;
+        forblock = Instantiate(forBlock);
+        forblock.transform.position = forBlockLocation;
+        ifblock = Instantiate(ifBlock);
+        ifblock.transform.position = ifBlockLocation;
+        text.text = ins.getDynamicsString(5);
+        dynamicTextUpdater.UpdateLocalizedString("dynamics5");;
+        yield return new WaitUntil(() => ins.checkDynamicsInstruccion(5, null, false, null, ifblock, forblock));
 
         text.text = "Tutorial completed!";
         dynamicTextUpdater.UpdateLocalizedString("completedTutorial");
@@ -389,11 +421,12 @@ public class Instruccion : MainMenuController
     private string dynamics3 = "The objective will be to drive the car to the plant to collect the humidity from it. "
         + "In this example, we will need a ‘Move forward’ block to move the car forward one square and a ‘Get humidity’ block to collect humidity.";
     private string dynamics4 = "This is the test stand, use it to help you visualise the path before you start programming. Press all the buttons to see what they do.";
-
+    private string dynamics5 = "Some blocks cannot work on their own, they need an End to know where their function ends. Place each End where it corresponds according to its colour.";
     public string getDynamicsString(int num)
     {
         switch (num)
         {
+            case 5: return dynamics5;
             case 4: return dynamics4;
             case 3: return dynamics3;
             case 2: return dynamics2;
@@ -415,10 +448,12 @@ public class Instruccion : MainMenuController
         }
     }
 
-    public bool checkDynamicsInstruccion(int num, GameObject mainBlock = null, bool dynamicTutorialCompleted = false, GameObject testStand = null)
+    public bool checkDynamicsInstruccion(int num, GameObject mainBlock = null, bool dynamicTutorialCompleted = false, GameObject testStand = null,
+        GameObject ifBlock = null, GameObject forBlock = null)
     {
         switch (num)
         {
+            case 5: return checkDynamics5(ifBlock, forBlock);
             case 4: return checkDynamics4(testStand);
             case 3: return checkDynamics3(dynamicTutorialCompleted);
             case 2: return checkDynamics2();
@@ -437,6 +472,41 @@ public class Instruccion : MainMenuController
             case 2: return checkControls2(grab);
             case 1: return checkControls1(grab);
             default: return false;
+        }
+    }
+
+    public bool checkDynamics5(GameObject ifBlock, GameObject forBlock)
+    {
+        // Check if ifBlock or forBlock is null
+        if (ifBlock == null || forBlock == null)
+        {
+            return false;
+        }
+
+        // Get XRSocketInteractor from each first child and check if they are valid
+        XRSocketInteractor ifSocket = ifBlock.GetComponent<LastBottonSocketHolder>().xRSocketInteractor;
+        XRSocketInteractor forSocket = forBlock.GetComponent<LastBottonSocketHolder>().xRSocketInteractor;
+
+        if (ifSocket == null || forSocket == null)
+        {
+            return false;
+        }
+
+        // Check if the socket item names match "EndIf" and "EndFor"
+        return GetSocketItemName(ifSocket).Contains("EndIf") && GetSocketItemName(forSocket).Contains("EndFor");
+    }
+
+
+    private string GetSocketItemName(XRSocketInteractor socketInteractor)
+    {
+        if (socketInteractor.hasSelection) // Comprobar si hay un objeto en el socket
+        {
+            var selectedObject = socketInteractor.firstInteractableSelected;
+            return selectedObject.transform.name; // Devolver el nombre del objeto
+        }
+        else
+        {
+            return "Empty"; // Devolver "Empty" si no hay objeto
         }
     }
 

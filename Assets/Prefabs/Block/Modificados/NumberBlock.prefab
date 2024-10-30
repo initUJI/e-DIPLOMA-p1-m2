@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8579356527245282715}
   - component: {fileID: 6938631427905015711}
   - component: {fileID: -5327354257115602085}
-  - component: {fileID: 6916859380538070262}
   - component: {fileID: 4691518377968917490}
   m_Layer: 12
   m_Name: NumberBlock
@@ -243,25 +242,25 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  animationTime: 0.2
+  animationTime: 0.1
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
   particleEffect: 0
@@ -307,19 +306,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minDistance: 0.2
   maxDistance: 1.5
---- !u!114 &6916859380538070262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4722741229816627545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetYRotation: 90
 --- !u!114 &4691518377968917490
 MonoBehaviour:
   m_ObjectHideFlags: 0

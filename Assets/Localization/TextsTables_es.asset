@@ -345,6 +345,12 @@ MonoBehaviour:
     m_Localized: Reiniciar Datos Guardados
     m_Metadata:
       m_Items: []
+  - m_Id: 58735299676053504
+    m_Localized: "Algunos bloques no pueden trabajar solos, necesitan un End para
+      saber donde finaliza su funci\xF3n. Coloca cada End donde corresponda seg\xFAn
+      su color."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -362,6 +362,11 @@ MonoBehaviour:
     m_Localized: Reset Data Saves
     m_Metadata:
       m_Items: []
+  - m_Id: 58735299676053504
+    m_Localized: Some blocks cannot work on their own, they need an End to know where
+      their function ends. Place each End where it corresponds according to its colour.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

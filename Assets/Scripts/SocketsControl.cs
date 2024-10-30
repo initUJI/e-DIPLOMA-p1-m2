@@ -5,14 +5,16 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SocketsControl : MonoBehaviour
 {
-    [SerializeField] private XRSocketInteractor[] sockets; // Sockets asignados manualmente o detectados en el objeto y sus hijos
+    [SerializeField] private XRSocketInteractor[] sockets; // Sockets assigned manually or detected in the object and its children
     private XRGrabInteractable _interactable;
+
+    private XRSocketInteractor currentSocket; // The socket currently holding this interactable
 
     void Start()
     {
         _interactable = GetComponent<XRGrabInteractable>();
 
-        // Obtener todos los sockets en los hijos y combinarlos con los asignados manualmente
+        // Get all sockets in the children and combine them with manually assigned ones
         List<XRSocketInteractor> allSockets = new List<XRSocketInteractor>(GetComponentsInChildren<XRSocketInteractor>());
 
         if (sockets != null)
@@ -28,19 +30,18 @@ public class SocketsControl : MonoBehaviour
 
         sockets = allSockets.ToArray();
 
-        // Asignar los eventos solo para sockets, no para el interactor de "mano"
+        // Assign events only for sockets, not for hand interactors
         foreach (var socket in sockets)
         {
             socket.selectEntered.AddListener(OnObjectInserted);
             socket.selectExited.AddListener(OnObjectRemoved);
         }
 
-        // Verificamos si el objeto fue agarrado o soltado con un interactor de "mano"
+        // Check if the object was grabbed or released with a hand interactor
         if (_interactable != null)
         {
             _interactable.selectEntered.AddListener(args =>
             {
-                // Solo activar `OnGrabbed` si es un interactor de "mano" (por ejemplo, XRRayInteractor)
                 if (args.interactorObject is XRRayInteractor)
                 {
                     OnGrabbed(args);
@@ -49,7 +50,6 @@ public class SocketsControl : MonoBehaviour
 
             _interactable.selectExited.AddListener(args =>
             {
-                // Solo activar `OnReleased` si es un interactor de "mano" (por ejemplo, XRRayInteractor)
                 if (args.interactorObject is XRRayInteractor)
                 {
                     OnReleased(args);
@@ -58,23 +58,22 @@ public class SocketsControl : MonoBehaviour
         }
     }
 
-
-    // Devuelve los sockets que se encuentran en los hijos
+    // Returns sockets found in the children
     public XRSocketInteractor[] GetSockets()
     {
         return sockets;
     }
 
-    // Desactiva todos los sockets en los hijos
+    // Deactivates all sockets in the children
     public void DeactivateSockets()
     {
         foreach (XRSocketInteractor socket in sockets)
         {
-            socket.gameObject.SetActive(false); // Desactiva el objeto del socket
+            socket.gameObject.SetActive(false);
         }
     }
 
-    // Activa los sockets vacíos en los hijos cuando se suelta el objeto
+    // Activates empty sockets in the children when the object is released
     public void ActivateSockets()
     {
         foreach (XRSocketInteractor socket in sockets)
@@ -83,56 +82,60 @@ public class SocketsControl : MonoBehaviour
         }
     }
 
-    // Activa o desactiva los sockets dependiendo de si se está usando un XRRayInteractor
+    // Toggles sockets depending on whether an XRRayInteractor is used
     public void ToggleSockets(SelectEnterEventArgs args)
     {
         bool shouldActivate = args.interactorObject.transform.GetComponent<XRRayInteractor>() ? false : true;
 
         foreach (XRSocketInteractor socket in sockets)
         {
-            if (socket.firstInteractableSelected == null) // Solo manipula sockets vacíos
+            if (socket.firstInteractableSelected == null)
             {
                 socket.gameObject.SetActive(shouldActivate);
             }
         }
     }
 
-    // Evento cuando se inserta un objeto en un socket
+    // Event when an object is inserted into a socket
     private void OnObjectInserted(SelectEnterEventArgs args)
     {
         IXRSelectInteractable insertedObject = args.interactableObject;
 
-        // Comprobamos si el objeto ya está en otro socket
+        // Check if the object is already in another socket
         if (IsObjectInAnySocket(insertedObject, args.interactorObject as XRSocketInteractor))
         {
-            Debug.LogWarning("El objeto ya está en otro socket. Cancelando la inserción...");
+            //Debug.LogWarning("The object is already in another socket. Cancelling insertion...");
 
-            // Cancelar la inserción en este socket utilizando interactionManager
             XRSocketInteractor socket = args.interactorObject as XRSocketInteractor;
             socket.interactionManager.CancelInteractableSelection(insertedObject);
             return;
         }
 
-        //Debug.Log("Objeto insertado correctamente.");
+        // Store the socket this interactable is currently in
+        currentSocket = args.interactorObject as XRSocketInteractor;
+       // Debug.Log("Object inserted into socket: " + currentSocket.name);
     }
 
-    // Evento cuando se retira un objeto de un socket
+    // Event when an object is removed from a socket
     private void OnObjectRemoved(SelectExitEventArgs args)
     {
         IXRSelectInteractable removedObject = args.interactableObject;
-        //Debug.Log("Objeto removido del socket.");
+
+        // Clear the currentSocket reference since the object has been removed
+        if (currentSocket == args.interactorObject as XRSocketInteractor)
+        {
+            //Debug.Log("Object removed from socket: " + currentSocket.name);
+            currentSocket = null;
+        }
     }
 
-    // Función para comprobar si el objeto ya está en otro socket (excluyendo el socket actual)
+    // Function to check if the object is already in another socket (excluding the current one)
     private bool IsObjectInAnySocket(IXRSelectInteractable interactable, XRSocketInteractor currentSocket)
     {
         foreach (var socket in sockets)
         {
-            // Ignorar el socket actual para evitar que bloquee su propia inserción
-            if (socket == currentSocket)
-                continue;
+            if (socket == currentSocket) continue;
 
-            // Comparamos los transforms de los objetos en lugar de las referencias directas
             if (socket.hasSelection && socket.firstInteractableSelected != null &&
                 socket.firstInteractableSelected.transform == interactable.transform)
             {
@@ -143,22 +146,39 @@ public class SocketsControl : MonoBehaviour
         return false;
     }
 
-    // Evento cuando se agarra el objeto
     private void OnGrabbed(SelectEnterEventArgs args)
     {
+
+        // If the object is currently in a socket, remove it
+        if (currentSocket != null)
+        {
+            //Debug.Log("Temporarily disabling and re-enabling socket: " + currentSocket.name);
+
+            // Start the coroutine to disable and re-enable the socket
+            StartCoroutine(TemporarilyDisableSocket(currentSocket));
+
+            // Clear the currentSocket reference since the object is no longer in the socket
+            currentSocket = null;
+        }
+
         DeactivateSockets();
     }
 
-    // Evento cuando se suelta el objeto
+    // Coroutine to disable and re-enable the socket with a delay
+    private IEnumerator TemporarilyDisableSocket(XRSocketInteractor socket)
+    {
+        socket.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f); // Wait for half a second
+        socket.gameObject.SetActive(true);
+
+        //Debug.Log("Socket re-enabled: " + socket.name);
+    }
+
+
+
+    // Event when the object is released
     private void OnReleased(SelectExitEventArgs args)
     {
-       /* XRSocketInteractor socket = args.interactorObject as XRSocketInteractor;
-
-        if (socket != null && socket.hasSelection )
-        {
-            Debug.LogWarning("El socket está ocupado, liberando el objeto correctamente.");
-        }*/
-
         ActivateSockets();
     }
 }

@@ -23,11 +23,11 @@ public class ButtonManager : MonoBehaviour
     void OnButtonClicked(int index)
     {
         buttonsPressed[index] = true;
-        Debug.Log($"Botón {index} pulsado.");
+        //Debug.Log($"Botón {index} pulsado.");
 
         if (CheckAllButtonsPressed())
         {
-            Debug.Log("Todos los botones han sido pulsados.");
+            //Debug.Log("Todos los botones han sido pulsados.");
         }
     }
 

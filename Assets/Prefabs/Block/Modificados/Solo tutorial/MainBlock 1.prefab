@@ -385,16 +385,12 @@ GameObject:
   - component: {fileID: 3999710675124569882}
   - component: {fileID: 3999710675124569881}
   - component: {fileID: 3999710675124569880}
-  - component: {fileID: 3999710675124569886}
-  - component: {fileID: 4059213187039562349}
   - component: {fileID: 600614187568865390}
   - component: {fileID: 2948892074523433254}
   - component: {fileID: 2780242033712439381}
   - component: {fileID: 3069866256178593180}
-  - component: {fileID: -5591547932450657484}
-  - component: {fileID: 242378957963087676}
   m_Layer: 12
-  m_Name: MainBlock
+  m_Name: MainBlock 1
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +403,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3999710675124569885}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -0.862, y: 1.179, z: 1.188}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -417,7 +413,7 @@ Transform:
   - {fileID: 2589202450303442442}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!33 &3999710675124569882
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -484,174 +480,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 126
   m_CollisionDetection: 2
---- !u!114 &3999710675124569886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3999710675124569885}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 3069866256178593180}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_InteractionLayers:
-    m_Bits: 4294967295
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_CustomReticle: {fileID: 0}
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3277668571603774393, guid: 2ad9a8890c1a43040ae30456280e5d25, type: 3}
-        m_TargetAssemblyTypeName: ConstraintsManager, Assembly-CSharp
-        m_MethodName: deleteConstraints
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 3999710675124569880}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3277668571603774393, guid: 2ad9a8890c1a43040ae30456280e5d25, type: 3}
-        m_TargetAssemblyTypeName: ConstraintsManager, Assembly-CSharp
-        m_MethodName: activeConstraints
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 3999710675124569880}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_OnFirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnLastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectCanceled:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnActivate:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnDeactivate:
-    m_PersistentCalls:
-      m_Calls: []
-  m_AttachTransform: {fileID: 2589202450303442442}
-  m_UseDynamicAttach: 0
-  m_MatchAttachPosition: 1
-  m_MatchAttachRotation: 1
-  m_SnapToColliderVolume: 1
-  m_AttachEaseInTime: 0.15
-  m_MovementType: 0
-  m_VelocityDamping: 1
-  m_VelocityScale: 1
-  m_AngularVelocityDamping: 1
-  m_AngularVelocityScale: 1
-  m_TrackPosition: 1
-  m_SmoothPosition: 1
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
-  m_TrackRotation: 1
-  m_SmoothRotation: 1
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
-  m_ThrowOnDetach: 0
-  m_ThrowSmoothingDuration: 0.25
-  m_ThrowSmoothingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
-  m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
-  m_AttachPointCompatibilityMode: 0
-  m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 1
---- !u!114 &4059213187039562349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3999710675124569885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5b51068925a2554aa9de17952c5bd65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  principalHandController: {fileID: 0}
-  interactable: {fileID: 0}
-  primaryButtonValue: 0
-  openWindow: 0
-  currentWindow: {fileID: 0}
-  deleteWindowPrefab: {fileID: 5960909082493203223, guid: f9201c9cba396dd4ea1948773e156343, type: 3}
 --- !u!114 &600614187568865390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,25 +498,25 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  animationTime: 0.1
+  animationTime: 0.2
   scaleFrameTime: 50
   destroyWhenScaledToZero: 1
   particleEffect: 0
@@ -739,33 +567,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1115721, y: 0.093893334, z: 0.29210126}
   m_Center: {x: -0.0057860427, y: -0.047146656, z: -0.146}
---- !u!114 &-5591547932450657484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3999710675124569885}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDistance: 0.2
-  maxDistance: 1.5
---- !u!114 &242378957963087676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3999710675124569885}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126d0deb89cbef24d94376ff50813200, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetYRotation: 90
 --- !u!1 &6636744964795244791
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +579,6 @@ GameObject:
   - component: {fileID: 6989163688595092968}
   - component: {fileID: 5123557136404840738}
   - component: {fileID: 5826283185880373080}
-  - component: {fileID: 5826283185880373081}
   - component: {fileID: 5826283185880373084}
   - component: {fileID: 4497093219976918322}
   - component: {fileID: 8866275113564789680}
@@ -873,20 +673,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &5826283185880373081
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6636744964795244791}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4166572282488909205, guid: bf31bd525618c7244a0532a861c3dac5, type: 3}
 --- !u!114 &5826283185880373084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,10 +685,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb47e695c34c80e4890f39ec799318f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 0
+  action: 1
   desiredRotation: {x: 0, y: 0, z: 0, w: 1}
   desiredPosition: {x: 0, y: 0, z: 0}
-  associatedObject: {fileID: 0}
+  associatedObject: {fileID: 6636744964795244791}
 --- !u!114 &4497093219976918322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,7 +703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_Colliders:
-  - {fileID: 5826283185880373081}
+  - {fileID: 757732029484945927}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1020,8 +806,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8, y: 0.4, z: 1.8}
-  m_Center: {x: 0, y: 0.2, z: 0}
+  m_Size: {x: 1.8, y: 0.55425537, z: 1.8}
+  m_Center: {x: -0.000000046078448, y: 0.27712741, z: 0.000000052857843}
 --- !u!1 &6787398622452130621
 GameObject:
   m_ObjectHideFlags: 0
