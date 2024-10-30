@@ -230,7 +230,11 @@ MonoBehaviour:
 
 
       To confirm, point to the delete button
-      with the control and press the trigger.'
+      with the control and press the trigger.
+
+
+
+      Or drag the block to the bin.'
     m_Metadata:
       m_Items: []
   - m_Id: 5871015858176
@@ -352,6 +356,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 58437793587740672
     m_Localized: Are you sure you want to return to the main scene?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58728576387096576
+    m_Localized: Reset Data Saves
     m_Metadata:
       m_Items: []
   references:

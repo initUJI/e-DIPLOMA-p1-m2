@@ -311,6 +311,10 @@ MonoBehaviour:
     m_Key: ReturnToMainMenu
     m_Metadata:
       m_Items: []
+  - m_Id: 58728576387096576
+    m_Key: resetSaves
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

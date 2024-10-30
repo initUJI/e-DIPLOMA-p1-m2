@@ -196,7 +196,8 @@ MonoBehaviour:
   - m_Id: 5856621006848
     m_Localized: "Para eliminar un bloque, apunta al bloque y presiona el bot\xF3n
       A para mostrar la ventana de eliminaci\xF3n.\r\n\nPara confirmar, apunta al
-      bot\xF3n de eliminaci\xF3n con el control y presiona el gatillo."
+      bot\xF3n de eliminaci\xF3n con el control y presiona el gatillo.\n\nO arrastra
+      el bloque hasta la papelera."
     m_Metadata:
       m_Items: []
   - m_Id: 5840078671872
@@ -338,6 +339,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 58437793587740672
     m_Localized: "\xBFEst\xE1s seguro de volver a la escena principal?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 58728576387096576
+    m_Localized: Reiniciar Datos Guardados
     m_Metadata:
       m_Items: []
   references:

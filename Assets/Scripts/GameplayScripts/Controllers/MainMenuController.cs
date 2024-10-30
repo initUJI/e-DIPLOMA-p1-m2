@@ -1,6 +1,5 @@
 
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,6 +22,7 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject testStandPrefab;
     [SerializeField] private GameObject gameManagerPrefab;
     [SerializeField] private GameObject countDownObject;
+    [SerializeField] private GameObject trashPrefab;
 
     private GameObject MainOptions;
     private GameObject resetOptions;
@@ -44,6 +44,7 @@ public class MainMenuController : MonoBehaviour
     private Vector3 block3Location;
     private Vector3 levelLocation;
     private Vector3 testStandLocation;
+    private Vector3 trashLocation;
     private const string TUTORIAL_COMPLETED_KEY = "TutorialCompleted_";
 
     private EventsManager eventsManager;
@@ -74,6 +75,7 @@ public class MainMenuController : MonoBehaviour
         block3Location = new Vector3(0.13f, 1.0f, -0.92f);
         levelLocation = new Vector3(-0.233f, -0.46f, -0.746f);
         testStandLocation = new Vector3(0.5f, 0.35f, -0.68f);
+        trashLocation = new Vector3(0.5f, 0.35f, -0.68f);
     }
 
     private void Update()
@@ -231,7 +233,7 @@ public class MainMenuController : MonoBehaviour
         yield return new WaitUntil(() => ins.checkControlsInstruccion(3, grabInteractable, platform));
         yield return new WaitForSeconds(1);
 
-        text.text = ins.getControlsString(4);
+        /*text.text = ins.getControlsString(4);
         xrOrigin.GetComponent<ActionBasedSnapTurnProvider>().enabled = true;
         TeleportationProvider teleportationProvider = xrOrigin.GetComponent<TeleportationProvider>();
         xrOrigin.GetComponent<TeleportationProvider>().enabled = true;
@@ -240,8 +242,10 @@ public class MainMenuController : MonoBehaviour
         Destroy(cube);
         Destroy(platform);
         dynamicTextUpdater.UpdateLocalizedString("controls4");
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(4, null, null, teleportCompleted));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(4, null, null, teleportCompleted));*/
 
+        Destroy(cube);
+        Destroy(platform);
         text.text = ins.getControlsString(5);
         platform = Instantiate(platformPrefab);
         platform.transform.position = platformLocation;
@@ -277,7 +281,9 @@ public class MainMenuController : MonoBehaviour
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(1, mainBlock));
         yield return new WaitForSeconds(1);
 
-        Destroy(moveForwardBlock);
+        Destroy(mainBlock);
+        GameObject trash = Instantiate(trashPrefab);
+        trash.transform.position = trashLocation;
         text.text = ins.getDynamicsString(2);
         dynamicTextUpdater.UpdateLocalizedString("dynamics2");
         yield return new WaitUntil(() => ins.checkDynamicsInstruccion(2));
@@ -373,7 +379,7 @@ public class Instruccion : MainMenuController
     private string controls1 = "Aim at the cube with the controller.\r\n\r\nHold down the controller grip to move the cube.\r\n";
     private string controls2 = "Release the grip to release the cube.";
     private string controls3 = "Move the controller while holding the cube to place it on the platform.";
-    private string controls4 = "Aim at the platform floor and press the grip once to move to that location. You can also rotate the view with the left joystick.";
+    //private string controls4 = "Aim at the platform floor and press the grip once to move to that location. You can also rotate the view with the left joystick.";
     private string controls5 = "Apply what you have learned to bring the cube to the new platform.";
 
     private string dynamics1 = "This is the ‘Main block’. It is in charge of executing all the instructions from top to bottom. " +
@@ -401,7 +407,7 @@ public class Instruccion : MainMenuController
         switch (num)
         {
             case 5: return controls5;
-            case 4: return controls4;
+           // case 4: return controls4;
             case 3: return controls3;
             case 2: return controls2;
             case 1: return controls1;
