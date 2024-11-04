@@ -34,7 +34,8 @@ public class ForBlock : ConditionalBlock
         ExecutableBlock block = (ExecutableBlock)this.getSocketBlock(bottomSocket);
         bool activeIf = false;
         IfBlock ifBlock = null;
-
+        MainBlock mainBlock = FindFirstObjectByType<MainBlock>();
+        List<Outline> outlines = mainBlock.FindAllBlockOutlines();
         // Asegurarnos de que no hay bucle infinito
         HashSet<ExecutableBlock> executedBlocks = new HashSet<ExecutableBlock>();
 
@@ -72,7 +73,9 @@ public class ForBlock : ConditionalBlock
 
             else if (activeIf && ifBlock != null || !activeIf && ifBlock == null)
             {
+                mainBlock.DisableOutlines(outlines);
                 block.Execute(variables);
+                block.gameObject.GetComponent<Outline>().enabled = true;
                 yield return new WaitUntil(() => block.IsFinished());
             }
 

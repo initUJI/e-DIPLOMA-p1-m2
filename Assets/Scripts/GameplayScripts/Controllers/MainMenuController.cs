@@ -261,14 +261,14 @@ public class MainMenuController : MonoBehaviour
         dynamicTextUpdater.UpdateLocalizedString("controls4");
         yield return new WaitUntil(() => ins.checkControlsInstruccion(4, null, null, teleportCompleted));*/
 
-        Destroy(cube);
+        /*Destroy(cube);
         Destroy(platform);
         text.text = ins.getControlsString(5);
         platform = Instantiate(platformPrefab);
         platform.transform.position = platformLocation;
         cube = Instantiate(cubePrefab);
         dynamicTextUpdater.UpdateLocalizedString("controls5");
-        yield return new WaitUntil(() => ins.checkControlsInstruccion(5, grabInteractable, platform));
+        yield return new WaitUntil(() => ins.checkControlsInstruccion(5, grabInteractable, platform));*/
 
         text.text = "Tutorial completed!";
         dynamicTextUpdater.UpdateLocalizedString("completedTutorial");

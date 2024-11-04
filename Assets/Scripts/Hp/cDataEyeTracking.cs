@@ -33,7 +33,7 @@ public class cDataEyeTracking {
     }
 
     private void CSVCreate() {
-        Debug.Log("<b>[SaveSit]</b> Creamos csv EyeTracking");
+        //Debug.Log("<b>[SaveSit]</b> Creamos csv EyeTracking");
         csvWriter = new StreamWriter(filepath + "_" + filename + ".csv");
         csvWriter.AutoFlush = true;
         csvWriter.WriteLine("userID;fecha");

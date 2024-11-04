@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UIElements;
 using UnityEngine.XR.Interaction.Toolkit;
 //using Unity.Burst.Intrinsics;
@@ -23,6 +25,7 @@ public class MainBlock : Block, WithBottomSocket
 
     [SerializeField] XRSocketInteractor bottomSocket;
     [SerializeField] GameObject canvasFail;
+    [SerializeField] GameObject startButton;
     [HideInInspector] public ExecutableBlock currentBlock;
     [HideInInspector] public bool wasIfBlock = false;
     [HideInInspector] public bool ifConditionChecked = false;
@@ -65,10 +68,10 @@ public class MainBlock : Block, WithBottomSocket
     void Update()
     {
         //test
-        if (Input.GetKeyDown(KeyCode.P))
+        /*if (Input.GetKeyDown(KeyCode.P))
         {
             Execute();
-        }
+        }*/
     }
 
     /* Calls the c_Execute coroutine */
@@ -110,6 +113,22 @@ public class MainBlock : Block, WithBottomSocket
         return (ExecutableBlock)getSocketBlock(bottomSocket);
     }
 
+    public XRSocketInteractor GetLastBottomSocket()
+    {
+        ExecutableBlock currentBlock = (ExecutableBlock)getSocketBlock(bottomSocket); // Empezar desde el primer bloque conectado al socket inferior
+        XRSocketInteractor lastBottomSocket = bottomSocket;
+
+        // Recorrer todos los bloques conectados
+        while (currentBlock != null)
+        {
+            lastBottomSocket = ((WithBottomSocket)currentBlock).getBottomSocket(); // Actualizar el último socket inferior
+            currentBlock = (ExecutableBlock)currentBlock.getSocketBlock(lastBottomSocket); // Obtener el siguiente bloque en la cadena
+        }
+
+        return lastBottomSocket; // Devolver el último socket inferior
+    }
+
+
     public IEnumerator c_Execute() {
 
         
@@ -121,12 +140,16 @@ public class MainBlock : Block, WithBottomSocket
 
         Debug.Log("MainBlock : BEGIN");
         GameManager.character.activeGlow();
+        startButton.GetComponent<XRSimpleInteractable>().enabled = false;
+        GetLastBottomSocket().gameObject.SetActive(false);
         currentBlock = (ExecutableBlock) getSocketBlock(bottomSocket);
         forBloks = 0;
         endForBlocks = 0;
         ifBlocks = 0;
         endIfBlocks = 0;
 
+        List<Outline> outlines = FindAllBlockOutlines();
+        DisableOutlines(outlines);
 
         while (currentBlock != null && !error)
         {
@@ -136,6 +159,7 @@ public class MainBlock : Block, WithBottomSocket
 
             yield return new WaitUntil(() => !paused); // Wait until pause equals false
                                                        //Debug.Log("MainBlock : Next block !");
+            DisableOutlines(outlines);
 
             if (currentBlock as ForBlock)
             {
@@ -143,6 +167,7 @@ public class MainBlock : Block, WithBottomSocket
                 forBloks++;
                 forBlock = (ForBlock)currentBlock;
                 currentBlock.Execute(variables);
+                currentBlock.gameObject.GetComponent<Outline>().enabled = true;
                 executingBlock = true;
             }
 
@@ -161,6 +186,7 @@ public class MainBlock : Block, WithBottomSocket
                 {
                     ifBlock.isFinished = true;
                 }
+                currentBlock.gameObject.GetComponent<Outline>().enabled = true;
             }
             else if (currentBlock.name.Contains("EndIf"))
             {
@@ -168,6 +194,7 @@ public class MainBlock : Block, WithBottomSocket
                 ifBlock = null;
                 endIfBlocks++;
                 //currentBlock.Execute(variables);
+                currentBlock.gameObject.GetComponent<Outline>().enabled = true;
             }
             else if (currentBlock as EndForBlock)
             {
@@ -176,8 +203,9 @@ public class MainBlock : Block, WithBottomSocket
                 endForBlocks++;
                 forBlock = null;
                 //currentBlock.Execute(variables);
+                currentBlock.gameObject.GetComponent<Outline>().enabled = true;
             }
-            else if (currentBlock as ElseBlock) {
+            /*else if (currentBlock as ElseBlock) {
                 ElseBlock elseBlock = (ElseBlock) currentBlock;
                 if (wasIfBlock)
                 {
@@ -192,15 +220,16 @@ public class MainBlock : Block, WithBottomSocket
                 {
                     GameManager.ReportError(elseBlock, "An else block must be preceded by an if block");
                 }
-            } else {
+            } */else {
                 if ((activeIf && ifBlock != null || !activeIf && ifBlock == null) && (forBlock == null && !activeFor))
                 {
                     currentBlock.Execute(variables); // Execute the current block
+                    currentBlock.gameObject.GetComponent<Outline>().enabled = true;
                     executingBlock = true;
                 }
 
             }
-
+            
             //Debug.Log("W");
             yield return new WaitUntil(() => !error);
             if (executingBlock)
@@ -227,11 +256,41 @@ public class MainBlock : Block, WithBottomSocket
             if (canvasFail != null)
             {
                 canvasFail.SetActive(true);
+                var selectedLocale = LocalizationSettings.SelectedLocale;
+                if (allCorrect && IsCollidingWithAny(GameManager.character.gameObject, ConvertPlantListToGameObjectList(FindObjectsOfType<Plant>())) && 
+                    (forBloks != endForBlocks || ifBlocks != endIfBlocks))
+                {
+                    
+
+                    if (selectedLocale.Identifier.Code == "es") // Para español
+                    {
+                        canvasFail.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Falta un End";
+                    }
+                    else
+                    {
+                        canvasFail.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "An End is missing";
+                    }
+                }
+                else
+                {
+                    if (selectedLocale.Identifier.Code == "es") // Para español
+                    {
+                        canvasFail.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Revisa tu código";
+                    }
+                    else
+                    {
+                        canvasFail.transform.GetChild(2).GetComponent<TextMeshProUGUI>().text = "Check your code";
+                    }
+                }
+                
             }
 
         }
 
         GameManager.character.desactiveGlow();
+        startButton.GetComponent<XRSimpleInteractable>().enabled = true;
+        GetLastBottomSocket().gameObject.SetActive(true);
+        DisableOutlines(outlines);
         Debug.Log("MainBlock : END");
 
     }
@@ -265,6 +324,38 @@ public class MainBlock : Block, WithBottomSocket
         }
 
         return gameObjects;
+    }
+
+    public void DisableOutlines(List<Outline> outlines)
+    {
+        foreach (Outline outline in outlines)
+        {
+            if (outline != null)
+            {
+                outline.enabled = false; // Desactivar el componente Outline
+            }
+        }
+    }
+
+
+    public List<Outline> FindAllBlockOutlines()
+    {
+        List<Outline> outlines = new List<Outline>();
+
+        // Encontrar todos los objetos con el tag "Block"
+        GameObject[] blocks = GameObject.FindGameObjectsWithTag("Block");
+
+        // Recorrer cada objeto y obtener el componente Outline
+        foreach (GameObject block in blocks)
+        {
+            Outline outline = block.GetComponent<Outline>();
+            if (outline != null)
+            {
+                outlines.Add(outline); // Añadir el componente Outline a la lista
+            }
+        }
+
+        return outlines; // Devolver la lista de componentes Outline
     }
 
     bool IsCollidingWithAny(GameObject target, List<GameObject> objects)

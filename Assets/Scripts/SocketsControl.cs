@@ -82,20 +82,6 @@ public class SocketsControl : MonoBehaviour
         }
     }
 
-    // Toggles sockets depending on whether an XRRayInteractor is used
-    public void ToggleSockets(SelectEnterEventArgs args)
-    {
-        bool shouldActivate = args.interactorObject.transform.GetComponent<XRRayInteractor>() ? false : true;
-
-        foreach (XRSocketInteractor socket in sockets)
-        {
-            if (socket.firstInteractableSelected == null)
-            {
-                socket.gameObject.SetActive(shouldActivate);
-            }
-        }
-    }
-
     // Event when an object is inserted into a socket
     private void OnObjectInserted(SelectEnterEventArgs args)
     {
@@ -173,8 +159,6 @@ public class SocketsControl : MonoBehaviour
 
         //Debug.Log("Socket re-enabled: " + socket.name);
     }
-
-
 
     // Event when the object is released
     private void OnReleased(SelectExitEventArgs args)

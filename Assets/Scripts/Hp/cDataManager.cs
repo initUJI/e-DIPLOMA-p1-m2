@@ -28,7 +28,7 @@ public class cDataManager : MonoBehaviour {
 
     public static void Init() {
         if (iniciado) return;
-        Debug.Log("<b>[Save]</b>Iniciado DataManager");
+        //Debug.Log("<b>[Save]</b>Iniciado DataManager");
         offsetTime = Time.realtimeSinceStartup;
 
         nfi.NumberDecimalSeparator = ".";

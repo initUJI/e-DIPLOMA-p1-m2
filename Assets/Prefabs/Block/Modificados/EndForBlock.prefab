@@ -18,8 +18,8 @@ GameObject:
   - component: {fileID: 207788813518633013}
   - component: {fileID: 4989831646180125348}
   - component: {fileID: 2417576234269196994}
-  - component: {fileID: 1040013076720390632}
   - component: {fileID: 8011361357711104750}
+  - component: {fileID: -6268817656203687056}
   m_Layer: 12
   m_Name: EndForBlock
   m_TagString: Block
@@ -360,20 +360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sockets:
   - {fileID: 8170523681141268511}
---- !u!114 &1040013076720390632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207788813518633014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDistance: 0.2
-  maxDistance: 1.5
 --- !u!114 &8011361357711104750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +373,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetYRotation: 90
+--- !u!114 &-6268817656203687056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207788813518633014}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.90860677, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &8170523681141268504
 GameObject:
   m_ObjectHideFlags: 0

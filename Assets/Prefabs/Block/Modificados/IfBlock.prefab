@@ -267,8 +267,8 @@ GameObject:
   - component: {fileID: 6390981843126046797}
   - component: {fileID: 3229687323123176277}
   - component: {fileID: 8555027758803748240}
-  - component: {fileID: -1392452824683573159}
   - component: {fileID: -7919548893070587231}
+  - component: {fileID: 181309539962129468}
   m_Layer: 12
   m_Name: IfBlock
   m_TagString: Block
@@ -617,20 +617,6 @@ MonoBehaviour:
   currentFirstBlock: {fileID: 0}
   isFinished: 0
   rightSocket: {fileID: 8098880639519661101}
---- !u!114 &-1392452824683573159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229687323123176279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbf7bf3f69922b04ba00a1b88861af46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDistance: 0.2
-  maxDistance: 1.5
 --- !u!114 &-7919548893070587231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,6 +630,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetYRotation: 90
+--- !u!114 &181309539962129468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229687323123176279}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0, g: 0.90860677, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3710463724042710824
 GameObject:
   m_ObjectHideFlags: 0

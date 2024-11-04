@@ -155,11 +155,25 @@ public class LevelManager : NumberOfBlocks
 
         if (selectedLocale.Identifier.Code == "es") // Para español
         {
-            localizedText = "Nivel " + level.ToString() + "/6";
+            if (level <= 6)
+            {
+                localizedText = "Nivel " + level.ToString() + "/6";
+            }
+            else
+            {
+                localizedText = "¡Finalizado!";
+            }
         }
         else // Para inglés u otros idiomas
         {
-            localizedText = "Level " + level.ToString() + "/6";
+            if (level <= 6)
+            {
+                localizedText = "Level " + level.ToString() + "/6";
+            }
+            else
+            {
+                localizedText = "¡Finished!";
+            }
         }
 
         // Asignar el texto traducido al componente de texto

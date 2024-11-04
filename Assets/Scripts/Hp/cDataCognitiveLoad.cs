@@ -37,7 +37,7 @@ public class cDataCognitiveLoad
 
     private void CSVCreate()
     {
-        Debug.Log("<b>[SaveSit]</b> Creamos csv CognitiveLoad");
+       // Debug.Log("<b>[SaveSit]</b> Creamos csv CognitiveLoad");
         csvWriter = new StreamWriter(filepath + "_" + filename + ".csv");
         csvWriter.AutoFlush = true;
         csvWriter.WriteLine("userID;fecha");

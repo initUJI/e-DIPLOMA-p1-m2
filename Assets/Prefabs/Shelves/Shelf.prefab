@@ -246,7 +246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8427354631159147402}
   - component: {fileID: 3106408527843031042}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,3 +415,4 @@ MonoBehaviour:
   attach: {fileID: 3471840588420917804}
   currentBlock: {fileID: 0}
   numberForNumberBlock: 0
+  levelManager: {fileID: 0}

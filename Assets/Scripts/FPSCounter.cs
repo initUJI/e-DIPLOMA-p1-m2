@@ -50,7 +50,7 @@ public class FPSCounter : MonoBehaviour
         // Verifica si los FPS caen por debajo del umbral y no se está reiniciando ya
         if (fps < fpsThreshold && !isRestarting)
         {
-            Debug.LogWarning("FPS ha caído por debajo de " + fpsThreshold + ". Esperando para verificar...");
+            //Debug.LogWarning("FPS ha caído por debajo de " + fpsThreshold + ". Esperando para verificar...");
             if (warningText != null)
             {
                 warningText.text = warningMessage; // Asigna el mensaje en el idioma correspondiente
@@ -74,12 +74,12 @@ public class FPSCounter : MonoBehaviour
         if (fps < fpsThreshold)
         {
 
-            Debug.LogWarning("FPS no se han recuperado. Reiniciando escena...");
+            //Debug.LogWarning("FPS no se han recuperado. Reiniciando escena...");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else
         {
-            Debug.Log("FPS se han recuperado. No se reinicia la escena.");
+            //Debug.Log("FPS se han recuperado. No se reinicia la escena.");
             isRestarting = false;  // Restablece el flag ya que no es necesario reiniciar
             if (warningText != null)
             {

@@ -3128,8 +3128,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419804684}
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 2.81, z: -3.5}
-  m_LocalScale: {x: 0.66, y: 0.5, z: 1}
+  m_LocalPosition: {x: 0.026, y: 3.615, z: -3.5}
+  m_LocalScale: {x: 0.39138, y: 0.5, z: 0.762846}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 684319787}
@@ -3914,6 +3914,18 @@ PrefabInstance:
     - target: {fileID: 1457394172823981175, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
       propertyPath: m_Name
       value: RightHand Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457394172823981177, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
+      propertyPath: m_MoveObjectIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457394172823981177, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
+      propertyPath: m_MoveObjectOut
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457394172823981177, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
+      propertyPath: m_DirectionalAnchorRotation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1457394172823981178, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
       propertyPath: m_ReferenceFrame
@@ -5920,14 +5932,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944007447}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 4, y: 2, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0.12278779, y: 0.12278779, z: 0.6963643, w: 0.6963643}
+  m_LocalPosition: {x: 4, y: 2.789, z: -2.112}
+  m_LocalScale: {x: 0.6627092, y: 0.5, z: 0.492326}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 684319787}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 20, z: 90}
 --- !u!64 &944007449
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8688,14 +8700,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546119541}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4, y: 2, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0.122787856, y: -0.122787856, z: -0.6963643, w: 0.6963643}
+  m_LocalPosition: {x: -4, y: 2.789, z: -2.11}
+  m_LocalScale: {x: 0.6627092, y: 0.5, z: 0.47741097}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 684319787}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: -20, z: -90}
 --- !u!64 &1546119543
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11280,6 +11292,18 @@ PrefabInstance:
     - target: {fileID: 4111316452795453794, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
       propertyPath: m_Name
       value: LeftHand Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111316452795453804, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
+      propertyPath: m_MoveObjectIn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111316452795453804, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
+      propertyPath: m_MoveObjectOut
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111316452795453804, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
+      propertyPath: m_DirectionalAnchorRotation
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4111316452795453805, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
       propertyPath: m_ReferenceFrame

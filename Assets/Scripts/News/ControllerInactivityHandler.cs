@@ -52,6 +52,19 @@ public class ControllerInactivityHandler : MonoBehaviour
         if (controller == null || rayInteractor == null || lineRenderer == null || handModel == null)
             return;
 
+        // Verificar si el controlador está encendido
+        InputDevice device = controller.inputDevice;
+        bool isDeviceActive = device.isValid && device.TryGetFeatureValue(CommonUsages.isTracked, out bool isTracked) && isTracked;
+
+        if (!isDeviceActive)
+        {
+            // Si el mando no está encendido, ocultar el modelo, rayo y línea
+            rayInteractor.enabled = false;
+            lineRenderer.enabled = false;
+            handModel.SetActive(false);
+            return;
+        }
+
         // Obtener la posición actual del controlador
         Vector3 currentPosition = controller.transform.position;
 

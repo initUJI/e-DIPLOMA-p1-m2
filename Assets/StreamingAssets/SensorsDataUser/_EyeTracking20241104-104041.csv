@@ -1,0 +1,16 @@
+userID;fecha
+anom;04/11/2024_10:40
+unixTimestamp;Timestamp;Situacion;Accion;Objeto
+1730713241,70083;,20196;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730713243,51252;2,01334;Test1;SALE_HEAD;Center Wall: Part of Player Area
+1730713245,92512;4,42555;Test1;ENTRA_HEAD;Center Wall: Part of Player Area
+1730713246,82973;5,33102;Test1;SALE_HEAD;Limit (3): Part of the level
+1730713246,84382;5,34421;Test1;ENTRA_HEAD;Left Wall: Part of Player Area
+1730713247,79098;6,29215;Test1;SALE_HEAD;Col: Part of Limits
+1730713247,86117;6,36173;Test1;ENTRA_HEAD;Shelf (2): Part of Player Area
+1730713250,14450;8,64506;Test1;SALE_HEAD;Col: Part of Limits
+1730713250,21600;8,71651;Test1;ENTRA_HEAD;Col: Part of Limits
+1730713250,43700;8,93806;Test1;SALE_HEAD;Col: Part of Limits
+1730713252,39794;10,89847;Test1;ENTRA_HEAD;Right Wall (1): Part of Player Area
+1730713256,03370;14,53469;Test1;SALE_HEAD;Right Wall (1): Part of Player Area
+1730713256,08893;14,58954;Test1;ENTRA_HEAD;Left Wall: Part of Player Area

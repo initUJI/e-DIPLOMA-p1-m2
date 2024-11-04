@@ -294,7 +294,7 @@ public class Emotibit : MonoBehaviour
             {
                 isDataTimeout = true;
                 onDataTimeoutReceived?.Invoke();
-                Debug.Log("Emotibit Data Timeout!");
+                //Debug.Log("Emotibit Data Timeout!");
             }
         }
 

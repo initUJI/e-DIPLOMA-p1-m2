@@ -187,10 +187,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5871015858176
     m_Localized: "El objetivo es conducir el coche hasta la planta para recoger la
-      humedad. Comprueba la direcci\xF3n del coche.\n\nNecesitamos un bloque de 'Avanzar'
-      para mover el coche una casilla hacia adelante.\n\nNecesitamos un bloque de
-      'Obtener humedad' para recoger la humedad.\n\nPulsa el bot\xF3n 'Start' para
-      que se ejecute el c\xF3digo."
+      humedad. Comprueba la direcci\xF3n del coche.\n\nNecesitamos un bloque de 'Move
+      forward' para mover el coche una casilla hacia adelante.\n\nNecesitamos un
+      bloque de 'Get humidity' para recoger la humedad.\n\nPulsa el bot\xF3n 'Start'
+      para que se ejecute el c\xF3digo."
     m_Metadata:
       m_Items: []
   - m_Id: 5856621006848
@@ -201,9 +201,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5840078671872
-    m_Localized: "Este es el \xABbloque principal\xBB, responsable de ejecutar todas
-      las instrucciones de arriba a abajo.\r\n\r\nPara colocar un bloque, c\xF3gelo
-      y ponlo debajo del bloque anterior."
+    m_Localized: "Este es el \xABStart block\xBB, responsable de ejecutar todas las
+      instrucciones de arriba a abajo.\r\n\r\nPara colocar un bloque, c\xF3gelo y
+      ponlo debajo del bloque anterior."
     m_Metadata:
       m_Items: []
   - m_Id: 5647811776512
@@ -225,7 +225,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5578588983296
     m_Localized: "Apunta al cubo con el control.\r\n\nMant\xE9n presionado el agarre
-      del control para mover el cubo.\r \nPuedes acercarlo y alejarlo con el joystick."
+      del control para mover el cubo.\r"
     m_Metadata:
       m_Items: []
   - m_Id: 7510418296832
@@ -349,6 +349,14 @@ MonoBehaviour:
     m_Localized: "Algunos bloques no pueden trabajar solos, necesitan un End para
       saber donde finaliza su funci\xF3n. Coloca cada End donde corresponda seg\xFAn
       su color."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60529288878518272
+    m_Localized: Estante pruebas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60529947669458944
+    m_Localized: "Men\xFA principal"
     m_Metadata:
       m_Items: []
   references:

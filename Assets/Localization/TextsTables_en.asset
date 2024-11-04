@@ -186,7 +186,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5578588983296
     m_Localized: "Aim at the cube with the controller.\r\n\nHold down the controller
-      grip to move the cube.\r \nYou can zoom in and out with the joystick."
+      grip to move the cube.\r "
     m_Metadata:
       m_Items: []
   - m_Id: 5602379075584
@@ -215,7 +215,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5840078671872
-    m_Localized: 'This is the "Main block", responsible for executing all instructions
+    m_Localized: 'This is the "Start block", responsible for executing all instructions
       from top to bottom.
 
 
@@ -365,6 +365,14 @@ MonoBehaviour:
   - m_Id: 58735299676053504
     m_Localized: Some blocks cannot work on their own, they need an End to know where
       their function ends. Place each End where it corresponds according to its colour.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60529288878518272
+    m_Localized: Test stand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 60529947669458944
+    m_Localized: Main menu
     m_Metadata:
       m_Items: []
   references:

@@ -38,7 +38,7 @@ public class cDataHeartRate
 
     private void CSVCreate()
     {
-        Debug.Log("<b>[SaveSit]</b> Creamos csv HeartRate");
+        //Debug.Log("<b>[SaveSit]</b> Creamos csv HeartRate");
         csvWriter = new StreamWriter(filepath + "_" + filename + ".csv");
         csvWriter.AutoFlush = true;
         csvWriter.WriteLine("userID;fecha");
