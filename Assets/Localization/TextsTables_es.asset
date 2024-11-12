@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 932646522880
-    m_Localized: Coloca bloques debajo del main para llevar el coche hasta la planta
+    m_Localized: Coloca bloques debajo del start para llevar el coche hasta la planta
       y coger su humedad.
     m_Metadata:
       m_Items: []
@@ -105,8 +105,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3409055879168
-    m_Localized: "El contenido entre el bloque de repetici\xF3n y su final se ejecutar\xE1
-      el n\xFAmero de veces especificado."
+    m_Localized: "El contenido entre el bloque de repetici\xF3n \xABrepeat\xBB y
+      su final \xABend\xBB se ejecutar\xE1 el n\xFAmero de veces especificado."
     m_Metadata:
       m_Items: []
   - m_Id: 3427280130048
@@ -123,8 +123,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3999584522240
-    m_Localized: "El contenido entre \xABif\xBB y su final s\xF3lo se ejecuta si
-      se cumple la condici\xF3n."
+    m_Localized: "El contenido entre \xABif\xBB y su final \xABend\xBB s\xF3lo se
+      ejecuta si se cumple la condici\xF3n."
     m_Metadata:
       m_Items: []
   - m_Id: 4025186553856

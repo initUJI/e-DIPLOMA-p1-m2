@@ -6,13 +6,14 @@ public class TrashBin : MonoBehaviour
     private LevelManager levelManager;
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.name);
         // Verifica si el objeto que entra en el trigger tiene el tag "Block"
         if (other.CompareTag("Block"))
         {
             // Destruye el objeto con el tag "Block"
             onTriggerEnterDeleteRubish(other.gameObject);
-            //Destroy(other.gameObject);
-            //Debug.Log("Objeto destruido en la papelera.");
+            Destroy(other.gameObject);
+            Debug.Log("Objeto destruido en la papelera.");
         }
     }
 

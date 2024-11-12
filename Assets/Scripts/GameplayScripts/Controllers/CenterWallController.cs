@@ -14,7 +14,7 @@ public class CenterWallController : MonoBehaviour
     private int actualLevel;
     private Image arrowDownImage;
     private Coroutine blinkCoroutine;
-    private bool blinkActivatedOnce = false; // Nueva bandera para rastrear si ya se activó el parpadeo
+    private bool blinkActivatedOnce = false;
 
     void Start()
     {
@@ -30,16 +30,13 @@ public class CenterWallController : MonoBehaviour
 
     private IEnumerator InitializeLevel()
     {
-        // Esperamos hasta que actualLevel sea mayor que 0
         while ((actualLevel = levelManager.getActualLevel()) <= 0)
         {
-            yield return null; // Espera un frame y vuelve a comprobar
+            yield return null;
         }
 
-        // Una vez inicializado, continuamos con la lógica según el nivel
         if (actualLevel == 1)
         {
-            // Si estamos en el nivel 1 y el parpadeo no se ha activado previamente
             if (!blinkActivatedOnce)
             {
                 StartCoroutine(ActivateBlinkEffectAfterDelay(30f));
@@ -47,7 +44,6 @@ public class CenterWallController : MonoBehaviour
         }
         else
         {
-            // Si estamos en otros niveles, bajamos la pared automáticamente
             centerWallDown();
         }
     }
@@ -58,9 +54,8 @@ public class CenterWallController : MonoBehaviour
 
         if (arrowDown.activeInHierarchy)
         {
-            // Iniciar el parpadeo
             blinkCoroutine = StartCoroutine(BlinkArrowDown());
-            blinkActivatedOnce = true; // Marcar que el parpadeo ya se activó una vez
+            blinkActivatedOnce = true;
         }
     }
 
@@ -68,22 +63,20 @@ public class CenterWallController : MonoBehaviour
     {
         while (true)
         {
-            // Alternar entre colores para crear el efecto de parpadeo
-            arrowDownImage.color = Color.red;  // Color de parpadeo
+            arrowDownImage.color = Color.red;
             yield return new WaitForSeconds(0.5f);
-            arrowDownImage.color = Color.white;  // Color original
+            arrowDownImage.color = Color.white;
             yield return new WaitForSeconds(0.5f);
         }
     }
 
     public void centerWallDown()
     {
-        // Detener el parpadeo si está activo
         if (blinkCoroutine != null)
         {
             StopCoroutine(blinkCoroutine);
             blinkCoroutine = null;
-            arrowDownImage.color = Color.white;  // Restaurar el color original
+            arrowDownImage.color = Color.white;
         }
 
         StartCoroutine(WaitForAnimation("CenterWallDown"));
@@ -92,6 +85,20 @@ public class CenterWallController : MonoBehaviour
     public void centerWallUp()
     {
         StartCoroutine(WaitForAnimation("CenterWallUp"));
+
+        // Iniciar temporizador de 1 minuto para bajar la pared automáticamente
+        StartCoroutine(AutoLowerWallAfterDelay(60f));
+    }
+
+    private IEnumerator AutoLowerWallAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // Si la pared sigue arriba después del retraso, se baja automáticamente
+        if (wallUP)
+        {
+            centerWallDown();
+        }
     }
 
     IEnumerator WaitForAnimation(string animation)
@@ -100,7 +107,6 @@ public class CenterWallController : MonoBehaviour
         AnimatorStateInfo animationState = animator.GetCurrentAnimatorStateInfo(0);
         yield return new WaitForSeconds(animationState.length);
 
-        // Cambiar el estado de las flechas según la animación
         switch (animation)
         {
             case "CenterWallDown":

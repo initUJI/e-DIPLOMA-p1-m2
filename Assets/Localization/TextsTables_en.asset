@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 932646522880
-    m_Localized: Place blocks under the main to bring the car to the plant and catch
+    m_Localized: Place blocks under the start to bring the car to the plant and catch
       its humidity.
     m_Metadata:
       m_Items: []
