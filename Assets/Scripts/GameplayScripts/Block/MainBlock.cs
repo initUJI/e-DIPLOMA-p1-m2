@@ -46,6 +46,7 @@ public class MainBlock : Block, WithBottomSocket
     int endForBlocks = 0;
     int ifBlocks = 0;
     int endIfBlocks = 0;
+    int getHumidityCount = 0;
 
     public XRSocketInteractor getBottomSocket()
     {
@@ -81,6 +82,7 @@ public class MainBlock : Block, WithBottomSocket
         {
             GameManager.DisplayOnPrompt("Execution !");
             error = false;
+            getHumidityCount = 0;
             variables = new Dictionary<string, int>();
             if (canvasFail != null)
             {
@@ -154,6 +156,11 @@ public class MainBlock : Block, WithBottomSocket
         while (currentBlock != null && !error)
         {
             GameManager.currentBlock = currentBlock;
+
+            if (currentBlock.gameObject.name.Contains("Humidity"))
+            {
+                getHumidityCount++;
+            }
 
             //Debug.Log(currentBlock.name);
 
@@ -247,7 +254,7 @@ public class MainBlock : Block, WithBottomSocket
         }
 
         if (allCorrect && IsCollidingWithAny(GameManager.character.gameObject, ConvertPlantListToGameObjectList(FindObjectsOfType<Plant>())) &&
-            forBloks == endForBlocks && ifBlocks == endIfBlocks)
+            forBloks == endForBlocks && ifBlocks == endIfBlocks && getHumidityCount < 2)
         {
             completeLevel();
         }

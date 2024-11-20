@@ -104,6 +104,12 @@ public class ForBlock : ConditionalBlock
         forIsFinished = false;
 
         Block block = getSocketBlock(rightSocket);
+
+        if (block == null)
+        {
+            yield return null;
+        }
+
         String toInterpret = ((WithAssociatedString)block).getAssociatedString();
         int number;
         int.TryParse(toInterpret, out number);

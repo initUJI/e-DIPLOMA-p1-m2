@@ -356,7 +356,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 60529947669458944
-    m_Localized: "Men\xFA principal"
+    m_Localized: Menu principal
     m_Metadata:
       m_Items: []
   references:

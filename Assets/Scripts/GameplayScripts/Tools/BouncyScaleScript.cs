@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class BouncyScaleScript : MonoBehaviour
 {
@@ -18,9 +19,14 @@ public class BouncyScaleScript : MonoBehaviour
     private float originalAnimationTime;
     private Vector3 objectOriginalScale;
     private Coroutine lastCoroutine;
+
+    private XRGrabInteractable grabInteractable;
     // Start is called before the first frame update
     void Start()
     {
+        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable.enabled = false;
+
         if (particleEffect && effect == null) Debug.LogWarning("，ATENCION! Boolean particleEffect es true\nNecesitas asignar la variable effect (GameObject con ParticleSystem) a la componente BouncyScript del objeto " + gameObject.name + " para que haya un efecto." + "\nATENTION! Boolean particleEffect is set to true\nYou need to assign the variable effect (GameObject with PaticleSystem) to the component BouncyScript of the object " + gameObject.name + " in order to have an effect.");
 
         objectOriginalScale = transform.localScale;
@@ -81,6 +87,7 @@ public class BouncyScaleScript : MonoBehaviour
         scaleUp = !scaleUp;
 
         lastCoroutine = null;
+        grabInteractable.enabled = true;
 
         if (scaleUp && destroyWhenScaledToZero) GameObject.Destroy(gameObject); // Destroy if scaled to Zero and inspector Boolean of destroying active
     }
