@@ -536,6 +536,7 @@ MonoBehaviour:
   bottomBlock: {fileID: 0}
   bottomSocket: {fileID: 3999710674519891484}
   canvasFail: {fileID: 0}
+  startButton: {fileID: 6636744964795244791}
   currentBlock: {fileID: 0}
   wasIfBlock: 0
   ifConditionChecked: 0
