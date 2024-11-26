@@ -3932,6 +3932,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1457394172823981178, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
+      propertyPath: m_AllowAnchorControl
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457394172823981178, guid: 4e16ea228a0f99846aa54db57c722f88, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 0}
@@ -11308,6 +11312,10 @@ PrefabInstance:
     - target: {fileID: 4111316452795453805, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
       propertyPath: m_ReferenceFrame
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4111316452795453805, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
+      propertyPath: m_AllowAnchorControl
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4111316452795453805, guid: 365fcb0dc759f914da977b71a687b11a, type: 3}
       propertyPath: m_InteractionManager
